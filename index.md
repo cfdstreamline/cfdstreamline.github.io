@@ -1,7 +1,3 @@
----
-layout: page
----
-
 # CFD Streamline
 
 [Software](/docs/software.md)
