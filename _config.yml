@@ -21,7 +21,7 @@ title_separator: "-"
 subtitle: # site tagline that appears below site title in masthead
 name: "CFD Streamline"
 description: "CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive."
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: "https://www.cfdstreamline.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -71,7 +71,7 @@ naver_site_verification:
 
 # Social Sharing
 twitter:
-  username:
+  username: cfdstreamline
 facebook:
   username:
   app_id:
@@ -80,7 +80,7 @@ og_image: # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type: # Person or Organization (defaults to Person)
+  type: Organization # Person or Organization (defaults to Person)
   name: # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
@@ -121,15 +121,24 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/company/cfdstreamline"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/cfdstreamline"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
+    - label: "Youtube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A"
+    - label: "Pinterest"
+      icon: "fab fa-fw fa-pinterest"
+      url: "https://www.pinterest.com/cfdstreamline"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://www.instagram.com/cfd.streamline"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
