@@ -1,7 +1,3 @@
----
-layout: page
----
-
 # Tools
 
 ### [BLWF Toolkit](https://blwf-aero.ru/index_en.html)
