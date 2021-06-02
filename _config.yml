@@ -8,3 +8,10 @@ twitter_username: cfdstreamline
 github_username: cfdstreamline
 
 theme: jekyll-theme-minimal
+
+header_pages:
+  - home.md
+  - software.md
+  - testcases.md
+  - bibliography.md
+  - about.md
