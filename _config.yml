@@ -10,7 +10,7 @@ github_username: cfdstreamline
 google_analytics:
 
 
-theme: mmistakes/minimal-mistakes
+theme: jekyll-theme-minimal
 
 header_pages:
   - index.md
