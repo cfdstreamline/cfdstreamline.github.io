@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: single
 ---
 
-# Reporting
+## Reporting
 
 ### [Miktex](https://miktex.org/)
 * Release Type: open-source

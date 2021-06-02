@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: single
 ---
 
-# Geometry
+## Geometry
 
 ### [Salome](https://www.salome-platform.org/)
 * Release Type: Open Source

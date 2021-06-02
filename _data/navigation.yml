@@ -1,13 +1,13 @@
 # main links
 main:
   - title: "Software"
-    url: /sources/software.md
+    url: /sources/software/index.html
   - title: "Test Cases"
-    url: /sources/testcases.md
+    url: /sources/testcases/index.html
   - title: "Bibliography"
-    url: /sources/bibliography.md
+    url: /sources/bibliography/index.html
   - title: "Store"
-    url: /sources/store.md
+    url: /sources/store/index.html
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
@@ -16,3 +16,24 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+docs:
+  - title: Software
+    url: /sources/software/
+    children:
+      - title: "Geometry"
+        url: /sources/software_geometry/
+      - title: "Mesh"
+        url: /sources/software_mesh/
+      - title: "Solvers"
+        url: /sources/software_solvers/
+      - title: "Post-Processing"
+        url: /sources/software_post-processing/
+      - title: "Tools"
+        url: /sources/software_tools/
+      - title: "Reporting"
+        url: /sources/software_reporting/
+      - title: "Databanks"
+        url: /sources/software_databanks/
+      - title: "Repositories"
+        url: /sources/software_repositories/

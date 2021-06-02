@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: single
 ---
 
-# Code Repositories
+## Code Repositories
 
 
 ### [Code Projects](https://code.nasa.gov/)

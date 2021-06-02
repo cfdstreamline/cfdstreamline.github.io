@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: single
 ---
 
-# Databanks
+## Databanks
 
 
 ### [DATCOM](http://www.pdas.com/datcom.html)

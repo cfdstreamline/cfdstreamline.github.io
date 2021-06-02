@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: single
 ---
 
-# Mesh
+## Mesh
 
 ### [Gmsh](http://gmsh.info/)
 * Release Type: Open Source

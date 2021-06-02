@@ -1,9 +1,8 @@
-
 ---
-layout: page
+layout: single
 ---
 
-# Solvers
+## Solvers
 
 ## Panel Methods
 
