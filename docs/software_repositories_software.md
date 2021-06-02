@@ -1,7 +1,3 @@
----
-layout: page
----
-
 # Code Repositories
 
 
