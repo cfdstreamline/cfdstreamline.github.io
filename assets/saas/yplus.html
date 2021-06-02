@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<script>
+function yPlus2Ds(form) {
+   // Compute a wall spacing value 
+   // for given flow conditions and a desired Y+
+
+   Uinf = eval(form.Uinf.value)
+   rho = eval(form.rho.value)
+   L = eval(form.L.value)
+   mu = eval(form.mu.value)
+   yPlus = eval(form.yPlus.value)
+
+   // Check the input
+   // Return -1 on error
+   if ( Uinf <= 0 ||
+        rho <= 0 ||
+        L <= 0 ||
+        mu <= 0 ||
+        yPlus <= 0 ) {
+      form.Ds.value = -1
+      return;
+   }
+
+   // Compute Ds
+   Rex = (rho*Uinf*L)/mu
+   Cf = 0.026*Math.pow(Rex,-(1.0/7.0))
+   tauWall = Cf*rho*Uinf*Uinf*0.5
+   Ufric = Math.sqrt(tauWall/rho)
+   Ds = (yPlus*mu)/(Ufric*rho)
+
+   // Put results into the form
+   form.Ds.value = Ds
+   form.Rex.value = Rex
+}
+</script>
+
+
+<style>
+th {
+	height: 20px;
+    padding: 10px;
+	text-align: left;
+}
+td {
+	height: 20px;
+	width: 10%;
+	padding: 10px;
+	text-align: left;
+}
+</style>
+
+</head>
+
+<body>
+
+<form name="Y2" id="yplus">
+<!-- Input -->
+	<h2>Input</h2>
+
+	<div>
+		<table style="width:80%">
+			<tr>
+				<td><label for="Uinf">U<sub>&infin;</sub> </label></td>
+				<td><input type="text" id="Uinf" name="Uinf" value="1.0" size="20"/></td>
+				<td>m/s</td>
+				<td>freestream velocity</td>
+			</tr>
+
+			<tr>
+				<td><label for="rho">&rho;<sub>&infin;</sub></label></td>
+				<td><input type="text" id="rho" name="rho" value="1.225" size="20"/></td>
+				<td>kg/m3</td>
+				<td>freestream density</td>
+			</tr>
+
+			<tr>
+				<td><label for="mu">&mu;<sub>&infin;</sub> </label></td>
+				<td><input type="text" id="mu" name="mu" value="0.000018375" size="20"/></td>
+				<td>kg/m*s</td>
+				<td>dynamic viscosity</td>
+			</tr>
+
+			<tr>
+				<td><label for="L">L </label></td>
+				<td><input type="text" id="L" name="L" value="1.0" size="20"/></td>
+				<td>m</td>
+				<td>reference length</td>
+			</tr>
+
+			<tr>
+				<td><label style="width:1%" for="yPlus">y<sup>+</sup> </label></td>
+				<td><input type="text" id="yPlus" name="yPlus" value="1.0" size="20"/></td>
+				<td>-</td>
+				<td>required y<sup>+</sup></td>
+			</tr>
+		</table>
+
+	</div>
+
+
+<!-- Output -->
+
+	<h2>Output</h2>
+
+	<div>
+	<button type="button" onclick="yPlus2Ds(this.form)">Calculate</button>
+
+		<table style="width:80%">
+			<tr>
+				<td><label for="Ds">&Delta;s </label></td>
+				<td><input type="text" id="Ds" name="Ds" size="20"/></td>
+				<td>m</td>
+				<td>first element height</td>
+			</tr>
+
+			<tr>
+				<td><label for="Rex">Re </label></td>
+				<td><input type="text" id="Rex" name="Rex" size="20"/></td>
+				<td>-</td>
+				<td>Reynolds number</td>
+			</tr>
+		</table>
+
+	</div>
+
+</form>
+
+</body>
+</html>
