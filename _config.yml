@@ -1,4 +1,5 @@
 title: CFD Streamline
+logo: /assets/img/logo.png
 email: cfd.streamline@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.
@@ -6,6 +7,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: cfdstreamline
 github_username: cfdstreamline
+show_downloads: true
+google_analytics:
+
 
 theme: jekyll-theme-minimal
 
