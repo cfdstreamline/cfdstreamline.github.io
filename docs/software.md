@@ -1,15 +1,15 @@
-## [Geometry](../docs/software_geometry.md)
+## [Geometry](software_geometry.md)
 
-## [Mesh](../docs/software_mesh.md)
+## [Mesh](software_mesh.md)
 
-## [Solver](../docs/software_solvers.md)
+## [Solver](software_solvers.md)
 
-## [Post-Processing](../docs/software_post-processing.md)
+## [Post-Processing](software_post-processing.md)
 
-## [Tools](../docs/software_tools.md)
+## [Tools](software_tools.md)
 
-## [Databanks](../docs/software_databanks.md)
+## [Databanks](software_databanks.md)
 
-## [Repositories](../docs/software_repositories.md)
+## [Repositories](software_repositories.md)
 
 
