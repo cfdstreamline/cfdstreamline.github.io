@@ -1,7 +1,3 @@
----
-layout: page
----
-
 # Reporting
 
 ### [Miktex](https://miktex.org/)
