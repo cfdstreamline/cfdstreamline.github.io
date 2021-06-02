@@ -1,8 +1,3 @@
-
----
-layout: page
----
-
 # Solvers
 
 ## Panel Methods
