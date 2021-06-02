@@ -1,10 +1,12 @@
 ---
 layout: single
+sidebar:
+  nav: "nav-software"
 ---
 
-## Reporting
+# Reporting
 
-### [Miktex](https://miktex.org/)
+## [Miktex](https://miktex.org/)
 * Release Type: open-source
 * Description: MiKTeX (pronounced mick-tech) is an implementation of TeX/LaTeX and related programs
 * System: Linux, Windows, and Mac
@@ -13,7 +15,7 @@ layout: single
 * [Latex Wiki](https://en.wikibooks.org/wiki/LaTeX)
 
 
-### [OpenOffice](https://www.openoffice.org)
+## [OpenOffice](https://www.openoffice.org)
 * Release Type: open-source
 * Description: Free alternative to Microsoft Office.
 * System: Linux, Windows, and Mac

@@ -1,11 +1,13 @@
 ---
 layout: single
+sidebar:
+  nav: "nav-software"
 ---
 
-## Databanks
+# Databanks
 
 
-### [DATCOM](http://www.pdas.com/datcom.html)
+## [DATCOM](http://www.pdas.com/datcom.html)
 * Release Type: open-source
 * Description: The computer program calculates static stability, high lift and control, and dynamic derivative characteristics using the methods contained in the USAF Stability and Control Datcom (Data Compendium). 
 * System: Linux, Windows, and Mac

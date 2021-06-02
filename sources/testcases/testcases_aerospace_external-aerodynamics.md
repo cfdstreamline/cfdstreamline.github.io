@@ -1,14 +1,16 @@
 ---
 layout: single
+sidebar:
+  nav: "nav-testcases"
 ---
 
-## Aerospace - External Aerodynamics
+# Aerospace - External Aerodynamics
 
 
-### 2D Cases
+## 2D Cases
 
 
-#### [NACA-0012 Airfoil](https://turbmodels.larc.nasa.gov/naca0012_val.html)
+### [NACA-0012 Airfoil](https://turbmodels.larc.nasa.gov/naca0012_val.html)
 * Experimental data: publically available
 * Grids: publically available
 * Numerical results: publically available
@@ -18,7 +20,7 @@ layout: single
   * AoA = -17.3deg. to +17.3deg.
 
 
-#### [NACA-4412 Airfoil](https://turbmodels.larc.nasa.gov/naca4412sep_val.html)
+### [NACA-4412 Airfoil](https://turbmodels.larc.nasa.gov/naca4412sep_val.html)
 * Objective: Trailing edge separation.
 * Experimental data: publically available
 * Grids: publically available
@@ -29,7 +31,7 @@ layout: single
   * AoA = 13.87 deg.
 
 
-#### [RAE-2822 Airfoil](https://www.grc.nasa.gov/WWW/wind/valid/raetaf/raetaf.html)
+### [RAE-2822 Airfoil](https://www.grc.nasa.gov/WWW/wind/valid/raetaf/raetaf.html)
 * Experimental data: publically available
 * Grids: publically available
 * Numerical results: publically available
@@ -39,7 +41,7 @@ layout: single
   * AoA = 2.92 deg.
 
 
-#### [NLR Airfoil with Flap](https://www.grc.nasa.gov/WWW/wind/valid/nlrflap/nlrflap.html)
+### [NLR Airfoil with Flap](https://www.grc.nasa.gov/WWW/wind/valid/nlrflap/nlrflap.html)
 * Experimental data: publically available
 * Grids: publically available
 * Numerical results: publically available
@@ -50,7 +52,7 @@ layout: single
   * AoA = 10 deg.
 
 
-#### [Axisymmetric SWBLI near M=7](https://turbmodels.larc.nasa.gov/axiswblim7_val.html)
+### [Axisymmetric SWBLI near M=7](https://turbmodels.larc.nasa.gov/axiswblim7_val.html)
 * Experimental data: publically available
 * Grids: not available
 * Numerical results: publically available
@@ -61,10 +63,10 @@ layout: single
 
 
 
-### 3D Cases
+## 3D Cases
 
 
-#### [Onera M6 Wing](https://www.grc.nasa.gov/WWW/wind/valid/m6wing/m6wing.html)
+### [Onera M6 Wing](https://www.grc.nasa.gov/WWW/wind/valid/m6wing/m6wing.html)
 * Experimental data: publically available
 * Grids: not available
 * Numerical results: publically available
@@ -75,7 +77,7 @@ layout: single
 * [CFL3D site](https://cfl3d.larc.nasa.gov/Cfl3dv6/cfl3dv6_testcases.html#onera)
 
 
-#### [ARA M100 Wing-Body](https://cfl3d.larc.nasa.gov/Cfl3dv6/cfl3dv6_testcases.html#ara)[i](https://cfl3d.larc.nasa.gov/Cfl3dv6/cfl3dv6_testcases.html#ara)[te](https://cfl3d.larc.nasa.gov/Cfl3dv6/cfl3dv6_testcases.html#ara)
+### [ARA M100 Wing-Body](https://cfl3d.larc.nasa.gov/Cfl3dv6/cfl3dv6_testcases.html#ara)[i](https://cfl3d.larc.nasa.gov/Cfl3dv6/cfl3dv6_testcases.html#ara)[te](https://cfl3d.larc.nasa.gov/Cfl3dv6/cfl3dv6_testcases.html#ara)
 * Experimental data: publically available
 * Grids: not available
 * Numerical results: publically available
@@ -85,7 +87,7 @@ layout: single
   * AoA = 2.873 deg.
 
 
-#### [Delta Wing](https://cfl3d.larc.nasa.gov/Cfl3dv6/cfl3dv6_testcases.html#delta)
+### [Delta Wing](https://cfl3d.larc.nasa.gov/Cfl3dv6/cfl3dv6_testcases.html#delta)
 * Experimental data: publically available
 * Grids: not available
 * Numerical results: publically available
@@ -95,9 +97,9 @@ layout: single
   * AoA = 20.5 deg.
 
 
-#### [DPW Series](https://aiaa-dpw.larc.nasa.gov/)
+### [DPW Series](https://aiaa-dpw.larc.nasa.gov/)
 
-##### [DPW-1](https://aiaa-dpw.larc.nasa.gov/Workshop1/workshop1.html)
+#### [DPW-1](https://aiaa-dpw.larc.nasa.gov/Workshop1/workshop1.html)
 * Experimental data: publically available
 * Grids: not available
 * Numerical results: publically available
@@ -106,7 +108,7 @@ layout: single
   * Re = 11.72E6
   * AoA = 3.06 deg.
 
-##### [DPW-2](https://aiaa-dpw.larc.nasa.gov/Workshop2/workshop2.html)
+#### [DPW-2](https://aiaa-dpw.larc.nasa.gov/Workshop2/workshop2.html)
 * 2nd AIAA CFD Drag Prediction Workshop
 * Model: DLR-F6
 * Experimental data: publically available
@@ -132,7 +134,7 @@ layout: single
     * M = 0.50, 0.60, 0.70, 0.72, 0.74, 0.75, 0.76, 0.77
     * CL = 0.500 ± .001
 
-##### [DPW-3](https://aiaa-dpw.larc.nasa.gov/Workshop3/workshop3.html)
+#### [DPW-3](https://aiaa-dpw.larc.nasa.gov/Workshop3/workshop3.html)
 * 3rd AIAA CFD Drag Prediction Workshop
 * Model: DLR-F6
 * Experimental data: publically available
@@ -159,7 +161,7 @@ layout: single
     * Drag polar (medium grid)
       * AoA = -1, 0, 0.5, 1, 1.5, 2, 2.5, 3 deg.
 
-##### [DPW-4](https://aiaa-dpw.larc.nasa.gov/Workshop4/workshop4.html)
+#### [DPW-4](https://aiaa-dpw.larc.nasa.gov/Workshop4/workshop4.html)
 * 4th AIAA CFD Drag Prediction Workshop
 * Model: NASA Common Research Model (CRM)
 * Experimental data: publically available
@@ -187,7 +189,7 @@ layout: single
     * CL = 0.500 ±0.001
     * T = -250F (for Re = 20E6)
 
-##### [DPW-5](https://aiaa-dpw.larc.nasa.gov/Workshop5/workshop5.html)
+#### [DPW-5](https://aiaa-dpw.larc.nasa.gov/Workshop5/workshop5.html)
 * 5th AIAA CFD Drag Prediction Workshop
 * Model: NASA Common Research Model (CRM)
 * Experimental data: publically available
@@ -207,7 +209,7 @@ layout: single
     * Re = 5E6 (cref = 275.80 in)
     * T = 100F
 
-##### [DPW-6](https://aiaa-dpw.larc.nasa.gov/Workshop6/workshop6.html)
+#### [DPW-6](https://aiaa-dpw.larc.nasa.gov/Workshop6/workshop6.html)
 * 6th AIAA CFD Drag Prediction Workshop
 * Model: NASA Common Research Model (CRM)
 * Experimental data: publically available
@@ -218,7 +220,7 @@ layout: single
   * Re = 5E6
   * CL = 0.5 ±0.001
 
-##### [DPW-7](https://aiaa-dpw.larc.nasa.gov/)
+#### [DPW-7](https://aiaa-dpw.larc.nasa.gov/)
 * 7th AIAA CFD Drag Prediction Workshop
 * Model: NASA Common Research Model (CRM)
 * Experimental data: publically available
@@ -236,9 +238,9 @@ layout: single
 
 
 
-#### [HLPW Series](https://hiliftpw.larc.nasa.gov)
+### [HLPW Series](https://hiliftpw.larc.nasa.gov)
 
-##### [HLPW-1](https://hiliftpw.larc.nasa.gov/index-workshop1.html)
+#### [HLPW-1](https://hiliftpw.larc.nasa.gov/index-workshop1.html)
 * 1st AIAA CFD High Lift Prediction Workshop
 * Model: NASA Trap Wing
 * Experimental data: publically available
@@ -246,7 +248,7 @@ layout: single
 * Numerical results: publically available
 * [Cases](https://hiliftpw.larc.nasa.gov/Workshop1/testcases.html)
 
-##### [HLPW-2](https://hiliftpw.larc.nasa.gov/index-workshop2.html)
+#### [HLPW-2](https://hiliftpw.larc.nasa.gov/index-workshop2.html)
 * 2nd AIAA CFD High Lift Prediction Workshop
 * Model: DLR F-11
 * Experimental data: publically available
@@ -254,7 +256,7 @@ layout: single
 * Numerical results: publically available
 * [Cases](https://hiliftpw.larc.nasa.gov/Workshop2/testcases.html)
 
-##### [HLPW-3](https://hiliftpw.larc.nasa.gov/index-workshop3.html)
+#### [HLPW-3](https://hiliftpw.larc.nasa.gov/index-workshop3.html)
 * 3rd AIAA CFD High Lift Prediction Workshop
 * Model: JAXA JSM
 * Experimental data: publically available
@@ -262,7 +264,7 @@ layout: single
 * Numerical results: publically available
 * [Cases](https://hiliftpw.larc.nasa.gov/Workshop3/OfficialTestCases-HiLiftPW-3-2017_v9.pdf)
 
-##### [HLPW-4](https://hiliftpw.larc.nasa.gov/)
+#### [HLPW-4](https://hiliftpw.larc.nasa.gov/)
 * 4th AIAA CFD High Lift Prediction Workshop
 * Model: NASA CRM-HL
 * Experimental data: publically available

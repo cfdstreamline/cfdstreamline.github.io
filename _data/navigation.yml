@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "Software"
-    url: /sources/software/index.html
+    url: /sources/software/software/index.html
   - title: "Test Cases"
-    url: /sources/testcases/index.html
+    url: /sources/testcases/testcases/index.html
   - title: "Bibliography"
     url: /sources/bibliography/index.html
   - title: "Store"
@@ -17,23 +17,46 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 
-docs:
+nav-software:
   - title: Software
-    url: /sources/software/
+    url: /sources/software/software/
     children:
       - title: "Geometry"
-        url: /sources/software_geometry/
+        url: /sources/software/software_geometry/
       - title: "Mesh"
-        url: /sources/software_mesh/
+        url: /sources/software/software_mesh/
       - title: "Solvers"
-        url: /sources/software_solvers/
+        url: /sources/software/software_solvers/
       - title: "Post-Processing"
-        url: /sources/software_post-processing/
+        url: /sources/software/software_post-processing/
       - title: "Tools"
-        url: /sources/software_tools/
+        url: /sources/software/software_tools/
       - title: "Reporting"
-        url: /sources/software_reporting/
+        url: /sources/software/software_reporting/
       - title: "Databanks"
-        url: /sources/software_databanks/
+        url: /sources/software/software_databanks/
       - title: "Repositories"
-        url: /sources/software_repositories/
+        url: /sources/software/software_repositories/
+
+nav-testcases:
+  - title: Test Cases
+    url: /sources/testcases/testcases/
+    children:
+      - title: "Aerospace"
+        url: /sources/testcases/testcases/
+      - title: "External Aerodynamics"
+        url: /sources/testcases/testcases_aerospace_external-aerodynamics/
+      - title: "Internal Aerodynamics"
+        url: /sources/testcases/testcases_aerospace_internal-aerodynamics/
+      - title: "Thermodynamics"
+        url: /sources/testcases/testcases_aerospace_thermodynamics/
+      - title: "Automotive"
+        url: /sources/testcases/testcases/
+      - title: "External Aerodynamics"
+        url: /sources/testcases/testcases_automotive_external-aerodynamics/
+      - title: "Internal Aerodynamics"
+        url: /sources/testcases/testcases_automotive_internal-aerodynamics/
+      - title: "Thermodynamics"
+        url: /sources/testcases/testcases_automotive_thermodynamics/
+      - title: "Repositories"
+        url: /sources/testcases/testcases_repositories/

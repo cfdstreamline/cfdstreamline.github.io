@@ -1,10 +1,9 @@
 ---
 layout: home
-author_profile: false
-sidebar:
-    nav: "docs"
+author_profile: true
 ---
 
-## [Software](./sources/software/index.html)
+## [Software](./sources/software/software/index.html)
 
-## [Test Cases](./sources/testcases/index.html)
+## [Test Cases](./sources/testcases/testcases/index.html)
+
