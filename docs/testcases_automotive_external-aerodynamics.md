@@ -1,7 +1,3 @@
----
-layout: page
----
-
 # Automotive - External Aerodynamics
 
 ## 3D Cases
