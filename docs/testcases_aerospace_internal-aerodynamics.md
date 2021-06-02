@@ -1,7 +1,0 @@
-# Aerospace - Internal Aerodynamics
-
-
-
-
-
-
