@@ -1,7 +1,3 @@
----
-layout: page
----
-
 # Mesh
 
 ### [Gmsh](http://gmsh.info/)
