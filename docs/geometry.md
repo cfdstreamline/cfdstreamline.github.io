@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # Geometry
 
 ## [Salome](https://www.salome-platform.org/)
