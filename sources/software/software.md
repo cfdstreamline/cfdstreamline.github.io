@@ -1,7 +1,7 @@
 ---
 layout: single
 sidebar:
-  nav: "nav-software"
+  nav: "software"
 ---
 
 # Software
