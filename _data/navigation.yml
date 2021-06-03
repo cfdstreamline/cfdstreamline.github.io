@@ -4,10 +4,10 @@ main:
     url: /sources/software/software/index.html
   - title: "Test Cases"
     url: /sources/testcases/testcases/index.html
-  - title: "Bibliography"
-    url: /sources/bibliography/index.html
-  - title: "Store"
-    url: /sources/store/index.html
+  #- title: "Bibliography"
+  #  url: /sources/bibliography/index.html
+  #- title: "Store"
+  #  url: /sources/store/index.html
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
