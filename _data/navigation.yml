@@ -17,7 +17,7 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 
-nav-software:
+software:
   - title: Software
     url: /sources/software/software/
     children:
@@ -38,7 +38,7 @@ nav-software:
       - title: "Repositories"
         url: /sources/software/software_repositories/
 
-nav-testcases:
+testcases:
   - title: Test Cases
     url: /sources/testcases/testcases/
     children:
