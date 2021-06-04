@@ -16,6 +16,8 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  - title: "Apps"
+    url: /sources/apps_yplus.html
 
 software:
   - title: Software

@@ -1,42 +1,11 @@
 <!DOCTYPE html>
 <html>
 
+	<script src="../assets/apps/yplus.js" defer> </script>
 
+	<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 <head>
-<script>
-function yPlus2Ds(form) {
-   // Compute a wall spacing value 
-   // for given flow conditions and a desired Y+
 
-   Uinf = eval(form.Uinf.value)
-   rho = eval(form.rho.value)
-   L = eval(form.L.value)
-   mu = eval(form.mu.value)
-   yPlus = eval(form.yPlus.value)
-
-   // Check the input
-   // Return -1 on error
-   if ( Uinf <= 0 ||
-        rho <= 0 ||
-        L <= 0 ||
-        mu <= 0 ||
-        yPlus <= 0 ) {
-      form.Ds.value = -1
-      return;
-   }
-
-   // Compute Ds
-   Rex = (rho*Uinf*L)/mu
-   Cf = 0.026*Math.pow(Rex,-(1.0/7.0))
-   tauWall = Cf*rho*Uinf*Uinf*0.5
-   Ufric = Math.sqrt(tauWall/rho)
-   Ds = (yPlus*mu)/(Ufric*rho)
-
-   // Put results into the form
-   form.Ds.value = Ds
-   form.Rex.value = Rex
-}
-</script>
 
 
 <style>
@@ -56,13 +25,15 @@ td {
 </head>
 
 <body>
+	<script async src="https://cse.google.com/cse.js?cx=a390aa655bef0d717"></script>
+	<div class="gcse-search"></div>
 
 <form name="Y2" id="yplus">
 <!-- Input -->
 	<h2>Input</h2>
 
 	<div>
-		<table style="width:80%">
+		<table style="width:50%">
 			<tr>
 				<td><label for="Uinf">U<sub>&infin;</sub> </label></td>
 				<td><input type="text" id="Uinf" name="Uinf" value="1.0" size="20"/></td>
@@ -126,8 +97,17 @@ td {
 		</table>
 
 	</div>
-
 </form>
+
+<amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-4699563125299312"
+     data-ad-slot="3532465338"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad>
+
 
 </body>
 </html>
