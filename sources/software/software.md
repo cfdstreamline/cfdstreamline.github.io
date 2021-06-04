@@ -1,8 +1,7 @@
 ---
 layout: single
+title: Software
 ---
-
-# Software
 
 ## [Geometry](/sources/software/software_geometry/index.html)
 

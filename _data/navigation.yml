@@ -60,3 +60,28 @@ testcases:
         url: /sources/testcases/testcases_automotive_thermodynamics/
       - title: "Repositories"
         url: /sources/testcases/testcases_repositories/
+
+sociallinks:
+  - title: Follow
+    children:
+      - label: "Linkedin"
+        icon: "fab fa-fw fa-linkedin"
+        url: "https://www.linkedin.com/company/cfdstreamline"
+      - label: "GitHub"
+        icon: "fab fa-fw fa-github"
+        url: "https://github.com/cfdstreamline"
+      - label: "Youtube"
+        icon: "fab fa-fw fa-youtube"
+        url: "https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A"
+      - label: "Pinterest"
+        icon: "fab fa-fw fa-pinterest"
+        url: "https://www.pinterest.com/cfdstreamline"
+      - label: "Instagram"
+        icon: "fab fa-fw fa-instagram"
+        url: "https://www.instagram.com/cfd.streamline"
+      - label: "Twitter"
+        icon: "fab fa-fw fa-twitter-square"
+        url: "https://twitter.com/CfdStreamline"
+      - label: "Facebook"
+        icon: "fab fa-fw fa-facebook-square"
+        url: "https://www.facebook.com/CFD-Streamline-102236005421147/"

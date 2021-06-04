@@ -1,5 +1,4 @@
 ---
 layout: single
+title: Automotive - Internal Aerodynamics
 ---
-
-# Automotive - Internal Aerodynamics

@@ -1,9 +1,7 @@
 ---
 layout: single
+title: Aerospace - Internal Aerodynamics
 ---
-
-# Aerospace - Internal Aerodynamics
-
 
 
 
