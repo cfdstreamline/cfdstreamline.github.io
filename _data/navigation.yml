@@ -17,7 +17,7 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
   - title: "Apps"
-    url: /sources/apps_yplus.html
+    url: /sources/apps_yplus/index.html
 
 software:
   - title: Software

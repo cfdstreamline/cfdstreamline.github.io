@@ -24,7 +24,7 @@ function yPlus2Ds(form) {
     Cf = 0.026*Math.pow(Rex,-(1.0/7.0))
     tauWall = Cf*rho*Uinf*Uinf*0.5
     Ufric = Math.sqrt(tauWall/rho)
-    Ds = (yPlus*mu)/(Ufric*rho)
+    Ds = (yPlus*mu)/(Ufric*rho)*1000
  
     // Put results into the form
     form.Ds.value = Ds
