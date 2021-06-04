@@ -1,10 +1,6 @@
 ---
 layout: single
-sidebar:
-  nav: "nav-software"
----
-
-# Geometry
+ Geometry
 
 ## [Salome](https://www.salome-platform.org/)
 * Release Type: Open Source

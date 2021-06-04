@@ -1,7 +1,5 @@
 ---
 layout: single
-sidebar:
-  nav: "testcases"
 ---
 # Test Cases
 

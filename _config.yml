@@ -10,8 +10,8 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes@4.23.0"
+#theme: "minimal-mistakes-jekyll"
+remote_theme: "mmistakes/minimal-mistakes@4.23.0"
 minimal_mistakes_skin: "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -71,9 +71,9 @@ naver_site_verification:
 
 # Social Sharing
 twitter:
-  username: cfdstreamline
+  username: "cfdstreamline"
 facebook:
-  username: https://www.facebook.com/CFD-Streamline-102236005421147/
+  username: "https://www.facebook.com/CFD-Streamline-102236005421147/"
   app_id:
   publisher:
 og_image: # Open Graph/Twitter default site image
@@ -83,11 +83,6 @@ social:
   type: Organization # Person or Organization (defaults to Person)
   name: # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://www.instagram.com/cfd.streamline"
-    - "https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A"
-    - "https://www.pinterest.com/cfdstreamline"
-    - "https://github.com/cfdstreamline"
-    - "https://www.linkedin.com/company/cfdstreamline"
 
 # Analytics
 analytics:
@@ -99,7 +94,7 @@ analytics:
 # Site Author
 author:
   name: "CFD Streamline"
-  avatar: /assets/images/icon/logo.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar: "/assets/images/icon/logo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   #bio: "I am an **amazing** person."
   #location: "Somewhere"
   #email:
@@ -295,7 +290,7 @@ defaults:
       related: true
   # _pages
   - scope:
-      path:
+      path: ""
       type: pages
     values:
       layout: single
@@ -308,10 +303,3 @@ defaults:
       comments: false
       share: true
       related: true
-
-- scope:
-      path: testcases
-      type: pages
-    values:
-      sidebar:
-        nav: testcases

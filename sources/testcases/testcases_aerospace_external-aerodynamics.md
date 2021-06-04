@@ -1,7 +1,5 @@
 ---
 layout: single
-sidebar:
-  nav: "nav-testcases"
 ---
 
 # Aerospace - External Aerodynamics

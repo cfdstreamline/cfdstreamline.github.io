@@ -1,8 +1,6 @@
 ---
 layout: single
-sidebar:
-  nav: "nav-software"
----
+-
 
 # Reporting
 
