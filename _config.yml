@@ -284,6 +284,15 @@ collections:
   portfolio:
     output: false
     permalink: /:collection/:path/
+  sources-testcases:
+    output: true
+    permalink: /:collection/:path/
+  sources-software:
+    output: true
+    permalink: /:collection/:path/
+  apps:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:

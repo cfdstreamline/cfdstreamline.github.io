@@ -2,7 +2,7 @@
 title: "Baz Boom Identity"
 excerpt: "Baz Boom design system including logo mark, website design, and branding applications."
 header:
-  image: /assets/images/stock/pexels-abdulwahab-alawadhi-3422964.jpg
+  image: /assets/images/stock/thumbs/pexels-abdulwahab-alawadhi-3422964.jpg
   teaser: assets/images/stock/pexels-abdulwahab-alawadhi-3422964.jpg
 sidebar:
   - title: "Role"
@@ -12,13 +12,13 @@ sidebar:
   - title: "Responsibilities"
     text: "Reuters try PR stupid commenters should isn't a business model"
 gallery:
-  - url: /assets/images/stock/pexels-abdulwahab-alawadhi-3422964.jpg
+  - url: /assets/images/stock/thumbs/pexels-abdulwahab-alawadhi-3422964.jpg
     image_path: assets/images/stock/pexels-abdulwahab-alawadhi-3422964.jpg
     alt: "placeholder image 1"
-  - url: /assets/images/stock/pexels-hugo-lamacq-5914334.jpg
+  - url: /assets/images/stock/thumbs/pexels-hugo-lamacq-5914334.jpg
     image_path: assets/images/stock/pexels-hugo-lamacq-5914334.jpg
     alt: "placeholder image 2"
-  - url: /assets/images/stock/todd-jiang-4YKx90d8FUE-unsplash.jpg
+  - url: /assets/images/stock/thumbs/todd-jiang-4YKx90d8FUE-unsplash.jpg
     image_path: assets/images/stock/todd-jiang-4YKx90d8FUE-unsplash.jpg
     alt: "placeholder image 3"
 ---

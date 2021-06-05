@@ -3,7 +3,7 @@ layout: splash
 classes: wide
 toc: false
 permalink: /bibliography/
-feature_row:
+cfd:
   - image_path: /assets/images/books/cfd/patankar_-_numerical_heat_transfer_and_fluid_flow.jpg
     alt: "Numerical Heat Transfer And Fluid Flow"
     title: "Numerical Heat Transfer And Fluid Flow"
@@ -12,8 +12,8 @@ feature_row:
     btn_label: "See on Amazon"
     btn_class: "btn btn--primary btn--small"
   - image_path: /assets/images/books/cfd/wilcox_dc_-_turbulence_modeling_for_cfd.jpg
-    alt: "Turbulence Modeling For Cfd"
-    title: "Turbulence Modeling For Cfd"
+    alt: "Turbulence Modeling For   CFD"
+    title: "Turbulence Modeling For   CFD"
     href: "https://amzn.to/3vgTuZ8"
     url: "https://amzn.to/3vgTuZ8"
     btn_label: "See on Amazon"
@@ -144,7 +144,104 @@ feature_row:
     url: "https://amzn.to/2Sm7VfY"
     btn_label: "See on Amazon"
     btn_class: "btn btn--primary btn--small"
+aerodynamics:
+  - image_path: /assets/images/books/aerodynamics/schmitz_sven_-_aerodynamics_of_wind_turbines_a_physical_basis_for_analysis_and_design_1st-edition.jpg
+    alt: "﻿Aerodynamics Of Wind Turbines A Physical Basis For Analysis And Design 1st-Edition"
+    title: "﻿Aerodynamics Of Wind Turbines A Physical Basis For Analysis And Design 1st-Edition"
+    href: "https://amzn.to/3vnzmEC"
+    url: "https://amzn.to/3vnzmEC"
+    btn_label: "See on Amazon"
+    btn_class: "btn btn--primary btn--small"
+  - image_path: /assets/images/books/aerodynamics/anderson_jd_-_fundamentals_of_aerodynamics_6th-edition.jpg
+    alt: "Fundamentals Of Aerodynamics 6th-Edition"
+    title: "Fundamentals Of Aerodynamics 6th-Edition"
+    href: "https://amzn.to/3uiwZSs"
+    url: "https://amzn.to/3uiwZSs"
+    btn_label: "See on Amazon"
+    btn_class: "btn btn--primary btn--small"
+  - image_path: /assets/images/books/aerodynamics/anderson_jd_-_hypersonics_and_high_temperature_gas_dynamics_3rd-edition.jpg
+    alt: "Hypersonics And High Temperature Gas Dynamics 3rd-Edition"
+    title: "Hypersonics And High Temperature Gas Dynamics 3rd-Edition"
+    href: "https://amzn.to/3oOPjBj"
+    url: "https://amzn.to/3oOPjBj"
+    btn_label: "See on Amazon"
+    btn_class: "btn btn--primary btn--small"
+  - image_path: /assets/images/books/aerodynamics/katz_joseph_-_aerodynamics_of_race_cars.jpg
+    alt: "Aerodynamics Of Race Cars"
+    title: "Aerodynamics Of Race Cars"
+    href: "https://amzn.to/3oNaJip"
+    url: "https://amzn.to/3oNaJip"
+    btn_label: "See on Amazon"
+    btn_class: "btn btn--primary btn--small"
+  - image_path: /assets/images/books/aerodynamics/schuetz_thomas_-_hucho_-_aerodynamik_des_automobils_stroemungsmechanik_waermetechnik_fahrdynamik_komfort_6th-edition.jpg
+    alt: "Aerodynamik Des Automobils Stroemungsmechanik Waermetechnik Fahrdynamik Komfort 6th-Edition"
+    title: "Aerodynamik Des Automobils Stroemungsmechanik Waermetechnik Fahrdynamik Komfort 6th-Edition"
+    href: "https://amzn.to/3fjWAWC"
+    url: "https://amzn.to/3fjWAWC"
+    btn_label: "See on Amazon"
+    btn_class: "btn btn--primary btn--small"
+  - image_path: /assets/images/books/aerodynamics/schlichting_-_boundary_layer_theory.jpg
+    alt: "Boundary Layer Theory"
+    title: "Boundary Layer Theory"
+    href: "https://amzn.to/3fid1D2"
+    url: "https://amzn.to/3fid1D2"
+    btn_label: "See on Amazon"
+    btn_class: "btn btn--primary btn--small"
+  - image_path: /assets/images/books/aerodynamics/katz_joseph_-_introductory_fluid_mechanics.jpg
+    alt: "Introductory Fluid Mechanics"
+    title: "Introductory Fluid Mechanics"
+    href: "https://amzn.to/3fgydt4"
+    url: "https://amzn.to/3fgydt4"
+    btn_label: "See on Amazon"
+    btn_class: "btn btn--primary btn--small"
+  - image_path: /assets/images/books/aerodynamics/abbott_-_theory_of_wing_sections.jpg
+    alt: "Theory Of Wing Sections"
+    title: "Theory Of Wing Sections"
+    href: "https://amzn.to/3fE5GN2"
+    url: "https://amzn.to/3fE5GN2"
+    btn_label: "See on Amazon"
+    btn_class: "btn btn--primary btn--small"
+  - image_path: /assets/images/books/aerodynamics/hoerner_sf_-_fluid-dynamic_drag_1965.jpg
+    alt: "Fluid-Dynamic Drag"
+    title: "Fluid-Dynamic Drag"
+    href: "https://amzn.to/34gl6Sn"
+    url: "https://amzn.to/34gl6Sn"
+    btn_label: "See on Amazon"
+    btn_class: "btn btn--primary btn--small"
+  - image_path: /assets/images/books/aerodynamics/anderson_jd_-_modern_compressible_flow_4th-edition.jpg
+    alt: "Modern Compressible Flow 4th-Edition"
+    title: "Modern Compressible Flow 4th-Edition"
+    href: "https://amzn.to/2SuOPEg"
+    url: "https://amzn.to/2SuOPEg"
+    btn_label: "See on Amazon"
+    btn_class: "btn btn--primary btn--small"
+  - image_path: /assets/images/books/aerodynamics/hansen_martin_ol_aerodynamics_of_wind_turbines.jpg
+    alt: "Aerodynamics Of Wind Turbines"
+    title: "Aerodynamics Of Wind Turbines"
+    href: "https://amzn.to/2SttTxr"
+    url: "https://amzn.to/2SttTxr"
+    btn_label: "See on Amazon"
+    btn_class: "btn btn--primary btn--small"
+  - image_path: /assets/images/books/aerodynamics/schlichting_-_aerodynamics_of_the_airplane.jpg
+    alt: "Aerodynamics Of The Airplane"
+    title: "Aerodynamics Of The Airplane"
+    href: "https://amzn.to/2Spz6Xp"
+    url: "https://amzn.to/2Spz6Xp"
+    btn_label: "See on Amazon"
+    btn_class: "btn btn--primary btn--small"
+  - image_path: /assets/images/books/aerodynamics/hoerner_sf_-_fluid_dynamic_lift_1985.jpg
+    alt: "Fluid Dynamic Lift"
+    title: "Fluid Dynamic Lift"
+    href: "https://amzn.to/2QUboCa"
+    url: "https://amzn.to/2QUboCa"
+    btn_label: "See on Amazon"
+    btn_class: "btn btn--primary btn--small"
 ---
 
-{% include feature_row %}
+## CFD
 
+{% include feature_row_biblio id='cfd' %}
+
+## Aerodynamics
+
+{% include feature_row_biblio id='aerodynamics' %}

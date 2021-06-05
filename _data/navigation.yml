@@ -13,7 +13,7 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
   - title: "Apps"
-    url: /apps/yplus/
+    url: /apps/
   #- title: "Store"
   #  url: /sources/store/index.html
   - title: "About"
