@@ -1,6 +1,8 @@
 ---
 layout: single
 title: Geometry
+categories:
+  - software
 ---
 
 

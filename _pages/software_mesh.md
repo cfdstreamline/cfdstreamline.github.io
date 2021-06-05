@@ -1,6 +1,8 @@
 ---
 layout: single
 title: Mesh
+categories:
+  - software
 ---
 
 ## [Gmsh](http://gmsh.info/){:target="_blank"}

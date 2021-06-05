@@ -1,6 +1,8 @@
 ---
 layout: single
 title: Reporting
+categories:
+  - software
 ---
 
 

@@ -1,15 +1,11 @@
 # main links
 main:
   - title: "Software"
-    url: /sources/software/software/index.html
+    url: /software/
   - title: "Test Cases"
-    url: /sources/testcases/testcases/index.html
-  #- title: "Bibliography"
-  #  url: /sources/bibliography/index.html
-  #- title: "Store"
-  #  url: /sources/store/index.html
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+    url: /testcases/
+  - title: "Bibliography"
+    url: /bibliography/
   - title: "Posts"
     url: /posts/
   # - title: "Sample Collections"
@@ -17,7 +13,11 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
   - title: "Apps"
-    url: /sources/apps_yplus/index.html
+    url: /apps/yplus/
+  #- title: "Store"
+  #  url: /sources/store/index.html
+  - title: "About"
+    url: /about/
 
 software:
   - title: Software

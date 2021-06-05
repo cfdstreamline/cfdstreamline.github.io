@@ -1,6 +1,8 @@
 ---
 layout: single
 title: Aerospace - External Aerodynamics
+categories:
+  - testcases
 ---
 
 ## 2D Cases

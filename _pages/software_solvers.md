@@ -1,6 +1,8 @@
 ---
 layout: single
 title: Solvers
+categories:
+  - software
 ---
 
 # Panel Methods

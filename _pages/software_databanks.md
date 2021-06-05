@@ -1,6 +1,8 @@
 ---
 layout: single
 title: "Databanks"
+categories:
+  - software
 ---
 
 ## [DATCOM](http://www.pdas.com/datcom.html){:target="_blank"}

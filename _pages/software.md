@@ -1,9 +1,9 @@
 ---
 layout: single
 title: Software
+permalink: /software/
 ---
 
-[post](/posts/2020_06_05_How_to_Install_MPICH/index.html)
 
 ## [Geometry](/sources/software/software_geometry/index.html)
 

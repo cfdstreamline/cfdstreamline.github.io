@@ -1,6 +1,8 @@
 ---
 layout: single
 title: Tools
+categories:
+  - software
 ---
 
 # Tools

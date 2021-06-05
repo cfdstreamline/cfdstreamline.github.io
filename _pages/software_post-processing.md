@@ -1,6 +1,8 @@
 ---
 layout: single
 title: Post-Processing
+categories:
+  - software
 ---
 
 
