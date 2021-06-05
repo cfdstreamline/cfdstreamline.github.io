@@ -3,6 +3,8 @@ layout: single
 title: Software
 ---
 
+[post](/posts/2020_06_05_How_to_Install_MPICH/index.html)
+
 ## [Geometry](/sources/software/software_geometry/index.html)
 
 ## [Mesh](/sources/software/software_mesh/index.html)
