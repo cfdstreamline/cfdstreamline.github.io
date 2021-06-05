@@ -1,6 +1,7 @@
 ---
 permalink: /about/
 title: "About"
+toc: false
 excerpt: "CFD Streamline, a comprehensive reference."
 layouts_gallery:
   - url: ../assets/images/stock/thumbs/joel-jasmin-forestbird-P8b0bg-w_YA-unsplash.jpg
