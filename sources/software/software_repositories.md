@@ -45,3 +45,10 @@ title: Code Repositories
 * Linear Algebra Package (C++ implementation)
 * Release Type: open-source
 * Description: Repository containing hundreds of routines written in C++ for solving systems of simultaneous linear equations, least-squares solutions of linear systems of equations, eigenvalue problems, and singular value problems.
+
+
+## [BLAS](http://www.netlib.org/blas/){:target="_blank"}
+* Basic Linear Algebra Subprograms
+* Release Type: open-source
+* Description: Repository of routines that provide standard building blocks for performing basic vector and matrix operations.
+

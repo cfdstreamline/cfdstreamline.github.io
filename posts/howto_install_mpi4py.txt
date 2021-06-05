@@ -1,8 +1,0 @@
-sudo su
-yum install python3-devel
-easy_install pip
-pip3 install mpi4py
-
-
-
-
