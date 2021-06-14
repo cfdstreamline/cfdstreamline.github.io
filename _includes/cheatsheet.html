@@ -1,0 +1,14 @@
+{% for c in site.data.cheatsheets %}
+  {% if c[0] == include.name %}
+    {% assign f = c[1] %}
+    <table>
+      {% for b in f %}
+        <tr>
+          <td>{{ b.command }}</td>
+          <td>{{ b.description }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  {% endif %}
+{% endfor %}
+

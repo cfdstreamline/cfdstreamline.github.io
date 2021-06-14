@@ -273,7 +273,6 @@ compress_html:
   ignore:
     envs: development
 
-
 # Collections
 collections:
   recipes:
@@ -286,6 +285,9 @@ collections:
     output: true
     permalink: /:collection/:path/
   sources-software:
+    output: true
+    permalink: /:collection/:path/
+  sources-cheatsheets:
     output: true
     permalink: /:collection/:path/
   apps:
