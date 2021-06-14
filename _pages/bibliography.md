@@ -7,24 +7,9 @@ permalink: /bibliography/
 
 ## CFD
 
+{% include feature_row_products class='book' category='cfd' %}
 
 
-{% include feature_row_biblio_v2 id='cfd' %}
-
-<!-- {% include feature_row_biblio id='cfd' %} 
-<ul>
-{% for member in site.data.biblioteca %}
-  <li>
-    <a href="{{ member.link }}">
-      {{ member.titulo }}
-    </a>
-  </li>
-{% endfor %}
-</ul>
--->
-
-<!--
 ## Aerodynamics
 
-{% include feature_row_biblio id='aerodynamics' %}
--->
+{% include feature_row_products class='book' category='aerodynamics' %}
