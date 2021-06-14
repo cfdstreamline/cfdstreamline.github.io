@@ -1,10 +1,12 @@
 ---
 title: "How to install MPICH"
 layout: single
+classes: wide
 categories:
   - howto
 author_profile: true
 toc: false
+sidebar_ads: true
 ---
 
 

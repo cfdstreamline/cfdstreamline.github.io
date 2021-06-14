@@ -1,10 +1,12 @@
 ---
 title: "How to install SU2 in MPI mode on Linux"
 layout: single
+classes: wide
 categories:
   - howto
 author_profile: true
 toc: false
+sidebar_ads: true
 ---
 
 ## Pre-requisite installations installations
