@@ -1,5 +1,5 @@
 ---
-title: Bash Cheat Sheet
+title: Bash
 layout: wiki
 sidebar: toc
 excerpt: ""

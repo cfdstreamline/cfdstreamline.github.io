@@ -1,10 +1,10 @@
 ---
-title: Python Cheat Sheet
+title: Python
 layout: wiki
 sidebar: toc
 excerpt: ""
 header:
-  teaser: /assets/images/logos/logo_python.png
+  teaser: /assets/images/logos/logo_python.svg
 ---
 
 ## Introduction

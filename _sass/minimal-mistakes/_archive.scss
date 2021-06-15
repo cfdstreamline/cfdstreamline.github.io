@@ -92,6 +92,8 @@
 
   img {
     width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
 
@@ -105,7 +107,7 @@
   font-family: $caption-font-family;
   font-size: $type-size-8;
   background: #000;
-  text-align: right;
+  text-align: center;
   z-index: 5;
   opacity: 0.5;
   border-radius: $border-radius 0 0 0;
@@ -225,11 +227,13 @@
 
   .archive__item-teaser {
     @include breakpoint($small) {
-      max-height: 200px;
+      /*height: 200px;*/
+      height: span(5 of 10);
     }
 
     @include breakpoint($medium) {
-      max-height: 120px;
+      /*height: 120px;*/
+      height: span(3 of 12);
     }
   }
 }
