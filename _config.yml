@@ -289,7 +289,7 @@ collections:
     permalink: /:collection/:path/
   sources-cheatsheets:
     output: true
-    permalink: /:collection/:path/
+    permalink: /references/cheatsheets/:path/
   apps:
     output: true
     permalink: /:collection/:path/

@@ -1,8 +1,9 @@
 ---
 layout: splash
 classes: wide
+excerpt: ""
 toc: false
-permalink: /bibliography/
+permalink: /references/bibliography/
 ---
 
 ## CFD
