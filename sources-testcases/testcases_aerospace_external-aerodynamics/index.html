@@ -1,0 +1,790 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.23.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Aerospace - External Aerodynamics - CFD Streamline</title>
+<meta name="description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CFD Streamline">
+<meta property="og:title" content="Aerospace - External Aerodynamics">
+<meta property="og:url" content="http://localhost:4000/sources-testcases/testcases_aerospace_external-aerodynamics/">
+
+
+  <meta property="og:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/stock/thumbs/pexels-pixabay-40753.jpg">
+
+
+
+  <meta name="twitter:site" content="@cfdstreamline">
+  <meta name="twitter:title" content="Aerospace - External Aerodynamics">
+  <meta name="twitter:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+  <meta name="twitter:url" content="http://localhost:4000/sources-testcases/testcases_aerospace_external-aerodynamics/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="http://localhost:4000/assets/images/stock/thumbs/pexels-pixabay-40753.jpg">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-06-16T15:54:05+02:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/CFD-Streamline-102236005421147">
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/sources-testcases/testcases_aerospace_external-aerodynamics/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Organization",
+      "url": "http://localhost:4000/",
+      "logo": "http://localhost:4000/assets/images/site-logo.png"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="CFD Streamline Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<script data-ad-client="ca-pub-4699563125299312" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js">
+</script>
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icon/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icon/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icon/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/icon/favicon/site.webmanifest">
+<link rel="mask-icon" href="/assets/images/icon/favicon/safari-pinned-tab.svg" color="#283747">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/icon/logo.jpg" alt="CFD Streamline"></a>
+        
+        <a class="site-title" href="/">
+          CFD Streamline
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/software/">Software</a>
+            </li><li class="masthead__menu-item">
+              <a href="/testcases/">Test Cases</a>
+            </li><li class="masthead__menu-item">
+              <a href="/references/">References</a>
+            </li><li class="masthead__menu-item">
+              <a href="/posts/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/apps/">Apps</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Aerospace - External Aerodynamics">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Aerospace - External Aerodynamics
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h2 id="2d-cases">2D Cases</h2>
+
+<h3 id="naca-0012-airfoil"><a href="https://turbmodels.larc.nasa.gov/naca0012_val.html" target="_blank">NACA-0012 Airfoil</a></h3>
+<ul>
+  <li>Experimental data: publically available</li>
+  <li>Grids: publically available</li>
+  <li>Numerical results: publically available</li>
+  <li>Cases:
+    <ul>
+      <li>M = 0.15</li>
+      <li>Re = 6E6</li>
+      <li>AoA = -17.3deg. to +17.3deg.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="naca-4412-airfoil"><a href="https://turbmodels.larc.nasa.gov/naca4412sep_val.html" target="_blank">NACA-4412 Airfoil</a></h3>
+<ul>
+  <li>Objective: Trailing edge separation.</li>
+  <li>Experimental data: publically available</li>
+  <li>Grids: publically available</li>
+  <li>Numerical results: publically available</li>
+  <li>Case:
+    <ul>
+      <li>M = 0.09</li>
+      <li>Re = 1.52E6</li>
+      <li>AoA = 13.87 deg.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="rae-2822-airfoil"><a href="https://www.grc.nasa.gov/WWW/wind/valid/raetaf/raetaf.html" target="_blank">RAE-2822 Airfoil</a></h3>
+<ul>
+  <li>Experimental data: publically available</li>
+  <li>Grids: publically available</li>
+  <li>Numerical results: publically available</li>
+  <li>Case:
+    <ul>
+      <li>M = 0.725</li>
+      <li>Re = 6.5E6</li>
+      <li>AoA = 2.92 deg.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="nlr-airfoil-with-flap"><a href="https://www.grc.nasa.gov/WWW/wind/valid/nlrflap/nlrflap.html" target="_blank">NLR Airfoil with Flap</a></h3>
+<ul>
+  <li>Experimental data: publically available</li>
+  <li>Grids: publically available</li>
+  <li>Numerical results: publically available</li>
+  <li>Cases:
+    <ul>
+      <li>M = 0.20</li>
+      <li>
+        <ul>
+          <li>P = 14.7 Psia</li>
+        </ul>
+      </li>
+      <li>T = 520 R</li>
+      <li>AoA = 10 deg.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="axisymmetric-swbli-near-m7"><a href="https://turbmodels.larc.nasa.gov/axiswblim7_val.html" target="_blank">Axisymmetric SWBLI near M=7</a></h3>
+<ul>
+  <li>Experimental data: publically available</li>
+  <li>Grids: not available</li>
+  <li>Numerical results: publically available</li>
+  <li>Case:
+    <ul>
+      <li>M = 7.11</li>
+      <li>Re = 57060 per cm</li>
+      <li>AoA = 20 deg.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="3d-cases">3D Cases</h2>
+
+<h3 id="onera-m6-wing"><a href="https://www.grc.nasa.gov/WWW/wind/valid/m6wing/m6wing.html" target="_blank">Onera M6 Wing</a></h3>
+<ul>
+  <li>Experimental data: publically available</li>
+  <li>Grids: not available</li>
+  <li>Numerical results: publically available</li>
+  <li>Case:
+    <ul>
+      <li>M = 0.8395</li>
+      <li>Re = 11.72E6</li>
+      <li>AoA = 3.06 deg.</li>
+    </ul>
+  </li>
+  <li><a href="https://cfl3d.larc.nasa.gov/Cfl3dv6/cfl3dv6_testcases.html#onera">CFL3D site</a></li>
+</ul>
+
+<h3 id="ara-m100-wing-bodyite"><a href="https://cfl3d.larc.nasa.gov/Cfl3dv6/cfl3dv6_testcases.html#ara">ARA M100 Wing-Body</a><a href="https://cfl3d.larc.nasa.gov/Cfl3dv6/cfl3dv6_testcases.html#ara">i</a><a href="https://cfl3d.larc.nasa.gov/Cfl3dv6/cfl3dv6_testcases.html#ara" target="_blank">te</a></h3>
+<ul>
+  <li>Experimental data: publically available</li>
+  <li>Grids: not available</li>
+  <li>Numerical results: publically available</li>
+  <li>Case:
+    <ul>
+      <li>M = 0.8027</li>
+      <li>Re = 13.1E6</li>
+      <li>AoA = 2.873 deg.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="delta-wing"><a href="https://cfl3d.larc.nasa.gov/Cfl3dv6/cfl3dv6_testcases.html#delta" target="_blank">Delta Wing</a></h3>
+<ul>
+  <li>Experimental data: publically available</li>
+  <li>Grids: not available</li>
+  <li>Numerical results: publically available</li>
+  <li>Case:
+    <ul>
+      <li>M = 0.3</li>
+      <li>Re = 0.5E6</li>
+      <li>AoA = 20.5 deg.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="dpw-series"><a href="https://aiaa-dpw.larc.nasa.gov/" target="_blank">DPW Series</a></h3>
+
+<h4 id="dpw-1"><a href="https://aiaa-dpw.larc.nasa.gov/Workshop1/workshop1.html" target="_blank">DPW-1</a></h4>
+<ul>
+  <li>Experimental data: publically available</li>
+  <li>Grids: not available</li>
+  <li>Numerical results: publically available</li>
+  <li>Case:
+    <ul>
+      <li>M = 0.8395</li>
+      <li>Re = 11.72E6</li>
+      <li>AoA = 3.06 deg.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="dpw-2"><a href="https://aiaa-dpw.larc.nasa.gov/Workshop2/workshop2.html" target="_blank">DPW-2</a></h4>
+<ul>
+  <li>2nd AIAA CFD Drag Prediction Workshop</li>
+  <li>Model: DLR-F6</li>
+  <li>Experimental data: publically available</li>
+  <li>Grids: publically available</li>
+  <li>Numerical results: publically available</li>
+  <li>Cases (required):
+    <ul>
+      <li>Single point grid convergence study for wb and wbpn
+        <ul>
+          <li>M = 0.75</li>
+          <li>Re = 3E6 (c=141.2 mm)</li>
+          <li>CL = .500 ± .001</li>
+          <li>“Fully turbulent” solution</li>
+        </ul>
+      </li>
+      <li>Drag Polar for wb and wbpn
+        <ul>
+          <li>M = 0.75</li>
+          <li>Re = 3E6 (c=141.2 mm)</li>
+          <li>AoA (deg.) = -3°, -2°, -1.5°, -1°,0°, 1°, 1.5°</li>
+          <li>Boundary layer transition or “fully turbulent”</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Cases (optional):
+    <ul>
+      <li>Comparison of “tripped” and “fully turbulent” solutions
+        <ul>
+          <li>M = 0.75</li>
+          <li>Re = 3E6 (c=141.2 mm)</li>
+          <li>CL = .500 ± .001</li>
+        </ul>
+      </li>
+      <li>Drag rise for for wb and wbpn (very optional)
+        <ul>
+          <li>M = 0.50, 0.60, 0.70, 0.72, 0.74, 0.75, 0.76, 0.77</li>
+          <li>CL = 0.500 ± .001</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="dpw-3"><a href="https://aiaa-dpw.larc.nasa.gov/Workshop3/workshop3.html" target="_blank">DPW-3</a></h4>
+<ul>
+  <li>3rd AIAA CFD Drag Prediction Workshop</li>
+  <li>Model: DLR-F6</li>
+  <li>Experimental data: publically available</li>
+  <li>Grids: publically available</li>
+  <li>Numerical results: publically available</li>
+  <li>Cases
+    <ul>
+      <li>DLR-F6 wb with and without FX2B fairing
+        <ul>
+          <li>For all cases
+            <ul>
+              <li>Re = 5E6 (cref = 141.2 mm)</li>
+              <li>T = 580R (322.22 K)</li>
+            </ul>
+          </li>
+          <li>DLR-F6 wb with FX2B fairing and without fairing
+            <ul>
+              <li>Grid convergence study
+                <ul>
+                  <li>M = 0.75</li>
+                  <li>CL = 0.500 ±0.001</li>
+                </ul>
+              </li>
+              <li>Drag polar (medium grid)
+                <ul>
+                  <li>M = 0.75</li>
+                  <li>AoA = -3, -2, -1, -0.5, 0, 0.5, 1, 1.5 deg.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Wing alone comparison: DPW-W1 (baseline) vs. DPW-W2 (simple optimization)
+        <ul>
+          <li>Re = 5E6 (cref = 197.556 mm)</li>
+          <li>T = 580R (322.22 K)</li>
+          <li>M = 0.76</li>
+          <li>Grid convergence
+            <ul>
+              <li>AoA = 0.5 deg.</li>
+            </ul>
+          </li>
+          <li>Drag polar (medium grid)
+            <ul>
+              <li>AoA = -1, 0, 0.5, 1, 1.5, 2, 2.5, 3 deg.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="dpw-4"><a href="https://aiaa-dpw.larc.nasa.gov/Workshop4/workshop4.html" target="_blank">DPW-4</a></h4>
+<ul>
+  <li>4th AIAA CFD Drag Prediction Workshop</li>
+  <li>Model: NASA Common Research Model (CRM)</li>
+  <li>Experimental data: publically available</li>
+  <li>Grids: publically available</li>
+  <li>Numerical results: publically available</li>
+  <li>Cases:
+    <ul>
+      <li>Grid convergence and downwash studies:
+        <ul>
+          <li>M=0.85</li>
+          <li>Re = 5E6 (cref = 275.80 in)</li>
+          <li>T = 100F</li>
+          <li>Grid convergence study
+            <ul>
+              <li>CL=0.500 ±0.001</li>
+            </ul>
+          </li>
+          <li>Downwash study
+            <ul>
+              <li>Drag Polars for AoA = 0.0, 1.0, 1.5, 2.0, 2.5, 3.0, 4.0 deg.</li>
+              <li>Trimmed drag polar (cg at reference center) derived from polars at iH = -2, 0, +2 deg.</li>
+              <li>Delta drag polar of tail off vs. tail on (i.e. wb vs. wbh trimmed)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Mach sweep study (optional):
+        <ul>
+          <li>Re = 5E6 (cref = 275.80 in)</li>
+          <li>T = 100F</li>
+          <li>Drag Polars at M = 0.70, 0.75, 0.80, 0.83, 0.85, 0.86, 0.87</li>
+          <li>Drag rise curves at CL = 0.400, 0.450, 0.500 (±0.001 or extracted from polars)</li>
+        </ul>
+      </li>
+      <li>Reynolds number study (optional):
+        <ul>
+          <li>Compare Re = 5E6 results with Re = 20E6 results (cref = 275.80 in)</li>
+          <li>M = 0.85</li>
+          <li>CL = 0.500 ±0.001</li>
+          <li>T = -250F (for Re = 20E6)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="dpw-5"><a href="https://aiaa-dpw.larc.nasa.gov/Workshop5/workshop5.html" target="_blank">DPW-5</a></h4>
+<ul>
+  <li>5th AIAA CFD Drag Prediction Workshop</li>
+  <li>Model: NASA Common Research Model (CRM)</li>
+  <li>Experimental data: publically available</li>
+  <li>Grids: publically available</li>
+  <li>Numerical results: publically available</li>
+  <li>Cases:
+    <ul>
+      <li>Wing-body grid convergence study:
+        <ul>
+          <li>M = 0.85</li>
+          <li>CL = 0.500 ±0.001</li>
+          <li>Re = 5E6 (cref = 275.80 in)</li>
+          <li>T = 100F</li>
+          <li>Provided grid series (required)</li>
+          <li>Participant developed grids (optional)</li>
+        </ul>
+      </li>
+      <li>Wing-body buffet study:
+        <ul>
+          <li>M = 0.85</li>
+          <li>Drag polar for AoA = 2.50, 2.75, 3.00, 3.25, 3.50, 3.75, 4.00 deg.</li>
+          <li>Re = 5E6 (cref = 275.80 in)</li>
+          <li>T = 100F</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="dpw-6"><a href="https://aiaa-dpw.larc.nasa.gov/Workshop6/workshop6.html" target="_blank">DPW-6</a></h4>
+<ul>
+  <li>6th AIAA CFD Drag Prediction Workshop</li>
+  <li>Model: NASA Common Research Model (CRM)</li>
+  <li>Experimental data: publically available</li>
+  <li>Grids: publically available</li>
+  <li>Numerical results: publically available</li>
+  <li>Cases:
+    <ul>
+      <li>M = 0.85</li>
+      <li>Re = 5E6</li>
+      <li>CL = 0.5 ±0.001</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="dpw-7"><a href="https://aiaa-dpw.larc.nasa.gov/" target="_blank">DPW-7</a></h4>
+<ul>
+  <li>7th AIAA CFD Drag Prediction Workshop</li>
+  <li>Model: NASA Common Research Model (CRM)</li>
+  <li>Experimental data: publically available</li>
+  <li>Grids: publically available</li>
+  <li>Numerical results: publically available</li>
+  <li>Cases:
+    <ul>
+      <li>Required
+        <ul>
+          <li>Case 1: Grid Convergence Study</li>
+          <li>Case 2: Alpha Sweeps at Constant Re</li>
+          <li>Case 3: Re Sweep at Constant CL</li>
+        </ul>
+      </li>
+      <li>Optional
+        <ul>
+          <li>Case 4: Solution-Adapted Grid</li>
+          <li>Case 5: Beyond RANS: URANS, DDES, WMLES, Lattice-Boltzmann, etc.</li>
+          <li>Case 6: Coupled Aero-Structural Simulation</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="hlpw-series"><a href="https://hiliftpw.larc.nasa.gov" target="_blank">HLPW Series</a></h3>
+
+<h4 id="hlpw-1"><a href="https://hiliftpw.larc.nasa.gov/index-workshop1.html" target="_blank">HLPW-1</a></h4>
+<ul>
+  <li>1st AIAA CFD High Lift Prediction Workshop</li>
+  <li>Model: NASA Trap Wing</li>
+  <li>Experimental data: publically available</li>
+  <li>Grids: publically available</li>
+  <li>Numerical results: publically available</li>
+  <li><a href="https://hiliftpw.larc.nasa.gov/Workshop1/testcases.html">Cases</a></li>
+</ul>
+
+<h4 id="hlpw-2"><a href="https://hiliftpw.larc.nasa.gov/index-workshop2.html" target="_blank">HLPW-2</a></h4>
+<ul>
+  <li>2nd AIAA CFD High Lift Prediction Workshop</li>
+  <li>Model: DLR F-11</li>
+  <li>Experimental data: publically available</li>
+  <li>Grids: publically available</li>
+  <li>Numerical results: publically available</li>
+  <li><a href="https://hiliftpw.larc.nasa.gov/Workshop2/testcases.html">Cases</a></li>
+</ul>
+
+<h4 id="hlpw-3"><a href="https://hiliftpw.larc.nasa.gov/index-workshop3.html" target="_blank">HLPW-3</a></h4>
+<ul>
+  <li>3rd AIAA CFD High Lift Prediction Workshop</li>
+  <li>Model: JAXA JSM</li>
+  <li>Experimental data: publically available</li>
+  <li>Grids: publically available</li>
+  <li>Numerical results: publically available</li>
+  <li><a href="https://hiliftpw.larc.nasa.gov/Workshop3/OfficialTestCases-HiLiftPW-3-2017_v9.pdf">Cases</a></li>
+</ul>
+
+<h4 id="hlpw-4"><a href="https://hiliftpw.larc.nasa.gov/" target="_blank">HLPW-4</a></h4>
+<ul>
+  <li>4th AIAA CFD High Lift Prediction Workshop</li>
+  <li>Model: NASA CRM-HL</li>
+  <li>Experimental data: publically available</li>
+  <li>Grids: publically available</li>
+  <li>Numerical results: publically available</li>
+  <li><a href="https://aiaa-dpw.larc.nasa.gov/Workshop6/DPW6_Test_Cases_2016-04-21.pdf">Cases</a></li>
+</ul>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/sources-testcases/testcases_aerospace_internal-aerodynamics/" class="pagination--pager" title="Aerospace - Internal Aerodynamics
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      <div align="center" style="margin: 1em 0;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- ad-unit_horizontal -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4699563125299312"
+             data-ad-slot="3532465338"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+
+    
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
+    <label class="sr-only" for="cse-search-input-box-id">
+      Enter your search term...
+    </label>
+    <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results">
+    <gcse:searchresults-only></gcse:searchresults-only>
+  </div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.linkedin.com/company/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+        
+          <li><a href="https://github.com/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+        
+          <li><a href="https://www.pinterest.com/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-pinterest" aria-hidden="true"></i> Pinterest</a></li>
+        
+      
+        
+          <li><a href="https://www.instagram.com/cfd.streamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/CfdStreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/CFD-Streamline-102236005421147/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 CFD Streamline. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<script>
+  (function () {
+    var cx = 'a390aa655bef0d717';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+  function googleCustomSearchExecute() {
+    var input = document.getElementById('cse-search-input-box-id');
+    var element = google.search.cse.element.getElement('searchresults-only0');
+    if (input.value == '') {
+      element.clearAllResults();
+    } else {
+      element.execute(input.value);
+    }
+    return false;
+  }
+
+  
+</script>
+
+
+
+
+
+
+
+  </body>
+</html>

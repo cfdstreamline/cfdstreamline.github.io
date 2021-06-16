@@ -1,0 +1,803 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.23.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Latex - CFD Streamline</title>
+<meta name="description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CFD Streamline">
+<meta property="og:title" content="Latex">
+<meta property="og:url" content="http://localhost:4000/references/cheatsheets/latex/">
+
+
+  <meta property="og:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/logos/logo_latex.svg">
+
+
+
+  <meta name="twitter:site" content="@cfdstreamline">
+  <meta name="twitter:title" content="Latex">
+  <meta name="twitter:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+  <meta name="twitter:url" content="http://localhost:4000/references/cheatsheets/latex/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="http://localhost:4000/assets/images/logos/logo_latex.svg">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-06-16T15:54:05+02:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/CFD-Streamline-102236005421147">
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/references/cheatsheets/latex/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Organization",
+      "url": "http://localhost:4000/",
+      "logo": "http://localhost:4000/assets/images/site-logo.png"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="CFD Streamline Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<script data-ad-client="ca-pub-4699563125299312" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js">
+</script>
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icon/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icon/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icon/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/icon/favicon/site.webmanifest">
+<link rel="mask-icon" href="/assets/images/icon/favicon/safari-pinned-tab.svg" color="#283747">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--wiki wide">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/icon/logo.jpg" alt="CFD Streamline"></a>
+        
+        <a class="site-title" href="/">
+          CFD Streamline
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/software/">Software</a>
+            </li><li class="masthead__menu-item">
+              <a href="/testcases/">Test Cases</a>
+            </li><li class="masthead__menu-item">
+              <a href="/references/">References</a>
+            </li><li class="masthead__menu-item">
+              <a href="/posts/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/apps/">Apps</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+    <div class="sidebar sticky">
+      <nav class="toc">
+        <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+        <ul class="toc__menu"><li><a href="#overview">Overview</a></li><li><a href="#document-classes">Document Classes</a><ul><li><a href="#classes">Classes</a></li><li><a href="#common-options">Common options</a></li></ul></li><li><a href="#packages">Packages</a></li><li><a href="#title">Title</a></li><li><a href="#page-style">Page Style</a></li><li><a href="#tables-of-content">Tables of Content</a></li><li><a href="#document-structure">Document Structure</a></li><li><a href="#text-environments">Text Environments</a></li><li><a href="#text-properties">Text Properties</a><ul><li><a href="#font-face">Font Face</a></li><li><a href="#font-size">Font size</a><ul><li><a href="#verbatim-text">Verbatim text</a></li><li><a href="#justification">Justification</a></li><li><a href="#miscellaneous">Miscellaneous</a></li></ul></li><li><a href="#symbols">Symbols</a></li><li><a href="#accents">Accents</a></li></ul></li></ul>
+
+      </nav>
+    </div>
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Latex">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Latex
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <h2 id="overview">Overview</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">% All comment lines start with %. There are no multi-line comments</span>
+<span class="c">% Every LaTeX command starts with a backslash (\)</span>
+
+
+<span class="c">% Preamble</span>
+<span class="c">%-----------------------------------------------</span>
+<span class="c">% Document Class</span>
+<span class="k">\documentclass</span><span class="na">[12pt]</span><span class="p">{</span>article<span class="p">}</span>
+
+<span class="c">% Packages</span>
+<span class="k">\usepackage</span><span class="p">{</span>caption<span class="p">}</span>     <span class="c">% Sets figure captions</span>
+<span class="k">\usepackage</span><span class="p">{</span>float<span class="p">}</span>       <span class="c">% Allows figures to float</span>
+<span class="k">\usepackage</span><span class="p">{</span>hyperref<span class="p">}</span>    <span class="c">% Allows hyperlinks</span>
+
+<span class="c">% Document Properties Definitions</span>
+<span class="k">\author</span><span class="p">{</span>Author's name<span class="p">}</span> 
+<span class="k">\date</span><span class="p">{</span><span class="k">\today</span><span class="p">}</span>
+<span class="k">\title</span><span class="p">{</span>Title<span class="p">}</span>
+
+
+<span class="c">% Document</span>
+<span class="c">%-----------------------------------------------</span>
+<span class="nt">\begin{document}</span>
+
+<span class="c">% Title</span>
+<span class="k">\maketitle</span>
+<span class="k">\newpage</span>          <span class="c">% Creates a new page</span>
+
+<span class="c">% Tables of Content</span>
+<span class="k">\tableofcontents</span> <span class="c">% Main table of content</span>
+<span class="k">\newpage</span>
+<span class="k">\listoffigures</span>   <span class="c">% List of figures</span>
+<span class="k">\newpage</span>
+<span class="k">\listoftables</span>    <span class="c">% List of tables</span>
+<span class="k">\newpage</span>
+
+<span class="c">% Abstract: command is available in the document classes article and report.</span>
+<span class="nt">\begin{abstract}</span>
+ <span class="k">\LaTeX</span><span class="p">{}</span> documentation written as <span class="k">\LaTeX</span>! How novel and totally not
+ my idea!
+<span class="nt">\end{abstract}</span>
+
+<span class="c">% Sections</span>
+<span class="k">\section</span><span class="p">{</span>Introduction<span class="p">}</span>
+Hello, my name is Colton and together we're going to explore <span class="k">\LaTeX</span>!
+
+<span class="k">\section</span><span class="p">{</span>Another section<span class="p">}</span>
+This is the text for another section. I think it needs a subsection.
+
+<span class="k">\subsection</span><span class="p">{</span>This is a subsection<span class="p">}</span> <span class="c">% Subsections are also intuitive.</span>
+I think we need another one.
+
+<span class="k">\subsubsection</span><span class="p">{</span>Pythagoras<span class="p">}</span>
+Much better now.
+<span class="k">\label</span><span class="p">{</span>subsec:pythagoras<span class="p">}</span>
+
+<span class="k">\section*</span><span class="p">{</span>This is an unnumbered section<span class="p">}</span>
+However not all sections have to be numbered!
+
+<span class="k">\section</span><span class="p">{</span>Some Text notes<span class="p">}</span>
+<span class="k">\LaTeX</span><span class="p">{}</span> is generally pretty good about placing text where it should
+go. If
+a line <span class="k">\\</span> needs <span class="k">\\</span> to <span class="k">\\</span> break <span class="k">\\</span> you add <span class="k">\textbackslash\textbackslash</span><span class="p">{}</span>
+to the source code.
+
+Separate paragraphs by empty lines.
+
+You need to add a backslash after abbreviations (if not followed by a comma), because otherwise the spacing after the dot is too large:
+E.g., i.e., etc.<span class="k">\ </span>are are such abbreviations.
+
+<span class="k">\section</span><span class="p">{</span>Lists<span class="p">}</span>
+<span class="nt">\begin{enumerate}</span> <span class="c">% This creates an "enumerate" environment.</span>
+  <span class="c">% \item tells the enumerate to increment</span>
+  <span class="k">\item</span> Salad.
+  <span class="k">\item</span> 27 watermelon.
+  <span class="k">\item</span> A single jackrabbit.
+  <span class="c">% we can even override the item number by using []</span>
+  <span class="k">\item</span><span class="na">[how many?]</span> Medium sized squirt guns.
+
+  Not a list item, but still part of the enumerate.
+<span class="nt">\end{enumerate}</span> <span class="c">% All environments must have an end.</span>
+
+<span class="k">\section</span><span class="p">{</span>Math<span class="p">}</span>
+
+Here's how you state all x that belong to X, <span class="p">$</span><span class="nv">\forall</span><span class="nb"> x </span><span class="nv">\in</span><span class="nb"> X</span><span class="p">$</span>.
+We can also enter math mode with <span class="p">\[</span><span class="nb">a</span><span class="p">^</span><span class="m">2</span><span class="nb"> </span><span class="o">+</span><span class="nb"> b</span><span class="p">^</span><span class="m">2</span><span class="nb"> </span><span class="o">=</span><span class="nb"> c</span><span class="p">^</span><span class="m">2</span><span class="nb"> </span><span class="p">\]</span>.
+
+<span class="c">% Display math with the equation 'environment'</span>
+<span class="nt">\begin{equation}</span> <span class="c">% enters math-mode</span>
+    c<span class="p">^</span>2 = a<span class="p">^</span>2 + b<span class="p">^</span>2.
+    <span class="k">\label</span><span class="p">{</span>eq:pythagoras<span class="p">}</span> <span class="c">% for referencing</span>
+<span class="nt">\end{equation}</span> <span class="c">% all \begin statements must have an end statement</span>
+
+Eqn.~<span class="k">\ref</span><span class="p">{</span>eq:pythagoras<span class="p">}</span> is also known as the Pythagoras Theorem which is also
+the subject of Sec.~<span class="k">\ref</span><span class="p">{</span>subsec:pythagoras<span class="p">}</span>. A lot of things can be labeled:
+figures, equations, sections, etc.
+
+
+<span class="k">\section</span><span class="p">{</span>Figures<span class="p">}</span>
+
+<span class="c">% See https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions for more details</span>
+
+<span class="nt">\begin{figure}</span>[H] <span class="c">% H here denoted the placement option.</span>
+    <span class="k">\centering</span> <span class="c">% centers the figure on the page</span>
+    <span class="c">% Inserts a figure scaled to 0.8 the width of the page.</span>
+    <span class="c">%\includegraphics[width=0.8\linewidth]{right-triangle.png}</span>
+    <span class="c">% Commented out for compilation purposes. Please use your imagination.</span>
+    <span class="k">\caption</span><span class="p">{</span>Right triangle with sides <span class="p">$</span><span class="nb">a</span><span class="p">$</span>, <span class="p">$</span><span class="nb">b</span><span class="p">$</span>, <span class="p">$</span><span class="nb">c</span><span class="p">$}</span>
+    <span class="k">\label</span><span class="p">{</span>fig:right-triangle<span class="p">}</span>
+<span class="nt">\end{figure}</span>
+
+<span class="k">\subsection</span><span class="p">{</span>Table<span class="p">}</span>
+
+<span class="nt">\begin{table}</span>[H]
+  <span class="k">\caption</span><span class="p">{</span>Caption for the Table.<span class="p">}</span>
+  <span class="c">% The basic is simple: one letter for each column, to control alignment:</span>
+  <span class="c">% basic options are: c, l, r and p for centered, left, right and paragraph</span>
+  <span class="c">% optionnally, you can add a | for a vertical line</span>
+  <span class="c">% See https://en.wikibooks.org/wiki/LaTeX/Tables for more details</span>
+  <span class="nt">\begin{tabular}</span><span class="p">{</span>c|cc<span class="p">}</span>  <span class="c">% here it means "centered | vertical line, centered centered"</span>
+    Number <span class="p">&amp;</span>  Last Name <span class="p">&amp;</span> First Name <span class="k">\\</span> <span class="c">% Column rows are separated by &amp;</span>
+    <span class="k">\hline</span> <span class="c">% a horizontal line</span>
+    1 <span class="p">&amp;</span> Biggus <span class="p">&amp;</span> Dickus <span class="k">\\</span>
+    2 <span class="p">&amp;</span> Monty <span class="p">&amp;</span> Python
+  <span class="nt">\end{tabular}</span>
+<span class="nt">\end{table}</span>
+
+<span class="k">\section</span><span class="p">{</span>Getting <span class="k">\LaTeX</span><span class="p">{}</span> to not compile something (i.e.<span class="k">\ </span>Source Code)<span class="p">}</span>
+
+<span class="c">% There are other packages that exist (i.e. minty, lstlisting, etc.)</span>
+<span class="c">% but verbatim is the bare-bones basic one.</span>
+<span class="nt">\begin{verbatim}</span>
+  print("Hello World!")
+  a<span class="c">%b; % look! We can use % signs in verbatim.</span>
+  random = 4; #decided by fair random dice roll, https://www.xkcd.com/221/
+  See https://www.explainxkcd.com/wiki/index.php/221:<span class="p">_</span>Random<span class="p">_</span>Number
+<span class="nt">\end{verbatim}</span>
+
+<span class="k">\section</span><span class="p">{</span>Compiling<span class="p">}</span>
+
+<span class="nt">\begin{enumerate}</span>
+  <span class="k">\item</span> Write the document in plain text (the ``source code'').
+  <span class="k">\item</span> Compile source code to produce a pdf.
+    The compilation step looks like this (in Linux): <span class="k">\\</span>
+    <span class="nt">\begin{verbatim}</span>
+      &gt; pdflatex learn-latex.tex
+    <span class="nt">\end{verbatim}</span>
+<span class="nt">\end{enumerate}</span>
+
+<span class="k">\section</span><span class="p">{</span>Hyperlinks<span class="p">}</span>
+
+There exists two main types of links: visible URL <span class="k">\\</span>
+<span class="k">\url</span><span class="p">{</span>https://learnxinyminutes.com/docs/latex/<span class="p">}</span>, or
+<span class="k">\href</span><span class="p">{</span>https://learnxinyminutes.com/docs/latex/<span class="p">}{</span>shadowed by text<span class="p">}</span>
+<span class="c">% You can not add extra-spaces or special symbols into shadowing text since it</span>
+<span class="c">% will cause mistakes during the compilation</span>
+
+This package also produces list of thumbnails in the output pdf document and
+active links in the table of contents.
+
+<span class="k">\section</span><span class="p">{</span>Writing in ASCII or other encodings<span class="p">}</span>
+
+It is easy to insert accents and basic Latin symbols, with backslash shortcuts
+Like <span class="k">\,</span>c, <span class="k">\'</span>e, <span class="k">\`</span>A, <span class="k">\ae</span> and <span class="k">\oe</span> etc.  <span class="c">% for ç, é, À, etc</span>
+<span class="c">% See https://en.wikibooks.org/wiki/LaTeX/Special_Characters#Escaped_codes for more</span>
+
+To write directly in UTF-8, when compiling with pdflatex, use
+<span class="nt">\begin{verbatim}</span>
+    <span class="k">\usepackage</span><span class="na">[utf8]</span><span class="p">{</span>inputenc<span class="p">}</span>
+<span class="nt">\end{verbatim}</span>
+The selected font has to support the glyphs used for your document, you have to add
+<span class="nt">\begin{verbatim}</span>
+    <span class="k">\usepackage</span><span class="na">[T1]</span><span class="p">{</span>fontenc<span class="p">}</span>
+<span class="nt">\end{verbatim}</span>
+
+
+<span class="k">\section</span><span class="p">{</span>End<span class="p">}</span>
+
+That's all for now!
+
+<span class="c">% Bibliography</span>
+<span class="nt">\begin{thebibliography}</span><span class="p">{</span>1<span class="p">}</span>
+  <span class="k">\bibitem</span><span class="p">{</span>latexwiki<span class="p">}</span> The amazing <span class="k">\LaTeX</span><span class="p">{}</span> wikibook: <span class="k">\emph</span><span class="p">{</span>https://en.wikibooks.org/wiki/LaTeX<span class="p">}</span>
+  <span class="k">\bibitem</span><span class="p">{</span>latextutorial<span class="p">}</span> An actual tutorial: <span class="k">\emph</span><span class="p">{</span>http://www.latex-tutorial.com<span class="p">}</span>
+<span class="nt">\end{thebibliography}</span>
+
+<span class="c">% Ends the document</span>
+<span class="nt">\end{document}</span>
+</code></pre></div></div>
+
+<h2 id="document-classes">Document Classes</h2>
+
+<p>Usage: <code class="language-plaintext highlighter-rouge">\documentclass[opt,opt]{class}</code>.</p>
+
+<h3 id="classes">Classes</h3>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>book    <span class="c">% Default is two-sided.</span>
+report  <span class="c">% No \part divisions.</span>
+article <span class="c">% No \part or \chapter divisions.</span>
+letter  <span class="c">% Letter.</span>
+slides  <span class="c">% Large sans-serif font.</span>
+</code></pre></div></div>
+
+<h3 id="common-options">Common options</h3>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10pt/11pt/12pt       <span class="c">% Font size.</span>
+letterpaper/a4paper  <span class="c">% Paper size.</span>
+twocolumn            <span class="c">% Use two columns.</span>
+twoside              <span class="c">% Set margins for two-sided.</span>
+landscape            <span class="c">% Landscape orientation. Must use dvips -t landscape.</span>
+draft                <span class="c">% Double-space lines.</span>
+</code></pre></div></div>
+
+<h2 id="packages">Packages</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\usepackage</span><span class="p">{</span>fullpage<span class="p">}</span>  <span class="c">% uses 1 inch margins.</span>
+<span class="k">\usepackage</span><span class="p">{</span>anysize<span class="p">}</span>   <span class="c">% sets margins: \marginsize{l}{r}{t}{b}</span>
+<span class="k">\usepackage</span><span class="p">{</span>multicol<span class="p">}</span>  <span class="c">% uses n columns: \begin{multicols}{n}.</span>
+<span class="k">\usepackage</span><span class="p">{</span>lscape<span class="p">}</span>    <span class="c">% allows a page to be rendered in landscape mode</span>
+<span class="k">\usepackage</span><span class="p">{</span>appendix<span class="p">}</span>  <span class="c">% allows appendix section to be included</span>
+<span class="k">\usepackage</span><span class="p">{</span>lettrine<span class="p">}</span>  <span class="c">% supports various dropped capitals styles</span>
+<span class="k">\usepackage</span><span class="p">{</span>hyperref<span class="p">}</span>  <span class="c">% allows hyperlinks</span>
+<span class="k">\usepackage</span><span class="p">{</span>url<span class="p">}</span>       <span class="c">% inserts URL: \url{http://... }.</span>
+<span class="k">\usepackage</span><span class="p">{</span>latexsym<span class="p">}</span>  <span class="c">% uses \LaTeX\ symbol font.</span>
+
+<span class="k">\usepackage</span><span class="p">{</span>graphicx<span class="p">}</span>  <span class="c">% shows image: \includegraphics[width=x]{file}.</span>
+<span class="k">\usepackage</span><span class="p">{</span>epstopdf<span class="p">}</span>  <span class="c">% convert eps figures to pdf</span>
+<span class="k">\usepackage</span><span class="p">{</span>caption<span class="p">}</span>   <span class="c">% sets figure captions</span>
+<span class="k">\usepackage</span><span class="p">{</span>subcaption<span class="p">}</span><span class="c">% captions for the subfigures</span>
+<span class="k">\usepackage</span><span class="p">{</span>float<span class="p">}</span>     <span class="c">% allows figures to float</span>
+
+<span class="k">\usepackage</span><span class="p">{</span>amsmath<span class="p">}</span>   <span class="c">% American Mathematical Society package (allows \eqref)</span>
+<span class="k">\usepackage</span><span class="p">{</span>amssymb<span class="p">}</span>   <span class="c">% American Mathematical Society extra symbols</span>
+<span class="k">\usepackage</span><span class="p">{</span>amsthm<span class="p">}</span>    <span class="c">% offers the theorem setup of the AMS document classes</span>
+<span class="k">\usepackage</span><span class="p">{</span>cancel<span class="p">}</span>    <span class="c">% allows showing canceled terms in equations</span>
+
+<span class="k">\usepackage</span><span class="p">{</span>tabularx<span class="p">}</span>  <span class="c">% an extension of tabular which has an additional column designator, X, which creates a paragraph-like column whose width automatically expands so that the declared width of the environment is filled</span>
+<span class="k">\usepackage</span><span class="p">{</span>booktabs<span class="p">}</span>  <span class="c">% enhances the quality of tables and provides extra commands</span>
+<span class="k">\usepackage</span><span class="p">{</span>multirow<span class="p">}</span>  <span class="c">% tables with cell occuping more than one row</span>
+<span class="k">\usepackage</span><span class="p">{</span>threeparttable<span class="p">}</span> <span class="c">% tables with footnotes</span>
+<span class="k">\usepackage</span><span class="p">{</span>placeins<span class="p">}</span>  <span class="c">% defines a \FloatBarrier command, beyond which floats may not pass</span>
+</code></pre></div></div>
+
+<h2 id="title">Title</h2>
+
+<p>Usage: <code class="language-plaintext highlighter-rouge">\maketitle</code></p>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\author</span><span class="p">{</span>text<span class="p">}</span>          <span class="c">% Author of document.</span>
+<span class="k">\title</span><span class="p">{</span>text<span class="p">}</span>           <span class="c">% Title of document.</span>
+<span class="k">\date</span><span class="p">{</span>text<span class="p">}</span>            <span class="c">% Date.</span>
+</code></pre></div></div>
+
+<h2 id="page-style">Page Style</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\pagestyle</span><span class="p">{</span>empty<span class="p">}</span>      <span class="c">% Both header and footer are cleared</span>
+<span class="k">\pagestyle</span><span class="p">{</span>plain<span class="p">}</span>      <span class="c">% Header is clear, but the footer contains the page number in the center.</span>
+<span class="k">\pagestyle</span><span class="p">{</span>headings<span class="p">}</span>   <span class="c">% Footer is blank, header displays information according to document class (e.g., section name) and page number top right.</span>
+<span class="k">\pagestyle</span><span class="p">{</span>myheadings<span class="p">}</span> <span class="c">% Page number is top right, and it is possible to control the rest of the header.</span>
+</code></pre></div></div>
+
+<h2 id="tables-of-content">Tables of Content</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\tableofcontents</span> <span class="c">% Adds a table of content.</span>
+<span class="k">\listoffigures</span>   <span class="c">% List of figures</span>
+<span class="k">\listoftables</span>    <span class="c">% List of tables</span>
+</code></pre></div></div>
+
+<h2 id="document-structure">Document Structure</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\setcounter</span><span class="p">{</span>secnumdepth<span class="p">}{</span>x<span class="p">}</span> <span class="c">% suppresses heading numbers of depth &gt; x, where chapter has depth 0. </span>
+
+<span class="k">\part</span><span class="p">{</span>title<span class="p">}</span>
+<span class="k">\chapter</span><span class="p">{</span>title<span class="p">}</span>
+<span class="k">\section</span><span class="p">{</span>title<span class="p">}</span>
+<span class="k">\section*</span><span class="p">{</span>title<span class="p">}</span>, <span class="c">% not numbers the section and it does not appear in the table of contents</span>
+<span class="k">\subsection</span><span class="p">{</span>title<span class="p">}</span>
+<span class="k">\subsubsection</span><span class="p">{</span>title<span class="p">}</span>
+<span class="k">\paragraph</span><span class="p">{</span>title<span class="p">}</span>
+<span class="k">\subparagraph</span><span class="p">{</span>title<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="text-environments">Text Environments</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">\begin{comment}</span>   <span class="c">% Comment (not printed). Requires verbatim package.</span>
+<span class="nt">\begin{quote}</span>     <span class="c">% Indented quotation block.</span>
+<span class="nt">\begin{quotation}</span> <span class="c">% Like quote with indented paragraphs.</span>
+<span class="nt">\begin{verse}</span>     <span class="c">% Quotation block for verse.</span>
+</code></pre></div></div>
+
+<h2 id="text-properties">Text Properties</h2>
+
+<h3 id="font-face">Font Face</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Command</th>
+      <th style="text-align: center">Declaration</th>
+      <th style="text-align: left">Effect</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\textrm{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\rmfamily text}</code></td>
+      <td style="text-align: left">Roman family</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\textsf{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\sffamily text}</code></td>
+      <td style="text-align: left">Sans serif family</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\texttt{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\ttfamily text}</code></td>
+      <td style="text-align: left">Typewriter family</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\textmd{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\mdseries text}</code></td>
+      <td style="text-align: left">Medium series</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\textbf{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\bfseries text}</code></td>
+      <td style="text-align: left">Bold series</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\textup{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\upshape text}</code></td>
+      <td style="text-align: left">Upright shape</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\textit{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\itshape text}</code></td>
+      <td style="text-align: left">Italic shape</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\textsl{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\slshape text}</code></td>
+      <td style="text-align: left">Slanted shape</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\textsc{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\scshape text}</code></td>
+      <td style="text-align: left">Small Caps shape</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\emph{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\em text}</code></td>
+      <td style="text-align: left">Emphasized</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\textnormal{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\normalfont text}</code></td>
+      <td style="text-align: left">Document font</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\underline{text}</code></td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">Underline</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="font-size">Font size</h3>
+
+<p>Usage <code class="language-plaintext highlighter-rouge">{\command text }</code></p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\tiny</span>         <span class="c">% tiny</span>
+<span class="k">\scriptsize</span>   <span class="c">% scriptsize</span>
+<span class="k">\footnotesize</span> <span class="c">% footnotesize</span>
+<span class="k">\small</span>        <span class="c">% small</span>
+<span class="k">\normalsize</span>   <span class="c">% normalsize</span>
+<span class="k">\large</span>        <span class="c">% large</span>
+<span class="k">\Large</span>        <span class="c">% Large</span>
+<span class="k">\LARGE</span>        <span class="c">% LARGE</span>
+<span class="k">\huge</span>         <span class="c">% huge</span>
+<span class="k">\Huge</span>         <span class="c">% Huge</span>
+</code></pre></div></div>
+
+<p>&lt;!–</p>
+<h4 id="verbatim-text">Verbatim text</h4>
+<p>\begin{verbatim} Verbatim environment.
+\begin{verbatim*} Spaces are shown as .
+\verb!text! Text between the delimiting characters (in
+this case `!’) is verbatim.</p>
+
+<h4 id="justification">Justification</h4>
+<p>Environment Declaration
+\begin{center} \centering
+\begin{flushleft} \raggedright
+\begin{flushright} \raggedleft</p>
+
+<h4 id="miscellaneous">Miscellaneous</h4>
+<p>\linespread{x} changes the line spacing by the multiplier x.</p>
+
+<h3 id="symbols">Symbols</h3>
+<p>&amp; \&amp; _ . . . \ldots  \textbullet
+$ $ ^ \^{} j \textbar n \textbackslash
+% \% ~ ~{} # # x \S</p>
+
+<h3 id="accents">Accents</h3>
+<p>o `o o 'o ^o \^o ~o ~o o =o
+_o .o o "o o \c o o \v o }o \H o
+c \c c o.
+\d o o
+
+\b o oo \t oo  \oe
+ \OE</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/references/cheatsheets/julia/" class="pagination--pager" title="Julia
+">Previous</a>
+    
+    
+      <a href="/references/cheatsheets/linux/" class="pagination--pager" title="Linux
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      <div align="center" style="margin: 1em 0;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- ad-unit_horizontal -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4699563125299312"
+             data-ad-slot="3532465338"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+
+    
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
+    <label class="sr-only" for="cse-search-input-box-id">
+      Enter your search term...
+    </label>
+    <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results">
+    <gcse:searchresults-only></gcse:searchresults-only>
+  </div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.linkedin.com/company/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+        
+          <li><a href="https://github.com/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+        
+          <li><a href="https://www.pinterest.com/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-pinterest" aria-hidden="true"></i> Pinterest</a></li>
+        
+      
+        
+          <li><a href="https://www.instagram.com/cfd.streamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/CfdStreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/CFD-Streamline-102236005421147/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 CFD Streamline. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<script>
+  (function () {
+    var cx = 'a390aa655bef0d717';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+  function googleCustomSearchExecute() {
+    var input = document.getElementById('cse-search-input-box-id');
+    var element = google.search.cse.element.getElement('searchresults-only0');
+    if (input.value == '') {
+      element.clearAllResults();
+    } else {
+      element.execute(input.value);
+    }
+    return false;
+  }
+
+  
+</script>
+
+
+
+
+
+
+
+  </body>
+</html>
