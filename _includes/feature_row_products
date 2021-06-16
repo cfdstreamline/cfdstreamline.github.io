@@ -7,7 +7,7 @@
 
     {% if f.class == include.class and f.category == include.category %}
 
-      <div class="feature__item_biblio{% if include.type %}--{{ include.type }}{% endif %}">
+      <div class="feature__item_rfv_biblio{% if include.type %}--{{ include.type }}{% endif %}">
         <div class="archive__item">
           {% if f.image_path %}
             <div class="archive__item-teaser">
