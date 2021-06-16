@@ -302,11 +302,11 @@ Optional arguments need a default value in the signature, defined with `=`.
 Keyword arguments use the named notation and are listed in the function's
 signature after the semicolon:
 
-````
+```julia
 function func(req1, req2; key1=dflt1, key2=dflt2)
     # do stuff
 end
-````
+```
 
 The semicolon is *not* required in the call to a function that accepts keyword arguments.
 
@@ -317,7 +317,7 @@ Multiple data structures can be returned as a tuple in a single `return` stateme
 Command line arguments `julia script.jl arg1 arg2...` can be processed from global
 constant `ARGS`:
 
-```
+```julia
 for arg in ARGS
     println(arg)
 end
@@ -328,7 +328,7 @@ Anonymous functions can best be used in collection functions or list comprehensi
 
 Functions can accept a variable number of arguments:
 
-```
+```julia
 function func(a...)
     println(a)
 end
@@ -338,7 +338,7 @@ func(1, 2, [3:5]) # tuple: (1, 2, UnitRange{Int64}[3:5])
 
 Functions can be nested:
 
-```
+```julia
 function outerfunction()
     # do some outer stuff
     function innerfunction()
@@ -351,7 +351,7 @@ end
 
 Functions can have explicit return types
 
-```
+```julia
 # take any Number subtype and return it as a String
 function stringifynumber(num::T)::String where T <: Number
     return "$num"
@@ -362,7 +362,7 @@ Functions can be
 [vectorized](https://docs.julialang.org/en/v1/manual/functions/#man-vectorized-1){:target="_blank"}
 by using the Dot Syntax
 
-```
+```julia
 # here we broadcast the subtraction of each mean value
 # by using the dot operator
 julia> using Statistics
@@ -542,7 +542,7 @@ people with knowledge of dynamic SQL. The `Meta.parse` function is similar
 to Oracle"s and PostgreSQL"s `EXECUTE IMMEDIATE` statement or SQL
 Server's `sp_executesql()` procedure. </span></a> , and `Expr(:call, ...)`.
 
-```
+```julia
 x = 1
 line = "1 + $x"         # some code
 expr = Meta.parse(line) # make an Expr object
