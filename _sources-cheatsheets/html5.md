@@ -211,3 +211,11 @@ width=""                        <!-- Describes the width of the iframe in pixels
 &#149; &ouml; Small bullet - .
 &#153; &ucirc; Trademark Symbol - ™
 ```
+
+
+## [Source](https://github.com/LeCoupa/awesome-cheatsheets/blob/master/frontend/html5.html){:target="_blank"}
+
+
+## See Also
+
+[Learn X in Y minutes](https://learnxinyminutes.com/docs/html/){:target="_blank"}

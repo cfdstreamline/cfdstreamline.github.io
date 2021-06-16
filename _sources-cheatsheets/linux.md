@@ -378,3 +378,20 @@ yes                 # give yes response everytime an input is requested from scr
 
 
 ## Profile Configuration: .bashrc
+
+
+
+
+
+## Sources
+
+<https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh>{:target="_blank"}
+
+<https://cheatography.com/davechild/cheat-sheets/linux-command-line/>{:target="_blank"}
+
+<https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/ubuntu.sh>{:target="_blank"}
+
+
+## See Also
+
+[Learn X in Y minutes](https://learnxinyminutes.com/docs/html/){:target="_blank"}

@@ -101,9 +101,9 @@
   overflow: hidden;
 
   img {
+    object-fit: cover;                 /* R */
     width: 100%;
     height: auto;                      /* R */
-    object-fit: cover;                 /* R */
   }
 }
 

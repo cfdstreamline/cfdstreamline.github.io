@@ -14,7 +14,9 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser_rfv" >
-        <img src="{{ teaser | relative_url }}" class="align-center" alt="" width="{{ include.image_width | default: 'auto' }}" height="{{ include.image_height | default: '10%' }}">
+        <a href="{{ post.url | relative_url }}" rel="permalink">
+          <img src="{{ teaser | relative_url }}" class="align-center" alt="" width="{{ include.image_width | default: 'auto' }}" height="{{ include.image_height | default: '10%' }}">
+        </a>
       </div>
     {% endif %}
     <h2 class="archive__item-title_rfv no_toc" itemprop="headline">

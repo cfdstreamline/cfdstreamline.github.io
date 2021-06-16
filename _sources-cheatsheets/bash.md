@@ -569,3 +569,11 @@ echo -e "${Red}${On_White}This is Red test on White background${Color_Off}"
 # option -e is mandatory, it enable interpretation of backslash escapes
 printf "${Red} This is red \n"
 ```
+
+
+## [Source](https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh){:target="_blank"}
+
+
+## See Also
+
+[Learn X in Y minutes](https://learnxinyminutes.com/docs/bash/){:target="_blank"}

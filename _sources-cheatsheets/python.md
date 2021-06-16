@@ -319,3 +319,12 @@ function_name()
 * We need not to specify the return type of the function.
 * Functions by default return `None` 
 * We can return any datatype.
+
+
+
+## [Source](https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/python.md){:target="_blank"}
+
+
+## See Also
+
+[Learn X in Y minutes](https://learnxinyminutes.com/docs/python/){:target="_blank"}

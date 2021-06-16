@@ -150,3 +150,11 @@ git clean -f -d/git clean -fd     # To remove directories permanently
 git clean -f -X/git clean -fX     # To remove ignored files permanently
 git clean -f -x/git clean -fx     # To remove ignored and non-ignored files permanently
 ```
+
+
+## [Source](https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/git.sh){:target="_blank"}
+
+
+## See Also
+
+[Learn X in Y minutes](https://learnxinyminutes.com/docs/git/){:target="_blank"}
