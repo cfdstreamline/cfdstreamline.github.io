@@ -18,26 +18,26 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="CFD Streamline">
 <meta property="og:title" content="Latex">
-<meta property="og:url" content="http://localhost:4000/references/cheatsheets/latex/">
+<meta property="og:url" content="/references/cheatsheets/latex/">
 
 
   <meta property="og:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/images/logos/logo_latex.svg">
+  <meta property="og:image" content="/assets/images/logos/logo_latex.svg">
 
 
 
   <meta name="twitter:site" content="@cfdstreamline">
   <meta name="twitter:title" content="Latex">
   <meta name="twitter:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
-  <meta name="twitter:url" content="http://localhost:4000/references/cheatsheets/latex/">
+  <meta name="twitter:url" content="/references/cheatsheets/latex/">
 
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="http://localhost:4000/assets/images/logos/logo_latex.svg">
+      <meta name="twitter:image" content="/assets/images/logos/logo_latex.svg">
     
   
 
@@ -45,7 +45,7 @@
 
 
 
-  <meta property="article:published_time" content="2021-06-16T15:54:05+02:00">
+  <meta property="article:published_time" content="2021-06-17T20:20:24+02:00">
 
 
 
@@ -58,7 +58,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/references/cheatsheets/latex/">
+<link rel="canonical" href="/references/cheatsheets/latex/">
 
 
 
@@ -68,8 +68,8 @@
     "@context": "https://schema.org",
     
       "@type": "Organization",
-      "url": "http://localhost:4000/",
-      "logo": "http://localhost:4000/assets/images/site-logo.png"
+      "url": "/",
+      "logo": "/assets/images/site-logo.png"
     
   }
 </script>
@@ -118,9 +118,36 @@
 
 <script data-ad-client="ca-pub-4699563125299312" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+<!--
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+  </script>
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js">
+</script>
+-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  processEscapes: true},
+  jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
+  extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
+  TeX: {
+  extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
+  equationNumbers: {
+  autoNumber: "AMS"
+  }
+  }
+  });
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
 </script>
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
@@ -205,7 +232,7 @@
     <div class="sidebar sticky">
       <nav class="toc">
         <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-        <ul class="toc__menu"><li><a href="#overview">Overview</a></li><li><a href="#document-classes">Document Classes</a><ul><li><a href="#classes">Classes</a></li><li><a href="#common-options">Common options</a></li></ul></li><li><a href="#packages">Packages</a></li><li><a href="#title">Title</a></li><li><a href="#page-style">Page Style</a></li><li><a href="#tables-of-content">Tables of Content</a></li><li><a href="#document-structure">Document Structure</a></li><li><a href="#text-environments">Text Environments</a></li><li><a href="#text-properties">Text Properties</a><ul><li><a href="#font-face">Font Face</a></li><li><a href="#font-size">Font size</a><ul><li><a href="#verbatim-text">Verbatim text</a></li><li><a href="#justification">Justification</a></li><li><a href="#miscellaneous">Miscellaneous</a></li></ul></li><li><a href="#symbols">Symbols</a></li><li><a href="#accents">Accents</a></li></ul></li></ul>
+        <ul class="toc__menu"><li><a href="#overview">Overview</a></li><li><a href="#document-classes">Document Classes</a><ul><li><a href="#classes">Classes</a></li><li><a href="#common-options">Common options</a></li></ul></li><li><a href="#packages">Packages</a></li><li><a href="#title">Title</a></li><li><a href="#page-style">Page Style</a></li><li><a href="#tables-of-content">Tables of Content</a></li><li><a href="#document-structure">Document Structure</a></li><li><a href="#text-environments">Text Environments</a></li><li><a href="#text-properties">Text Properties</a><ul><li><a href="#font-face">Font Face</a></li><li><a href="#font-size">Font size</a></li><li><a href="#justification">Justification</a></li><li><a href="#line-spacing">Line Spacing</a></li><li><a href="#symbols">Symbols</a></li><li><a href="#accents">Accents</a></li><li><a href="#delimiters">Delimiters</a></li><li><a href="#dashes">Dashes</a></li></ul></li><li><a href="#lists">Lists</a></li><li><a href="#line-and-page-breaks">Line and Page Breaks</a></li><li><a href="#miscellaneous">Miscellaneous</a></li><li><a href="#references">References</a></li><li><a href="#floating-bodies">Floating bodies</a></li><li><a href="#tabular-environments">Tabular Environments</a><ul><li><a href="#tabbing-environment">tabbing environment</a></li><li><a href="#tabular-environment">tabular environment</a></li></ul></li><li><a href="#math-mode">Math Mode</a><ul><li><a href="#symbols-1">Symbols</a></li></ul></li><li><a href="#bibliography-and-citations">Bibliography and Citations</a><ul><li><a href="#bibtex-citation-types">BibTex Citation Types</a></li><li><a href="#bibtex-entry-types">BibTex Entry Types</a></li><li><a href="#fields">Fields</a></li><li><a href="#common-bibtexstyle-files">Common BibTex Style Files</a></li><li><a href="#example">Example</a></li></ul></li><li><a href="#source">Source</a></li><li><a href="#see-also">See Also</a></li></ul>
 
       </nav>
     </div>
@@ -214,7 +241,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Latex">
     <meta itemprop="description" content="">
-    
+    <meta itemprop="datePublished" content="2021-06-17T20:20:24+02:00">
     
 
     <div class="page__inner-wrap">
@@ -246,7 +273,7 @@
 <span class="k">\usepackage</span><span class="p">{</span>hyperref<span class="p">}</span>    <span class="c">% Allows hyperlinks</span>
 
 <span class="c">% Document Properties Definitions</span>
-<span class="k">\author</span><span class="p">{</span>Author's name<span class="p">}</span> 
+<span class="k">\author</span><span class="p">{</span>Author's name<span class="p">}</span>
 <span class="k">\date</span><span class="p">{</span><span class="k">\today</span><span class="p">}</span>
 <span class="k">\title</span><span class="p">{</span>Title<span class="p">}</span>
 
@@ -477,6 +504,7 @@ draft                <span class="c">% Double-space lines.</span>
 <h2 id="title">Title</h2>
 
 <p>Usage: <code class="language-plaintext highlighter-rouge">\maketitle</code></p>
+
 <div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\author</span><span class="p">{</span>text<span class="p">}</span>          <span class="c">% Author of document.</span>
 <span class="k">\title</span><span class="p">{</span>text<span class="p">}</span>           <span class="c">% Title of document.</span>
 <span class="k">\date</span><span class="p">{</span>text<span class="p">}</span>            <span class="c">% Date.</span>
@@ -499,7 +527,7 @@ draft                <span class="c">% Double-space lines.</span>
 
 <h2 id="document-structure">Document Structure</h2>
 
-<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\setcounter</span><span class="p">{</span>secnumdepth<span class="p">}{</span>x<span class="p">}</span> <span class="c">% suppresses heading numbers of depth &gt; x, where chapter has depth 0. </span>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\setcounter</span><span class="p">{</span>secnumdepth<span class="p">}{</span>x<span class="p">}</span> <span class="c">% suppresses heading numbers of depth &gt; x, where chapter has depth 0.</span>
 
 <span class="k">\part</span><span class="p">{</span>title<span class="p">}</span>
 <span class="k">\chapter</span><span class="p">{</span>title<span class="p">}</span>
@@ -513,10 +541,13 @@ draft                <span class="c">% Double-space lines.</span>
 
 <h2 id="text-environments">Text Environments</h2>
 
-<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">\begin{comment}</span>   <span class="c">% Comment (not printed). Requires verbatim package.</span>
-<span class="nt">\begin{quote}</span>     <span class="c">% Indented quotation block.</span>
-<span class="nt">\begin{quotation}</span> <span class="c">% Like quote with indented paragraphs.</span>
-<span class="nt">\begin{verse}</span>     <span class="c">% Quotation block for verse.</span>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">\begin{comment}</span>   <span class="nt">\end{comment}</span>   <span class="c">% Comment (not printed). Requires verbatim package.</span>
+<span class="nt">\begin{quote}</span>     <span class="nt">\end{quote}</span>     <span class="c">% Indented quotation block.</span>
+<span class="nt">\begin{quotation}</span> <span class="nt">\end{quotation}</span> <span class="c">% Like quote with indented paragraphs.</span>
+<span class="nt">\begin{verse}</span>     <span class="nt">\end{verse}</span>     <span class="c">% Quotation block for verse.</span>
+<span class="nt">\begin{verbatim}</span>  <span class="nt">\end{verbatim}</span>  <span class="c">% Verbatim environment.</span>
+
+<span class="nb">\verb</span><span class="kp">!</span><span class="sx">text</span><span class="kp">!</span> <span class="c">% Text between the delimiting characters (in this case '!') is verbatim.</span>
 </code></pre></div></div>
 
 <h2 id="text-properties">Text Properties</h2>
@@ -611,35 +642,835 @@ draft                <span class="c">% Double-space lines.</span>
 <span class="k">\Huge</span>         <span class="c">% Huge</span>
 </code></pre></div></div>
 
-<p>&lt;!–</p>
-<h4 id="verbatim-text">Verbatim text</h4>
-<p>\begin{verbatim} Verbatim environment.
-\begin{verbatim*} Spaces are shown as .
-\verb!text! Text between the delimiting characters (in
-this case `!’) is verbatim.</p>
+<h3 id="justification">Justification</h3>
 
-<h4 id="justification">Justification</h4>
-<p>Environment Declaration
-\begin{center} \centering
-\begin{flushleft} \raggedright
-\begin{flushright} \raggedleft</p>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">% Environment</span>
+<span class="nt">\begin{center}</span>     <span class="nt">\end{center}</span>
+<span class="nt">\begin{flushleft}</span>  <span class="nt">\end{flushleft}</span>
+<span class="nt">\begin{flushright}</span> <span class="nt">\end{flushright}</span>
 
-<h4 id="miscellaneous">Miscellaneous</h4>
-<p>\linespread{x} changes the line spacing by the multiplier x.</p>
+<span class="c">% Declaration</span>
+<span class="k">\centering</span>
+<span class="k">\raggedright</span>
+<span class="k">\raggedleft</span>
+</code></pre></div></div>
+
+<h3 id="line-spacing">Line Spacing</h3>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\linespread</span><span class="p">{</span>x<span class="p">}</span> <span class="c">% changes the line spacing by the multiplier x.</span>
+</code></pre></div></div>
 
 <h3 id="symbols">Symbols</h3>
-<p>&amp; \&amp; _ . . . \ldots  \textbullet
-$ $ ^ \^{} j \textbar n \textbackslash
-% \% ~ ~{} # # x \S</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Symbol</th>
+      <th style="text-align: left">Latex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">&amp;</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\&amp;</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">_</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\_</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">…</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\ldots</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\bullet\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\textbullet</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\$</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">^</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\^{}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">|</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\textbar</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\textbackslash</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">%</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\%</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">~</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\~{}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">#</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\#</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">S</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\S</code></td>
+    </tr>
+  </tbody>
+</table>
 
 <h3 id="accents">Accents</h3>
-<p>o `o o 'o ^o \^o ~o ~o o =o
-_o .o o "o o \c o o \v o }o \H o
-c \c c o.
-\d o o
-
-\b o oo \t oo  \oe
- \OE</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Accent</th>
+      <th style="text-align: left">Latex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">ò</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\`o</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ó</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\'o</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ô</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\^o</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">õ</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\~o</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ō</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\=o</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ȧ</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\.a</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ö</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\"o</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">o̧</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\c o</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ă</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\u a</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ǎ</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\v a</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ő</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\H</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ç</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\c c</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ạ</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\d a</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ą</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\k a</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">⁀</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\t</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">œ</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\oe</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Œ</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\OE</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">æ</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\ae</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Æ</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\AE</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">å</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\aa</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Å</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\A</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ø</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\o</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Ø</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\O</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ł</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\l</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Ł</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\L</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">¡</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">~</code>`</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">¿</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">?</code>`</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="delimiters">Delimiters</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Delimiter</th>
+      <th style="text-align: left">Latex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">`     | <code class="language-plaintext highlighter-rouge">`</code></td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">’</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">'</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">“</td>
+      <td style="text-align: left">` `` `</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">”</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">''</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">{}</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\{\}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">[]</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">[]</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">()</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">()</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">&lt;</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\textless</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">&gt;</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\textgreater</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="dashes">Dashes</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Name</th>
+      <th style="text-align: center">Latex</th>
+      <th style="text-align: left">Example</th>
+      <th style="text-align: left">Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">hyphen</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">-</code></td>
+      <td style="text-align: left">X-ray</td>
+      <td style="text-align: left">In words</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">en-dash</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">--</code></td>
+      <td style="text-align: left">1–5</td>
+      <td style="text-align: left">Between numbers</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">em-dash</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">---</code></td>
+      <td style="text-align: left">Yes—or no?</td>
+      <td style="text-align: left">Punctuation</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="lists">Lists</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">\begin{enumerate}</span>     <span class="c">% Numbered list.</span>
+  <span class="k">\item</span> text          <span class="c">% Adds an item.</span>
+<span class="nt">\end{enumerate}</span>
+
+<span class="nt">\begin{itemize}</span>       <span class="c">% Bulleted list.</span>
+  <span class="k">\item</span> text          <span class="c">% Adds an item.</span>
+<span class="nt">\end{itemize}</span>
+
+<span class="nt">\begin{description}</span>   <span class="c">% Description list.</span>
+  <span class="k">\item</span><span class="na">[x]</span> text       <span class="c">% Uses x instead of normal bullet or number. Required for descriptions</span>
+<span class="nt">\end{description}</span>
+</code></pre></div></div>
+
+<h2 id="line-and-page-breaks">Line and Page Breaks</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\\</span>         <span class="c">% Begin new line without new paragraph.</span>
+<span class="k">\\*</span>        <span class="c">% Prohibit pagebreak after linebreak.</span>
+<span class="k">\kill</span>      <span class="c">% Don't print current line.</span>
+<span class="k">\pagebreak</span> <span class="c">% Starts new page.</span>
+<span class="k">\newpage</span>   <span class="c">% Starts new page</span>
+<span class="k">\noindent</span>  <span class="c">% Do not indent current line.</span>
+</code></pre></div></div>
+
+<h2 id="miscellaneous">Miscellaneous</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\today</span>      <span class="c">% Prints todays date</span>
+~           <span class="c">% Space, disallow linebreak (W.J.~Clinton).</span>
+<span class="k">\@</span>.         <span class="c">% Indicate that the . ends a sentence when following an uppercase letter.</span>
+<span class="k">\hspace</span><span class="p">{</span>l<span class="p">}</span>  <span class="c">% Horizontal space of length l (Ex: l = 20pt).</span>
+<span class="k">\vspace</span><span class="p">{</span>l<span class="p">}</span>  <span class="c">% Vertical space of length l.</span>
+<span class="k">\rule</span><span class="p">{</span>w<span class="p">}{</span>h<span class="p">}</span> <span class="c">% Line of width w and height h.</span>
+</code></pre></div></div>
+
+<h2 id="references">References</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\label</span><span class="p">{</span>marker<span class="p">}</span>   <span class="c">% Set a marker for cross-reference, often of the form \label{sec:item}.</span>
+<span class="k">\ref</span><span class="p">{</span>marker<span class="p">}</span>     <span class="c">% Give section/body number of marker.</span>
+<span class="k">\pageref</span><span class="p">{</span>marker<span class="p">}</span> <span class="c">% Give page number of marker.</span>
+<span class="k">\footnote</span><span class="p">{</span>text<span class="p">}</span>  <span class="c">% Print footnote at bottom of page.</span>
+</code></pre></div></div>
+
+<h2 id="floating-bodies">Floating bodies</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">\begin{table}</span>[place]     <span class="nt">\end{table}</span>    <span class="c">% Add numbered table.</span>
+<span class="nt">\begin{figure}</span>[place]    <span class="nt">\end{figure}</span>   <span class="c">% Add numbered figure.</span>
+<span class="nt">\begin{equation}</span>[place]  <span class="nt">\end{equation}</span> <span class="c">% Add numbered equation.</span>
+<span class="k">\caption</span><span class="p">{</span>text<span class="p">}</span>                          <span class="c">% Caption for the body.</span>
+</code></pre></div></div>
+
+<p>The place is a list valid placements for the body. t=top,
+h=here, b=bottom, p=separate page, !=place even if ugly.
+Captions and label markers should be within the environment.</p>
+
+<h2 id="tabular-environments">Tabular Environments</h2>
+
+<h3 id="tabbing-environment"><code class="language-plaintext highlighter-rouge">tabbing</code> environment</h3>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\=</span> <span class="c">% Set tab stop. </span>
+<span class="k">\&gt;</span> <span class="c">% Go to tab stop.</span>
+</code></pre></div></div>
+
+<p>Tab stops can be set on “invisible” lines with <code class="language-plaintext highlighter-rouge">\\kill</code> at the end
+of the line. Normally <code class="language-plaintext highlighter-rouge">\\</code> is used to separate lines.</p>
+
+<h3 id="tabular-environment"><code class="language-plaintext highlighter-rouge">tabular</code> environment</h3>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">\begin{array}</span>[pos]<span class="p">{</span>cols<span class="p">}</span>           <span class="nt">\end{array}</span>
+<span class="nt">\begin{tabular}</span>[pos]<span class="p">{</span>cols<span class="p">}</span>         <span class="nt">\end{tabular}</span>
+<span class="nt">\begin{tabular*}</span><span class="p">{</span>width<span class="p">}</span>[pos]<span class="p">{</span>cols<span class="p">}</span> <span class="nt">\end{tabular*}</span>
+</code></pre></div></div>
+
+<p>Column specification:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">l</code></td>
+      <td>Left-justified column.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">c</code></td>
+      <td>Centered column.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">r</code></td>
+      <td>Right-justified column.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">p{width}</code></td>
+      <td>Same as <code class="language-plaintext highlighter-rouge">\parbox[t]{width}</code>.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">@{decl}</code></td>
+      <td>Insert <code class="language-plaintext highlighter-rouge">decl</code> instead of inter-column space.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">|</code></td>
+      <td>Inserts a vertical line between columns.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Elements:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">\hline</code></td>
+      <td>Horizontal line between rows.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">\cline{x-y}</code></td>
+      <td>Horizontal line across columns <code class="language-plaintext highlighter-rouge">x</code> through <code class="language-plaintext highlighter-rouge">y</code>.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">\multicolumn{n}{cols}{text}</code></td>
+      <td>A cell that spans <code class="language-plaintext highlighter-rouge">n</code> columns, with <code class="language-plaintext highlighter-rouge">cols</code> column specification.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="math-mode">Math Mode</h2>
+
+<p>For inline math, use <code class="language-plaintext highlighter-rouge">\(...\)</code> or <code class="language-plaintext highlighter-rouge">$...$</code>. 
+For displayed math, use <code class="language-plaintext highlighter-rouge">\[...\]</code> or <code class="language-plaintext highlighter-rouge">\begin{equation} \end{equation}</code>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Math Element</th>
+      <th style="text-align: left">Latex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">\(a^{x}\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">a^{x}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(a_{x}\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">a_{x}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\frac{x}{y}\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\frac{x}{y}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\sum_{k=1}^n\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\sum_{k=1}^n</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\sqrt[n]{x}\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\sqrt[n]{x}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\prod_{k=1}^n\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\prod_{k=1}^n</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="symbols-1">Symbols</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Math Symbol</th>
+      <th style="text-align: left">Latex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">\(\leq\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\leq</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\geq\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\geq</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\neq\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\neq</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\approx\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\approx</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\times\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\times</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\div\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\div</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\pm\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\pm</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\cdot\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\cdot</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(^{\circ}\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">^{\circ}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\circ\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\circ</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\prime\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\prime</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\cdots\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\cdots</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\infty\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\infty</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\neg\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\neg</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\wedge\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\wedge</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\vee\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\vee</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\supset\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\supset</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\forall\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\forall</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\in\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\in</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\rightarrow\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\rightarrow</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\subset\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\subset</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\exists\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\exists</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\notin\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\notin</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Rightarrow\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Rightarrow</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\cup\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\cup</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\cap\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\cap</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\mid\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\mid</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Leftrightarrow\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Leftrightarrow</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\dot a\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\dot a</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\hat a\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\hat a</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\bar a\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\bar a</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\tilde a\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\tilde a</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\alpha\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\alpha</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\beta\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\beta</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\gamma\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\gamma</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\delta\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\delta</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\epsilon\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\epsilon</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\zeta\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\zeta</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\eta\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\eta</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\varepsilon\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\varepsilon</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\theta\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\theta</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\iota\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\iota</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\kappa\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\kappa</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\vartheta\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\vartheta</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\lambda\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\lambda</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\mu\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\mu</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\nu\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\nu</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\xi\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\xi</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\pi\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\pi</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\rho\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\rho</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\sigma\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\sigma</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\tau\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\tau</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\upsilon\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\upsilon</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\phi\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\phi</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\chi\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\chi</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\psi\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\psi</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\omega\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\omega</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Gamma\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Gamma</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Delta\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Delta</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Theta\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Theta</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Lambda\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Lambda</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Xi\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Xi</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Pi\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Pi</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Sigma\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Sigma</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Upsilon\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Upsilon</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Phi\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Phi</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Psi\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Psi</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Omega\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Omega</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="bibliography-and-citations">Bibliography and Citations</h2>
+
+<p>When using BibTex, you need to run <code class="language-plaintext highlighter-rouge">latex</code>, <code class="language-plaintext highlighter-rouge">bibtex</code>, and <code class="language-plaintext highlighter-rouge">latex</code> twice more
+to resolve dependencies.</p>
+
+<h3 id="bibtex-citation-types">BibTex Citation Types</h3>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\cite</span><span class="p">{</span>key<span class="p">}</span>       <span class="c">% Full author list and year. (Watson and Crick 1953)</span>
+<span class="k">\citeA</span><span class="p">{</span>key<span class="p">}</span>      <span class="c">% Full author list. (Watson and Crick)</span>
+<span class="k">\citeN</span><span class="p">{</span>key<span class="p">}</span>      <span class="c">% Full author list and year. Watson and Crick (1953)</span>
+<span class="k">\shortcite</span><span class="p">{</span>key<span class="p">}</span>  <span class="c">% Abbreviated author list and year.</span>
+<span class="k">\shortciteA</span><span class="p">{</span>key<span class="p">}</span> <span class="c">% Abbreviated author list. </span>
+<span class="k">\shortciteN</span><span class="p">{</span>key<span class="p">}</span> <span class="c">% Abbreviated author list and year.</span>
+<span class="k">\citeyear</span><span class="p">{</span>key<span class="p">}</span>   <span class="c">% Cite year only. (1953)</span>
+</code></pre></div></div>
+
+<p>All the above have an <code class="language-plaintext highlighter-rouge">NP</code> variant without parentheses. Ex: <code class="language-plaintext highlighter-rouge">\citeNP</code>.</p>
+
+<h3 id="bibtex-entry-types">BibTex Entry Types</h3>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@article      <span class="c">% Journal or magazine article.</span>
+@book         <span class="c">% Book with publisher.</span>
+@booklet      <span class="c">% Book without publisher.</span>
+@conference   <span class="c">% Article in conference proceedings.</span>
+@inbook       <span class="c">% A part of a book and/or range of pages.</span>
+@incollection <span class="c">% A part of book with its own title.</span>
+@misc         <span class="c">% If nothing else fits.</span>
+@phdthesis    <span class="c">% PhD. thesis.</span>
+@proceedings  <span class="c">% Proceedings of a conference.</span>
+@techreport   <span class="c">% Tech report, usually numbered in series.</span>
+@unpublished  <span class="c">% Unpublished.</span>
+</code></pre></div></div>
+
+<h3 id="fields">Fields</h3>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>address      <span class="c">% Address of publisher. Not necessary for major publishers.</span>
+author       <span class="c">% Names of authors, of format ....</span>
+booktitle    <span class="c">% Title of book when part of it is cited.</span>
+chapter      <span class="c">% Chapter or section number.</span>
+edition      <span class="c">% Edition of a book.</span>
+editor       <span class="c">% Names of editors.</span>
+institution  <span class="c">% Sponsoring institution of tech. report.</span>
+journal      <span class="c">% Journal name.</span>
+key          <span class="c">% Used for cross ref. when no author.</span>
+month        <span class="c">% Month published. Use 3-letter abbreviation.</span>
+note         <span class="c">% Any additional information.</span>
+number       <span class="c">% Number of journal or magazine.</span>
+organization <span class="c">% Organization that sponsors a conference.</span>
+pages        <span class="c">% Page range (2,6,9--12).</span>
+publisher    <span class="c">% Publisher’s name.</span>
+school       <span class="c">% Name of school (for thesis).</span>
+series       <span class="c">% Name of series of books.</span>
+title        <span class="c">% Title of work.</span>
+type         <span class="c">% Type of tech. report, ex. “Research Note”.</span>
+volume       <span class="c">% Volume of a journal or book.</span>
+year         <span class="c">% Year of publication.</span>
+</code></pre></div></div>
+
+<p>Not all fields need to be filled. See example below.</p>
+
+<h3 id="common-bibtexstyle-files">Common BibTex Style Files</h3>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>abbrv    <span class="c">% Standard           </span>
+alpha    <span class="c">% Standard </span>
+abstract <span class="c">% alpha with abstract</span>
+plain    <span class="c">% Standard           </span>
+unsrt    <span class="c">% Unsorted</span>
+apa      <span class="c">% APA</span>
+</code></pre></div></div>
+
+<p>The LaTeX document should have the following two lines just before <code class="language-plaintext highlighter-rouge">\end{document}</code>, where <code class="language-plaintext highlighter-rouge">bibfile.bib</code> is the name of the file:</p>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\bibliographystyle</span><span class="p">{</span>plain<span class="p">}</span>
+<span class="k">\bibliography</span><span class="p">{</span>bibfile<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="example">Example</h3>
+
+<p>The  database goes in a file called <code class="language-plaintext highlighter-rouge">file.bib</code>, which is processed with <code class="language-plaintext highlighter-rouge">bibtex file</code>.</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@String<span class="p">{</span>N = <span class="p">{</span>Na<span class="k">\-</span>ture<span class="p">}}</span>
+@Article<span class="p">{</span>WC:1953,
+  author  = <span class="p">{</span>James Watson and Francis Crick<span class="p">}</span>,
+  title   = <span class="p">{</span>A structure for Deoxyribose Nucleic Acid<span class="p">}</span>,
+  journal = N,
+  volume  = <span class="p">{</span>171<span class="p">}</span>,
+  pages   = <span class="p">{</span>737<span class="p">}</span>,
+  year    = 1953
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="source"><a href="https://learnxinyminutes.com/docs/latex/" target="\_blank">Source</a></h2>
+
+<h2 id="see-also">See Also</h2>
+
+<ul>
+  <li><a href="https://learnxinyminutes.com/docs/latex/" target="\_blank">Learn X in Y minutes</a></li>
+  <li><a href="https://en.wikibooks.org/wiki/LaTeX" target="\_blank">Wikibooks</a></li>
+  <li><a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes" target="\_blank">Overleaf - Learn Latex in 30 Minutes</a></li>
+  <li><a href="https://latex-tutorial.com/" target="\_blank">Latex Tutorial</a></li>
+</ul>
 
         
       </section>
@@ -650,6 +1481,8 @@ _o .o o "o o \c o o \v o }o \H o
 
 
         
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-06-17T20:20:24+02:00">2021-06-17</time></p>
 
 
       </footer>

@@ -1,0 +1,1197 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.23.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Awk - CFD Streamline</title>
+<meta name="description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CFD Streamline">
+<meta property="og:title" content="Awk">
+<meta property="og:url" content="/references/cheatsheets/awk/">
+
+
+  <meta property="og:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+
+
+
+  <meta property="og:image" content="/assets/images/logos/logo_awk.png">
+
+
+
+  <meta name="twitter:site" content="@cfdstreamline">
+  <meta name="twitter:title" content="Awk">
+  <meta name="twitter:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+  <meta name="twitter:url" content="/references/cheatsheets/awk/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="/assets/images/logos/logo_awk.png">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-06-17T20:20:24+02:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/CFD-Streamline-102236005421147">
+  
+
+  
+
+
+<link rel="canonical" href="/references/cheatsheets/awk/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Organization",
+      "url": "/",
+      "logo": "/assets/images/site-logo.png"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="CFD Streamline Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<script data-ad-client="ca-pub-4699563125299312" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!--
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+  </script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js">
+</script>
+-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  processEscapes: true},
+  jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
+  extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
+  TeX: {
+  extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
+  equationNumbers: {
+  autoNumber: "AMS"
+  }
+  }
+  });
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icon/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icon/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icon/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/icon/favicon/site.webmanifest">
+<link rel="mask-icon" href="/assets/images/icon/favicon/safari-pinned-tab.svg" color="#283747">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--wiki wide">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/icon/logo.jpg" alt="CFD Streamline"></a>
+        
+        <a class="site-title" href="/">
+          CFD Streamline
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/software/">Software</a>
+            </li><li class="masthead__menu-item">
+              <a href="/testcases/">Test Cases</a>
+            </li><li class="masthead__menu-item">
+              <a href="/references/">References</a>
+            </li><li class="masthead__menu-item">
+              <a href="/posts/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/apps/">Apps</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+    <div class="sidebar sticky">
+      <nav class="toc">
+        <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+        <ul class="toc__menu"><li><a href="#overview">Overview</a><ul><li><a href="#one-liners">One-liners</a><ul><li><a href="#print-selected-fields-at-a-variable-position">Print Selected Fields (at a Variable Position)</a></li><li><a href="#print-matching-lines">Print Matching Lines</a></li><li><a href="#insert-a-string-after-the-matching-line">Insert a String After the Matching Line</a></li><li><a href="#conditionals">Conditionals</a></li><li><a href="#replacement-for-some-common-unix-commands">Replacement for Some Common Unix Commands</a></li><li><a href="#operations-with-lines">Operations with Lines</a></li><li><a href="#renaming-files-with-awk">Renaming files with AWK</a></li><li><a href="#awk-as-a-command-line-calculator">AWK as a command-line calculator</a></li></ul></li><li><a href="#awk-program">Awk Program</a></li><li><a href="#variables">Variables</a></li><li><a href="#conditions--loops">Conditions &amp; Loops</a></li><li><a href="#arrays">Arrays</a></li><li><a href="#functions">Functions</a></li></ul></li><li><a href="#variables-1">Variables</a><ul><li><a href="#build-in-variables">Build-in Variables</a></li><li><a href="#expressions">Expressions</a></li><li><a href="#examples">Examples</a></li><li><a href="#environment-variables">Environment Variables</a></li><li><a href="#gnu-awk-only">GNU awk only</a></li><li><a href="#defining-variable">Defining Variable</a><ul><li><a href="#use-shell-variables">Use Shell Variables</a></li></ul></li></ul></li><li><a href="#operators">Operators</a><ul><li><a href="#operators-1">Operators</a><ul><li><a href="#regular-expression">Regular Expression</a></li><li><a href="#more-conditions">More conditions</a></li></ul></li><li><a href="#operations">Operations</a><ul><li><a href="#arithmetic-operations">Arithmetic Operations</a></li><li><a href="#shorthand-assignments">Shorthand Assignments</a></li><li><a href="#comparison-operators">Comparison Operators</a></li></ul></li><li><a href="#examples-1">Examples</a></li></ul></li><li><a href="#functions-1">Functions</a><ul><li><a href="#common-functions">Common Functions</a></li><li><a href="#user-defined-function">User Defined Function</a></li></ul></li><li><a href="#arrays-1">Arrays</a><ul><li><a href="#array-with-index">Array with Index</a></li><li><a href="#array-with-key">Array with Key</a></li><li><a href="#array-with-split">Array with Split</a></li><li><a href="#array-with-asort">Array with Asort</a></li><li><a href="#multi-dimensional">Multi-dimensional</a></li><li><a href="#multi-dimensional-iteration">Multi-Dimensional Iteration</a></li></ul></li><li><a href="#conditions">Conditions</a><ul><li><a href="#if-else-statement">if-else Statement</a><ul><li><a href="#ternary-operator">Ternary operator</a></li></ul></li><li><a href="#examples-2">Examples</a></li><li><a href="#switch">switch</a></li></ul></li><li><a href="#loops">Loops</a><ul><li><a href="#fori">for…i</a></li><li><a href="#forin">for…in</a><ul><li><a href="#arguments">Arguments</a></li></ul></li><li><a href="#while">while</a></li><li><a href="#dowhile">do…while</a></li><li><a href="#break">Break</a></li><li><a href="#continue">Continue</a></li><li><a href="#examples-3">Examples</a></li></ul></li><li><a href="#formatted-printing">Formatted Printing</a><ul><li><a href="#usage">Usage</a><ul><li><a href="#right-align">Right align</a></li><li><a href="#left-align">Left align</a></li></ul></li><li><a href="#common-specifiers">Common Specifiers</a></li><li><a href="#space">Space</a></li><li><a href="#header">Header</a></li></ul></li><li><a href="#miscellaneous">Miscellaneous</a><ul><li><a href="#regex-metacharacters">Regex Metacharacters</a></li><li><a href="#escape-sequences">Escape Sequences</a></li><li><a href="#run-script">Run Script</a></li></ul></li><li><a href="#source">Source</a></li><li><a href="#see-also">See Also</a></li></ul>
+
+      </nav>
+    </div>
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Awk">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2021-06-17T20:20:24+02:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Awk
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <h2 id="overview">Overview</h2>
+
+<h3 id="one-liners">One-liners</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span>  <span class="o">-</span><span class="nx">F</span><span class="s2">":"</span> <span class="err">'</span><span class="p">{</span><span class="k">print</span> <span class="nv">$2</span><span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>               <span class="c1"># Print selected fields (at a fixed position). Split up the lines of the file file.txt with ":" (colon) separated fields and print the second field ($2) of each line</span>
+<span class="nx">awk</span>  <span class="o">-</span><span class="nx">F</span><span class="s2">":"</span> <span class="err">'</span><span class="p">{</span><span class="k">if</span> <span class="p">(</span><span class="nv">$2</span><span class="p">)</span><span class="k">print</span> <span class="nv">$2</span><span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>        <span class="c1"># Same as above but print only output if the second field ($2) exists and is not empty</span>
+<span class="nx">awk</span> <span class="o">-</span><span class="nx">F</span><span class="p">:</span> <span class="err">'</span><span class="p">{</span> <span class="k">print</span> <span class="nv">$1</span> <span class="s2">"-"</span> <span class="nv">$4</span> <span class="s2">"-"</span> <span class="nv">$6</span> <span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>  <span class="c1"># Print selected fields from each line separated by a dash</span>
+<span class="nx">awk</span> <span class="o">-</span><span class="nx">F</span><span class="p">:</span> <span class="err">'</span><span class="p">{</span> <span class="k">print</span> <span class="nv">$NF</span> <span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>               <span class="c1"># Print the last field in each line</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="p">{</span> <span class="nv">$2</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span> <span class="k">print</span> <span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>              <span class="c1"># Print every line and delete the second field</span>
+</code></pre></div></div>
+
+<h4 id="print-selected-fields-at-a-variable-position">Print Selected Fields (at a Variable Position)</h4>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">ip</span> <span class="nx">route</span> <span class="nx">get</span> <span class="mf">1.1</span><span class="p">.</span><span class="mf">1.1</span> <span class="o">|</span> <span class="nx">awk</span> <span class="err">'</span><span class="p">{</span><span class="k">for</span><span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;=</span><span class="kc">NF</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span><span class="k">if</span><span class="p">(</span><span class="nv">$i</span><span class="o">==</span><span class="s2">"src"</span><span class="p">)</span> <span class="k">print</span> <span class="nv">$</span><span class="p">(</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)}}</span><span class="err">'</span> <span class="c1"># Print the content of a field after the field that contains the string "src". This will always print the computers "own IP" used for the communication with the public IP 1.1.1.1 (it will return 10.8.0.3 for the above examples).</span>
+</code></pre></div></div>
+
+<h4 id="print-matching-lines">Print Matching Lines</h4>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span>  <span class="o">-</span><span class="nx">F</span><span class="s2">":"</span> <span class="err">'</span><span class="o">/</span><span class="nx">some</span> <span class="nx">regexp</span><span class="o">/</span><span class="p">{</span><span class="k">print</span> <span class="nv">$2</span><span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>                <span class="c1"># Print field number two ($2) only on lines matching "some regexp" (fiel separator is ":")</span>
+<span class="nx">awk</span>  <span class="err">'</span><span class="o">/</span><span class="nx">regexp</span> <span class="nx">a</span><span class="o">/</span><span class="p">{</span><span class="k">print</span><span class="p">};</span><span class="sr">/regexp b/</span><span class="p">{</span><span class="k">printf</span> <span class="nv">$0</span><span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>      <span class="c1"># Print lines matching "regexp a" and lines matching "regexp b" but the later ones are printed without newline (note the printf)</span>
+<span class="nx">awk</span>  <span class="o">-</span><span class="nx">F</span><span class="s2">":"</span> <span class="err">'</span><span class="o">!</span><span class="sr">/some regexp/</span><span class="p">{</span><span class="k">print</span> <span class="nv">$2</span><span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>               <span class="c1"># Print field number two ($2) only on lines not matching "some regexp" (fiel separator is ":")</span>
+<span class="nx">awk</span>  <span class="o">-</span><span class="nx">F</span><span class="s2">":"</span> <span class="err">'</span><span class="o">/</span><span class="nx">some</span> <span class="nx">regexp</span><span class="o">/</span><span class="p">{</span><span class="k">next</span><span class="p">;}{</span><span class="k">print</span> <span class="nv">$2</span><span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>         <span class="c1"># Print field number two ($2) only on lines not matching "some regexp" (fiel separator is ":")</span>
+<span class="nx">awk</span>  <span class="o">-</span><span class="nx">F</span><span class="s2">":"</span> <span class="err">'</span><span class="o">/</span><span class="nx">some</span> <span class="nx">regexp</span><span class="o">/</span><span class="p">{</span><span class="k">print</span> <span class="nv">$2</span><span class="p">;</span><span class="k">next</span><span class="p">}{</span><span class="k">print</span> <span class="nv">$3</span><span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span> <span class="c1"># Print field number two ($2) only on lines matching "some regexp" otherwise print field number three ($3) (fiel separator is ":"). The "next" command causes awk to continue with the next line and execute "{print $3}" only for non matching lines. This is like</span>
+<span class="o">/</span><span class="nx">regexp</span><span class="o">/</span><span class="p">{...</span><span class="k">if</span><span class="p">..</span><span class="nx">regexp</span><span class="p">..</span><span class="nx">matches</span><span class="p">...;</span><span class="k">next</span><span class="p">}{...</span><span class="k">else</span><span class="p">...}</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="nv">$2</span> <span class="o">~</span> <span class="sr">/regexp/</span><span class="p">{</span><span class="k">print</span><span class="p">;}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>                         <span class="c1"># Print lines where field number two matches regexp (apply regexp only to field 2, not the whole line)</span>
+<span class="nx">ps</span> <span class="nx">aux</span> <span class="o">|</span> <span class="nx">awk</span> <span class="err">'</span><span class="nv">$8</span> <span class="o">~</span> <span class="sr">/R/</span><span class="p">{</span><span class="k">print</span><span class="p">;}</span><span class="kc">NR</span><span class="o">==</span><span class="mi">1</span><span class="p">{</span><span class="k">print</span><span class="p">}</span><span class="err">'</span>                  <span class="c1"># Here is an example parsing the linux "ps aux" command. It has in the eighth column the process state. To print all processes that are in running or runnable state you would look for the letter "R" in that 8-th column. You want as well to print line 1 of the ps command printout since it contains the column header</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="o">/</span><span class="nx">regexp</span><span class="o">/</span><span class="p">{</span><span class="nx">i</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span><span class="k">next</span><span class="p">;}{</span><span class="k">if</span><span class="p">(</span><span class="nx">i</span><span class="p">){</span><span class="nx">i</span><span class="o">--</span><span class="p">;</span> <span class="k">print</span><span class="p">;}}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>       <span class="c1"># Print the next two (i=2) lines after the line matching regexp</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="o">/</span><span class="nx">regexp</span><span class="o">/</span><span class="p">{</span><span class="nx">i</span><span class="o">=</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">;}{</span><span class="k">if</span><span class="p">(</span><span class="nx">i</span><span class="p">){</span><span class="nx">i</span><span class="o">--</span><span class="p">;</span> <span class="k">print</span><span class="p">;}}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>          <span class="c1"># Print the line and the next two (i=2) lines after the line matching regexp</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="o">/</span><span class="nx">start</span><span class="o">/</span><span class="p">,</span><span class="sr">/stop/</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>                                <span class="c1"># AWK ranges: Print the lines from a file starting at the line matching "start" until the line matching "stop". Note: make sure that the stop pattern does not match the start line otherwise only that line will be printed.</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="o">/</span><span class="nx">start</span><span class="o">/</span><span class="p">,</span><span class="mi">0</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>                                     <span class="c1"># AWK ranges: Print the lines starting at the line matching "start" until the end of the file. Note: make sure that the stop pattern does not match the start line otherwise only that line will be printed.</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="o">/</span><span class="nx">prompt</span><span class="p">.</span><span class="o">*</span><span class="nx">ls</span><span class="o">/</span><span class="p">{</span><span class="nx">s</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="k">print</span><span class="p">;</span><span class="k">next</span><span class="p">};</span><span class="sr">/prompt/</span><span class="p">{</span><span class="nx">s</span><span class="o">=</span><span class="mi">0</span><span class="p">};</span><span class="nx">s</span><span class="o">==</span><span class="mi">1</span><span class="p">{</span><span class="k">print</span><span class="p">}</span><span class="err">'</span> <span class="nb">log</span><span class="p">.</span><span class="nx">txt</span>         <span class="c1"># Change "prompt" to whatever string appears in your terminal prompt, e.g the hostname.</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="o">/</span><span class="nx">prompt</span><span class="p">.</span><span class="o">*</span><span class="nx">ls</span><span class="o">/</span><span class="p">{</span><span class="nx">s</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="k">print</span><span class="p">;</span><span class="k">next</span><span class="p">};</span><span class="nx">s</span><span class="o">==</span><span class="mi">0</span><span class="p">{</span><span class="k">next</span><span class="p">};{</span><span class="k">print</span><span class="p">};</span><span class="sr">/prompt/</span><span class="p">{</span><span class="nx">s</span><span class="o">=</span><span class="mi">0</span><span class="p">};</span><span class="err">'</span> <span class="nb">log</span><span class="p">.</span><span class="nx">txt</span> <span class="c1"># If you want to include the last prompt where to stop printing then try this. Change "prompt" to whatever string appears in your terminal prompt, e.g the hostname.</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="o">!</span><span class="sr">/regexp/</span><span class="p">{</span><span class="k">print</span> <span class="nv">$1</span> <span class="s2">" "</span> <span class="nv">$2</span> <span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>                 <span class="c1"># Print fields 1 and 2 from all lines not matching regexp</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="o">/</span><span class="nx">regexp1</span><span class="o">/&amp;&amp;!</span><span class="sr">/regexp2/</span><span class="p">{</span><span class="k">print</span> <span class="nv">$1</span> <span class="s2">" "</span> <span class="nv">$2</span> <span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>     <span class="c1"># Print fields 1 and 2 from lines matching regexp1 and not matching regexp2</span>
+</code></pre></div></div>
+
+<p>Regexp syntax:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">c</code> matches the non-metacharacter c.</li>
+  <li><code class="language-plaintext highlighter-rouge">\c</code> matches the literal character c.</li>
+  <li><code class="language-plaintext highlighter-rouge">.</code> matches any character including newline.</li>
+  <li><code class="language-plaintext highlighter-rouge">^</code> matches the beginning of a string (example: ^1 , only lines starting with a one)</li>
+  <li><code class="language-plaintext highlighter-rouge">$</code> matches the end of a string (example: end$ , only lines ending in “end”)</li>
+  <li><code class="language-plaintext highlighter-rouge">[abc...]</code> character list, matches any of the characters abc….</li>
+  <li><code class="language-plaintext highlighter-rouge">[0-9a-zA-Z]</code> range of characters 0-9 and a-z,A-Z</li>
+  <li><code class="language-plaintext highlighter-rouge">[^abc...]</code> negated character list, matches any character except abc….</li>
+  <li><code class="language-plaintext highlighter-rouge">r1|r2</code> alternation: matches either r1 or r2.</li>
+  <li><code class="language-plaintext highlighter-rouge">r1r2</code> concatenation: matches r1, and then r2.</li>
+  <li><code class="language-plaintext highlighter-rouge">r+</code> matches one or more r’s.</li>
+  <li><code class="language-plaintext highlighter-rouge">r*</code> matches zero or more r’s.</li>
+  <li><code class="language-plaintext highlighter-rouge">r?</code> matches zero or one r’s.</li>
+  <li><code class="language-plaintext highlighter-rouge">(r)</code> grouping: matches r.</li>
+</ul>
+
+<h4 id="insert-a-string-after-the-matching-line">Insert a String After the Matching Line</h4>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="o">/</span><span class="nx">regexp</span><span class="o">/</span><span class="p">{</span><span class="k">print</span> <span class="nv">$0</span><span class="p">;</span> <span class="k">print</span> <span class="s2">"text inserted after matching line"</span><span class="p">;</span><span class="k">next</span><span class="p">}{</span><span class="k">print</span><span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>   <span class="c1"># This inserts a new line after the matching line. `$0` is the line where the search pattern "regexp" matches without the newline at the end. The awk print command prints the string and appends a new line.</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="o">/</span><span class="nx">regexp</span><span class="o">/</span><span class="p">{</span><span class="k">print</span> <span class="nv">$0</span> <span class="s2">"text appended at end of the matching line"</span><span class="p">;</span><span class="k">next</span><span class="p">}{</span><span class="k">print</span><span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>  <span class="c1"># This appends a string to the matching line</span>
+</code></pre></div></div>
+
+<h4 id="conditionals">Conditionals</h4>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="o">/</span><span class="nx">regexp</span><span class="o">/</span><span class="p">{</span><span class="nx">A</span><span class="o">-</span><span class="nx">here</span><span class="p">;</span><span class="k">next</span><span class="p">}{</span><span class="nx">B</span><span class="o">-</span><span class="nx">here</span><span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>                                <span class="c1"># If matching "do A" else "do B" (if .. then .. else in awk)</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="o">/</span><span class="nx">regexp</span><span class="o">/</span><span class="p">{</span><span class="nb">gsub</span><span class="p">(</span><span class="sr">/string/</span><span class="p">,</span><span class="s2">"replacement"</span><span class="p">);</span><span class="k">print</span> <span class="nv">$1</span><span class="p">;</span><span class="k">next</span><span class="p">}{</span><span class="k">print</span><span class="p">;}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span> <span class="c1"># The example would print lines that do not match unchanged (action B is just "print;") while on lines that match /regexp/ it would replace /string/ by replacement and print the first element ($1).</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="o">/</span><span class="nx">regexpA</span><span class="o">/</span><span class="p">{</span><span class="nx">A</span><span class="o">-</span><span class="k">do</span><span class="o">-</span><span class="nx">here</span><span class="p">;}</span><span class="sr">/regexpB/</span><span class="p">{</span><span class="nx">B</span><span class="o">-</span><span class="k">do</span><span class="o">-</span><span class="nx">here</span><span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>                    <span class="c1"># If matching "A do..." OR if matching "B do.." (if .. then, if .. then, ...., in awk)</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="o">/</span><span class="nx">house</span><span class="o">/</span><span class="p">{</span><span class="k">print</span> <span class="nv">$1</span><span class="p">;}</span><span class="sr">/cat/</span><span class="p">{</span><span class="k">print</span><span class="p">;}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>
+</code></pre></div></div>
+
+<h4 id="replacement-for-some-common-unix-commands">Replacement for Some Common Unix Commands</h4>
+<p>Useful in a non unix environment</p>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">END</span><span class="p">{</span><span class="k">print</span> <span class="kc">NR</span><span class="p">}</span><span class="err">'</span>   <span class="c1"># Count lines (wc -l)</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="o">/</span><span class="nx">regexp</span><span class="o">/</span><span class="err">'</span>        <span class="c1"># Search for matching lines (egrep regexp)</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="o">!</span><span class="sr">/regexp/</span><span class="err">'</span>       <span class="c1"># Print non matching lines (egrep -v regexp)</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="o">/</span><span class="nx">regexp</span><span class="o">/</span><span class="p">{</span><span class="k">print</span> <span class="kc">FNR</span><span class="p">,</span><span class="nv">$0</span><span class="p">}</span><span class="err">'</span> <span class="c1"># Print matching lines with numbers (egrep -n regexp)</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span><span class="nx">IGNORECASE</span><span class="o">=</span><span class="mi">1</span><span class="p">};</span><span class="sr">/regexp/</span><span class="err">'</span> <span class="c1"># Print matching lines and ignore case (egrep -i regexp)</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="p">{</span><span class="k">print</span> <span class="kc">FNR</span> <span class="s2">"\t"</span> <span class="nv">$0</span><span class="p">}</span><span class="err">'</span> <span class="c1"># Number lines (cat -n)</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="nx">a</span> <span class="o">!~</span> <span class="nv">$0</span><span class="p">{</span><span class="k">print</span><span class="p">};</span> <span class="p">{</span><span class="nx">a</span><span class="o">=</span><span class="nv">$0</span><span class="p">}</span><span class="err">'</span> <span class="c1"># Remove duplicate consecutive lines (uniq)</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="kc">NR</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="err">'</span> <span class="c1"># Print first 5 lines of file (head -5)</span>
+</code></pre></div></div>
+
+<h4 id="operations-with-lines">Operations with Lines</h4>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="o">/^</span><span class="p">..</span><span class="o">*</span><span class="nv">$</span><span class="o">/</span><span class="p">{</span> <span class="k">print</span> <span class="kc">FNR</span> <span class="s2">":"</span> <span class="nv">$0</span> <span class="p">;</span><span class="k">next</span><span class="p">}{</span><span class="k">print</span><span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span> <span class="c1"># Number non empty lines: prints all lines and adds a line number to non empty lines</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="o">/^</span><span class="p">[</span> <span class="err">\</span><span class="nx">t</span><span class="p">]</span><span class="o">*</span><span class="nv">$</span><span class="o">/</span><span class="p">{</span><span class="k">next</span><span class="p">}{</span><span class="k">print</span><span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>                 <span class="c1"># Remove empty lines: prints all lines except empty ones and lines with only space and tab:</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="nb">length</span><span class="p">(</span><span class="nv">$0</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">80</span><span class="p">{</span><span class="k">print</span> <span class="kc">FNR</span><span class="p">,</span><span class="nv">$0</span><span class="p">}</span><span class="err">'</span>  <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>            <span class="c1"># Number lines longer than 80 char and show them. This is useful to find all the lines longer than 80 characters (or any other length)</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="nb">length</span> <span class="o">&lt;</span> <span class="mi">80</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>                             <span class="c1"># Print only lines of less than 80 characters</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="o">/</span><span class="nx">regexp</span><span class="o">/</span><span class="p">{</span><span class="nb">gsub</span><span class="p">(</span><span class="sr">/foo/</span><span class="p">,</span> <span class="s2">"bar"</span><span class="p">)};{</span><span class="k">print</span><span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>    <span class="c1"># Substitute foo for bar on lines matching regexp</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="p">{</span><span class="nb">sub</span><span class="p">(</span><span class="sr">/</span><span class="se">[</span><span class="sr"> </span><span class="se">\t]</span><span class="sr">*$/</span><span class="p">,</span> <span class="s2">""</span><span class="p">);</span><span class="k">print</span><span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>              <span class="c1"># Delete trailing white space (spaces, tabs)</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="p">{</span><span class="nb">sub</span><span class="p">(</span><span class="sr">/^</span><span class="se">[</span><span class="sr"> </span><span class="se">\t]</span><span class="sr">+/</span><span class="p">,</span> <span class="s2">""</span><span class="p">);</span> <span class="k">print</span><span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span>             <span class="c1"># Delete leading white space</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="o">/</span><span class="nx">regexp</span><span class="o">/</span><span class="p">{</span><span class="nb">sub</span><span class="p">(</span><span class="sr">/^/</span><span class="p">,</span> <span class="s2">"++++"</span><span class="p">);</span> <span class="k">print</span><span class="p">;</span><span class="k">next</span><span class="p">;}{</span><span class="k">print</span><span class="p">}</span><span class="err">'</span> <span class="nx">file</span><span class="p">.</span><span class="nx">txt</span> <span class="c1"># Add some characters at the beginning of matching lines. Add ++++ at lines matching regexp.</span>
+<span class="nx">gcc</span> <span class="o">-</span><span class="nx">Wall</span> <span class="nx">main</span><span class="p">.</span><span class="nx">c</span> <span class="o">|</span><span class="err">&amp;</span> <span class="nx">awk</span> <span class="err">'</span><span class="o">/</span><span class="p">:</span> <span class="nx">warning</span><span class="p">:</span><span class="o">/</span><span class="p">{</span><span class="k">print</span> <span class="s2">"\x1B[01;31m"</span> <span class="nv">$0</span> <span class="s2">"\x1B[m"</span><span class="p">;</span><span class="k">next</span><span class="p">;}{</span><span class="k">print</span><span class="p">}</span><span class="err">'</span> <span class="c1"># Color gcc warnings in red. The `\x1B` means the ascii character with hex number 1B (ESC).</span>
+</code></pre></div></div>
+
+<h4 id="renaming-files-with-awk">Renaming files with AWK</h4>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">ls</span> <span class="o">*</span><span class="p">.</span><span class="nx">MP3</span> <span class="o">|</span> <span class="nx">awk</span> <span class="err">'</span><span class="p">{</span> <span class="k">printf</span><span class="p">(</span><span class="s2">"mv \"%s\" \"%s\"\n"</span><span class="p">,</span> <span class="nv">$0</span><span class="p">,</span> <span class="nb">tolower</span><span class="p">(</span><span class="nv">$0</span><span class="p">))</span> <span class="p">}</span><span class="err">'</span>      <span class="c1"># Rename all .MP3 file to be lower case</span>
+<span class="nx">ls</span> <span class="o">*</span><span class="p">.</span><span class="nx">MP3</span> <span class="o">|</span> <span class="nx">awk</span> <span class="err">'</span><span class="p">{</span> <span class="k">printf</span><span class="p">(</span><span class="s2">"mv \"%s\" \"%s\"\n"</span><span class="p">,</span> <span class="nv">$0</span><span class="p">,</span> <span class="nb">tolower</span><span class="p">(</span><span class="nv">$0</span><span class="p">))</span> <span class="p">}</span><span class="err">'</span> <span class="o">|</span> <span class="nx">sh</span> <span class="c1"># The above will just print what would happen. To actually execute it you run</span>
+</code></pre></div></div>
+<p>Substitute a regexp pattern with a given replacement string. We can e.g replace “ “ (spaces in the file names) by “-“:</p>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">ls</span> <span class="o">|</span> <span class="nx">awk</span> <span class="err">'</span><span class="p">{</span> <span class="k">printf</span><span class="p">(</span><span class="s2">"mv \"%s\" \"%s\"\n"</span><span class="p">,</span> <span class="nv">$0</span><span class="p">,</span> <span class="nx">gensub</span><span class="p">(</span><span class="sr">/ +/</span><span class="p">,</span><span class="s2">"-"</span><span class="p">,</span><span class="s2">"g"</span><span class="p">))</span> <span class="p">}</span><span class="err">'</span>      <span class="c1"># Dryrun: prints what would happen.</span>
+<span class="nx">ls</span> <span class="o">|</span> <span class="nx">awk</span> <span class="err">'</span><span class="p">{</span> <span class="k">printf</span><span class="p">(</span><span class="s2">"mv \"%s\" \"%s\"\n"</span><span class="p">,</span> <span class="nv">$0</span><span class="p">,</span> <span class="nx">gensub</span><span class="p">(</span><span class="sr">/ +/</span><span class="p">,</span><span class="s2">"-"</span><span class="p">,</span><span class="s2">"g"</span><span class="p">))</span> <span class="p">}</span><span class="err">'</span> <span class="o">|</span> <span class="nx">sh</span> <span class="c1">#  Actually executes the substitution.</span>
+</code></pre></div></div>
+<p>The gensub function reads the strings from <code class="language-plaintext highlighter-rouge">$0</code> (=current line) and returns the modified string. The third argument, the “g”, means to find and replace everywhere (globally) on the current line.</p>
+
+<h4 id="awk-as-a-command-line-calculator">AWK as a command-line calculator</h4>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span><span class="p">{</span><span class="k">print</span> <span class="mf">3.1</span><span class="o">+</span><span class="mi">4</span><span class="o">/</span><span class="mi">2</span><span class="p">}</span><span class="err">'</span>                 <span class="c1"># This prints 5.1</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span><span class="p">{</span><span class="k">print</span> <span class="nb">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)}</span><span class="err">'</span>                 <span class="c1"># This prints 1.41421</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span><span class="p">{</span><span class="k">print</span> <span class="mi">2</span><span class="o">^</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)}</span><span class="err">'</span>                 <span class="c1"># This prints 1.41421</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span><span class="p">{</span><span class="k">printf</span> <span class="s2">"%.15f\n"</span><span class="p">,</span><span class="mi">4</span><span class="o">*</span><span class="nb">atan2</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)}</span><span class="err">'</span> <span class="c1"># This prints 3.141592653589793 (PI with a 15 digits behind the decimal point)</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span><span class="p">{</span><span class="k">printf</span> <span class="s2">"0x%x\n"</span><span class="p">,</span> <span class="mi">32</span><span class="p">}</span><span class="err">'</span>           <span class="c1"># Print decimal number as hex (this prints 0x20)</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span><span class="p">{</span><span class="k">print</span> <span class="nx">strtonum</span><span class="p">(</span><span class="mi">0</span><span class="nx">x20</span><span class="p">)}</span><span class="err">'</span>          <span class="c1"># Convert hex string to decimal (this prints 32)</span>
+</code></pre></div></div>
+
+<p>Math operators in gnu awk:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">+ - * /</code></li>
+  <li><code class="language-plaintext highlighter-rouge">^ or **</code>: Exponentiation</li>
+  <li><code class="language-plaintext highlighter-rouge">%</code>: Modulo</li>
+  <li><code class="language-plaintext highlighter-rouge">exp(), log()</code>: Exponential function and natural logarithm</li>
+  <li><code class="language-plaintext highlighter-rouge">atan2(y, x), sin(), cos()</code>: work all in radians (fraction of PI)</li>
+  <li><code class="language-plaintext highlighter-rouge">sqrt()</code> same as <code class="language-plaintext highlighter-rouge">**(1/2)</code>: Square root</li>
+  <li><code class="language-plaintext highlighter-rouge">strtonum()</code>: Convert hex (start with 0x) and octal (start with 0) to decimal</li>
+</ul>
+
+<p>If you want to use this frequently then you could put this into your .bashrc file:</p>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># add the awc function to .basrc</span>
+<span class="c1"># use awc like this: awc "3.4+2+8+99.2" (do not forget the quotes)</span>
+<span class="nx">awc</span><span class="p">(){</span> <span class="nx">awk</span> <span class="s2">"BEGIN{ print $* }"</span> <span class="p">;}</span>
+</code></pre></div></div>
+<p>On the shell you can then type <code class="language-plaintext highlighter-rouge">awc "3.4+2+8+99.2"</code> and it will print <code class="language-plaintext highlighter-rouge">112.6</code>.</p>
+
+<h3 id="awk-program">Awk Program</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">BEGIN</span>          <span class="p">{</span><span class="o">&lt;</span><span class="nx">initializations</span><span class="o">&gt;</span><span class="p">}</span> 
+   <span class="o">&lt;</span><span class="nx">pattern</span> <span class="mi">1</span><span class="o">&gt;</span> <span class="p">{</span><span class="o">&lt;</span><span class="nx">program</span> <span class="nx">actions</span><span class="o">&gt;</span><span class="p">}</span> 
+   <span class="o">&lt;</span><span class="nx">pattern</span> <span class="mi">2</span><span class="o">&gt;</span> <span class="p">{</span><span class="o">&lt;</span><span class="nx">program</span> <span class="nx">actions</span><span class="o">&gt;</span><span class="p">}</span> 
+   <span class="p">...</span>
+<span class="kr">END</span>            <span class="p">{</span><span class="o">&lt;</span> <span class="nx">final</span> <span class="nx">actions</span> <span class="o">&gt;</span><span class="p">}</span>
+</code></pre></div></div>
+
+<p>Example:</p>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span>
+    <span class="kr">BEGIN</span> <span class="p">{</span> <span class="k">print</span> <span class="s2">"\n&gt;&gt;&gt;Start"</span> <span class="p">}</span>
+    <span class="o">!</span><span class="sr">/</span><span class="se">(</span><span class="sr">login|shutdown</span><span class="se">)</span><span class="sr">/</span> <span class="p">{</span> <span class="k">print</span> <span class="kc">NR</span><span class="p">,</span> <span class="nv">$0</span> <span class="p">}</span>
+    <span class="kr">END</span> <span class="p">{</span> <span class="k">print</span> <span class="s2">"&lt;&lt;&lt;END\n"</span> <span class="p">}</span>
+<span class="err">'</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">passwd</span>
+</code></pre></div></div>
+
+<h3 id="variables">Variables</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="o">-</span><span class="nx">F</span><span class="p">:</span> <span class="err">'</span><span class="p">{</span><span class="k">print</span> <span class="nv">$1</span><span class="p">,</span><span class="nv">$NF</span><span class="p">}</span><span class="err">'</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">passwd</span>     <span class="c1"># Prints first and last field</span>
+<span class="nx">awk</span> <span class="o">-</span><span class="nx">F</span><span class="p">:</span> <span class="err">'</span><span class="p">{</span><span class="k">print</span> <span class="kc">NR</span><span class="p">,</span> <span class="nv">$0</span><span class="p">}</span><span class="err">'</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">passwd</span>     <span class="c1"># Prints with line number</span>
+<span class="nx">awk</span> <span class="o">-</span><span class="nx">F</span><span class="p">:</span> <span class="err">'</span><span class="p">{</span><span class="k">print</span> <span class="nv">$</span><span class="p">(</span><span class="kc">NF</span><span class="o">-</span><span class="mi">1</span><span class="p">)}</span><span class="err">'</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">passwd</span>    <span class="c1"># Prints second last field</span>
+<span class="nx">awk</span> <span class="o">-</span><span class="nx">F</span><span class="p">:</span> <span class="err">'</span><span class="p">{</span><span class="k">print</span> <span class="nv">$1</span> <span class="s2">"="</span> <span class="nv">$6</span><span class="p">}</span><span class="err">'</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">passwd</span>  <span class="c1"># Prints first and sixth fields and custom string = in between</span>
+</code></pre></div></div>
+
+<h3 id="conditions--loops">Conditions &amp; Loops</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="p">{</span><span class="k">if</span> <span class="p">(</span><span class="nv">$3</span><span class="o">&gt;</span><span class="mi">30</span><span class="p">)</span> <span class="k">print</span> <span class="nv">$1</span><span class="p">}</span><span class="err">'</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">passwd</span>
+</code></pre></div></div>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span><span class="p">{</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nx">a</span><span class="o">++</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">)</span>
+        <span class="nx">s</span><span class="o">=</span><span class="nx">s</span> <span class="s2">" "</span><span class="p">;</span>
+    <span class="k">print</span> <span class="nx">s</span>
+<span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<h3 id="arrays">Arrays</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+   <span class="nx">fruits</span><span class="p">[</span><span class="s2">"mango"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"yellow"</span><span class="p">;</span>
+   <span class="nx">fruits</span><span class="p">[</span><span class="s2">"orange"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"orange"</span>
+   <span class="k">print</span> <span class="nx">fruits</span><span class="p">[</span><span class="s2">"orange"</span><span class="p">]</span> 
+   <span class="k">print</span> <span class="nx">fruits</span><span class="p">[</span><span class="s2">"mango"</span><span class="p">]</span>
+<span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<h3 id="functions">Functions</h3>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># =&gt; 5</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span><span class="p">{</span><span class="k">print</span> <span class="nb">length</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">)}</span><span class="err">'</span>
+<span class="c1"># =&gt; HELLO</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span><span class="p">{</span><span class="k">print</span> <span class="nb">toupper</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">)}</span><span class="err">'</span>
+<span class="c1"># =&gt; hel</span>
+<span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span><span class="p">{</span><span class="k">print</span> <span class="nb">substr</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<h2 id="variables-1">Variables</h2>
+
+<h3 id="build-in-variables">Build-in Variables</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$0</span>           <span class="c1"># Whole line                    </span>
+<span class="nv">$1</span><span class="p">,</span> <span class="nv">$2</span><span class="p">...</span><span class="nv">$NF</span> <span class="c1"># First, second… last field     </span>
+<span class="kc">NR</span>           <span class="c1"># Total `N`umber of `R`ecords   </span>
+<span class="kc">NF</span>           <span class="c1"># `N`number of `F`ields         </span>
+<span class="kc">OFS</span>          <span class="c1"># `O`utput `F`ield `S`eparator  &lt;br&gt; _(default " ")_ </span>
+<span class="kc">FS</span>           <span class="c1"># input `F`ield `S`eparator &lt;br&gt; _(default " ")_     </span>
+<span class="kc">ORS</span>          <span class="c1"># `O`utput `R`ecord `S`eparator &lt;br&gt; _(default "\n")_</span>
+<span class="kc">RS</span>           <span class="c1"># input `R`ecord `S`eparator &lt;br&gt; _(default "\n")_   </span>
+<span class="kc">FILENAME</span>     <span class="c1"># Name of the file  </span>
+</code></pre></div></div>
+
+<h3 id="expressions">Expressions</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$1</span> <span class="o">==</span> <span class="s2">"root"</span>      <span class="c1"># First field equals root </span>
+<span class="p">{</span><span class="k">print</span> <span class="nv">$</span><span class="p">(</span><span class="kc">NF</span><span class="o">-</span><span class="mi">1</span><span class="p">)}</span>   <span class="c1"># Second last field</span>
+<span class="kc">NR</span><span class="o">!=</span><span class="mi">1</span><span class="p">{</span><span class="k">print</span> <span class="nv">$0</span><span class="p">}</span>   <span class="c1"># From 2th record  </span>
+<span class="kc">NR</span> <span class="o">&gt;</span> <span class="mi">3</span>            <span class="c1"># From 4th record  </span>
+<span class="kc">NR</span> <span class="o">==</span> <span class="mi">1</span>           <span class="c1"># First record     </span>
+<span class="kr">END</span><span class="p">{</span><span class="k">print</span> <span class="kc">NR</span><span class="p">}</span>     <span class="c1"># Total records    </span>
+<span class="kr">BEGIN</span><span class="p">{</span><span class="k">print</span> <span class="kc">OFMT</span><span class="p">}</span> <span class="c1"># Output format    </span>
+<span class="p">{</span><span class="k">print</span> <span class="kc">NR</span><span class="p">,</span> <span class="nv">$0</span><span class="p">}</span>    <span class="c1"># Line number      </span>
+<span class="p">{</span><span class="k">print</span> <span class="kc">NR</span> <span class="s2">"	"</span> <span class="nv">$0</span><span class="p">}</span> <span class="c1"># Line number (tab)</span>
+<span class="p">{</span><span class="nv">$1</span> <span class="o">=</span> <span class="kc">NR</span><span class="p">;</span> <span class="k">print</span><span class="p">}</span>  <span class="c1"># Replace 1th field with line number</span>
+<span class="nv">$NF</span> <span class="o">&gt;</span> <span class="mi">4</span>           <span class="c1"># Last field &gt; 4      </span>
+<span class="kc">NR</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>       <span class="c1"># Even records        </span>
+<span class="kc">NR</span><span class="o">==</span><span class="mi">10</span><span class="p">,</span> <span class="kc">NR</span><span class="o">==</span><span class="mi">20</span>    <span class="c1"># Records 10 to 20    </span>
+<span class="kr">BEGIN</span><span class="p">{</span><span class="k">print</span> <span class="kc">ARGC</span><span class="p">}</span> <span class="c1"># Total arguments     </span>
+<span class="kc">ORS</span><span class="o">=</span><span class="kc">NR</span><span class="o">%</span><span class="mi">5</span><span class="p">?</span><span class="s2">","</span><span class="p">:</span><span class="s2">"\n"</span> <span class="c1"># Concatenate records </span>
+</code></pre></div></div>
+
+<h3 id="examples">Examples</h3>
+
+<p>Print sum and average</p>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="o">-</span><span class="nx">F</span><span class="p">:</span> <span class="err">'</span><span class="p">{</span><span class="nx">sum</span> <span class="o">+=</span> <span class="nv">$3</span><span class="p">}</span>
+     <span class="kr">END</span> <span class="p">{</span> <span class="k">print</span> <span class="nx">sum</span><span class="p">,</span> <span class="nx">sum</span><span class="o">/</span><span class="kc">NR</span> <span class="p">}</span>
+<span class="err">'</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">passwd</span>
+</code></pre></div></div>
+
+<p>Printing parameters</p>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="kc">ARGC</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="k">print</span> <span class="kc">ARGV</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">}</span><span class="err">'</span> <span class="nx">a</span> <span class="nx">b</span> <span class="nx">c</span>
+</code></pre></div></div>
+
+<p>Output field separator as a comma</p>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span> <span class="kc">FS</span><span class="o">=</span><span class="s2">":"</span><span class="p">;</span><span class="kc">OFS</span><span class="o">=</span><span class="s2">","</span><span class="p">}</span>
+    <span class="p">{</span><span class="k">print</span> <span class="nv">$1</span><span class="p">,</span><span class="nv">$2</span><span class="p">,</span><span class="nv">$3</span><span class="p">,</span><span class="nv">$4</span><span class="p">}</span><span class="err">'</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">passwd</span>
+</code></pre></div></div>
+
+<p>Position of match</p>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">match</span><span class="p">(</span><span class="s2">"One Two Three"</span><span class="p">,</span> <span class="s2">"Tw"</span><span class="p">))</span>
+        <span class="k">print</span> <span class="nx">RSTART</span> <span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<p>Length of match</p>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">match</span><span class="p">(</span><span class="s2">"One Two Three"</span><span class="p">,</span> <span class="s2">"re"</span><span class="p">))</span>
+        <span class="k">print</span> <span class="nx">RLENGTH</span> <span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<h3 id="environment-variables">Environment Variables</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kc">ARGC</span>    <span class="c1"># Number or arguments </span>
+<span class="kc">ARGV</span>    <span class="c1"># Array of arguments  </span>
+<span class="kc">FNR</span>     <span class="c1"># `F`ile `N`umber of `R`ecords     </span>
+<span class="kc">OFMT</span>    <span class="c1"># Format for numbers       &lt;br&gt; _(default "%.6g")_         </span>
+<span class="nx">RSTART</span>  <span class="c1"># Location in the string  </span>
+<span class="nx">RLENGTH</span> <span class="c1"># Length of match         </span>
+<span class="kc">SUBSEP</span>  <span class="c1"># Multi-dimensional array separator &lt;br&gt; _(default "\034")_</span>
+<span class="nx">ARGIND</span>  <span class="c1"># Argument Index  </span>
+</code></pre></div></div>
+
+<h3 id="gnu-awk-only">GNU awk only</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kc">ENVIRON</span>     <span class="c1"># Environment variables</span>
+<span class="nx">IGNORECASE</span>  <span class="c1"># Ignore case       </span>
+<span class="kc">CONVFMT</span>     <span class="c1"># Conversion format </span>
+<span class="nx">ERRNO</span>       <span class="c1"># System errors     </span>
+<span class="nx">FIELDWIDTHS</span> <span class="c1"># Fixed width fields</span>
+</code></pre></div></div>
+
+<h3 id="defining-variable">Defining Variable</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="o">-</span><span class="nx">v</span> <span class="nx">var1</span><span class="o">=</span><span class="s2">"Hello"</span> <span class="o">-</span><span class="nx">v</span> <span class="nx">var2</span><span class="o">=</span><span class="s2">"Wold"</span> <span class="err">'</span>
+    <span class="kr">END</span> <span class="p">{</span><span class="k">print</span> <span class="nx">var1</span><span class="p">,</span> <span class="nx">var2</span><span class="p">}</span>
+<span class="err">'</span> <span class="o">&lt;</span><span class="sr">/dev/</span><span class="nx">null</span>
+</code></pre></div></div>
+
+<h4 id="use-shell-variables">Use Shell Variables</h4>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="o">-</span><span class="nx">v</span> <span class="nx">varName</span><span class="o">=</span><span class="s2">"$PWD"</span> <span class="err">'</span>
+    <span class="kr">END</span> <span class="p">{</span><span class="k">print</span> <span class="nx">varName</span><span class="p">}</span><span class="err">'</span> <span class="o">&lt;</span><span class="sr">/dev/</span><span class="nx">null</span>
+</code></pre></div></div>
+
+<h2 id="operators">Operators</h2>
+
+<h3 id="operators-1">Operators</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">|</span> <span class="err">`</span><span class="p">{</span><span class="k">print</span> <span class="nv">$1</span><span class="p">}</span>     <span class="o">|</span> <span class="nx">First</span> <span class="nx">field</span> <span class="o">|</span>
+<span class="o">|</span> <span class="err">`</span><span class="nv">$2</span> <span class="o">==</span> <span class="s2">"foo"</span>    <span class="o">|</span> <span class="nx">Equals</span>      <span class="o">|</span>
+<span class="o">|</span> <span class="err">`</span><span class="nv">$2</span> <span class="o">!=</span> <span class="s2">"foo"</span>    <span class="o">|</span> <span class="nx">Not</span> <span class="nx">equals</span>  <span class="o">|</span>
+<span class="o">|</span> <span class="err">`</span><span class="s2">"foo"</span> <span class="o">in</span> <span class="nx">array</span> <span class="o">|</span> <span class="nx">In</span> <span class="nx">array</span>    <span class="o">|</span>
+</code></pre></div></div>
+
+<h4 id="regular-expression">Regular Expression</h4>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">|</span> <span class="err">`</span><span class="o">/</span><span class="nx">regex</span><span class="o">/</span>       <span class="o">|</span> <span class="nx">Line</span> <span class="nx">matches</span>      <span class="o">|</span>
+<span class="o">|</span> <span class="err">`</span><span class="o">!</span><span class="sr">/regex/</span>      <span class="o">|</span> <span class="nx">Line</span> <span class="nx">not</span> <span class="nx">matches</span>  <span class="o">|</span>
+<span class="o">|</span> <span class="err">`</span><span class="nv">$1</span> <span class="o">~</span> <span class="sr">/regex/</span>  <span class="o">|</span> <span class="nx">Field</span> <span class="nx">matches</span>     <span class="o">|</span>
+<span class="o">|</span> <span class="err">`</span><span class="nv">$1</span> <span class="o">!~</span> <span class="sr">/regex/</span> <span class="o">|</span> <span class="nx">Field</span> <span class="nx">not</span> <span class="nx">matches</span> <span class="o">|</span>
+</code></pre></div></div>
+
+<h4 id="more-conditions">More conditions</h4>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">|</span> <span class="err">`</span><span class="p">(</span><span class="nv">$2</span> <span class="o">&lt;=</span> <span class="mi">4</span> <span class="o">||</span> <span class="nv">$3</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">)</span> <span class="o">|</span> <span class="nx">Or</span>  <span class="o">|</span>
+<span class="o">|</span> <span class="err">`</span><span class="p">(</span><span class="nv">$1</span> <span class="o">==</span> <span class="mi">4</span> <span class="o">&amp;&amp;</span> <span class="nv">$3</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">)</span>   <span class="o">|</span> <span class="nx">And</span> <span class="o">|</span>
+</code></pre></div></div>
+
+<h3 id="operations">Operations</h3>
+
+<h4 id="arithmetic-operations">Arithmetic Operations</h4>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">+</span>
+<span class="o">-</span>  
+<span class="o">*</span>  
+<span class="sr">/ </span><span class="err"> 
+</span><span class="o">%</span>  
+<span class="o">++</span> 
+<span class="o">--</span> 
+</code></pre></div></div>
+
+<h4 id="shorthand-assignments">Shorthand Assignments</h4>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">+=</span> 
+<span class="o">-=</span> 
+<span class="o">*=</span> 
+<span class="sr">/=</span><span class="err"> 
+</span><span class="o">%=</span> 
+</code></pre></div></div>
+
+<h4 id="comparison-operators">Comparison Operators</h4>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">==</span>
+<span class="o">!=</span>
+<span class="o">&lt;</span>
+<span class="o">&gt;</span>
+<span class="o">&lt;=</span>
+<span class="o">&gt;=</span>
+</code></pre></div></div>
+
+<h3 id="examples-1">Examples</h3>
+
+<p>Match</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>awk 'BEGIN {
+    if ("foo" ~ "^fo+$")
+        print "Fooey!";
+}'
+</code></pre></div></div>
+
+<p>Not Match</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>awk 'BEGIN {
+    if ("boo" !~ "^fo+$")
+        print "Boo!";
+}'
+</code></pre></div></div>
+
+<p>If in Array</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>awk 'BEGIN {
+    assoc["foo"] = "bar";
+    assoc["bar"] = "baz";
+    if ("foo" in assoc)
+        print "Fooey!";
+}'
+</code></pre></div></div>
+
+<h2 id="functions-1">Functions</h2>
+
+<h3 id="common-functions">Common Functions</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">index</span><span class="p">(</span><span class="nx">s</span><span class="p">,</span><span class="nx">t</span><span class="p">)</span>          <span class="c1"># Position in string s where string t occurs, 0 if not found  </span>
+<span class="nb">length</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span>           <span class="c1"># Length of string s (or $0 if no arg)                        </span>
+<span class="nb">rand</span>                <span class="c1"># Random number between 0 and 1                               </span>
+<span class="nb">substr</span><span class="p">(</span><span class="nx">s</span><span class="p">,</span><span class="nb">index</span><span class="p">,</span><span class="nx">len</span><span class="p">)</span> <span class="c1"># Return len-char substring of s that begins at index (counted from 1)           </span>
+<span class="nb">srand</span>               <span class="c1"># Set seed for rand and return previous seed                    </span>
+<span class="nb">int</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span>              <span class="c1"># Truncate x to integer value                                   </span>
+<span class="nb">split</span><span class="p">(</span><span class="nx">s</span><span class="p">,</span><span class="nx">a</span><span class="p">,</span><span class="nx">fs</span><span class="p">)</span>       <span class="c1"># Split string s into array a split by fs, returning length of a</span>
+<span class="nb">match</span><span class="p">(</span><span class="nx">s</span><span class="p">,</span><span class="nx">r</span><span class="p">)</span>          <span class="c1"># Position in string s where regex r occurs, or 0 if not found  </span>
+<span class="nb">sub</span><span class="p">(</span><span class="nx">r</span><span class="p">,</span><span class="nx">t</span><span class="p">,</span><span class="nx">s</span><span class="p">)</span>          <span class="c1"># Substitute t for first occurrence of regex r in string s (or $0 if s not given)</span>
+<span class="nb">gsub</span><span class="p">(</span><span class="nx">r</span><span class="p">,</span><span class="nx">t</span><span class="p">,</span><span class="nx">s</span><span class="p">)</span>         <span class="c1"># Substitute t for all occurrences of regex r in string s</span>
+<span class="nb">system</span><span class="p">(</span><span class="nx">cmd</span><span class="p">)</span>         <span class="c1"># Execute cmd and return exit status                     </span>
+<span class="nb">tolower</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span>          <span class="c1"># String s to lowercase                                  </span>
+<span class="nb">toupper</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span>          <span class="c1"># String s to uppercase                                  </span>
+<span class="k">getline</span>             <span class="c1"># Set $0 to next input record from current input file.   </span>
+</code></pre></div></div>
+
+<h3 id="user-defined-function">User Defined Function</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span>
+    <span class="c1"># Returns minimum number</span>
+    <span class="kd">function</span> <span class="nx">find_min</span><span class="p">(</span><span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">){</span>
+       <span class="k">if</span> <span class="p">(</span><span class="nx">num1</span> <span class="o">&lt;</span> <span class="nx">num2</span><span class="p">)</span>
+       <span class="k">return</span> <span class="nx">num1</span>
+       <span class="k">return</span> <span class="nx">num2</span>
+    <span class="p">}</span>
+    <span class="c1"># Returns maximum number</span>
+    <span class="kd">function</span> <span class="nx">find_max</span><span class="p">(</span><span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">){</span>
+       <span class="k">if</span> <span class="p">(</span><span class="nx">num1</span> <span class="o">&gt;</span> <span class="nx">num2</span><span class="p">)</span>
+       <span class="k">return</span> <span class="nx">num1</span>
+       <span class="k">return</span> <span class="nx">num2</span>
+    <span class="p">}</span>
+    <span class="c1"># Main function</span>
+    <span class="kd">function</span> <span class="nx">main</span><span class="p">(</span><span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">){</span>
+       <span class="nx">result</span> <span class="o">=</span> <span class="nx">find_min</span><span class="p">(</span><span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">)</span>
+       <span class="k">print</span> <span class="s2">"Minimum ="</span><span class="p">,</span> <span class="nx">result</span>
+      
+       <span class="nx">result</span> <span class="o">=</span> <span class="nx">find_max</span><span class="p">(</span><span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">)</span>
+       <span class="k">print</span> <span class="s2">"Maximum ="</span><span class="p">,</span> <span class="nx">result</span>
+    <span class="p">}</span>
+    <span class="c1"># Script execution starts here</span>
+    <span class="kr">BEGIN</span> <span class="p">{</span>
+       <span class="nx">main</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="err">'</span>
+</code></pre></div></div>
+
+<h2 id="arrays-1">Arrays</h2>
+
+<h3 id="array-with-index">Array with Index</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"foo"</span><span class="p">;</span>
+    <span class="nx">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"bar"</span><span class="p">;</span>
+    <span class="k">print</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span> <span class="c1"># =&gt; foo</span>
+    <span class="k">delete</span> <span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+    <span class="k">print</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span> <span class="c1"># =&gt; ""</span>
+<span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<h3 id="array-with-key">Array with Key</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="nx">assoc</span><span class="p">[</span><span class="s2">"foo"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"bar"</span><span class="p">;</span>
+    <span class="nx">assoc</span><span class="p">[</span><span class="s2">"bar"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"baz"</span><span class="p">;</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">"baz"</span> <span class="o">in</span> <span class="nx">assoc</span><span class="p">);</span> <span class="c1"># =&gt; 0</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">"foo"</span> <span class="o">in</span> <span class="nx">assoc</span><span class="p">);</span> <span class="c1"># =&gt; 1</span>
+<span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<h3 id="array-with-split">Array with Split</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="nb">split</span><span class="p">(</span><span class="s2">"foo:bar:baz"</span><span class="p">,</span> <span class="nx">arr</span><span class="p">,</span> <span class="s2">":"</span><span class="p">);</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nx">key</span> <span class="o">in</span> <span class="nx">arr</span><span class="p">)</span>
+        <span class="k">print</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">key</span><span class="p">];</span>
+<span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<h3 id="array-with-asort">Array with Asort</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="nx">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="nx">arr</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span>
+    <span class="nx">n</span> <span class="o">=</span> <span class="nx">asort</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="nx">n</span> <span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
+<span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<h3 id="multi-dimensional">Multi-dimensional</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="nx">multidim</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"foo"</span><span class="p">;</span>
+    <span class="nx">multidim</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"bar"</span><span class="p">;</span>
+    <span class="nx">multidim</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"baz"</span><span class="p">;</span>
+    <span class="nx">multidim</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"boo"</span><span class="p">;</span>
+<span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<h3 id="multi-dimensional-iteration">Multi-Dimensional Iteration</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="nx">array</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span>
+    <span class="nx">array</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="mi">5</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nx">comb</span> <span class="o">in</span> <span class="nx">array</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nb">split</span><span class="p">(</span><span class="nx">comb</span><span class="p">,</span><span class="nx">sep</span><span class="p">,</span><span class="kc">SUBSEP</span><span class="p">);</span>
+        <span class="k">print</span> <span class="nx">sep</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="nx">sep</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> 
+        <span class="nx">array</span><span class="p">[</span><span class="nx">sep</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="nx">sep</span><span class="p">[</span><span class="mi">2</span><span class="p">]]</span>
+    <span class="p">}</span>
+<span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<h2 id="conditions">Conditions</h2>
+
+<h3 id="if-else-statement">if-else Statement</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="o">-</span><span class="nx">v</span> <span class="nx">count</span><span class="o">=</span><span class="mi">2</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">count</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">print</span> <span class="s2">"Yes"</span><span class="p">;</span>
+    <span class="k">else</span>
+        <span class="k">print</span> <span class="s2">"Huh?"</span><span class="p">;</span>
+<span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<h4 id="ternary-operator">Ternary operator</h4>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="o">-</span><span class="nx">v</span> <span class="nx">count</span><span class="o">=</span><span class="mi">2</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="k">print</span> <span class="p">(</span><span class="nx">count</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span> <span class="p">?</span> <span class="s2">"Yes"</span> <span class="p">:</span> <span class="s2">"Huh?"</span><span class="p">;</span>
+<span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<h3 id="examples-2">Examples</h3>
+
+<p>Exists:</p>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="nx">assoc</span><span class="p">[</span><span class="s2">"foo"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"bar"</span><span class="p">;</span>
+    <span class="nx">assoc</span><span class="p">[</span><span class="s2">"bar"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"baz"</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="s2">"foo"</span> <span class="o">in</span> <span class="nx">assoc</span><span class="p">)</span>
+        <span class="k">print</span> <span class="s2">"Fooey!"</span><span class="p">;</span>
+<span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<p>Not exists:</p>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="nx">assoc</span><span class="p">[</span><span class="s2">"foo"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"bar"</span><span class="p">;</span>
+    <span class="nx">assoc</span><span class="p">[</span><span class="s2">"bar"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"baz"</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="s2">"Huh"</span> <span class="o">in</span> <span class="nx">assoc</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">)</span>
+        <span class="k">print</span> <span class="s2">"Huh!"</span><span class="p">;</span>
+<span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<h3 id="switch">switch</h3>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="o">-</span><span class="nx">F</span><span class="p">:</span> <span class="err">'</span><span class="p">{</span>
+    <span class="nx">switch</span> <span class="p">(</span><span class="kc">NR</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">case</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="nx">case</span> <span class="s2">"11"</span><span class="p">:</span>
+            <span class="k">print</span> <span class="kc">NR</span> <span class="o">-</span> <span class="mi">1</span>
+            <span class="k">break</span>
+        
+        <span class="nx">case</span> <span class="o">/</span><span class="mi">2</span><span class="p">[[:</span><span class="nx">digit</span><span class="p">:]]</span><span class="o">+</span><span class="sr">/</span><span class="err">:
+</span>            <span class="k">print</span> <span class="kc">NR</span>
+        
+        <span class="nx">default</span><span class="p">:</span>
+            <span class="k">print</span> <span class="kc">NR</span> <span class="o">+</span> <span class="mi">1</span>
+        
+        <span class="nx">case</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+            <span class="k">print</span> <span class="kc">NR</span> <span class="o">*</span> <span class="o">-</span><span class="mi">1</span>
+    <span class="p">}</span>
+<span class="p">}</span><span class="err">'</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">passwd</span>
+</code></pre></div></div>
+
+<h2 id="loops">Loops</h2>
+
+<h3 id="fori">for…i</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="k">print</span> <span class="s2">"i="</span> <span class="nx">i</span><span class="p">;</span>
+<span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<h3 id="forin">for…in</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="nx">assoc</span><span class="p">[</span><span class="s2">"key1"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"val1"</span>
+    <span class="nx">assoc</span><span class="p">[</span><span class="s2">"key2"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"val2"</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nx">key</span> <span class="o">in</span> <span class="nx">assoc</span><span class="p">)</span>
+        <span class="k">print</span> <span class="nx">assoc</span><span class="p">[</span><span class="nx">key</span><span class="p">];</span>
+<span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<h4 id="arguments">Arguments</h4>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nx">argnum</span> <span class="o">in</span> <span class="kc">ARGV</span><span class="p">)</span>
+        <span class="k">print</span> <span class="kc">ARGV</span><span class="p">[</span><span class="nx">argnum</span><span class="p">];</span>
+<span class="p">}</span><span class="err">'</span> <span class="nx">a</span> <span class="nx">b</span> <span class="nx">c</span>
+</code></pre></div></div>
+
+<h3 id="while">while</h3>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nx">a</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">print</span> <span class="s2">"- "</span> <span class="s2">" concatenation: "</span> <span class="nx">a</span>
+        <span class="nx">a</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<h3 id="dowhile">do…while</h3>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="p">{</span>
+    <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">do</span> <span class="p">{</span>
+        <span class="k">print</span> <span class="nv">$0</span>
+        <span class="nx">i</span><span class="o">++</span>
+    <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">)</span>
+<span class="p">}</span><span class="err">'</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">passwd</span>
+</code></pre></div></div>
+
+<h3 id="break">Break</h3>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="nx">break_num</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">print</span> <span class="nx">i</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">==</span> <span class="nx">break_num</span><span class="p">)</span>
+            <span class="k">break</span>
+    <span class="p">}</span>
+<span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<h3 id="continue">Continue</h3>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nx">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">x</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">x</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">==</span> <span class="mi">5</span> <span class="o">||</span> <span class="nx">x</span> <span class="o">==</span> <span class="mi">6</span><span class="p">)</span>
+            <span class="k">continue</span>
+        <span class="k">printf</span> <span class="s2">"%d "</span><span class="p">,</span> <span class="nx">x</span>
+    <span class="p">}</span>
+    <span class="k">print</span> <span class="s2">""</span>
+<span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<h3 id="examples-3">Examples</h3>
+
+<p>Powers of two between 1 and 100</p>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">;</span> <span class="nx">i</span> <span class="o">*=</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">print</span> <span class="nx">i</span>
+<span class="p">}</span><span class="err">'</span>
+</code></pre></div></div>
+
+<p>Reverse records</p>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="o">-</span><span class="nx">F</span><span class="p">:</span> <span class="err">'</span><span class="p">{</span> <span class="nx">x</span><span class="p">[</span><span class="kc">NR</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$0</span> <span class="p">}</span>
+    <span class="kr">END</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="kc">NR</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">--</span><span class="p">)</span>
+        <span class="k">print</span> <span class="nx">x</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span>
+    <span class="p">}</span>
+<span class="err">'</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">passwd</span>
+</code></pre></div></div>
+
+<p>Reverse fields</p>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="o">-</span><span class="nx">F</span><span class="p">:</span> <span class="err">'</span><span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="kc">NF</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">--</span><span class="p">)</span>
+        <span class="k">printf</span><span class="p">(</span><span class="s2">"%s "</span><span class="p">,</span><span class="nv">$i</span><span class="p">);</span>
+    <span class="k">print</span> <span class="s2">""</span>
+<span class="p">}</span><span class="err">'</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">passwd</span>
+</code></pre></div></div>
+
+<p>Sum by Record</p>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="o">-</span><span class="nx">F</span><span class="p">:</span> <span class="err">'</span><span class="p">{</span>
+    <span class="nx">s</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="kc">NF</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="nx">s</span> <span class="o">+=</span> <span class="nv">$i</span><span class="p">;</span>
+    <span class="k">print</span> <span class="nx">s</span>
+<span class="p">}</span><span class="err">'</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">passwd</span>
+</code></pre></div></div>
+
+<p>Sum whole file</p>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="o">-</span><span class="nx">F</span><span class="p">:</span> <span class="err">'</span>
+    <span class="p">{</span><span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="kc">NF</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="nx">s</span> <span class="o">+=</span> <span class="nv">$i</span><span class="p">;</span>
+    <span class="p">};</span>
+    <span class="kr">END</span><span class="p">{</span><span class="k">print</span> <span class="nx">s</span><span class="p">}</span>
+<span class="err">'</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">passwd</span>
+</code></pre></div></div>
+
+<h2 id="formatted-printing">Formatted Printing</h2>
+
+<h3 id="usage">Usage</h3>
+
+<h4 id="right-align">Right align</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>awk 'BEGIN{printf "|%10s|\n", "hello"}'
+
+|     hello|
+</code></pre></div></div>
+
+<h4 id="left-align">Left align</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>awk 'BEGIN{printf "|%-10s|\n", "hello"}'
+
+|hello     |
+</code></pre></div></div>
+
+<h3 id="common-specifiers">Common Specifiers</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Character</th>
+      <th style="text-align: left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">c</code></td>
+      <td style="text-align: left">ASCII character</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">d</code></td>
+      <td style="text-align: left">Decimal integer</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">e</code>, <code class="language-plaintext highlighter-rouge">E</code>, <code class="language-plaintext highlighter-rouge">f</code></td>
+      <td style="text-align: left">Floating-point format</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">o</code></td>
+      <td style="text-align: left">Unsigned octal value</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">s</code></td>
+      <td style="text-align: left">String</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">%</code></td>
+      <td style="text-align: left">Literal %</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="space">Space</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="o">-</span><span class="nx">F</span><span class="p">:</span> <span class="err">'</span><span class="p">{</span>
+    <span class="k">printf</span> <span class="s2">"%-10s %s\n"</span><span class="p">,</span> <span class="nv">$1</span><span class="p">,</span> <span class="nv">$</span><span class="p">(</span><span class="kc">NF</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="p">}</span><span class="err">'</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">passwd</span> <span class="o">|</span> <span class="nx">head</span> <span class="o">-</span><span class="nx">n</span> <span class="mi">3</span>
+</code></pre></div></div>
+<p>Outputs</p>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">root</span>       <span class="o">/</span><span class="nx">root</span>
+<span class="nx">bin</span>        <span class="o">/</span><span class="nx">bin</span>
+<span class="nx">daemon</span>     <span class="o">/</span><span class="nx">sbin</span>
+</code></pre></div></div>
+
+<h3 id="header">Header</h3>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">awk</span> <span class="o">-</span><span class="nx">F</span><span class="p">:</span> <span class="err">'</span><span class="kr">BEGIN</span> <span class="p">{</span>
+    <span class="k">printf</span> <span class="s2">"%-10s %s\n"</span><span class="p">,</span> <span class="s2">"User"</span><span class="p">,</span> <span class="s2">"Home"</span>
+    <span class="k">printf</span> <span class="s2">"%-10s %s\n"</span><span class="p">,</span> <span class="s2">"----"</span><span class="p">,</span><span class="s2">"----"</span><span class="p">}</span>
+    <span class="p">{</span> <span class="k">printf</span> <span class="s2">"%-10s %s\n"</span><span class="p">,</span> <span class="nv">$1</span><span class="p">,</span> <span class="nv">$</span><span class="p">(</span><span class="kc">NF</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">}</span>
+<span class="err">'</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">passwd</span> <span class="o">|</span> <span class="nx">head</span> <span class="o">-</span><span class="nx">n</span> <span class="mi">5</span>
+</code></pre></div></div>
+
+<p>Outputs</p>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">User</span>       <span class="nx">Home</span>
+<span class="o">----</span>       <span class="o">----</span>
+<span class="nx">root</span>       <span class="o">/</span><span class="nx">root</span>
+<span class="nx">bin</span>        <span class="o">/</span><span class="nx">bin</span>
+<span class="nx">daemon</span>     <span class="o">/</span><span class="nx">sbin</span>
+</code></pre></div></div>
+
+<h2 id="miscellaneous">Miscellaneous</h2>
+
+<h3 id="regex-metacharacters">Regex Metacharacters</h3>
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">\</span>
+<span class="o">^</span>
+<span class="nv">$</span>
+<span class="p">.</span>
+<span class="p">[</span>
+<span class="p">]</span>
+<span class="o">|</span>
+<span class="p">(</span>
+<span class="p">)</span>
+<span class="o">*</span>
+<span class="o">+</span>
+<span class="p">?</span>
+</code></pre></div></div>
+
+<h3 id="escape-sequences">Escape Sequences</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">\</span><span class="nx">b</span>  <span class="c1"># Backspace </span>
+<span class="err">\</span><span class="nx">f</span>  <span class="c1"># Form feed </span>
+<span class="err">\</span><span class="nx">n</span>  <span class="c1"># Newline (line feed)</span>
+<span class="err">\</span><span class="nx">r</span>  <span class="c1"># Carriage return</span>
+<span class="err">\</span><span class="nx">t</span>  <span class="c1"># Horizontal tab </span>
+<span class="err">\</span><span class="nx">v</span>  <span class="c1"># Vertical tab   </span>
+</code></pre></div></div>
+
+<h3 id="run-script">Run Script</h3>
+
+<div class="language-awk highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$</span> <span class="nx">cat</span> <span class="nx">demo</span><span class="p">.</span><span class="nx">awk</span>
+<span class="c1">#!/usr/bin/awk -f</span>
+<span class="kr">BEGIN</span> <span class="p">{</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">23</span> <span class="p">}</span>
+      <span class="p">{</span> <span class="nx">x</span> <span class="o">+=</span> <span class="mi">2</span> <span class="p">}</span>
+<span class="kr">END</span>   <span class="p">{</span> <span class="k">print</span> <span class="nx">x</span> <span class="p">}</span>
+<span class="nv">$</span> <span class="nx">awk</span> <span class="o">-</span><span class="nx">f</span> <span class="nx">demo</span><span class="p">.</span><span class="nx">awk</span> <span class="o">/</span><span class="nx">etc</span><span class="o">/</span><span class="nx">passwd</span>
+<span class="mi">69</span>
+</code></pre></div></div>
+
+<h2 id="source"><a href="https://quickref.me/awk" target="_blank">Source</a></h2>
+
+<h2 id="see-also">See Also</h2>
+
+<ul>
+  <li><a href="https://learnxinyminutes.com/docs/awk/" target="_blank">Learn X in Y minutes</a></li>
+  <li><a href="https://www.gnu.org/software/gawk/manual/gawk.html" target="_blank">GNU Awk User Guide</a></li>
+  <li><a href="https://en.wikibooks.org/wiki/AWK" target="_blank">Wikibooks</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/AWK" target="_blank">Wikipedia</a></li>
+  <li><a href="http://tuxgraphics.org/~guido/scripts/awk-one-liner.html" target="_blank">Awk one-liner collection</a></li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-06-17T20:20:24+02:00">2021-06-17</time></p>
+
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/references/cheatsheets/bash/" class="pagination--pager" title="Bash
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      <div align="center" style="margin: 1em 0;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- ad-unit_horizontal -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4699563125299312"
+             data-ad-slot="3532465338"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+
+    
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
+    <label class="sr-only" for="cse-search-input-box-id">
+      Enter your search term...
+    </label>
+    <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results">
+    <gcse:searchresults-only></gcse:searchresults-only>
+  </div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.linkedin.com/company/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+        
+          <li><a href="https://github.com/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+        
+          <li><a href="https://www.pinterest.com/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-pinterest" aria-hidden="true"></i> Pinterest</a></li>
+        
+      
+        
+          <li><a href="https://www.instagram.com/cfd.streamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/CfdStreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/CFD-Streamline-102236005421147/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 CFD Streamline. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<script>
+  (function () {
+    var cx = 'a390aa655bef0d717';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+  function googleCustomSearchExecute() {
+    var input = document.getElementById('cse-search-input-box-id');
+    var element = google.search.cse.element.getElement('searchresults-only0');
+    if (input.value == '') {
+      element.clearAllResults();
+    } else {
+      element.execute(input.value);
+    }
+    return false;
+  }
+
+  
+</script>
+
+
+
+
+
+
+
+  </body>
+</html>
