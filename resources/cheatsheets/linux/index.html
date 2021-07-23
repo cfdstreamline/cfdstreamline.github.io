@@ -1,0 +1,893 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.23.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Linux | CFD Streamline</title>
+<meta name="description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CFD Streamline">
+<meta property="og:title" content="Linux">
+<meta property="og:url" content="http://localhost:4000/resources/cheatsheets/linux/">
+
+
+  <meta property="og:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/logos/logo_linux-tux.svg">
+
+
+
+  <meta name="twitter:site" content="@cfdstreamline">
+  <meta name="twitter:title" content="Linux">
+  <meta name="twitter:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+  <meta name="twitter:url" content="http://localhost:4000/resources/cheatsheets/linux/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="http://localhost:4000/assets/images/logos/logo_linux-tux.svg">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-07-23T17:10:09+02:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/CFD-Streamline-102236005421147">
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/resources/cheatsheets/linux/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Organization",
+      "url": "http://localhost:4000/",
+      "logo": "http://localhost:4000/assets/images/site-logo.png"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="CFD Streamline Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- snipcart -->
+<link rel="preconnect" href="https://app.snipcart.com">
+<link rel="preconnect" href="https://cdn.snipcart.com">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
+
+
+
+<!-- google adsense -->
+<script data-ad-client="ca-pub-7211504142101622" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+<!-- mathjax -->
+<!--
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+  </script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js">
+</script>
+-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  processEscapes: true},
+  jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
+  extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
+  TeX: {
+  extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
+  equationNumbers: {
+  autoNumber: "AMS"
+  }
+  }
+  });
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icon/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icon/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icon/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/icon/favicon/site.webmanifest">
+<link rel="mask-icon" href="/assets/images/icon/favicon/safari-pinned-tab.svg" color="#283747">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--wiki">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/icon/logo.jpg" alt="CFD Streamline"></a>
+        
+        <a class="site-title" href="/">
+          CFD Streamline
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/wiki/">Wiki</a>
+            </li><li class="masthead__menu-item">
+              <a href="/software/">Software</a>
+            </li><li class="masthead__menu-item">
+              <a href="/testcases/">Test Cases</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resources/">Resources</a>
+            </li><li class="masthead__menu-item">
+              <a href="/posts/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/store/">Store</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/resources" itemprop="item"><span itemprop="name">Resources</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/cheatsheets" itemprop="item"><span itemprop="name">Cheatsheets</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Linux</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+  
+  </div>
+
+
+
+  
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Linux">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Linux
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+
+        <h2 id="basics">Basics</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">env</span>                 <span class="c"># displays all environment variables</span>
+
+<span class="nb">echo</span> <span class="nv">$SHELL</span>         <span class="c"># displays the shell you're using</span>
+<span class="nb">echo</span> <span class="nv">$BASH_VERSION</span>  <span class="c"># displays bash version</span>
+<span class="nb">echo</span> <span class="nv">$PATH</span>          <span class="c"># displays the path content</span>
+<span class="nb">echo</span> <span class="nv">$HOME</span>          <span class="c"># displays the home directory path</span>
+
+bash                <span class="c"># if you want to use bash (type exit to go back to your previously opened shell)</span>
+whereis cmd         <span class="c"># locates the binary, source and manual-page for a command</span>
+which cmd           <span class="c"># finds out which program is executed as 'bash' (default: /bin/bash, can change across environments)</span>
+
+clear               <span class="c"># clears content on window (hide displayed lines)</span>
+
+<span class="nb">shopt</span>               <span class="c"># sets options for the shell</span>
+
+<span class="nb">sudo</span> <span class="nt">-s</span>             <span class="c"># login as root</span>
+
+<span class="nb">exit</span>                <span class="c"># logs out of current session</span>
+</code></pre></div></div>
+
+<h2 id="shortcuts">Shortcuts</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CTRL+A  <span class="c"># move to beginning of line</span>
+CTRL+B  <span class="c"># moves backward one character</span>
+CTRL+C  <span class="c"># halts the current command</span>
+CTRL+D  <span class="c"># deletes one character backward or logs out of current session, similar to exit</span>
+CTRL+E  <span class="c"># moves to end of line</span>
+CTRL+F  <span class="c"># moves forward one character</span>
+CTRL+G  <span class="c"># aborts the current editing command and ring the terminal bell</span>
+CTRL+H  <span class="c"># deletes one character under cursor (same as DELETE)</span>
+CTRL+J  <span class="c"># same as RETURN</span>
+CTRL+K  <span class="c"># deletes (kill) forward to end of line</span>
+CTRL+L  <span class="c"># clears screen and redisplay the line</span>
+CTRL+M  <span class="c"># same as RETURN</span>
+CTRL+N  <span class="c"># next line in command history</span>
+CTRL+O  <span class="c"># same as RETURN, then displays next line in history file</span>
+CTRL+P  <span class="c"># previous line in command history</span>
+CTRL+Q  <span class="c"># resumes suspended shell output</span>
+CTRL+R  <span class="c"># searches backward</span>
+CTRL+S  <span class="c"># searches forward or suspends shell output</span>
+CTRL+T  <span class="c"># transposes two characters</span>
+CTRL+U  <span class="c"># kills backward from point to the beginning of line</span>
+CTRL+V  <span class="c"># makes the next character typed verbatim</span>
+CTRL+W  <span class="c"># kills the word behind the cursor</span>
+CTRL+X  <span class="c"># lists the possible filename completions of the current word</span>
+CTRL+Y  <span class="c"># retrieves (yank) last item killed</span>
+CTRL+Z  <span class="c"># stops the current command, resume with fg in the foreground or bg in the background</span>
+
+ALT+B   <span class="c"># moves backward one word</span>
+ALT+D   <span class="c"># deletes next word</span>
+ALT+F   <span class="c"># moves forward one word</span>
+ALT+H   <span class="c"># deletes one character backward</span>
+ALT+T   <span class="c"># transposes two words</span>
+ALT+.   <span class="c"># pastes last word from the last command. Pressing it repeatedly traverses through command history.</span>
+ALT+U   <span class="c"># capitalizes every character from the current cursor position to the end of the word</span>
+ALT+L   <span class="c"># uncapitalizes every character from the current cursor position to the end of the word</span>
+ALT+C   <span class="c"># capitalizes the letter under the cursor. The cursor then moves to the end of the word.</span>
+ALT+R   <span class="c"># reverts any changes to a command you’ve pulled from your history if you’ve edited it.</span>
+ALT+?   <span class="c"># list possible completions to what is typed</span>
+ALT+^   <span class="c"># expand line to most recent match from history</span>
+
+CTRL+X <span class="k">then</span> <span class="o">(</span>        <span class="c"># start recording a keyboard macro</span>
+CTRL+X <span class="k">then</span> <span class="o">)</span>        <span class="c"># finish recording keyboard macro</span>
+CTRL+X <span class="k">then </span>E        <span class="c"># recall last recorded keyboard macro</span>
+CTRL+X <span class="k">then </span>CTRL+E   <span class="c"># invoke text editor (specified by $EDITOR) on current command line then execute resultes as shell commands</span>
+
+BACKSPACE  <span class="c"># deletes one character backward</span>
+DELETE     <span class="c"># deletes one character under cursor</span>
+
+<span class="o">!!</span>       <span class="c"># repeats last command</span>
+<span class="o">!</span>_abc_   <span class="c"># runs last command starting with _abc_</span>
+<span class="o">!</span>_abc_:p <span class="c"># prints last command starting with _abc_</span>
+<span class="o">!</span><span class="nv">$ </span>      <span class="c"># last argument of previous command</span>
+ALT-.    <span class="c"># last argument of previous command</span>
+<span class="o">!</span><span class="se">\*</span>      <span class="c"># all arguments of previous command</span>
+^_abc_^_123_ <span class="c"># runs previous command, replacing _abc_ with _123_</span>
+
+</code></pre></div></div>
+
+<h2 id="history">History</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">history</span>   <span class="c"># shows command line history</span>
+<span class="o">!!</span>        <span class="c"># repeats the last command</span>
+<span class="o">!</span>&lt;n&gt;      <span class="c"># refers to command line 'n'</span>
+<span class="o">!</span>&lt;string&gt; <span class="c"># refers to command starting with 'string'</span>
+<span class="o">!</span><span class="nv">$ </span>       <span class="c"># refers to last argument of previous command</span>
+ALT-.     <span class="c"># refers to last argument of previous command</span>
+<span class="o">!</span><span class="se">\*</span>       <span class="c"># refers to all arguments of previous command</span>
+^_abc_^_123_ <span class="c"># runs previous command, replacing _abc_ with _123_</span>
+</code></pre></div></div>
+
+<h2 id="file-commands">File Commands</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">ls</span>                            <span class="c"># lists your files in current directory, ls &lt;dir&gt; to print files in a specific directory</span>
+<span class="nb">ls</span> <span class="nt">-l</span>                         <span class="c"># lists your files in 'long format', which contains the exact size of the file, who owns the file and who has the right to look at it, and when it was last modified</span>
+<span class="nb">ls</span> <span class="nt">-a</span>                         <span class="c"># lists all files in 'long format', including hidden files (name beginning with '.')</span>
+<span class="nb">ls</span> <span class="nt">-R</span>                         <span class="c"># lists recursively</span>
+<span class="nb">ls</span> <span class="nt">-r</span>                         <span class="c"># lists in reverse order</span>
+<span class="nb">ls</span> <span class="nt">-t</span>                         <span class="c"># lists sorting by last modified</span>
+<span class="nb">ls</span> <span class="nt">-1</span>                         <span class="c"># lists one file per line</span>
+<span class="nb">ls</span> <span class="nt">-m</span>                         <span class="c"># lists files separated by comma</span>
+<span class="nb">ls</span> <span class="nt">-Q</span>                         <span class="c"># lists files quoted</span>
+<span class="nb">ln</span> <span class="nt">-s</span> &lt;filename&gt; &lt;<span class="nb">link</span><span class="o">&gt;</span>       <span class="c"># creates symbolic link to file</span>
+<span class="nb">readlink</span> &lt;filename&gt;           <span class="c"># shows where a symbolic links points to</span>
+tree                          <span class="c"># show directories and subdirectories in easilly readable file tree</span>
+mc                            <span class="c"># terminal file explorer (alternative to ncdu)</span>
+<span class="nb">touch</span> &lt;filename&gt;              <span class="c"># creates or updates (edit) your file</span>
+file &lt;filename&gt;               <span class="c"># gets type of the file</span>
+<span class="nb">mktemp</span> <span class="nt">-t</span> &lt;filename&gt;          <span class="c"># make a temp file in /tmp/ which is deleted at next boot (-d to make directory)</span>
+<span class="nb">cat</span> &lt;filename&gt;                <span class="c"># prints file raw content (will not be interpreted)</span>
+any_command <span class="o">&gt;</span> &lt;filename&gt;      <span class="c"># '&gt;' is used to perform redirections, it will set any_command's stdout to file instead of "real stdout" (generally /dev/stdout)</span>
+more &lt;filename&gt;               <span class="c"># shows the first part of a file (move with space and type q to quit)</span>
+<span class="nb">head</span> <span class="nt">-n</span> &lt;nr&gt; &lt;filename&gt;       <span class="c"># outputs the first &lt;nr&gt; lines (default: 10 lines) of file </span>
+<span class="nb">tail</span> <span class="nt">-n</span> &lt;nr&gt; &lt;filename&gt;       <span class="c"># outputs the last &lt;nr&gt; lines (default: 10 lines) of file </span>
+<span class="nb">tail</span> <span class="nt">-F</span> &lt;filename&gt;            <span class="c"># outputs the last lines of file as it changes (default: 10 lines)</span>
+more &lt;filename&gt;               <span class="c"># shows and paginate the file</span>
+less &lt;filename&gt;               <span class="c"># shows and paginate the file, being faster and more resourceful than "more"</span>
+vim &lt;filename&gt;                <span class="c"># opens a file in VIM (VI iMproved) text editor, will create it if it doesn't exist</span>
+<span class="nb">mv</span> &lt;filename1&gt; &lt;dest&gt;         <span class="c"># moves a file to destination, behavior will change based on 'dest' type (dir: file is placed into dir; file: file will replace dest (tip: useful for renaming))</span>
+<span class="nb">cp</span> &lt;filename1&gt; &lt;dest&gt;         <span class="c"># copies a file</span>
+<span class="nb">rm</span> &lt;filename&gt;                 <span class="c"># removes a file</span>
+diff &lt;filename1&gt; &lt;filename2&gt;  <span class="c"># compares files, and shows where they differ</span>
+<span class="nb">wc</span> &lt;filename&gt;                 <span class="c"># tells you how many lines, words and characters there are in a file. Use -lwc (lines, word, character) to ouput only 1 of those informations</span>
+<span class="nb">sort</span> &lt;filename&gt;               <span class="c"># sorts the contents of a text file line by line in alphabetical order, use -n for numeric sort and -r for reversing order.</span>
+<span class="nb">sort</span> <span class="nt">-t</span> <span class="nt">-k</span> &lt;filename&gt;         <span class="c"># sorts the contents on specific sort key field starting from 1, using the field separator t.</span>
+rev                           <span class="c"># reverse string characters (hello becomes olleh)</span>
+<span class="nb">gzip</span> &lt;filename&gt;               <span class="c"># compresses files using gzip algorithm</span>
+<span class="nb">gunzip</span> &lt;filename&gt;             <span class="c"># uncompresses files compressed by gzip</span>
+gzcat &lt;filename&gt;              <span class="c"># lets you look at gzipped file without actually having to gunzip it</span>
+lpr &lt;filename&gt;                <span class="c"># prints the file</span>
+lpq                           <span class="c"># checks out the printer queue</span>
+lprm &lt;jobnumber&gt;              <span class="c"># removes something from the printer queue</span>
+genscript                     <span class="c"># converts plain text files into postscript for printing and gives you some options for formatting</span>
+dvips &lt;filename&gt;              <span class="c"># prints .dvi files (i.e. files produced by LaTeX)</span>
+<span class="nb">head</span> <span class="nt">-n</span> file_name | <span class="nb">tail</span> +n   <span class="c"># Print nth line from file.</span>
+<span class="nb">head</span> <span class="nt">-y</span> lines.txt | <span class="nb">tail</span> +x   <span class="c"># want to display all the lines from x to y. This includes the xth and yth lines.</span>
+</code></pre></div></div>
+
+<h2 id="directory-commands">Directory Commands</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> &lt;<span class="nb">dirname</span><span class="o">&gt;</span>               <span class="c"># makes a new directory</span>
+<span class="nb">rmdir</span> &lt;<span class="nb">dirname</span><span class="o">&gt;</span>               <span class="c"># remove an empty directory</span>
+<span class="nb">rmdir</span> <span class="nt">-rf</span> &lt;<span class="nb">dirname</span><span class="o">&gt;</span>           <span class="c"># remove a non-empty directory</span>
+<span class="nb">mv</span> &lt;dir1&gt; &lt;dir2&gt;              <span class="c"># rename a directory from &lt;dir1&gt; to &lt;dir2&gt;</span>
+<span class="nb">cd</span>                            <span class="c"># changes to home</span>
+<span class="nb">cd</span> ..                         <span class="c"># changes to the parent directory</span>
+<span class="nb">cd</span> &lt;<span class="nb">dirname</span><span class="o">&gt;</span>                  <span class="c"># changes directory</span>
+<span class="nb">cp</span> <span class="nt">-r</span> &lt;dir1&gt; &lt;dir2&gt;           <span class="c"># copy &lt;dir1&gt; into &lt;dir2&gt; including sub-directories</span>
+<span class="nb">pwd</span>                           <span class="c"># tells you where you currently are</span>
+<span class="nb">cd</span> ~                          <span class="c"># changes to home.</span>
+<span class="nb">cd</span> -                          <span class="c"># changes to previous working directory</span>
+<span class="nb">ls</span> <span class="nt">-d</span> <span class="k">*</span>/                      <span class="c"># lists all subfolders in the current folder</span>
+</code></pre></div></div>
+
+<h2 id="search-files-and-directories">Search Files and Directories</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep</span> &lt;pattern&gt; &lt;filename&gt;     <span class="c"># looks for the string in the files</span>
+<span class="nb">grep</span> <span class="nt">-r</span> &lt;pattern&gt; &lt;directory&gt; <span class="c"># search recursively for pattern in directory</span>
+<span class="nb">grep</span> <span class="nt">-i</span> &lt;pattern&gt; &lt;filename&gt;  <span class="c"># searches in case insensitive mode for the string in the files</span>
+<span class="nb">grep</span> <span class="nt">-v</span> &lt;pattern&gt; &lt;filename&gt;  <span class="c"># searches for lines of &lt;filename&gt; that don't contain &lt;pattern&gt;</span>
+<span class="nb">grep</span> <span class="nt">-o</span> &lt;pattern&gt; &lt;filename&gt;  <span class="c"># shows only the part of a line matching &lt;pattern&gt;</span>
+
+find <span class="nb">.</span> <span class="nt">-name</span> &lt;name or regex&gt; <span class="c"># searches for file &lt;name&gt; or for files matching the &lt;regex&gt; expression in the current directory and all its sub-directories</span>
+find <span class="nb">.</span> <span class="nt">-type</span> &lt;<span class="nb">type</span><span class="o">&gt;</span> <span class="c"># searches for files (-type f) or directories (-type d) in the current directory and all its sub-directories</span>
+find <span class="nb">.</span> <span class="nt">-user</span> &lt;user&gt; <span class="c"># searches for files owned by &lt;user&gt;</span>
+find <span class="nb">.</span> <span class="nt">-mmin</span> &lt;minutes&gt; <span class="c"># searches for files in the current directory and all its sub-directories that were modifed less than &lt;minutes&gt; ago</span>
+locate _file_ <span class="c"># Find _file_ (quick search of system index)</span>
+</code></pre></div></div>
+
+<h2 id="file-and-directory-permissions">File and Directory Permis­sions</h2>
+
+<p>First digit is owner permis­sion, second is group and third is everyone.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod</span> <span class="nt">-options</span> MODE &lt;filename&gt;  <span class="c"># lets you change the read, write, and execute permissions of &lt;filename&gt; to MODE for respectively the owner, the group and everyone.</span>
+<span class="nb">chmod </span>775 &lt;filename&gt;       <span class="c"># changes permissions of &lt;filename&gt; to 775</span>
+<span class="nb">chmod</span> <span class="nt">-R</span> 600 &lt;foldername&gt;  <span class="c"># applies chmod 600 recurs­ively chmod to &lt;foldername&gt;</span>
+<span class="nb">chown</span> &lt;username&gt;:&lt;group&gt; &lt;filename&gt; <span class="c"># Change &lt;filename&gt; owner to &lt;username&gt; and group to &lt;group&gt;</span>
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Permission Type</th>
+      <th>Symbol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>No Permission</td>
+      <td><code class="language-plaintext highlighter-rouge">---</code></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Execute</td>
+      <td><code class="language-plaintext highlighter-rouge">--x</code></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Write</td>
+      <td><code class="language-plaintext highlighter-rouge">-w-</code></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Execute + Write</td>
+      <td><code class="language-plaintext highlighter-rouge">-wx</code></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Read</td>
+      <td><code class="language-plaintext highlighter-rouge">r--</code></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Read + Execute</td>
+      <td><code class="language-plaintext highlighter-rouge">r-x</code></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Read +Write</td>
+      <td><code class="language-plaintext highlighter-rouge">rw-</code></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Read + Write +Execute</td>
+      <td><code class="language-plaintext highlighter-rouge">rwx</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="system-info">System Info</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">whoami</span>                   <span class="c"># returns your username</span>
+passwd                   <span class="c"># lets you change your password</span>
+quota <span class="nt">-v</span>                 <span class="c"># shows what your disk quota is</span>
+<span class="nb">date</span>                     <span class="c"># shows the current date and time</span>
+cal                      <span class="c"># shows the month's calendar</span>
+<span class="nb">uptime</span>                   <span class="c"># shows current uptime</span>
+w                        <span class="c"># displays whois online</span>
+finger &lt;user&gt;            <span class="c"># displays information about user</span>
+<span class="nb">uname</span> <span class="nt">-a</span>                 <span class="c"># shows kernel information</span>
+<span class="nb">head</span> <span class="nt">-n1</span> /etc/issue      <span class="c"># show linux distri­bution</span>
+mount                    <span class="c"># shows mounted filesy­stems</span>
+man &lt;<span class="nb">command</span><span class="o">&gt;</span>            <span class="c"># shows the manual for specified command</span>
+<span class="nb">df</span>                       <span class="c"># shows disk usage</span>
+<span class="nb">df</span> <span class="nt">-h</span>                    <span class="c"># shows disk usage in human readable format</span>
+<span class="nb">du</span> &lt;filename&gt;            <span class="c"># shows the disk usage of the files and directories in filename </span>
+<span class="nb">du</span> <span class="nt">-hs</span>                   <span class="c"># shows the total disk usage of the folder in human readable format</span>
+lscpu                    <span class="c"># gives information about the cpu</span>
+last &lt;yourUsername&gt;      <span class="c"># lists your last logins</span>
+ps <span class="nt">-u</span> yourusername       <span class="c"># lists your processes</span>
+<span class="nb">kill</span> &lt;PID&gt;               <span class="c"># kills the processes with the ID you gave</span>
+killall &lt;processname&gt;    <span class="c"># kill all processes with the name</span>
+top                      <span class="c"># displays your currently active processes</span>
+htop                     <span class="c"># displays your currently active processes with nicer graphics</span>
+lsof                     <span class="c"># lists open files</span>
+<span class="nb">bg</span>                       <span class="c"># lists stopped or background jobs ; resume a stopped job in the background</span>
+<span class="nb">fg</span>                       <span class="c"># brings the most recent job in the foreground</span>
+<span class="nb">fg</span> &lt;job&gt;                 <span class="c"># brings job to the foreground</span>
+<span class="nb">time</span> &lt;<span class="nb">command</span><span class="o">&gt;</span>           <span class="c"># report time consumed by command execution</span>
+</code></pre></div></div>
+
+<h2 id="ssh-commands">SSH Commands</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh user@host            <span class="c"># connects to host as user</span>
+ssh <span class="nt">-p</span> &lt;port&gt; user@host  <span class="c"># connects to host on specified port as user</span>
+ssh-copy-id user@host    <span class="c"># adds your ssh key to host for user to enable a keyed or passwordless login</span>
+</code></pre></div></div>
+
+<h2 id="netword-commands">Netword Commands</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ping &lt;host&gt;              <span class="c"># pings host and outputs results</span>
+whois &lt;domain&gt;           <span class="c"># gets whois information for domain</span>
+dig &lt;domain&gt;             <span class="c"># gets DNS information for domain</span>
+dig <span class="nt">-x</span> &lt;host&gt;            <span class="c"># reverses lookup host</span>
+wget &lt;file&gt;              <span class="c"># downloads file</span>
+host &lt;server_name&gt;       <span class="c"># shows the IP of server_name and vice-versa (host &lt;ip&gt;)</span>
+ip &lt;server_name&gt;         <span class="c"># shows the IP of server_name</span>
+
+scp /path/to/file user@server:/path/to/destination <span class="c"># Copy file from local directory to server directory</span>
+scp user@remote_host:remote_file local_file        <span class="c"># download file: remote -&gt; local</span>
+scp local_file user@remote_host:remote_file        <span class="c"># upload file: local -&gt; remote</span>
+</code></pre></div></div>
+
+<h2 id="command-line-processing-cycle">Command-line Processing Cycle</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># The default order for command lookup is functions, followed by built-ins, with scripts and executables last.</span>
+<span class="c"># There are three built-ins that you can use to override this order: `command`, `builtin` and `enable`.</span>
+
+<span class="nb">command</span>  <span class="c"># removes alias and function lookup. Only built-ins and commands found in the search path are executed</span>
+<span class="nb">builtin</span>  <span class="c"># looks up only built-in commands, ignoring functions and commands found in PATH</span>
+<span class="nb">enable</span>   <span class="c"># enables and disables shell built-ins</span>
+
+<span class="nb">eval</span>     <span class="c"># takes arguments and run them through the command-line processing steps all over again</span>
+</code></pre></div></div>
+
+<h2 id="inputoutput-redirectors">Input/Output Redirectors</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmd1 | cmd2 <span class="c"># pipe; takes standard output of cmd1 as standard input to cmd2</span>
+cmd1 &lt; cmd2 <span class="c"># takes standard output of cmd2 as file input to cmd1</span>
+&lt; file     <span class="c"># takes standard input from file</span>
+<span class="o">&gt;</span> file     <span class="c"># directs standard output to file</span>
+<span class="o">&gt;&gt;</span> file    <span class="c"># directs standard output to file; append to file if it already exists</span>
+<span class="o">&gt;</span>|file     <span class="c"># forces standard output to file even if noclobber is set</span>
+n&gt;|file    <span class="c"># forces output to file from file descriptor n even if noclobber is set</span>
+&lt;<span class="o">&gt;</span> file    <span class="c"># uses file as both standard input and standard output</span>
+n&lt;<span class="o">&gt;</span>file    <span class="c"># uses file as both input and output for file descriptor n</span>
+n&gt;file     <span class="c"># directs file descriptor n to file</span>
+n&lt;file     <span class="c"># takes file descriptor n from file</span>
+n&gt;&gt;file    <span class="c"># directs file description n to file; append to file if it already exists</span>
+n&gt;&amp;        <span class="c"># duplicates standard output to file descriptor n</span>
+n&lt;&amp;        <span class="c"># duplicates standard input from file descriptor n</span>
+n&gt;&amp;m       <span class="c"># file descriptor n is made to be a copy of the output file descriptor</span>
+n&lt;&amp;m       <span class="c"># file descriptor n is made to be a copy of the input file descriptor</span>
+&amp;&gt;file     <span class="c"># directs standard output and standard error to file</span>
+&lt;&amp;-        <span class="c"># closes the standard input</span>
+<span class="o">&gt;</span>&amp;-        <span class="c"># closes the standard output</span>
+n&gt;&amp;-       <span class="c"># closes the ouput from file descriptor n</span>
+n&lt;&amp;-       <span class="c"># closes the input from file descripor n</span>
+cmd <span class="o">&gt;</span> /dev/null      <span class="c"># discards stdout</span>
+cmd <span class="o">&gt;</span> /dev/null 2&gt;&amp;1 <span class="c"># discards both stdout and stderr</span>
+cmd 2&gt; file <span class="c"># directs error output (stderr) of _cmd_ to _file_</span>
+cmd 1&gt;&amp;2    <span class="c"># directs stdout to same place as stderr</span>
+cmd 2&gt;&amp;1    <span class="c"># directs stderr to same place as stdout</span>
+cmd &amp;&gt; file <span class="c"># directs every output of cmd to file</span>
+
+
+|tee &lt;file&gt;# output <span class="nb">command </span>to both terminal and a file <span class="o">(</span><span class="nt">-a</span> to append to file<span class="o">)</span>
+</code></pre></div></div>
+
+<h2 id="process-handling">Process Handling</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y.</span>
+<span class="c"># This is slightly different from CTRL+Z in that the process is only stopped when it attempts to read input from terminal.</span>
+<span class="c"># Of course, to interrupt a job, type CTRL+C.</span>
+
+cmd1 <span class="p">;</span> cmd2  <span class="c"># runs cmd1 and then cmd2</span>
+cmd1 <span class="o">&amp;&amp;</span> cmd2 <span class="c"># runs cmd2 if cmd1 is successful</span>
+cmd1 <span class="o">||</span> cmd2 <span class="c"># runs cmd2 if cmd1 is not successful</span>
+cmd &amp;        <span class="c"># runs job in the background and prompts back the shell</span>
+
+<span class="nb">jobs</span>         <span class="c"># lists all jobs (use with -l to see associated PID)</span>
+
+<span class="nb">fg</span>           <span class="c"># brings a background job into the foreground</span>
+<span class="nb">fg</span> %+        <span class="c"># brings most recently invoked background job</span>
+<span class="nb">fg</span> %-        <span class="c"># brings second most recently invoked background job</span>
+<span class="nb">fg</span> %N        <span class="c"># brings job number N</span>
+<span class="nb">fg</span> %string   <span class="c"># brings job whose command begins with string</span>
+<span class="nb">fg</span> %?string  <span class="c"># brings job whose command contains string</span>
+
+<span class="nb">kill</span> <span class="nt">-l</span>               <span class="c"># returns a list of all signals on the system, by name and number</span>
+<span class="nb">kill </span>PID              <span class="c"># terminates process with specified PID</span>
+<span class="nb">kill</span> <span class="nt">-s</span> SIGKILL 4500  <span class="c"># sends a signal to force or terminate the process</span>
+<span class="nb">kill</span> <span class="nt">-15</span> 913          <span class="c"># ending PID 913 process with signal 15 (TERM)</span>
+<span class="nb">kill</span> %1               <span class="c"># where %1 is the number of job as read from 'jobs' command.</span>
+pkill _name_          <span class="c"># kills process with name _name_</span>
+killall _name_        <span class="c"># kills all processes with names beginning _name_</span>
+
+ps           <span class="c"># prints a line of information about the current running login shell and any processes running under it</span>
+ps <span class="nt">-a</span>        <span class="c"># selects all processes with a tty except session leaders</span>
+
+<span class="nb">trap </span>cmd sig1 sig2  <span class="c"># executes a command when a signal is received by the script</span>
+<span class="nb">trap</span> <span class="s2">""</span> sig1 sig2   <span class="c"># ignores that signals</span>
+<span class="nb">trap</span> - sig1 sig2    <span class="c"># resets the action taken when the signal is received to the default</span>
+
+<span class="nb">disown</span> &lt;PID|JID&gt;    <span class="c"># removes the process from the list of jobs</span>
+
+<span class="nb">wait</span>                <span class="c"># waits until all background jobs have finished</span>
+<span class="nb">sleep</span> &lt;number&gt;      <span class="c"># wait # of seconds before continuing</span>
+watch <span class="nt">-n</span> &lt;s&gt; <span class="s1">'&lt;command&gt;'</span> <span class="c"># Issue the &lt;command&gt; every &lt;s&gt; seconds and display output</span>
+<span class="nb">nohup </span>sh custom-script.sh &amp; <span class="c"># Lauches custom-script.sh without trapping the screen</span>
+
+pv                  <span class="c"># display progress bar for data handling commands. often used with pipe like |pv</span>
+<span class="nb">yes</span>                 <span class="c"># give yes response everytime an input is requested from script/process</span>
+</code></pre></div></div>
+
+<h2 id="awk-commands">AWK Commands</h2>
+
+<h2 id="profile-configuration-bashrc">Profile Configuration: .bashrc</h2>
+
+<h2 id="sources">Sources</h2>
+
+<p><a href="https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh" target="_blank">https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh</a></p>
+
+<p><a href="https://cheatography.com/davechild/cheat-sheets/linux-command-line/" target="_blank">https://cheatography.com/davechild/cheat-sheets/linux-command-line/</a></p>
+
+<p><a href="https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/ubuntu.sh" target="_blank">https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/ubuntu.sh</a></p>
+
+<h2 id="see-also">See Also</h2>
+
+<p><a href="https://learnxinyminutes.com/docs/html/" target="_blank">Learn X in Y minutes</a></p>
+
+
+        
+      </section>
+
+      <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/resources/cheatsheets/latex/" class="pagination--pager" title="Latex
+">Previous</a>
+    
+    
+      <a href="/resources/cheatsheets/matlab/" class="pagination--pager" title="Matlab
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+    
+  </article>
+
+  
+  
+</div>
+
+      <div align="center" style="margin: 1em 0;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- ad-unit_horizontal -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-7211504142101622"
+             data-ad-slot="6952122554"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    
+    
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
+    <label class="sr-only" for="cse-search-input-box-id">
+      Enter your search term...
+    </label>
+    <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results">
+    <gcse:searchresults-only></gcse:searchresults-only>
+  </div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.linkedin.com/company/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+        
+          <li><a href="https://github.com/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+        
+          <li><a href="https://www.pinterest.com/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-pinterest" aria-hidden="true"></i> Pinterest</a></li>
+        
+      
+        
+          <li><a href="https://www.instagram.com/cfd.streamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/CfdStreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/CFD-Streamline-102236005421147/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 CFD Streamline. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<script>
+  (function () {
+    var cx = 'a390aa655bef0d717';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+  function googleCustomSearchExecute() {
+    var input = document.getElementById('cse-search-input-box-id');
+    var element = google.search.cse.element.getElement('searchresults-only0');
+    if (input.value == '') {
+      element.clearAllResults();
+    } else {
+      element.execute(input.value);
+    }
+    return false;
+  }
+
+  
+</script>
+
+
+
+
+
+
+
+<!-- snipcart -->
+<script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+<div hidden id="snipcart" data-api-key="NThhNjEyYzUtNjY3ZS00YTlkLWFjYWEtYmVmZTZhMzRhZjgyNjM3NjIzNzM3NTkwNTg2NzQ5
+"></div>
+
+  </body>
+</html>

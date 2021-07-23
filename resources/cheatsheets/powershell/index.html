@@ -1,0 +1,723 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.23.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>PowerShell | CFD Streamline</title>
+<meta name="description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CFD Streamline">
+<meta property="og:title" content="PowerShell">
+<meta property="og:url" content="http://localhost:4000/resources/cheatsheets/powershell/">
+
+
+  <meta property="og:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/logos/logo_powershell.png">
+
+
+
+  <meta name="twitter:site" content="@cfdstreamline">
+  <meta name="twitter:title" content="PowerShell">
+  <meta name="twitter:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+  <meta name="twitter:url" content="http://localhost:4000/resources/cheatsheets/powershell/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="http://localhost:4000/assets/images/logos/logo_powershell.png">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-07-23T17:10:09+02:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/CFD-Streamline-102236005421147">
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/resources/cheatsheets/powershell/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Organization",
+      "url": "http://localhost:4000/",
+      "logo": "http://localhost:4000/assets/images/site-logo.png"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="CFD Streamline Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- snipcart -->
+<link rel="preconnect" href="https://app.snipcart.com">
+<link rel="preconnect" href="https://cdn.snipcart.com">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
+
+
+
+<!-- google adsense -->
+<script data-ad-client="ca-pub-7211504142101622" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+<!-- mathjax -->
+<!--
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+  </script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js">
+</script>
+-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  processEscapes: true},
+  jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
+  extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
+  TeX: {
+  extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
+  equationNumbers: {
+  autoNumber: "AMS"
+  }
+  }
+  });
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icon/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icon/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icon/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/icon/favicon/site.webmanifest">
+<link rel="mask-icon" href="/assets/images/icon/favicon/safari-pinned-tab.svg" color="#283747">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--wiki">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/icon/logo.jpg" alt="CFD Streamline"></a>
+        
+        <a class="site-title" href="/">
+          CFD Streamline
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/wiki/">Wiki</a>
+            </li><li class="masthead__menu-item">
+              <a href="/software/">Software</a>
+            </li><li class="masthead__menu-item">
+              <a href="/testcases/">Test Cases</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resources/">Resources</a>
+            </li><li class="masthead__menu-item">
+              <a href="/posts/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/store/">Store</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/resources" itemprop="item"><span itemprop="name">Resources</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/cheatsheets" itemprop="item"><span itemprop="name">Cheatsheets</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">PowerShell</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+  
+  </div>
+
+
+
+  
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="PowerShell">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">PowerShell
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+
+        <h2 id="basics">Basics</h2>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Get-Command</span><span class="w">                                               </span><span class="c"># Retrieves a list of all the commands available to PowerShell</span><span class="w">
+                                                          </span><span class="c"># (native binaries in $env:PATH + cmdlets / functions from PowerShell modules)</span><span class="w">
+</span><span class="n">Get-Command</span><span class="w"> </span><span class="nt">-Module</span><span class="w"> </span><span class="nx">Microsoft</span><span class="o">*</span><span class="w">                            </span><span class="c"># Retrieves a list of all the PowerShell commands exported from modules named Microsoft*</span><span class="w">
+</span><span class="n">Get-Command</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="o">*</span><span class="nx">item</span><span class="w">                                   </span><span class="c"># Retrieves a list of all commands (native binaries + PowerShell commands) ending in "item"</span><span class="w">
+
+</span><span class="n">Get-Help</span><span class="w">                                                  </span><span class="c"># Get all help topics</span><span class="w">
+</span><span class="n">Get-Help</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">about_Variables</span><span class="w">                            </span><span class="c"># Get help for a specific about_* topic (aka. man page)</span><span class="w">
+</span><span class="n">Get-Help</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">Get-Command</span><span class="w">                                </span><span class="c"># Get help for a specific PowerShell function</span><span class="w">
+</span><span class="n">Get-Help</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">Get-Command</span><span class="w"> </span><span class="nt">-Parameter</span><span class="w"> </span><span class="nx">Module</span><span class="w">              </span><span class="c"># Get help for a specific parameter on a specific command</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="operators">Operators</h2>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w">                                                    </span><span class="c"># Basic variable assignment operator</span><span class="w">
+</span><span class="nv">$a</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="w">                                                   </span><span class="c"># Incremental assignment operator</span><span class="w">
+</span><span class="nv">$a</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">1</span><span class="w">                                                   </span><span class="c"># Decrement assignment operator</span><span class="w">
+
+</span><span class="nv">$a</span><span class="w"> </span><span class="o">-eq</span><span class="w"> </span><span class="mi">0</span><span class="w">                                                  </span><span class="c"># Equality comparison operator</span><span class="w">
+</span><span class="nv">$a</span><span class="w"> </span><span class="o">-ne</span><span class="w"> </span><span class="mi">5</span><span class="w">                                                  </span><span class="c"># Not-equal comparison operator</span><span class="w">
+</span><span class="nv">$a</span><span class="w"> </span><span class="o">-gt</span><span class="w"> </span><span class="mi">2</span><span class="w">                                                  </span><span class="c"># Greater than comparison operator</span><span class="w">
+</span><span class="nv">$a</span><span class="w"> </span><span class="o">-lt</span><span class="w"> </span><span class="mi">3</span><span class="w">                                                  </span><span class="c"># Less than comparison operator</span><span class="w">
+
+</span><span class="nv">$FirstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Trevor'</span><span class="w">
+</span><span class="nv">$FirstName</span><span class="w"> </span><span class="o">-like</span><span class="w"> </span><span class="s1">'T*'</span><span class="w">                                     </span><span class="c"># Perform string comparison using the -like operator, which supports the wildcard (*) character. Returns $true</span><span class="w">
+
+</span><span class="nv">$BaconIsYummy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="bp">$true</span><span class="w">
+</span><span class="nv">$FoodToEat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">$BaconIsYummy</span><span class="w"> </span><span class="nf">?</span><span class="w"> </span><span class="s1">'bacon'</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s1">'beets'</span><span class="w">            </span><span class="c"># Sets the $FoodToEat variable to 'bacon' using the ternary operator</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="regular-expressions">Regular Expressions</h2>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s1">'Trevor'</span><span class="w"> </span><span class="o">-match</span><span class="w"> </span><span class="s1">'^T\w*'</span><span class="w">                                   </span><span class="c"># Perform a regular expression match against a string value. # Returns $true and populates $matches variable</span><span class="w">
+</span><span class="nv">$matches</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w">                                               </span><span class="c"># Returns 'Trevor', based on the above match</span><span class="w">
+
+</span><span class="p">@(</span><span class="s1">'Trevor'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Billy'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Bobby'</span><span class="p">)</span><span class="w"> </span><span class="o">-match</span><span class="w"> </span><span class="s1">'^B'</span><span class="w">                 </span><span class="c"># Perform a regular expression match against an array of string values. Returns Billy, Bobby</span><span class="w">
+
+</span><span class="nv">$regex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="n">regex</span><span class="p">]</span><span class="s1">'(\w{3,8})'</span><span class="w">
+</span><span class="nv">$regex</span><span class="o">.</span><span class="nf">Matches</span><span class="p">(</span><span class="s1">'Trevor Bobby Dillon Joe Jacob'</span><span class="p">)</span><span class="o">.</span><span class="nf">Value</span><span class="w">     </span><span class="c"># Find multiple matches against a singleton string value.</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="flow-control">Flow Control</h2>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">-eq</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w">                                          </span><span class="c"># Do something if 1 is equal to 1</span><span class="w">
+
+</span><span class="kr">do</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s1">'hi'</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">while</span><span class="w"> </span><span class="p">(</span><span class="bp">$false</span><span class="p">)</span><span class="w">                                </span><span class="c"># Loop while a condition is true (always executes at least once)</span><span class="w">
+
+</span><span class="kr">while</span><span class="w"> </span><span class="p">(</span><span class="bp">$false</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s1">'hi'</span><span class="w"> </span><span class="p">}</span><span class="w">                                   </span><span class="c"># While loops are not guaranteed to run at least once</span><span class="w">
+</span><span class="kr">while</span><span class="w"> </span><span class="p">(</span><span class="bp">$true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w">                                         </span><span class="c"># Do something indefinitely</span><span class="w">
+</span><span class="kr">while</span><span class="w"> </span><span class="p">(</span><span class="bp">$true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">-eq</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kr">break</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w">                  </span><span class="c"># Break out of an infinite while loop conditionally</span><span class="w">
+
+</span><span class="kr">for</span><span class="w"> </span><span class="p">(</span><span class="nv">$i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="nv">$i</span><span class="w"> </span><span class="o">-le</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="nv">$i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">Write-Host</span><span class="w"> </span><span class="nv">$i</span><span class="w"> </span><span class="p">}</span><span class="w">           </span><span class="c"># Iterate using a for..loop</span><span class="w">
+</span><span class="kr">foreach</span><span class="w"> </span><span class="p">(</span><span class="nv">$item</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="p">(</span><span class="n">Get-Process</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w">                      </span><span class="c"># Iterate over items in an array</span><span class="w">
+
+</span><span class="kr">switch</span><span class="w"> </span><span class="p">(</span><span class="s1">'test'</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s1">'test'</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s1">'matched'</span><span class="p">;</span><span class="w"> </span><span class="kr">break</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w">           </span><span class="c"># Use the switch statement to perform actions based on conditions. Returns string 'matched'</span><span class="w">
+</span><span class="kr">switch</span><span class="w"> </span><span class="nt">-regex</span><span class="w"> </span><span class="p">(@(</span><span class="s1">'Trevor'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Daniel'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Bobby'</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w">          </span><span class="c"># Use the switch statement with regular expressions to match inputs</span><span class="w">
+  </span><span class="s1">'o'</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="bp">$PSItem</span><span class="p">;</span><span class="w"> </span><span class="kr">break</span><span class="w"> </span><span class="p">}</span><span class="w">                                  </span><span class="c"># NOTE: $PSItem or $_ refers to the "current" item being matched in the array</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="kr">switch</span><span class="w"> </span><span class="nt">-regex</span><span class="w"> </span><span class="p">(@(</span><span class="s1">'Trevor'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Daniel'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Bobby'</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w">          </span><span class="c"># Switch statement omitting the break statement. Inputs can be matched multiple times, in this scenario.</span><span class="w">
+  </span><span class="s1">'e'</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="bp">$PSItem</span><span class="w"> </span><span class="p">}</span><span class="w">
+  </span><span class="s1">'r'</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="bp">$PSItem</span><span class="w"> </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="variables">Variables</h2>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w">                                                    </span><span class="c"># Initialize a variable</span><span class="w">
+</span><span class="p">[</span><span class="n">int</span><span class="p">]</span><span class="w"> </span><span class="nv">$a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Trevor'</span><span class="w">                                       </span><span class="c"># Initialize a variable, with the specified type (throws an exception)</span><span class="w">
+</span><span class="p">[</span><span class="n">string</span><span class="p">]</span><span class="w"> </span><span class="nv">$a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Trevor'</span><span class="w">                                    </span><span class="c"># Initialize a variable, with the specified type (doesn't throw an exception)</span><span class="w">
+
+</span><span class="n">Get-Command</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="o">*</span><span class="nx">varia</span><span class="o">*</span><span class="w">                                 </span><span class="c"># Get a list of commands related to variable management</span><span class="w">
+
+</span><span class="n">Get-Variable</span><span class="w">                                              </span><span class="c"># Get an array of objects, representing the variables in the current and parent scopes</span><span class="w">
+</span><span class="n">Get-Variable</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nf">?</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="bp">$PSItem</span><span class="o">.</span><span class="nf">Options</span><span class="w"> </span><span class="o">-contains</span><span class="w"> </span><span class="s1">'constant'</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c"># Get variables with the "Constant" option set</span><span class="w">
+</span><span class="n">Get-Variable</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nf">?</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="bp">$PSItem</span><span class="o">.</span><span class="nf">Options</span><span class="w"> </span><span class="o">-contains</span><span class="w"> </span><span class="s1">'readonly'</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c"># Get variables with the "ReadOnly" option set</span><span class="w">
+
+</span><span class="n">New-Variable</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">FirstName</span><span class="w"> </span><span class="nt">-Value</span><span class="w"> </span><span class="nx">Trevor</span><span class="w">
+</span><span class="n">New-Variable</span><span class="w"> </span><span class="nx">FirstName</span><span class="w"> </span><span class="nt">-Value</span><span class="w"> </span><span class="nx">Trevor</span><span class="w"> </span><span class="nt">-Option</span><span class="w"> </span><span class="nx">Constant</span><span class="w">     </span><span class="c"># Create a constant variable, that can only be removed by restarting PowerShell</span><span class="w">
+</span><span class="n">New-Variable</span><span class="w"> </span><span class="nx">FirstName</span><span class="w"> </span><span class="nt">-Value</span><span class="w"> </span><span class="nx">Trevor</span><span class="w"> </span><span class="nt">-Option</span><span class="w"> </span><span class="nx">ReadOnly</span><span class="w">     </span><span class="c"># Create a variable that can only be removed by specifying the -Force parameter on Remove-Variable</span><span class="w">
+
+</span><span class="n">Remove-Variable</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">firstname</span><span class="w">                           </span><span class="c"># Remove a variable, with the specified name</span><span class="w">
+</span><span class="n">Remove-Variable</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">firstname</span><span class="w"> </span><span class="nt">-Force</span><span class="w">                    </span><span class="c"># Remove a variable, with the specified name, that has the "ReadOnly" option set</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="functions">Functions</h2>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">function</span><span class="w"> </span><span class="nf">add</span><span class="w"> </span><span class="p">(</span><span class="nv">$a</span><span class="p">,</span><span class="w"> </span><span class="nv">$b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">$a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">$b</span><span class="w"> </span><span class="p">}</span><span class="w">                         </span><span class="c"># A basic PowerShell function</span><span class="w">
+
+</span><span class="kr">function</span><span class="w"> </span><span class="nf">Do-Something</span><span class="w"> </span><span class="p">{</span><span class="w">                                   </span><span class="c"># A PowerShell Advanced Function, with all three blocks declared: BEGIN, PROCESS, END</span><span class="w">
+  </span><span class="p">[</span><span class="n">CmdletBinding</span><span class="p">]()</span><span class="err">]</span><span class="w">
+  </span><span class="kr">param</span><span class="w"> </span><span class="p">()</span><span class="w">
+  </span><span class="kr">begin</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w">
+  </span><span class="kr">process</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w">
+  </span><span class="kr">end</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="working-with-modules">Working with Modules</h2>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Get-Command</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="o">*</span><span class="nx">module</span><span class="o">*</span><span class="w"> </span><span class="nt">-Module</span><span class="w"> </span><span class="nx">mic</span><span class="o">*</span><span class="nx">core</span><span class="w">                 </span><span class="c"># Which commands can I use to work with modules?</span><span class="w">
+
+</span><span class="n">Get-Module</span><span class="w"> </span><span class="nt">-ListAvailable</span><span class="w">                                   </span><span class="c"># Show me all of the modules installed on my system (controlled by $env:PSModulePath)</span><span class="w">
+</span><span class="n">Get-Module</span><span class="w">                                                  </span><span class="c"># Show me all of the modules imported into the current session</span><span class="w">
+
+</span><span class="nv">$PSModuleAutoLoadingPreference</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w">                          </span><span class="c"># Disable auto-loading of installed PowerShell modules, when a command is invoked</span><span class="w">
+
+</span><span class="n">Import-Module</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">NameIT</span><span class="w">                                  </span><span class="c"># Explicitly import a module, from the specified filesystem path or name (must be present in $env:PSModulePath)</span><span class="w">
+</span><span class="n">Remove-Module</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">NameIT</span><span class="w">                                  </span><span class="c"># Remove a module from the scope of the current PowerShell session</span><span class="w">
+
+</span><span class="n">New-ModuleManifest</span><span class="w">                                          </span><span class="c"># Helper function to create a new module manifest. You can create it by hand instead.</span><span class="w">
+
+</span><span class="n">New-Module</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">trevor</span><span class="w"> </span><span class="nt">-ScriptBlock</span><span class="w"> </span><span class="p">{</span><span class="w">                      </span><span class="c"># Create an in-memory PowerShell module (advanced users)</span><span class="w">
+  </span><span class="kr">function</span><span class="w"> </span><span class="nf">Add</span><span class="p">(</span><span class="nv">$a</span><span class="p">,</span><span class="nv">$b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">$a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">$b</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w">
+
+</span><span class="n">New-Module</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">trevor</span><span class="w"> </span><span class="nt">-ScriptBlock</span><span class="w"> </span><span class="p">{</span><span class="w">                      </span><span class="c"># Create an in-memory PowerShell module, and make it visible to Get-Module (advanced users)</span><span class="w">
+  </span><span class="kr">function</span><span class="w"> </span><span class="nf">Add</span><span class="p">(</span><span class="nv">$a</span><span class="p">,</span><span class="nv">$b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">$a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">$b</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Import-Module</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="module-management">Module Management</h2>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Get-Command</span><span class="w"> </span><span class="nt">-Module</span><span class="w"> </span><span class="nx">PowerShellGet</span><span class="w">                           </span><span class="c"># Explore commands to manage PowerShell modules</span><span class="w">
+
+</span><span class="n">Find-Module</span><span class="w"> </span><span class="nt">-Tag</span><span class="w"> </span><span class="nx">cloud</span><span class="w">                                      </span><span class="c"># Find modules in the PowerShell Gallery with a "cloud" tag</span><span class="w">
+</span><span class="n">Find-Module</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">ps</span><span class="o">*</span><span class="w">                                       </span><span class="c"># Find modules in the PowerShell Gallery whose name starts with "PS"</span><span class="w">
+
+</span><span class="n">Install-Module</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">NameIT</span><span class="w"> </span><span class="nt">-Scope</span><span class="w"> </span><span class="nx">CurrentUser</span><span class="w"> </span><span class="nt">-Force</span><span class="w">       </span><span class="c"># Install a module to your personal directory (non-admin)</span><span class="w">
+</span><span class="n">Install-Module</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">NameIT</span><span class="w"> </span><span class="nt">-Force</span><span class="w">                          </span><span class="c"># Install a module to your personal directory (admin / root)</span><span class="w">
+</span><span class="n">Install-Module</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">NameIT</span><span class="w"> </span><span class="nt">-RequiredVersion</span><span class="w"> </span><span class="nx">1.9.0</span><span class="w">          </span><span class="c"># Install a specific version of a module</span><span class="w">
+
+</span><span class="n">Uninstall-Module</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">NameIT</span><span class="w">                               </span><span class="c"># Uninstall module called "NameIT", only if it was installed via Install-Module</span><span class="w">
+
+</span><span class="n">Register-PSRepository</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="err">&lt;</span><span class="nx">repo</span><span class="err">&gt;</span><span class="w"> </span><span class="nt">-SourceLocation</span><span class="w"> </span><span class="err">&lt;</span><span class="nx">uri</span><span class="err">&gt;</span><span class="w">    </span><span class="c"># Configure a private PowerShell module registry</span><span class="w">
+</span><span class="n">Unregister-PSRepository</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="err">&lt;</span><span class="nx">repo</span><span class="err">&gt;</span><span class="w">                        </span><span class="c"># Deregister a PowerShell Repository</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="filesystem">Filesystem</h2>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">New-Item</span><span class="w"> </span><span class="nt">-Path</span><span class="w"> </span><span class="nx">c:\test</span><span class="w"> </span><span class="nt">-ItemType</span><span class="w"> </span><span class="nx">Directory</span><span class="w">                  </span><span class="c"># Create a directory</span><span class="w">
+</span><span class="n">mkdir</span><span class="w"> </span><span class="nx">c:\test2</span><span class="w">                                              </span><span class="c"># Create a directory (short-hand)</span><span class="w">
+
+</span><span class="n">New-Item</span><span class="w"> </span><span class="nt">-Path</span><span class="w"> </span><span class="nx">c:\test\myrecipes.txt</span><span class="w">                        </span><span class="c"># Create an empty file</span><span class="w">
+</span><span class="n">Set-Content</span><span class="w"> </span><span class="nt">-Path</span><span class="w"> </span><span class="nx">c:\test.txt</span><span class="w"> </span><span class="nt">-Value</span><span class="w"> </span><span class="s1">''</span><span class="w">                     </span><span class="c"># Create an empty file</span><span class="w">
+</span><span class="p">[</span><span class="n">System.IO.File</span><span class="p">]::</span><span class="n">WriteAllText</span><span class="p">(</span><span class="s1">'testing.txt'</span><span class="p">,</span><span class="w"> </span><span class="s1">''</span><span class="p">)</span><span class="w">           </span><span class="c"># Create an empty file using .NET Base Class Library</span><span class="w">
+
+</span><span class="n">Remove-Item</span><span class="w"> </span><span class="nt">-Path</span><span class="w"> </span><span class="nx">testing.txt</span><span class="w">                               </span><span class="c"># Delete a file</span><span class="w">
+</span><span class="p">[</span><span class="n">System.IO.File</span><span class="p">]::</span><span class="n">Delete</span><span class="p">(</span><span class="s1">'testing.txt'</span><span class="p">)</span><span class="w">                     </span><span class="c"># Delete a file using .NET Base Class Library</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="hashtables-dictionary">Hashtables (Dictionary)</h2>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$Person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">@{</span><span class="w">
+  </span><span class="nx">FirstName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Trevor'</span><span class="w">
+  </span><span class="nx">LastName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Sullivan'</span><span class="w">
+  </span><span class="nx">Likes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">@(</span><span class="w">
+    </span><span class="s1">'Bacon'</span><span class="p">,</span><span class="w">
+    </span><span class="s1">'Beer'</span><span class="p">,</span><span class="w">
+    </span><span class="s1">'Software'</span><span class="w">
+  </span><span class="p">)</span><span class="w">
+</span><span class="p">}</span><span class="w">                                                           </span><span class="c"># Create a PowerShell HashTable</span><span class="w">
+
+</span><span class="nv">$Person</span><span class="o">.</span><span class="nf">FirstName</span><span class="w">                                           </span><span class="c"># Retrieve an item from a HashTable</span><span class="w">
+</span><span class="nv">$Person</span><span class="o">.</span><span class="n">Likes</span><span class="p">[</span><span class="nt">-1</span><span class="p">]</span><span class="w">                                           </span><span class="c"># Returns the last item in the "Likes" array, in the $Person HashTable (software)</span><span class="w">
+</span><span class="nv">$Person</span><span class="o">.</span><span class="nf">Age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">50</span><span class="w">                                            </span><span class="c"># Add a new property to a HashTable</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="windows-management-instrumentation-wmi-windows-only">Windows Management Instrumentation (WMI) (Windows only)</h2>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Get-CimInstance</span><span class="w"> </span><span class="nt">-ClassName</span><span class="w"> </span><span class="nx">Win32_BIOS</span><span class="w">                       </span><span class="c"># Retrieve BIOS information</span><span class="w">
+</span><span class="n">Get-CimInstance</span><span class="w"> </span><span class="nt">-ClassName</span><span class="w"> </span><span class="nx">Win32_DiskDrive</span><span class="w">                  </span><span class="c"># Retrieve information about locally connected physical disk devices</span><span class="w">
+</span><span class="n">Get-CimInstance</span><span class="w"> </span><span class="nt">-ClassName</span><span class="w"> </span><span class="nx">Win32_PhysicalMemory</span><span class="w">             </span><span class="c"># Retrieve information about install physical memory (RAM)</span><span class="w">
+</span><span class="n">Get-CimInstance</span><span class="w"> </span><span class="nt">-ClassName</span><span class="w"> </span><span class="nx">Win32_NetworkAdapter</span><span class="w">             </span><span class="c"># Retrieve information about installed network adapters (physical + virtual)</span><span class="w">
+</span><span class="n">Get-CimInstance</span><span class="w"> </span><span class="nt">-ClassName</span><span class="w"> </span><span class="nx">Win32_VideoController</span><span class="w">            </span><span class="c"># Retrieve information about installed graphics / video card (GPU)</span><span class="w">
+
+</span><span class="n">Get-CimClass</span><span class="w"> </span><span class="nt">-Namespace</span><span class="w"> </span><span class="nx">root\cimv2</span><span class="w">                          </span><span class="c"># Explore the various WMI classes available in the root\cimv2 namespace</span><span class="w">
+</span><span class="n">Get-CimInstance</span><span class="w"> </span><span class="nt">-Namespace</span><span class="w"> </span><span class="nx">root</span><span class="w"> </span><span class="nt">-ClassName</span><span class="w"> </span><span class="nx">__NAMESPACE</span><span class="w">      </span><span class="c"># Explore the child WMI namespaces underneath the root\cimv2 namespace</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="asynchronous-event-registration">Asynchronous Event Registration</h2>
+
+<h3 id="register-for-filesystem-events">Register for filesystem events</h3>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$Watcher</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="n">System.IO.FileSystemWatcher</span><span class="p">]::</span><span class="n">new</span><span class="p">(</span><span class="s1">'c:\tmp'</span><span class="p">)</span><span class="w">
+</span><span class="n">Register-ObjectEvent</span><span class="w"> </span><span class="nt">-InputObject</span><span class="w"> </span><span class="nv">$Watcher</span><span class="w"> </span><span class="nt">-EventName</span><span class="w"> </span><span class="nx">Created</span><span class="w"> </span><span class="nt">-Action</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="n">Write-Host</span><span class="w"> </span><span class="nt">-Object</span><span class="w"> </span><span class="s1">'New file created!!!'</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="perform-a-task-on-a-timer-ie-every-5000-milliseconds">Perform a task on a timer (ie. every 5000 milliseconds)</h3>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$Timer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="n">System.Timers.Timer</span><span class="p">]::</span><span class="n">new</span><span class="p">(</span><span class="mi">5000</span><span class="p">)</span><span class="w">
+</span><span class="n">Register-ObjectEvent</span><span class="w"> </span><span class="nt">-InputObject</span><span class="w"> </span><span class="nv">$Timer</span><span class="w"> </span><span class="nt">-EventName</span><span class="w"> </span><span class="nx">Elapsed</span><span class="w"> </span><span class="nt">-Action</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="n">Write-Host</span><span class="w"> </span><span class="nt">-ForegroundColor</span><span class="w"> </span><span class="nx">Blue</span><span class="w"> </span><span class="nt">-Object</span><span class="w"> </span><span class="s1">'Timer elapsed! Doing some work.'</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="nv">$Timer</span><span class="o">.</span><span class="nf">Start</span><span class="p">()</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="powershell-drives-psdrives">PowerShell Drives (PSDrives)</h2>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Get-PSDrive</span><span class="w">                                                 </span><span class="c"># List all the PSDrives on the system</span><span class="w">
+</span><span class="n">New-PSDrive</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">videos</span><span class="w"> </span><span class="nt">-PSProvider</span><span class="w"> </span><span class="nx">Filesystem</span><span class="w"> </span><span class="nt">-Root</span><span class="w"> </span><span class="nx">x:\data\content\videos</span><span class="w">  </span><span class="c"># Create a new PSDrive that points to a filesystem location</span><span class="w">
+</span><span class="n">New-PSDrive</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">h</span><span class="w"> </span><span class="nt">-PSProvider</span><span class="w"> </span><span class="nx">FileSystem</span><span class="w"> </span><span class="nt">-Root</span><span class="w"> </span><span class="s1">'\\storage\h$\data'</span><span class="w"> </span><span class="nt">-Persist</span><span class="w"> </span><span class="c"># Create a persistent mount on a drive letter, visible in Windows Explorer</span><span class="w">
+</span><span class="n">Set-Location</span><span class="w"> </span><span class="nt">-Path</span><span class="w"> </span><span class="nx">videos:</span><span class="w">                                  </span><span class="c"># Switch into PSDrive context</span><span class="w">
+</span><span class="n">Remove-PSDrive</span><span class="w"> </span><span class="nt">-Name</span><span class="w"> </span><span class="nx">xyz</span><span class="w">                                    </span><span class="c"># Delete a PSDrive</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="data-management">Data Management</h2>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Get-Process</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Group-Object</span><span class="w"> </span><span class="nt">-Property</span><span class="w"> </span><span class="nx">Name</span><span class="w">                   </span><span class="c"># Group objects by property name</span><span class="w">
+</span><span class="n">Get-Process</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Sort-Object</span><span class="w"> </span><span class="nt">-Property</span><span class="w"> </span><span class="nx">Id</span><span class="w">                      </span><span class="c"># Sort objects by a given property name</span><span class="w">
+</span><span class="n">Get-Process</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Where-Object</span><span class="w"> </span><span class="nt">-FilterScript</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="bp">$PSItem</span><span class="o">.</span><span class="nf">Name</span><span class="w"> </span><span class="o">-match</span><span class="w"> </span><span class="s1">'^c'</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c"># Filter objects based on a property matching a value</span><span class="w">
+</span><span class="n">gps</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">where</span><span class="w"> </span><span class="nx">Name</span><span class="w"> </span><span class="o">-match</span><span class="w"> </span><span class="s1">'^c'</span><span class="w">                                </span><span class="c"># Abbreviated form of the previous statement</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="source"><a href="https://gist.github.com/pcgeek86/336e08d1a09e3dd1a8f0a30a9fe61c8a" target="\_blank">Source</a></h2>
+
+<h2 id="see-also">See Also</h2>
+
+<ul>
+  <li><a href="http://learnxinyminutes.com/docs/powershell/" target="\_blank">Learn X in Y minutes</a></li>
+  <li><a href="https://download.microsoft.com/download/2/1/2/2122F0B9-0EE6-4E6D-BFD6-F9DCD27C07F9/WS12_QuickRef_Download_Files/PowerShell_LangRef_v3.pdf" target="\_blank">PDF 1</a></li>
+  <li><a href="https://cdn.comparitech.com/wp-content/uploads/2018/08/Comparitech-Powershell-cheatsheet.pdf" target="\_blank">PDF 2</a></li>
+</ul>
+
+
+
+        
+      </section>
+
+      <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/resources/cheatsheets/matlab/" class="pagination--pager" title="Matlab
+">Previous</a>
+    
+    
+      <a href="/resources/cheatsheets/python/" class="pagination--pager" title="Python
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+    
+  </article>
+
+  
+  
+</div>
+
+      <div align="center" style="margin: 1em 0;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- ad-unit_horizontal -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-7211504142101622"
+             data-ad-slot="6952122554"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    
+    
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
+    <label class="sr-only" for="cse-search-input-box-id">
+      Enter your search term...
+    </label>
+    <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results">
+    <gcse:searchresults-only></gcse:searchresults-only>
+  </div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.linkedin.com/company/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+        
+          <li><a href="https://github.com/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+        
+          <li><a href="https://www.pinterest.com/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-pinterest" aria-hidden="true"></i> Pinterest</a></li>
+        
+      
+        
+          <li><a href="https://www.instagram.com/cfd.streamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/CfdStreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/CFD-Streamline-102236005421147/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 CFD Streamline. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<script>
+  (function () {
+    var cx = 'a390aa655bef0d717';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+  function googleCustomSearchExecute() {
+    var input = document.getElementById('cse-search-input-box-id');
+    var element = google.search.cse.element.getElement('searchresults-only0');
+    if (input.value == '') {
+      element.clearAllResults();
+    } else {
+      element.execute(input.value);
+    }
+    return false;
+  }
+
+  
+</script>
+
+
+
+
+
+
+
+<!-- snipcart -->
+<script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+<div hidden id="snipcart" data-api-key="NThhNjEyYzUtNjY3ZS00YTlkLWFjYWEtYmVmZTZhMzRhZjgyNjM3NjIzNzM3NTkwNTg2NzQ5
+"></div>
+
+  </body>
+</html>

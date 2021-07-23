@@ -1,0 +1,1714 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.23.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Latex | CFD Streamline</title>
+<meta name="description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CFD Streamline">
+<meta property="og:title" content="Latex">
+<meta property="og:url" content="http://localhost:4000/resources/cheatsheets/latex/">
+
+
+  <meta property="og:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/logos/logo_latex.svg">
+
+
+
+  <meta name="twitter:site" content="@cfdstreamline">
+  <meta name="twitter:title" content="Latex">
+  <meta name="twitter:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+  <meta name="twitter:url" content="http://localhost:4000/resources/cheatsheets/latex/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="http://localhost:4000/assets/images/logos/logo_latex.svg">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-07-23T17:10:09+02:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/CFD-Streamline-102236005421147">
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/resources/cheatsheets/latex/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Organization",
+      "url": "http://localhost:4000/",
+      "logo": "http://localhost:4000/assets/images/site-logo.png"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="CFD Streamline Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- snipcart -->
+<link rel="preconnect" href="https://app.snipcart.com">
+<link rel="preconnect" href="https://cdn.snipcart.com">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
+
+
+
+<!-- google adsense -->
+<script data-ad-client="ca-pub-7211504142101622" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+<!-- mathjax -->
+<!--
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+  </script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js">
+</script>
+-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  processEscapes: true},
+  jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
+  extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
+  TeX: {
+  extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
+  equationNumbers: {
+  autoNumber: "AMS"
+  }
+  }
+  });
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icon/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icon/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icon/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/icon/favicon/site.webmanifest">
+<link rel="mask-icon" href="/assets/images/icon/favicon/safari-pinned-tab.svg" color="#283747">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--wiki">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/icon/logo.jpg" alt="CFD Streamline"></a>
+        
+        <a class="site-title" href="/">
+          CFD Streamline
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/wiki/">Wiki</a>
+            </li><li class="masthead__menu-item">
+              <a href="/software/">Software</a>
+            </li><li class="masthead__menu-item">
+              <a href="/testcases/">Test Cases</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resources/">Resources</a>
+            </li><li class="masthead__menu-item">
+              <a href="/posts/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/store/">Store</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/resources" itemprop="item"><span itemprop="name">Resources</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/cheatsheets" itemprop="item"><span itemprop="name">Cheatsheets</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Latex</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+  
+  </div>
+
+
+
+  
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Latex">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Latex
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+
+        <h2 id="overview">Overview</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">% All comment lines start with %. There are no multi-line comments</span>
+<span class="c">% Every LaTeX command starts with a backslash (\)</span>
+
+
+<span class="c">% Preamble</span>
+<span class="c">%-----------------------------------------------</span>
+<span class="c">% Document Class</span>
+<span class="k">\documentclass</span><span class="na">[12pt]</span><span class="p">{</span>article<span class="p">}</span>
+
+<span class="c">% Packages</span>
+<span class="k">\usepackage</span><span class="p">{</span>caption<span class="p">}</span>     <span class="c">% Sets figure captions</span>
+<span class="k">\usepackage</span><span class="p">{</span>float<span class="p">}</span>       <span class="c">% Allows figures to float</span>
+<span class="k">\usepackage</span><span class="p">{</span>hyperref<span class="p">}</span>    <span class="c">% Allows hyperlinks</span>
+
+<span class="c">% Document Properties Definitions</span>
+<span class="k">\author</span><span class="p">{</span>Author's name<span class="p">}</span>
+<span class="k">\date</span><span class="p">{</span><span class="k">\today</span><span class="p">}</span>
+<span class="k">\title</span><span class="p">{</span>Title<span class="p">}</span>
+
+
+<span class="c">% Document</span>
+<span class="c">%-----------------------------------------------</span>
+<span class="nt">\begin{document}</span>
+
+<span class="c">% Title</span>
+<span class="k">\maketitle</span>
+<span class="k">\newpage</span>          <span class="c">% Creates a new page</span>
+
+<span class="c">% Tables of Content</span>
+<span class="k">\tableofcontents</span> <span class="c">% Main table of content</span>
+<span class="k">\newpage</span>
+<span class="k">\listoffigures</span>   <span class="c">% List of figures</span>
+<span class="k">\newpage</span>
+<span class="k">\listoftables</span>    <span class="c">% List of tables</span>
+<span class="k">\newpage</span>
+
+<span class="c">% Abstract: command is available in the document classes article and report.</span>
+<span class="nt">\begin{abstract}</span>
+ <span class="k">\LaTeX</span><span class="p">{}</span> documentation written as <span class="k">\LaTeX</span>! How novel and totally not
+ my idea!
+<span class="nt">\end{abstract}</span>
+
+<span class="c">% Sections</span>
+<span class="k">\section</span><span class="p">{</span>Introduction<span class="p">}</span>
+Hello, my name is Colton and together we're going to explore <span class="k">\LaTeX</span>!
+
+<span class="k">\section</span><span class="p">{</span>Another section<span class="p">}</span>
+This is the text for another section. I think it needs a subsection.
+
+<span class="k">\subsection</span><span class="p">{</span>This is a subsection<span class="p">}</span> <span class="c">% Subsections are also intuitive.</span>
+I think we need another one.
+
+<span class="k">\subsubsection</span><span class="p">{</span>Pythagoras<span class="p">}</span>
+Much better now.
+<span class="k">\label</span><span class="p">{</span>subsec:pythagoras<span class="p">}</span>
+
+<span class="k">\section*</span><span class="p">{</span>This is an unnumbered section<span class="p">}</span>
+However not all sections have to be numbered!
+
+<span class="k">\section</span><span class="p">{</span>Some Text notes<span class="p">}</span>
+<span class="k">\LaTeX</span><span class="p">{}</span> is generally pretty good about placing text where it should
+go. If
+a line <span class="k">\\</span> needs <span class="k">\\</span> to <span class="k">\\</span> break <span class="k">\\</span> you add <span class="k">\textbackslash\textbackslash</span><span class="p">{}</span>
+to the source code.
+
+Separate paragraphs by empty lines.
+
+You need to add a backslash after abbreviations (if not followed by a comma), because otherwise the spacing after the dot is too large:
+E.g., i.e., etc.<span class="k">\ </span>are are such abbreviations.
+
+<span class="k">\section</span><span class="p">{</span>Lists<span class="p">}</span>
+<span class="nt">\begin{enumerate}</span> <span class="c">% This creates an "enumerate" environment.</span>
+  <span class="c">% \item tells the enumerate to increment</span>
+  <span class="k">\item</span> Salad.
+  <span class="k">\item</span> 27 watermelon.
+  <span class="k">\item</span> A single jackrabbit.
+  <span class="c">% we can even override the item number by using []</span>
+  <span class="k">\item</span><span class="na">[how many?]</span> Medium sized squirt guns.
+
+  Not a list item, but still part of the enumerate.
+<span class="nt">\end{enumerate}</span> <span class="c">% All environments must have an end.</span>
+
+<span class="k">\section</span><span class="p">{</span>Math<span class="p">}</span>
+
+Here's how you state all x that belong to X, <span class="p">$</span><span class="nv">\forall</span><span class="nb"> x </span><span class="nv">\in</span><span class="nb"> X</span><span class="p">$</span>.
+We can also enter math mode with <span class="p">\[</span><span class="nb">a</span><span class="p">^</span><span class="m">2</span><span class="nb"> </span><span class="o">+</span><span class="nb"> b</span><span class="p">^</span><span class="m">2</span><span class="nb"> </span><span class="o">=</span><span class="nb"> c</span><span class="p">^</span><span class="m">2</span><span class="nb"> </span><span class="p">\]</span>.
+
+<span class="c">% Display math with the equation 'environment'</span>
+<span class="nt">\begin{equation}</span> <span class="c">% enters math-mode</span>
+    c<span class="p">^</span>2 = a<span class="p">^</span>2 + b<span class="p">^</span>2.
+    <span class="k">\label</span><span class="p">{</span>eq:pythagoras<span class="p">}</span> <span class="c">% for referencing</span>
+<span class="nt">\end{equation}</span> <span class="c">% all \begin statements must have an end statement</span>
+
+Eqn.~<span class="k">\ref</span><span class="p">{</span>eq:pythagoras<span class="p">}</span> is also known as the Pythagoras Theorem which is also
+the subject of Sec.~<span class="k">\ref</span><span class="p">{</span>subsec:pythagoras<span class="p">}</span>. A lot of things can be labeled:
+figures, equations, sections, etc.
+
+
+<span class="k">\section</span><span class="p">{</span>Figures<span class="p">}</span>
+
+<span class="c">% See https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions for more details</span>
+
+<span class="nt">\begin{figure}</span>[H] <span class="c">% H here denoted the placement option.</span>
+    <span class="k">\centering</span> <span class="c">% centers the figure on the page</span>
+    <span class="c">% Inserts a figure scaled to 0.8 the width of the page.</span>
+    <span class="c">%\includegraphics[width=0.8\linewidth]{right-triangle.png}</span>
+    <span class="c">% Commented out for compilation purposes. Please use your imagination.</span>
+    <span class="k">\caption</span><span class="p">{</span>Right triangle with sides <span class="p">$</span><span class="nb">a</span><span class="p">$</span>, <span class="p">$</span><span class="nb">b</span><span class="p">$</span>, <span class="p">$</span><span class="nb">c</span><span class="p">$}</span>
+    <span class="k">\label</span><span class="p">{</span>fig:right-triangle<span class="p">}</span>
+<span class="nt">\end{figure}</span>
+
+<span class="k">\subsection</span><span class="p">{</span>Table<span class="p">}</span>
+
+<span class="nt">\begin{table}</span>[H]
+  <span class="k">\caption</span><span class="p">{</span>Caption for the Table.<span class="p">}</span>
+  <span class="c">% The basic is simple: one letter for each column, to control alignment:</span>
+  <span class="c">% basic options are: c, l, r and p for centered, left, right and paragraph</span>
+  <span class="c">% optionnally, you can add a | for a vertical line</span>
+  <span class="c">% See https://en.wikibooks.org/wiki/LaTeX/Tables for more details</span>
+  <span class="nt">\begin{tabular}</span><span class="p">{</span>c|cc<span class="p">}</span>  <span class="c">% here it means "centered | vertical line, centered centered"</span>
+    Number <span class="p">&amp;</span>  Last Name <span class="p">&amp;</span> First Name <span class="k">\\</span> <span class="c">% Column rows are separated by &amp;</span>
+    <span class="k">\hline</span> <span class="c">% a horizontal line</span>
+    1 <span class="p">&amp;</span> Biggus <span class="p">&amp;</span> Dickus <span class="k">\\</span>
+    2 <span class="p">&amp;</span> Monty <span class="p">&amp;</span> Python
+  <span class="nt">\end{tabular}</span>
+<span class="nt">\end{table}</span>
+
+<span class="k">\section</span><span class="p">{</span>Getting <span class="k">\LaTeX</span><span class="p">{}</span> to not compile something (i.e.<span class="k">\ </span>Source Code)<span class="p">}</span>
+
+<span class="c">% There are other packages that exist (i.e. minty, lstlisting, etc.)</span>
+<span class="c">% but verbatim is the bare-bones basic one.</span>
+<span class="nt">\begin{verbatim}</span>
+  print("Hello World!")
+  a<span class="c">%b; % look! We can use % signs in verbatim.</span>
+  random = 4; #decided by fair random dice roll, https://www.xkcd.com/221/
+  See https://www.explainxkcd.com/wiki/index.php/221:<span class="p">_</span>Random<span class="p">_</span>Number
+<span class="nt">\end{verbatim}</span>
+
+<span class="k">\section</span><span class="p">{</span>Compiling<span class="p">}</span>
+
+<span class="nt">\begin{enumerate}</span>
+  <span class="k">\item</span> Write the document in plain text (the ``source code'').
+  <span class="k">\item</span> Compile source code to produce a pdf.
+    The compilation step looks like this (in Linux): <span class="k">\\</span>
+    <span class="nt">\begin{verbatim}</span>
+      &gt; pdflatex learn-latex.tex
+    <span class="nt">\end{verbatim}</span>
+<span class="nt">\end{enumerate}</span>
+
+<span class="k">\section</span><span class="p">{</span>Hyperlinks<span class="p">}</span>
+
+There exists two main types of links: visible URL <span class="k">\\</span>
+<span class="k">\url</span><span class="p">{</span>https://learnxinyminutes.com/docs/latex/<span class="p">}</span>, or
+<span class="k">\href</span><span class="p">{</span>https://learnxinyminutes.com/docs/latex/<span class="p">}{</span>shadowed by text<span class="p">}</span>
+<span class="c">% You can not add extra-spaces or special symbols into shadowing text since it</span>
+<span class="c">% will cause mistakes during the compilation</span>
+
+This package also produces list of thumbnails in the output pdf document and
+active links in the table of contents.
+
+<span class="k">\section</span><span class="p">{</span>Writing in ASCII or other encodings<span class="p">}</span>
+
+It is easy to insert accents and basic Latin symbols, with backslash shortcuts
+Like <span class="k">\,</span>c, <span class="k">\'</span>e, <span class="k">\`</span>A, <span class="k">\ae</span> and <span class="k">\oe</span> etc.  <span class="c">% for ç, é, À, etc</span>
+<span class="c">% See https://en.wikibooks.org/wiki/LaTeX/Special_Characters#Escaped_codes for more</span>
+
+To write directly in UTF-8, when compiling with pdflatex, use
+<span class="nt">\begin{verbatim}</span>
+    <span class="k">\usepackage</span><span class="na">[utf8]</span><span class="p">{</span>inputenc<span class="p">}</span>
+<span class="nt">\end{verbatim}</span>
+The selected font has to support the glyphs used for your document, you have to add
+<span class="nt">\begin{verbatim}</span>
+    <span class="k">\usepackage</span><span class="na">[T1]</span><span class="p">{</span>fontenc<span class="p">}</span>
+<span class="nt">\end{verbatim}</span>
+
+
+<span class="k">\section</span><span class="p">{</span>End<span class="p">}</span>
+
+That's all for now!
+
+<span class="c">% Bibliography</span>
+<span class="nt">\begin{thebibliography}</span><span class="p">{</span>1<span class="p">}</span>
+  <span class="k">\bibitem</span><span class="p">{</span>latexwiki<span class="p">}</span> The amazing <span class="k">\LaTeX</span><span class="p">{}</span> wikibook: <span class="k">\emph</span><span class="p">{</span>https://en.wikibooks.org/wiki/LaTeX<span class="p">}</span>
+  <span class="k">\bibitem</span><span class="p">{</span>latextutorial<span class="p">}</span> An actual tutorial: <span class="k">\emph</span><span class="p">{</span>http://www.latex-tutorial.com<span class="p">}</span>
+<span class="nt">\end{thebibliography}</span>
+
+<span class="c">% Ends the document</span>
+<span class="nt">\end{document}</span>
+</code></pre></div></div>
+
+<h2 id="document-classes">Document Classes</h2>
+
+<p>Usage: <code class="language-plaintext highlighter-rouge">\documentclass[opt,opt]{class}</code>.</p>
+
+<h3 id="classes">Classes</h3>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>book    <span class="c">% Default is two-sided.</span>
+report  <span class="c">% No \part divisions.</span>
+article <span class="c">% No \part or \chapter divisions.</span>
+letter  <span class="c">% Letter.</span>
+slides  <span class="c">% Large sans-serif font.</span>
+</code></pre></div></div>
+
+<h3 id="common-options">Common options</h3>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10pt/11pt/12pt       <span class="c">% Font size.</span>
+letterpaper/a4paper  <span class="c">% Paper size.</span>
+twocolumn            <span class="c">% Use two columns.</span>
+twoside              <span class="c">% Set margins for two-sided.</span>
+landscape            <span class="c">% Landscape orientation. Must use dvips -t landscape.</span>
+draft                <span class="c">% Double-space lines.</span>
+</code></pre></div></div>
+
+<h2 id="packages">Packages</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\usepackage</span><span class="p">{</span>fullpage<span class="p">}</span>  <span class="c">% uses 1 inch margins.</span>
+<span class="k">\usepackage</span><span class="p">{</span>anysize<span class="p">}</span>   <span class="c">% sets margins: \marginsize{l}{r}{t}{b}</span>
+<span class="k">\usepackage</span><span class="p">{</span>multicol<span class="p">}</span>  <span class="c">% uses n columns: \begin{multicols}{n}.</span>
+<span class="k">\usepackage</span><span class="p">{</span>lscape<span class="p">}</span>    <span class="c">% allows a page to be rendered in landscape mode</span>
+<span class="k">\usepackage</span><span class="p">{</span>appendix<span class="p">}</span>  <span class="c">% allows appendix section to be included</span>
+<span class="k">\usepackage</span><span class="p">{</span>lettrine<span class="p">}</span>  <span class="c">% supports various dropped capitals styles</span>
+<span class="k">\usepackage</span><span class="p">{</span>hyperref<span class="p">}</span>  <span class="c">% allows hyperlinks</span>
+<span class="k">\usepackage</span><span class="p">{</span>url<span class="p">}</span>       <span class="c">% inserts URL: \url{http://... }.</span>
+<span class="k">\usepackage</span><span class="p">{</span>latexsym<span class="p">}</span>  <span class="c">% uses \LaTeX\ symbol font.</span>
+
+<span class="k">\usepackage</span><span class="p">{</span>graphicx<span class="p">}</span>  <span class="c">% shows image: \includegraphics[width=x]{file}.</span>
+<span class="k">\usepackage</span><span class="p">{</span>epstopdf<span class="p">}</span>  <span class="c">% convert eps figures to pdf</span>
+<span class="k">\usepackage</span><span class="p">{</span>caption<span class="p">}</span>   <span class="c">% sets figure captions</span>
+<span class="k">\usepackage</span><span class="p">{</span>subcaption<span class="p">}</span><span class="c">% captions for the subfigures</span>
+<span class="k">\usepackage</span><span class="p">{</span>float<span class="p">}</span>     <span class="c">% allows figures to float</span>
+
+<span class="k">\usepackage</span><span class="p">{</span>amsmath<span class="p">}</span>   <span class="c">% American Mathematical Society package (allows \eqref)</span>
+<span class="k">\usepackage</span><span class="p">{</span>amssymb<span class="p">}</span>   <span class="c">% American Mathematical Society extra symbols</span>
+<span class="k">\usepackage</span><span class="p">{</span>amsthm<span class="p">}</span>    <span class="c">% offers the theorem setup of the AMS document classes</span>
+<span class="k">\usepackage</span><span class="p">{</span>cancel<span class="p">}</span>    <span class="c">% allows showing canceled terms in equations</span>
+
+<span class="k">\usepackage</span><span class="p">{</span>tabularx<span class="p">}</span>  <span class="c">% an extension of tabular which has an additional column designator, X, which creates a paragraph-like column whose width automatically expands so that the declared width of the environment is filled</span>
+<span class="k">\usepackage</span><span class="p">{</span>booktabs<span class="p">}</span>  <span class="c">% enhances the quality of tables and provides extra commands</span>
+<span class="k">\usepackage</span><span class="p">{</span>multirow<span class="p">}</span>  <span class="c">% tables with cell occuping more than one row</span>
+<span class="k">\usepackage</span><span class="p">{</span>threeparttable<span class="p">}</span> <span class="c">% tables with footnotes</span>
+<span class="k">\usepackage</span><span class="p">{</span>placeins<span class="p">}</span>  <span class="c">% defines a \FloatBarrier command, beyond which floats may not pass</span>
+</code></pre></div></div>
+
+<h2 id="title">Title</h2>
+
+<p>Usage: <code class="language-plaintext highlighter-rouge">\maketitle</code></p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\author</span><span class="p">{</span>text<span class="p">}</span>          <span class="c">% Author of document.</span>
+<span class="k">\title</span><span class="p">{</span>text<span class="p">}</span>           <span class="c">% Title of document.</span>
+<span class="k">\date</span><span class="p">{</span>text<span class="p">}</span>            <span class="c">% Date.</span>
+</code></pre></div></div>
+
+<h2 id="page-style">Page Style</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\pagestyle</span><span class="p">{</span>empty<span class="p">}</span>      <span class="c">% Both header and footer are cleared</span>
+<span class="k">\pagestyle</span><span class="p">{</span>plain<span class="p">}</span>      <span class="c">% Header is clear, but the footer contains the page number in the center.</span>
+<span class="k">\pagestyle</span><span class="p">{</span>headings<span class="p">}</span>   <span class="c">% Footer is blank, header displays information according to document class (e.g., section name) and page number top right.</span>
+<span class="k">\pagestyle</span><span class="p">{</span>myheadings<span class="p">}</span> <span class="c">% Page number is top right, and it is possible to control the rest of the header.</span>
+</code></pre></div></div>
+
+<h2 id="tables-of-content">Tables of Content</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\tableofcontents</span> <span class="c">% Adds a table of content.</span>
+<span class="k">\listoffigures</span>   <span class="c">% List of figures</span>
+<span class="k">\listoftables</span>    <span class="c">% List of tables</span>
+</code></pre></div></div>
+
+<h2 id="document-structure">Document Structure</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\setcounter</span><span class="p">{</span>secnumdepth<span class="p">}{</span>x<span class="p">}</span> <span class="c">% suppresses heading numbers of depth &gt; x, where chapter has depth 0.</span>
+
+<span class="k">\part</span><span class="p">{</span>title<span class="p">}</span>
+<span class="k">\chapter</span><span class="p">{</span>title<span class="p">}</span>
+<span class="k">\section</span><span class="p">{</span>title<span class="p">}</span>
+<span class="k">\section*</span><span class="p">{</span>title<span class="p">}</span>, <span class="c">% not numbers the section and it does not appear in the table of contents</span>
+<span class="k">\subsection</span><span class="p">{</span>title<span class="p">}</span>
+<span class="k">\subsubsection</span><span class="p">{</span>title<span class="p">}</span>
+<span class="k">\paragraph</span><span class="p">{</span>title<span class="p">}</span>
+<span class="k">\subparagraph</span><span class="p">{</span>title<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="text-environments">Text Environments</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">\begin{comment}</span>   <span class="nt">\end{comment}</span>   <span class="c">% Comment (not printed). Requires verbatim package.</span>
+<span class="nt">\begin{quote}</span>     <span class="nt">\end{quote}</span>     <span class="c">% Indented quotation block.</span>
+<span class="nt">\begin{quotation}</span> <span class="nt">\end{quotation}</span> <span class="c">% Like quote with indented paragraphs.</span>
+<span class="nt">\begin{verse}</span>     <span class="nt">\end{verse}</span>     <span class="c">% Quotation block for verse.</span>
+<span class="nt">\begin{verbatim}</span>  <span class="nt">\end{verbatim}</span>  <span class="c">% Verbatim environment.</span>
+
+<span class="nb">\verb</span><span class="kp">!</span><span class="sx">text</span><span class="kp">!</span> <span class="c">% Text between the delimiting characters (in this case '!') is verbatim.</span>
+</code></pre></div></div>
+
+<h2 id="text-properties">Text Properties</h2>
+
+<h3 id="font-face">Font Face</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Command</th>
+      <th style="text-align: center">Declaration</th>
+      <th style="text-align: left">Effect</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\textrm{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\rmfamily text}</code></td>
+      <td style="text-align: left">Roman family</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\textsf{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\sffamily text}</code></td>
+      <td style="text-align: left">Sans serif family</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\texttt{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\ttfamily text}</code></td>
+      <td style="text-align: left">Typewriter family</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\textmd{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\mdseries text}</code></td>
+      <td style="text-align: left">Medium series</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\textbf{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\bfseries text}</code></td>
+      <td style="text-align: left">Bold series</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\textup{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\upshape text}</code></td>
+      <td style="text-align: left">Upright shape</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\textit{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\itshape text}</code></td>
+      <td style="text-align: left">Italic shape</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\textsl{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\slshape text}</code></td>
+      <td style="text-align: left">Slanted shape</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\textsc{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\scshape text}</code></td>
+      <td style="text-align: left">Small Caps shape</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\emph{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\em text}</code></td>
+      <td style="text-align: left">Emphasized</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\textnormal{text}</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">{\normalfont text}</code></td>
+      <td style="text-align: left">Document font</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\underline{text}</code></td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">Underline</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="font-size">Font size</h3>
+
+<p>Usage <code class="language-plaintext highlighter-rouge">{\command text }</code></p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\tiny</span>         <span class="c">% tiny</span>
+<span class="k">\scriptsize</span>   <span class="c">% scriptsize</span>
+<span class="k">\footnotesize</span> <span class="c">% footnotesize</span>
+<span class="k">\small</span>        <span class="c">% small</span>
+<span class="k">\normalsize</span>   <span class="c">% normalsize</span>
+<span class="k">\large</span>        <span class="c">% large</span>
+<span class="k">\Large</span>        <span class="c">% Large</span>
+<span class="k">\LARGE</span>        <span class="c">% LARGE</span>
+<span class="k">\huge</span>         <span class="c">% huge</span>
+<span class="k">\Huge</span>         <span class="c">% Huge</span>
+</code></pre></div></div>
+
+<h3 id="justification">Justification</h3>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">% Environment</span>
+<span class="nt">\begin{center}</span>     <span class="nt">\end{center}</span>
+<span class="nt">\begin{flushleft}</span>  <span class="nt">\end{flushleft}</span>
+<span class="nt">\begin{flushright}</span> <span class="nt">\end{flushright}</span>
+
+<span class="c">% Declaration</span>
+<span class="k">\centering</span>
+<span class="k">\raggedright</span>
+<span class="k">\raggedleft</span>
+</code></pre></div></div>
+
+<h3 id="line-spacing">Line Spacing</h3>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\linespread</span><span class="p">{</span>x<span class="p">}</span> <span class="c">% changes the line spacing by the multiplier x.</span>
+</code></pre></div></div>
+
+<h3 id="symbols">Symbols</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Symbol</th>
+      <th style="text-align: left">Latex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">&amp;</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\&amp;</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">_</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\_</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">…</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\ldots</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\bullet\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\textbullet</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\$</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">^</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\^{}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">|</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\textbar</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\textbackslash</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">%</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\%</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">~</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\~{}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">#</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\#</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">S</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\S</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="accents">Accents</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Accent</th>
+      <th style="text-align: left">Latex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">ò</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\`o</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ó</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\'o</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ô</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\^o</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">õ</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\~o</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ō</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\=o</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ȧ</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\.a</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ö</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\"o</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">o̧</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\c o</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ă</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\u a</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ǎ</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\v a</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ő</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\H</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ç</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\c c</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ạ</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\d a</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ą</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\k a</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">⁀</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\t</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">œ</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\oe</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Œ</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\OE</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">æ</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\ae</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Æ</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\AE</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">å</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\aa</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Å</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\A</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ø</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\o</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Ø</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\O</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">ł</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\l</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Ł</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\L</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">¡</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">~</code>`</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">¿</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">?</code>`</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="delimiters">Delimiters</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Delimiter</th>
+      <th style="text-align: left">Latex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">`     | <code class="language-plaintext highlighter-rouge">`</code></td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">’</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">'</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">“</td>
+      <td style="text-align: left">` `` `</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">”</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">''</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">{}</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\{\}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">[]</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">[]</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">()</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">()</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">&lt;</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\textless</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">&gt;</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\textgreater</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="dashes">Dashes</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Name</th>
+      <th style="text-align: center">Latex</th>
+      <th style="text-align: left">Example</th>
+      <th style="text-align: left">Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">hyphen</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">-</code></td>
+      <td style="text-align: left">X-ray</td>
+      <td style="text-align: left">In words</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">en-dash</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">--</code></td>
+      <td style="text-align: left">1–5</td>
+      <td style="text-align: left">Between numbers</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">em-dash</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">---</code></td>
+      <td style="text-align: left">Yes—or no?</td>
+      <td style="text-align: left">Punctuation</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="lists">Lists</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">\begin{enumerate}</span>     <span class="c">% Numbered list.</span>
+  <span class="k">\item</span> text          <span class="c">% Adds an item.</span>
+<span class="nt">\end{enumerate}</span>
+
+<span class="nt">\begin{itemize}</span>       <span class="c">% Bulleted list.</span>
+  <span class="k">\item</span> text          <span class="c">% Adds an item.</span>
+<span class="nt">\end{itemize}</span>
+
+<span class="nt">\begin{description}</span>   <span class="c">% Description list.</span>
+  <span class="k">\item</span><span class="na">[x]</span> text       <span class="c">% Uses x instead of normal bullet or number. Required for descriptions</span>
+<span class="nt">\end{description}</span>
+</code></pre></div></div>
+
+<h2 id="line-and-page-breaks">Line and Page Breaks</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\\</span>         <span class="c">% Begin new line without new paragraph.</span>
+<span class="k">\\*</span>        <span class="c">% Prohibit pagebreak after linebreak.</span>
+<span class="k">\kill</span>      <span class="c">% Don't print current line.</span>
+<span class="k">\pagebreak</span> <span class="c">% Starts new page.</span>
+<span class="k">\newpage</span>   <span class="c">% Starts new page</span>
+<span class="k">\noindent</span>  <span class="c">% Do not indent current line.</span>
+</code></pre></div></div>
+
+<h2 id="miscellaneous">Miscellaneous</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\today</span>      <span class="c">% Prints todays date</span>
+~           <span class="c">% Space, disallow linebreak (W.J.~Clinton).</span>
+<span class="k">\@</span>.         <span class="c">% Indicate that the . ends a sentence when following an uppercase letter.</span>
+<span class="k">\hspace</span><span class="p">{</span>l<span class="p">}</span>  <span class="c">% Horizontal space of length l (Ex: l = 20pt).</span>
+<span class="k">\vspace</span><span class="p">{</span>l<span class="p">}</span>  <span class="c">% Vertical space of length l.</span>
+<span class="k">\rule</span><span class="p">{</span>w<span class="p">}{</span>h<span class="p">}</span> <span class="c">% Line of width w and height h.</span>
+</code></pre></div></div>
+
+<h2 id="references">References</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\label</span><span class="p">{</span>marker<span class="p">}</span>   <span class="c">% Set a marker for cross-reference, often of the form \label{sec:item}.</span>
+<span class="k">\ref</span><span class="p">{</span>marker<span class="p">}</span>     <span class="c">% Give section/body number of marker.</span>
+<span class="k">\pageref</span><span class="p">{</span>marker<span class="p">}</span> <span class="c">% Give page number of marker.</span>
+<span class="k">\footnote</span><span class="p">{</span>text<span class="p">}</span>  <span class="c">% Print footnote at bottom of page.</span>
+</code></pre></div></div>
+
+<h2 id="floating-bodies">Floating bodies</h2>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">\begin{table}</span>[place]     <span class="nt">\end{table}</span>    <span class="c">% Add numbered table.</span>
+<span class="nt">\begin{figure}</span>[place]    <span class="nt">\end{figure}</span>   <span class="c">% Add numbered figure.</span>
+<span class="nt">\begin{equation}</span>[place]  <span class="nt">\end{equation}</span> <span class="c">% Add numbered equation.</span>
+<span class="k">\caption</span><span class="p">{</span>text<span class="p">}</span>                          <span class="c">% Caption for the body.</span>
+</code></pre></div></div>
+
+<p>The place is a list valid placements for the body. t=top,
+h=here, b=bottom, p=separate page, !=place even if ugly.
+Captions and label markers should be within the environment.</p>
+
+<h2 id="tabular-environments">Tabular Environments</h2>
+
+<h3 id="tabbing-environment"><code class="language-plaintext highlighter-rouge">tabbing</code> environment</h3>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\=</span> <span class="c">% Set tab stop. </span>
+<span class="k">\&gt;</span> <span class="c">% Go to tab stop.</span>
+</code></pre></div></div>
+
+<p>Tab stops can be set on “invisible” lines with <code class="language-plaintext highlighter-rouge">\\kill</code> at the end
+of the line. Normally <code class="language-plaintext highlighter-rouge">\\</code> is used to separate lines.</p>
+
+<h3 id="tabular-environment"><code class="language-plaintext highlighter-rouge">tabular</code> environment</h3>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">\begin{array}</span>[pos]<span class="p">{</span>cols<span class="p">}</span>           <span class="nt">\end{array}</span>
+<span class="nt">\begin{tabular}</span>[pos]<span class="p">{</span>cols<span class="p">}</span>         <span class="nt">\end{tabular}</span>
+<span class="nt">\begin{tabular*}</span><span class="p">{</span>width<span class="p">}</span>[pos]<span class="p">{</span>cols<span class="p">}</span> <span class="nt">\end{tabular*}</span>
+</code></pre></div></div>
+
+<p>Column specification:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">l</code></td>
+      <td>Left-justified column.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">c</code></td>
+      <td>Centered column.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">r</code></td>
+      <td>Right-justified column.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">p{width}</code></td>
+      <td>Same as <code class="language-plaintext highlighter-rouge">\parbox[t]{width}</code>.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">@{decl}</code></td>
+      <td>Insert <code class="language-plaintext highlighter-rouge">decl</code> instead of inter-column space.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">|</code></td>
+      <td>Inserts a vertical line between columns.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Elements:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">\hline</code></td>
+      <td>Horizontal line between rows.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">\cline{x-y}</code></td>
+      <td>Horizontal line across columns <code class="language-plaintext highlighter-rouge">x</code> through <code class="language-plaintext highlighter-rouge">y</code>.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">\multicolumn{n}{cols}{text}</code></td>
+      <td>A cell that spans <code class="language-plaintext highlighter-rouge">n</code> columns, with <code class="language-plaintext highlighter-rouge">cols</code> column specification.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="math-mode">Math Mode</h2>
+
+<p>For inline math, use <code class="language-plaintext highlighter-rouge">\(...\)</code> or <code class="language-plaintext highlighter-rouge">$...$</code>. 
+For displayed math, use <code class="language-plaintext highlighter-rouge">\[...\]</code> or <code class="language-plaintext highlighter-rouge">\begin{equation} \end{equation}</code>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Math Element</th>
+      <th style="text-align: left">Latex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">\(a^{x}\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">a^{x}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(a_{x}\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">a_{x}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\frac{x}{y}\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\frac{x}{y}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\sum_{k=1}^n\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\sum_{k=1}^n</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\sqrt[n]{x}\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\sqrt[n]{x}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\prod_{k=1}^n\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\prod_{k=1}^n</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="symbols-1">Symbols</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Math Symbol</th>
+      <th style="text-align: left">Latex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">\(\leq\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\leq</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\geq\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\geq</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\neq\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\neq</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\approx\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\approx</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\times\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\times</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\div\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\div</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\pm\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\pm</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\cdot\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\cdot</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(^{\circ}\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">^{\circ}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\circ\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\circ</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\prime\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\prime</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\cdots\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\cdots</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\infty\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\infty</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\neg\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\neg</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\wedge\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\wedge</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\vee\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\vee</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\supset\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\supset</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\forall\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\forall</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\in\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\in</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\rightarrow\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\rightarrow</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\subset\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\subset</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\exists\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\exists</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\notin\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\notin</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Rightarrow\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Rightarrow</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\cup\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\cup</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\cap\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\cap</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\mid\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\mid</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Leftrightarrow\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Leftrightarrow</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\dot a\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\dot a</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\hat a\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\hat a</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\bar a\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\bar a</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\tilde a\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\tilde a</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\alpha\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\alpha</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\beta\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\beta</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\gamma\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\gamma</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\delta\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\delta</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\epsilon\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\epsilon</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\zeta\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\zeta</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\eta\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\eta</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\varepsilon\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\varepsilon</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\theta\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\theta</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\iota\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\iota</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\kappa\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\kappa</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\vartheta\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\vartheta</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\lambda\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\lambda</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\mu\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\mu</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\nu\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\nu</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\xi\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\xi</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\pi\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\pi</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\rho\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\rho</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\sigma\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\sigma</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\tau\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\tau</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\upsilon\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\upsilon</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\phi\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\phi</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\chi\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\chi</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\psi\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\psi</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\omega\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\omega</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Gamma\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Gamma</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Delta\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Delta</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Theta\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Theta</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Lambda\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Lambda</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Xi\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Xi</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Pi\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Pi</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Sigma\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Sigma</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Upsilon\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Upsilon</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Phi\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Phi</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Psi\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Psi</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\(\Omega\)</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">\Omega</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="bibliography-and-citations">Bibliography and Citations</h2>
+
+<p>When using BibTex, you need to run <code class="language-plaintext highlighter-rouge">latex</code>, <code class="language-plaintext highlighter-rouge">bibtex</code>, and <code class="language-plaintext highlighter-rouge">latex</code> twice more
+to resolve dependencies.</p>
+
+<h3 id="bibtex-citation-types">BibTex Citation Types</h3>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\cite</span><span class="p">{</span>key<span class="p">}</span>       <span class="c">% Full author list and year. (Watson and Crick 1953)</span>
+<span class="k">\citeA</span><span class="p">{</span>key<span class="p">}</span>      <span class="c">% Full author list. (Watson and Crick)</span>
+<span class="k">\citeN</span><span class="p">{</span>key<span class="p">}</span>      <span class="c">% Full author list and year. Watson and Crick (1953)</span>
+<span class="k">\shortcite</span><span class="p">{</span>key<span class="p">}</span>  <span class="c">% Abbreviated author list and year.</span>
+<span class="k">\shortciteA</span><span class="p">{</span>key<span class="p">}</span> <span class="c">% Abbreviated author list. </span>
+<span class="k">\shortciteN</span><span class="p">{</span>key<span class="p">}</span> <span class="c">% Abbreviated author list and year.</span>
+<span class="k">\citeyear</span><span class="p">{</span>key<span class="p">}</span>   <span class="c">% Cite year only. (1953)</span>
+</code></pre></div></div>
+
+<p>All the above have an <code class="language-plaintext highlighter-rouge">NP</code> variant without parentheses. Ex: <code class="language-plaintext highlighter-rouge">\citeNP</code>.</p>
+
+<h3 id="bibtex-entry-types">BibTex Entry Types</h3>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@article      <span class="c">% Journal or magazine article.</span>
+@book         <span class="c">% Book with publisher.</span>
+@booklet      <span class="c">% Book without publisher.</span>
+@conference   <span class="c">% Article in conference proceedings.</span>
+@inbook       <span class="c">% A part of a book and/or range of pages.</span>
+@incollection <span class="c">% A part of book with its own title.</span>
+@misc         <span class="c">% If nothing else fits.</span>
+@phdthesis    <span class="c">% PhD. thesis.</span>
+@proceedings  <span class="c">% Proceedings of a conference.</span>
+@techreport   <span class="c">% Tech report, usually numbered in series.</span>
+@unpublished  <span class="c">% Unpublished.</span>
+</code></pre></div></div>
+
+<h3 id="fields">Fields</h3>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>address      <span class="c">% Address of publisher. Not necessary for major publishers.</span>
+author       <span class="c">% Names of authors, of format ....</span>
+booktitle    <span class="c">% Title of book when part of it is cited.</span>
+chapter      <span class="c">% Chapter or section number.</span>
+edition      <span class="c">% Edition of a book.</span>
+editor       <span class="c">% Names of editors.</span>
+institution  <span class="c">% Sponsoring institution of tech. report.</span>
+journal      <span class="c">% Journal name.</span>
+key          <span class="c">% Used for cross ref. when no author.</span>
+month        <span class="c">% Month published. Use 3-letter abbreviation.</span>
+note         <span class="c">% Any additional information.</span>
+number       <span class="c">% Number of journal or magazine.</span>
+organization <span class="c">% Organization that sponsors a conference.</span>
+pages        <span class="c">% Page range (2,6,9--12).</span>
+publisher    <span class="c">% Publisher’s name.</span>
+school       <span class="c">% Name of school (for thesis).</span>
+series       <span class="c">% Name of series of books.</span>
+title        <span class="c">% Title of work.</span>
+type         <span class="c">% Type of tech. report, ex. “Research Note”.</span>
+volume       <span class="c">% Volume of a journal or book.</span>
+year         <span class="c">% Year of publication.</span>
+</code></pre></div></div>
+
+<p>Not all fields need to be filled. See example below.</p>
+
+<h3 id="common-bibtexstyle-files">Common BibTex Style Files</h3>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>abbrv    <span class="c">% Standard           </span>
+alpha    <span class="c">% Standard </span>
+abstract <span class="c">% alpha with abstract</span>
+plain    <span class="c">% Standard           </span>
+unsrt    <span class="c">% Unsorted</span>
+apa      <span class="c">% APA</span>
+</code></pre></div></div>
+
+<p>The LaTeX document should have the following two lines just before <code class="language-plaintext highlighter-rouge">\end{document}</code>, where <code class="language-plaintext highlighter-rouge">bibfile.bib</code> is the name of the file:</p>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\bibliographystyle</span><span class="p">{</span>plain<span class="p">}</span>
+<span class="k">\bibliography</span><span class="p">{</span>bibfile<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="example">Example</h3>
+
+<p>The  database goes in a file called <code class="language-plaintext highlighter-rouge">file.bib</code>, which is processed with <code class="language-plaintext highlighter-rouge">bibtex file</code>.</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@String<span class="p">{</span>N = <span class="p">{</span>Na<span class="k">\-</span>ture<span class="p">}}</span>
+@Article<span class="p">{</span>WC:1953,
+  author  = <span class="p">{</span>James Watson and Francis Crick<span class="p">}</span>,
+  title   = <span class="p">{</span>A structure for Deoxyribose Nucleic Acid<span class="p">}</span>,
+  journal = N,
+  volume  = <span class="p">{</span>171<span class="p">}</span>,
+  pages   = <span class="p">{</span>737<span class="p">}</span>,
+  year    = 1953
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="source"><a href="https://learnxinyminutes.com/docs/latex/" target="\_blank">Source</a></h2>
+
+<h2 id="see-also">See Also</h2>
+
+<ul>
+  <li><a href="https://learnxinyminutes.com/docs/latex/" target="\_blank">Learn X in Y minutes</a></li>
+  <li><a href="https://en.wikibooks.org/wiki/LaTeX" target="\_blank">Wikibooks</a></li>
+  <li><a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes" target="\_blank">Overleaf - Learn Latex in 30 Minutes</a></li>
+  <li><a href="https://latex-tutorial.com/" target="\_blank">Latex Tutorial</a></li>
+</ul>
+
+
+        
+      </section>
+
+      <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/resources/cheatsheets/julia/" class="pagination--pager" title="Julia
+">Previous</a>
+    
+    
+      <a href="/resources/cheatsheets/linux/" class="pagination--pager" title="Linux
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+    
+  </article>
+
+  
+  
+</div>
+
+      <div align="center" style="margin: 1em 0;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- ad-unit_horizontal -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-7211504142101622"
+             data-ad-slot="6952122554"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    
+    
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
+    <label class="sr-only" for="cse-search-input-box-id">
+      Enter your search term...
+    </label>
+    <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results">
+    <gcse:searchresults-only></gcse:searchresults-only>
+  </div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.linkedin.com/company/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+        
+          <li><a href="https://github.com/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+        
+          <li><a href="https://www.pinterest.com/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-pinterest" aria-hidden="true"></i> Pinterest</a></li>
+        
+      
+        
+          <li><a href="https://www.instagram.com/cfd.streamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/CfdStreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/CFD-Streamline-102236005421147/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 CFD Streamline. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<script>
+  (function () {
+    var cx = 'a390aa655bef0d717';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+  function googleCustomSearchExecute() {
+    var input = document.getElementById('cse-search-input-box-id');
+    var element = google.search.cse.element.getElement('searchresults-only0');
+    if (input.value == '') {
+      element.clearAllResults();
+    } else {
+      element.execute(input.value);
+    }
+    return false;
+  }
+
+  
+</script>
+
+
+
+
+
+
+
+<!-- snipcart -->
+<script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+<div hidden id="snipcart" data-api-key="NThhNjEyYzUtNjY3ZS00YTlkLWFjYWEtYmVmZTZhMzRhZjgyNjM3NjIzNzM3NTkwNTg2NzQ5
+"></div>
+
+  </body>
+</html>

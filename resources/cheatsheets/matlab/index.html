@@ -1,0 +1,1050 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.23.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Matlab | CFD Streamline</title>
+<meta name="description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CFD Streamline">
+<meta property="og:title" content="Matlab">
+<meta property="og:url" content="http://localhost:4000/resources/cheatsheets/matlab/">
+
+
+  <meta property="og:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/logos/logo_mathworks.png">
+
+
+
+  <meta name="twitter:site" content="@cfdstreamline">
+  <meta name="twitter:title" content="Matlab">
+  <meta name="twitter:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+  <meta name="twitter:url" content="http://localhost:4000/resources/cheatsheets/matlab/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="http://localhost:4000/assets/images/logos/logo_mathworks.png">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-07-23T17:10:09+02:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/CFD-Streamline-102236005421147">
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/resources/cheatsheets/matlab/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Organization",
+      "url": "http://localhost:4000/",
+      "logo": "http://localhost:4000/assets/images/site-logo.png"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="CFD Streamline Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- snipcart -->
+<link rel="preconnect" href="https://app.snipcart.com">
+<link rel="preconnect" href="https://cdn.snipcart.com">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
+
+
+
+<!-- google adsense -->
+<script data-ad-client="ca-pub-7211504142101622" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+<!-- mathjax -->
+<!--
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+  </script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js">
+</script>
+-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  processEscapes: true},
+  jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
+  extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
+  TeX: {
+  extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
+  equationNumbers: {
+  autoNumber: "AMS"
+  }
+  }
+  });
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icon/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icon/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icon/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/icon/favicon/site.webmanifest">
+<link rel="mask-icon" href="/assets/images/icon/favicon/safari-pinned-tab.svg" color="#283747">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--wiki">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/icon/logo.jpg" alt="CFD Streamline"></a>
+        
+        <a class="site-title" href="/">
+          CFD Streamline
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/wiki/">Wiki</a>
+            </li><li class="masthead__menu-item">
+              <a href="/software/">Software</a>
+            </li><li class="masthead__menu-item">
+              <a href="/testcases/">Test Cases</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resources/">Resources</a>
+            </li><li class="masthead__menu-item">
+              <a href="/posts/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/store/">Store</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/resources" itemprop="item"><span itemprop="name">Resources</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/cheatsheets" itemprop="item"><span itemprop="name">Cheatsheets</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Matlab</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+  
+  </div>
+
+
+
+  
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Matlab">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Matlab
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+
+        <h2 id="1-basics">1. Basics</h2>
+
+<h3 id="i-comments-and-code-sections">i. Comments and Code Sections</h3>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">%% Code sections start with two percent signs. Section titles go on the same line.</span>
+<span class="c1">% Comments start with a percent sign.</span>
+
+<span class="c1">%{</span>
+<span class="n">Multi</span> <span class="nb">line</span> <span class="n">comments</span> <span class="n">look</span>
+<span class="n">something</span>
+<span class="n">like</span>
+<span class="n">this</span>
+<span class="c1">%}</span>
+
+<span class="c1">% Two percent signs denote the start of a new code section</span>
+<span class="c1">% Individual code sections can be run by moving the cursor to the section followed by</span>
+<span class="c1">% either clicking the "Run Section" button</span>
+<span class="c1">% or     using Ctrl+Shift+Enter (Windows) or Cmd+Shift+Return (OS X)</span>
+
+<span class="c1">%% This is the start of a code section</span>
+<span class="c1">%  One way of using sections is to separate expensive but unchanging start-up code like loading data</span>
+<span class="nb">load</span> <span class="n">myFile</span><span class="o">.</span><span class="n">mat</span> <span class="n">y</span>
+
+<span class="c1">%% This is another code section</span>
+<span class="c1">%  This section can be edited and run repeatedly on its own, and is helpful for exploratory programming and demos</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">A</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nb">plot</span><span class="p">(</span><span class="n">A</span><span class="p">);</span>
+
+<span class="c1">% commands can span multiple lines, using '...':</span>
+ <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="k">...</span>
+ <span class="o">+</span> <span class="mi">4</span>
+</code></pre></div></div>
+
+<h3 id="ii-helper-commands">ii. Helper Commands</h3>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">% commands can be passed to the operating system</span>
+<span class="k">!</span>ping google.com
+
+<span class="nb">who</span> <span class="c1">% Displays all variables in memory</span>
+<span class="nb">whos</span> <span class="c1">% Displays all variables in memory, with their types</span>
+<span class="nb">clear</span> <span class="c1">% Erases all your variables from memory</span>
+<span class="nb">clear</span><span class="p">(</span><span class="s1">'A'</span><span class="p">)</span> <span class="c1">% Erases a particular variable</span>
+<span class="nb">openvar</span><span class="p">(</span><span class="s1">'A'</span><span class="p">)</span> <span class="c1">% Open variable in variable editor</span>
+
+<span class="nb">clc</span> <span class="c1">% Erases the writing on your Command Window</span>
+<span class="nb">diary</span> <span class="c1">% Toggle writing Command Window text to file</span>
+<span class="n">ctrl</span><span class="o">-</span><span class="n">c</span> <span class="c1">% Abort current computation</span>
+
+<span class="nb">close</span> <span class="nb">all</span> <span class="c1">% Closes all figures</span>
+
+<span class="nb">edit</span><span class="p">(</span><span class="s1">'myfunction.m'</span><span class="p">)</span> <span class="c1">% Open function/script in editor</span>
+<span class="nb">type</span><span class="p">(</span><span class="s1">'myfunction.m'</span><span class="p">)</span> <span class="c1">% Print the source of function/script to Command Window</span>
+
+<span class="nb">profile</span> <span class="n">on</span>  <span class="c1">% turns on the code profiler</span>
+<span class="nb">profile</span> <span class="n">off</span>     <span class="c1">% turns off the code profiler</span>
+<span class="nb">profile</span> <span class="n">viewer</span>  <span class="c1">% Open profiler</span>
+
+<span class="nb">help</span> <span class="n">command</span>    <span class="c1">% Displays documentation for command in Command Window</span>
+<span class="nb">doc</span> <span class="n">command</span>     <span class="c1">% Displays documentation for command in Help Window</span>
+<span class="nb">lookfor</span> <span class="n">command</span> <span class="c1">% Searches for command in the first commented line of all functions</span>
+<span class="nb">lookfor</span> <span class="n">command</span> <span class="o">-</span><span class="nb">all</span> <span class="c1">% searches for command in all functions</span>
+
+
+<span class="c1">% Output formatting</span>
+<span class="nb">format</span> <span class="n">short</span>    <span class="c1">% 4 decimals in a floating number</span>
+<span class="nb">format</span> <span class="n">long</span>     <span class="c1">% 15 decimals</span>
+<span class="nb">format</span> <span class="n">bank</span>     <span class="c1">% only two digits after decimal point - for financial calculations</span>
+<span class="nb">fprintf</span><span class="p">(</span><span class="s1">'text'</span><span class="p">)</span> <span class="c1">% print "text" to the screen</span>
+<span class="nb">disp</span><span class="p">(</span><span class="s1">'text'</span><span class="p">)</span>    <span class="c1">% print "text" to the screen</span>
+
+<span class="c1">% pressing the up key shows you a history of previous commands</span>
+</code></pre></div></div>
+
+<h3 id="iii-variables-and-expressions">iii. Variables and Expressions</h3>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">% Variables &amp; Expressions</span>
+<span class="n">myVariable</span> <span class="o">=</span> <span class="mi">4</span>  <span class="c1">% Notice Workspace pane shows newly created variable</span>
+<span class="n">myVariable</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="c1">% Semi colon suppresses output to the Command Window</span>
+<span class="mi">4</span> <span class="o">+</span> <span class="mi">6</span>       <span class="c1">% ans = 10</span>
+<span class="mi">8</span> <span class="o">*</span> <span class="n">myVariable</span>  <span class="c1">% ans = 32</span>
+<span class="mi">2</span> <span class="o">^</span> <span class="mi">3</span>       <span class="c1">% ans = 8</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="n">c</span> <span class="o">=</span> <span class="nb">exp</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">*</span><span class="nb">sin</span><span class="p">(</span><span class="nb">pi</span><span class="p">/</span><span class="mi">2</span><span class="p">)</span> <span class="c1">% c = 7.3891</span>
+
+<span class="c1">% Logicals</span>
+<span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">5</span> <span class="c1">% ans = 0</span>
+<span class="mi">10</span> <span class="o">&gt;=</span> <span class="mi">10</span> <span class="c1">% ans = 1</span>
+<span class="mi">3</span> <span class="o">~=</span> <span class="mi">4</span> <span class="c1">% Not equal to -&gt; ans = 1</span>
+<span class="mi">3</span> <span class="o">==</span> <span class="mi">3</span> <span class="c1">% equal to -&gt; ans = 1</span>
+<span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="mi">4</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="c1">% AND -&gt; ans = 1</span>
+<span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="o">||</span> <span class="mi">4</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="c1">% OR -&gt; ans = 1</span>
+<span class="o">~</span><span class="mi">1</span> <span class="c1">% NOT -&gt; ans = 0</span>
+
+<span class="c1">% Logicals can be applied to matrices:</span>
+<span class="n">A</span> <span class="o">&gt;</span> <span class="mi">5</span>
+<span class="c1">% for each element, if condition is true, that element is 1 in returned matrix</span>
+<span class="n">A</span><span class="p">(</span> <span class="n">A</span> <span class="o">&gt;</span> <span class="mi">5</span> <span class="p">)</span>
+<span class="c1">% returns a vector containing the elements in A for which condition is true</span>
+
+<span class="c1">% Strings</span>
+<span class="n">a</span> <span class="o">=</span> <span class="s1">'MyString'</span>
+<span class="nb">length</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="c1">% ans = 8</span>
+<span class="n">a</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c1">% ans = y</span>
+<span class="p">[</span><span class="n">a</span><span class="p">,</span><span class="n">a</span><span class="p">]</span> <span class="c1">% ans = MyStringMyString</span>
+
+
+<span class="c1">% Cells</span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'one'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">,</span> <span class="s1">'three'</span><span class="p">}</span>
+<span class="n">a</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1">% ans = 'one' - returns a cell</span>
+<span class="nb">char</span><span class="p">(</span><span class="n">a</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span> <span class="c1">% ans = one - returns a string</span>
+
+<span class="c1">% Structures</span>
+<span class="n">A</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'one'</span><span class="p">,</span><span class="s1">'two'</span><span class="p">};</span>
+<span class="n">A</span><span class="o">.</span><span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span><span class="p">];</span>
+<span class="n">A</span><span class="o">.</span><span class="n">d</span><span class="o">.</span><span class="n">e</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+
+<span class="c1">% Variables can be saved to .mat files</span>
+<span class="nb">save</span><span class="p">(</span><span class="s1">'myFileName.mat'</span><span class="p">)</span> <span class="c1">% Save the variables in your Workspace</span>
+<span class="nb">load</span><span class="p">(</span><span class="s1">'myFileName.mat'</span><span class="p">)</span> <span class="c1">% Load saved variables into Workspace</span>
+</code></pre></div></div>
+
+<h2 id="2-matrices-and-vectors">2. Matrices and Vectors</h2>
+
+<p><strong>IMPORTANT: Indices in Matlab start at 1, not 0</strong></p>
+
+<h3 id="i-declarations">i. Declarations</h3>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">% Vectors</span>
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span> <span class="mi">32</span> <span class="mi">53</span> <span class="mi">7</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">x</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c1">% ans = 32</span>
+<span class="n">x</span><span class="p">(</span><span class="mi">2</span><span class="p">:</span><span class="mi">3</span><span class="p">)</span> <span class="c1">% ans = 32 53</span>
+<span class="n">x</span><span class="p">(</span><span class="mi">2</span><span class="p">:</span><span class="k">end</span><span class="p">)</span> <span class="c1">% ans = 32 53 7 1</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">;</span> <span class="mi">32</span><span class="p">;</span> <span class="mi">53</span><span class="p">;</span> <span class="mi">7</span><span class="p">;</span> <span class="mi">1</span><span class="p">]</span> <span class="c1">% Column vector</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span> <span class="c1">% x = 1 2 3 4 5 6 7 8 9 10</span>
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span> <span class="c1">% Increment by 2, i.e. x = 1 3 5 7 9</span>
+
+<span class="c1">% Matrices</span>
+<span class="n">A</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">;</span> <span class="mi">4</span> <span class="mi">5</span> <span class="mi">6</span><span class="p">;</span> <span class="mi">7</span> <span class="mi">8</span> <span class="mi">9</span><span class="p">]</span>
+<span class="c1">% Rows are separated by a semicolon; elements are separated with space or comma</span>
+<span class="c1">% A =</span>
+
+<span class="c1">%     1     2     3</span>
+<span class="c1">%     4     5     6</span>
+<span class="c1">%     7     8     9</span>
+
+<span class="n">A</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="c1">% ans = 6, A(row, column)</span>
+<span class="n">A</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="c1">% ans = 8</span>
+<span class="c1">% (implicitly concatenates columns into vector, then indexes into that)</span>
+
+
+<span class="n">A</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">=</span> <span class="mi">42</span> <span class="c1">% Update row 2 col 3 with 42</span>
+<span class="c1">% A =</span>
+
+<span class="c1">%     1     2     3</span>
+<span class="c1">%     4     5     42</span>
+<span class="c1">%     7     8     9</span>
+</code></pre></div></div>
+
+<h3 id="ii-splicing-and-dicing">ii. Splicing and Dicing</h3>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">A</span><span class="p">(</span><span class="mi">2</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">:</span><span class="mi">3</span><span class="p">)</span> <span class="c1">% Creates a new matrix from the old one</span>
+<span class="c1">%ans =</span>
+
+<span class="c1">%     5     42</span>
+<span class="c1">%     8     9</span>
+
+<span class="n">A</span><span class="p">(:,</span><span class="mi">1</span><span class="p">)</span> <span class="c1">% All rows in column 1</span>
+<span class="c1">%ans =</span>
+
+<span class="c1">%     1</span>
+<span class="c1">%     4</span>
+<span class="c1">%     7</span>
+
+<span class="n">A</span><span class="p">(</span><span class="mi">1</span><span class="p">,:)</span> <span class="c1">% All columns in row 1</span>
+<span class="c1">%ans =</span>
+
+<span class="c1">%     1     2     3</span>
+
+<span class="p">[</span><span class="n">A</span> <span class="p">;</span> <span class="n">A</span><span class="p">]</span> <span class="c1">% Concatenation of matrices (vertically)</span>
+<span class="c1">%ans =</span>
+
+<span class="c1">%     1     2     3</span>
+<span class="c1">%     4     5    42</span>
+<span class="c1">%     7     8     9</span>
+<span class="c1">%     1     2     3</span>
+<span class="c1">%     4     5    42</span>
+<span class="c1">%     7     8     9</span>
+
+<span class="c1">% this is the same as</span>
+<span class="nb">vertcat</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">A</span><span class="p">);</span>
+
+
+<span class="p">[</span><span class="n">A</span> <span class="p">,</span> <span class="n">A</span><span class="p">]</span> <span class="c1">% Concatenation of matrices (horizontally)</span>
+
+<span class="c1">%ans =</span>
+
+<span class="c1">%     1     2     3     1     2     3</span>
+<span class="c1">%     4     5    42     4     5    42</span>
+<span class="c1">%     7     8     9     7     8     9</span>
+
+<span class="c1">% this is the same as</span>
+<span class="nb">horzcat</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">A</span><span class="p">);</span>
+
+
+<span class="n">A</span><span class="p">(:,</span> <span class="p">[</span><span class="mi">3</span> <span class="mi">1</span> <span class="mi">2</span><span class="p">])</span> <span class="c1">% Rearrange the columns of original matrix</span>
+<span class="c1">%ans =</span>
+
+<span class="c1">%     3     1     2</span>
+<span class="c1">%    42     4     5</span>
+<span class="c1">%     9     7     8</span>
+
+<span class="n">A</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">:)</span> <span class="o">=</span><span class="p">[]</span> <span class="c1">% Delete the first row of the matrix</span>
+<span class="n">A</span><span class="p">(:,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">=</span><span class="p">[]</span> <span class="c1">% Delete the first column of the matrix</span>
+
+<span class="nb">squeeze</span><span class="p">(</span><span class="n">A</span><span class="p">);</span> <span class="c1">% Removes singular dimensions ie. 2x1x3 -&gt; 2x3</span>
+</code></pre></div></div>
+
+<h3 id="iii-arithmetic-and-operations">iii. Arithmetic and Operations</h3>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">transpose</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% Transpose the matrix, which is the same as:</span>
+<span class="n">A</span> <span class="n">one</span>
+
+<span class="n">A</span><span class="o">'</span> <span class="c1">% Concise version of complex transpose</span>
+<span class="n">A</span><span class="o">.'</span> <span class="c1">% Concise version of transpose (without taking complex conjugate)</span>
+
+<span class="nb">size</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% ans = 3 3</span>
+
+<span class="c1">% Element by Element Arithmetic vs. Matrix Arithmetic</span>
+<span class="c1">% On their own, the arithmetic operators act on whole matrices. When preceded</span>
+<span class="c1">% by a period, they act on each element instead. For example:</span>
+<span class="n">A</span> <span class="o">*</span> <span class="n">B</span> <span class="c1">% Matrix multiplication</span>
+<span class="n">A</span> <span class="o">.*</span> <span class="n">B</span> <span class="c1">% Multiple each element in A by its corresponding element in B</span>
+
+<span class="c1">% There are several pairs of functions, where one acts on each element, and</span>
+<span class="c1">% the other (whose name ends in m) acts on the whole matrix.</span>
+<span class="nb">exp</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% exponentiate each element</span>
+<span class="nb">expm</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% calculate the matrix exponential</span>
+<span class="nb">sqrt</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% take the square root of each element</span>
+<span class="nb">sqrtm</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">%  find the matrix whose square is A</span>
+
+<span class="c1">% Solving matrix equations (if no solution, returns a least squares solution)</span>
+<span class="c1">% The \ and / operators are equivalent to the functions mldivide and mrdivide</span>
+<span class="n">x</span><span class="o">=</span><span class="n">A</span><span class="p">\</span><span class="n">b</span> <span class="c1">% Solves Ax=b. Faster and more numerically accurate than using inv(A)*b.</span>
+<span class="n">x</span><span class="o">=</span><span class="n">b</span><span class="p">/</span><span class="n">A</span> <span class="c1">% Solves xA=b</span>
+
+<span class="nb">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% calculate the inverse matrix</span>
+<span class="nb">pinv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% calculate the pseudo-inverse</span>
+
+<span class="c1">% Common matrix functions</span>
+<span class="nb">zeros</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">)</span> <span class="c1">% m x n matrix of 0's</span>
+<span class="nb">ones</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">)</span> <span class="c1">% m x n matrix of 1's</span>
+<span class="nb">diag</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% Extracts the diagonal elements of a matrix A</span>
+<span class="nb">diag</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1">% Construct a matrix with diagonal elements listed in x, and zeroes elsewhere</span>
+<span class="nb">eye</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">)</span> <span class="c1">% Identity matrix</span>
+<span class="nb">linspace</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> <span class="c1">% Return n equally spaced points, with min x1 and max x2</span>
+<span class="nb">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% Inverse of matrix A</span>
+<span class="nb">det</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% Determinant of A</span>
+<span class="nb">eig</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% Eigenvalues and eigenvectors of A</span>
+<span class="nb">trace</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% Trace of matrix - equivalent to sum(diag(A))</span>
+<span class="nb">isempty</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% Tests if array is empty</span>
+<span class="nb">all</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% Tests if all elements are nonzero or true</span>
+<span class="nb">any</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% Tests if any elements are nonzero or true</span>
+<span class="nb">isequal</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span> <span class="c1">% Tests equality of two arrays</span>
+<span class="nb">numel</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% Number of elements in matrix</span>
+<span class="nb">triu</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1">% Returns the upper triangular part of x</span>
+<span class="nb">tril</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1">% Returns the lower triangular part of x</span>
+<span class="nb">cross</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">)</span> <span class="c1">%  Returns the cross product of the vectors A and B</span>
+<span class="nb">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">)</span> <span class="c1">% Returns scalar product of two vectors (must have the same length)</span>
+<span class="nb">transpose</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% Returns the transpose of A</span>
+<span class="nb">fliplr</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% Flip matrix left to right</span>
+<span class="nb">flipud</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% Flip matrix up to down</span>
+
+<span class="c1">% Matrix Factorisations</span>
+<span class="p">[</span><span class="n">L</span><span class="p">,</span> <span class="n">U</span><span class="p">,</span> <span class="n">P</span><span class="p">]</span> <span class="o">=</span> <span class="nb">lu</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% LU decomposition: PA = LU,L is lower triangular, U is upper triangular, P is permutation matrix</span>
+<span class="p">[</span><span class="n">P</span><span class="p">,</span> <span class="n">D</span><span class="p">]</span> <span class="o">=</span> <span class="nb">eig</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% eigen-decomposition: AP = PD, P's columns are eigenvectors and D's diagonals are eigenvalues</span>
+<span class="p">[</span><span class="n">U</span><span class="p">,</span><span class="n">S</span><span class="p">,</span><span class="n">V</span><span class="p">]</span> <span class="o">=</span> <span class="nb">svd</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="c1">% SVD: XV = US, U and V are unitary matrices, S has non-negative diagonal elements in decreasing order</span>
+<span class="p">[</span><span class="n">Q</span><span class="p">,</span> <span class="n">R</span><span class="p">]</span> <span class="o">=</span> <span class="nb">qr</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% if A is mxn, Q is mxm and R is mxn upper triangular</span>
+
+<span class="c1">% Common vector functions</span>
+<span class="nb">max</span>     <span class="c1">% largest component</span>
+<span class="nb">min</span>     <span class="c1">% smallest component</span>
+<span class="nb">length</span>  <span class="c1">% length of a vector</span>
+<span class="nb">sort</span>    <span class="c1">% sort in ascending order</span>
+<span class="nb">sum</span>     <span class="c1">% sum of elements</span>
+<span class="nb">prod</span>    <span class="c1">% product of elements</span>
+<span class="nb">mode</span>    <span class="c1">% modal value</span>
+<span class="nb">median</span>  <span class="c1">% median value</span>
+<span class="nb">mean</span>    <span class="c1">% mean value</span>
+<span class="nb">std</span>     <span class="c1">% standard deviation</span>
+<span class="nb">perms</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1">% list all permutations of elements of x</span>
+<span class="nb">find</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1">% Finds all non-zero elements of x and returns their indexes, can use comparison operators, </span>
+        <span class="c1">% i.e. find( x == 3 ) returns indexes of elements that are equal to 3</span>
+        <span class="c1">% i.e. find( x &gt;= 3 ) returns indexes of elements greater than or equal to 3</span>
+
+</code></pre></div></div>
+
+<h2 id="3-plots">3. Plots</h2>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">% Plotting</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">:</span><span class="o">.</span><span class="mi">10</span><span class="p">:</span><span class="mi">2</span><span class="o">*</span><span class="nb">pi</span><span class="p">;</span> <span class="c1">% Creates a vector that starts at 0 and ends at 2*pi with increments of .1</span>
+<span class="n">y</span> <span class="o">=</span> <span class="nb">sin</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+<span class="nb">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+<span class="nb">xlabel</span><span class="p">(</span><span class="s1">'x axis'</span><span class="p">)</span>
+<span class="nb">ylabel</span><span class="p">(</span><span class="s1">'y axis'</span><span class="p">)</span>
+<span class="nb">title</span><span class="p">(</span><span class="s1">'Plot of y = sin(x)'</span><span class="p">)</span>
+<span class="nb">axis</span><span class="p">([</span><span class="mi">0</span> <span class="mi">2</span><span class="o">*</span><span class="nb">pi</span> <span class="o">-</span><span class="mi">1</span> <span class="mi">1</span><span class="p">])</span> <span class="c1">% x range from 0 to 2*pi, y range from -1 to 1</span>
+
+<span class="nb">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y1</span><span class="p">,</span><span class="s1">'-'</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y2</span><span class="p">,</span><span class="s1">'--'</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y3</span><span class="p">,</span><span class="s1">':'</span><span class="p">)</span> <span class="c1">% For multiple functions on one plot</span>
+<span class="nb">legend</span><span class="p">(</span><span class="s1">'Line 1 label'</span><span class="p">,</span> <span class="s1">'Line 2 label'</span><span class="p">)</span> <span class="c1">% Label curves with a legend</span>
+
+<span class="c1">% Alternative method to plot multiple functions in one plot.</span>
+<span class="c1">% while 'hold' is on, commands add to existing graph rather than replacing it</span>
+<span class="nb">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="nb">hold</span> <span class="n">on</span>
+<span class="nb">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+<span class="nb">hold</span> <span class="n">off</span>
+
+<span class="nb">loglog</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="c1">% A log-log plot</span>
+<span class="nb">semilogx</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="c1">% A plot with logarithmic x-axis</span>
+<span class="nb">semilogy</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="c1">% A plot with logarithmic y-axis</span>
+
+<span class="nb">fplot</span> <span class="p">(</span><span class="o">@</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="n">x</span><span class="o">^</span><span class="mi">2</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span> <span class="c1">% plot the function x^2 from x=2 to x=5</span>
+
+<span class="c1">% Creates a meshgrid (2D grid) to calculate a function for every point in the grid</span>
+<span class="p">[</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">]</span> <span class="o">=</span> <span class="nb">meshgrid</span><span class="p">(</span><span class="n">x_min</span><span class="p">:</span><span class="nb">step</span><span class="p">:</span><span class="n">x_max</span><span class="p">,</span> <span class="n">y_min</span><span class="p">:</span><span class="nb">step</span><span class="p">:</span><span class="n">y_max</span><span class="p">)</span>
+
+<span class="nb">grid</span> <span class="n">on</span> <span class="c1">% Show grid; turn off with 'grid off'</span>
+<span class="nb">axis</span> <span class="n">square</span> <span class="c1">% Makes the current axes region square</span>
+<span class="nb">axis</span> <span class="n">equal</span> <span class="c1">% Set aspect ratio so data units are the same in every direction</span>
+
+<span class="nb">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span> <span class="c1">% Scatter-plot</span>
+<span class="nb">hist</span><span class="p">(</span><span class="n">x</span><span class="p">);</span> <span class="c1">% Histogram</span>
+<span class="nb">stem</span><span class="p">(</span><span class="n">x</span><span class="p">);</span> <span class="c1">% Plot values as stems, useful for displaying discrete data</span>
+<span class="nb">bar</span><span class="p">(</span><span class="n">x</span><span class="p">);</span> <span class="c1">% Plot bar graph</span>
+
+<span class="n">z</span> <span class="o">=</span> <span class="nb">sin</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+<span class="nb">plot3</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">);</span> <span class="c1">% 3D line plot</span>
+
+<span class="nb">pcolor</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% Heat-map of matrix: plot as grid of rectangles, coloured by value</span>
+<span class="nb">contour</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% Contour plot of matrix</span>
+<span class="nb">contourf</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% Filled contour plot of matrix</span>
+<span class="nb">mesh</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">% Plot as a mesh surface</span>
+
+<span class="n">h</span> <span class="o">=</span> <span class="nb">figure</span> <span class="c1">% Create new figure object, with handle h</span>
+<span class="nb">figure</span><span class="p">(</span><span class="n">h</span><span class="p">)</span> <span class="c1">% Makes the figure corresponding to handle h the current figure</span>
+<span class="nb">close</span><span class="p">(</span><span class="n">h</span><span class="p">)</span> <span class="c1">% close figure with handle h</span>
+<span class="nb">close</span> <span class="nb">all</span> <span class="c1">% close all open figure windows</span>
+<span class="nb">close</span> <span class="c1">% close current figure window</span>
+
+<span class="nb">shg</span> <span class="c1">% bring an existing graphics window forward, or create new one if needed</span>
+<span class="nb">clf</span> <span class="nb">clear</span> <span class="c1">% clear current figure window, and reset most figure properties</span>
+
+<span class="c1">% Properties can be set and changed through a figure handle.</span>
+<span class="c1">% You can save a handle to a figure when you create it.</span>
+<span class="c1">% The function get returns a handle to the current figure</span>
+<span class="n">h</span> <span class="o">=</span> <span class="nb">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span> <span class="c1">% you can save a handle to a figure when you create it</span>
+<span class="nb">set</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="s1">'Color'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
+<span class="c1">% 'y' yellow; 'm' magenta, 'c' cyan, 'r' red, 'g' green, 'b' blue, 'w' white, 'k' black</span>
+<span class="nb">set</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="s1">'LineStyle'</span><span class="p">,</span> <span class="s1">'--'</span><span class="p">)</span>
+ <span class="c1">% '--' is solid line, '---' dashed, ':' dotted, '-.' dash-dot, 'none' is no line</span>
+<span class="nb">get</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="s1">'LineStyle'</span><span class="p">)</span>
+
+
+<span class="c1">% The function gca returns a handle to the axes for the current figure</span>
+<span class="nb">set</span><span class="p">(</span><span class="nb">gca</span><span class="p">,</span> <span class="s1">'XDir'</span><span class="p">,</span> <span class="s1">'reverse'</span><span class="p">);</span> <span class="c1">% reverse the direction of the x-axis</span>
+
+<span class="c1">% To create a figure that contains several axes in tiled positions, use subplot</span>
+<span class="nb">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span> <span class="c1">% select the first position in a 2-by-3 grid of subplots</span>
+<span class="nb">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">);</span> <span class="nb">title</span><span class="p">(</span><span class="s1">'First Plot'</span><span class="p">)</span> <span class="c1">% plot something in this position</span>
+<span class="nb">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span> <span class="c1">% select second position in the grid</span>
+<span class="nb">plot</span><span class="p">(</span><span class="n">x2</span><span class="p">);</span> <span class="nb">title</span><span class="p">(</span><span class="s1">'Second Plot'</span><span class="p">)</span> <span class="c1">% plot something there</span>
+
+<span class="c1">% Given</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:</span><span class="mf">0.5</span><span class="p">:</span><span class="mi">3</span><span class="p">];</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="n">x1</span><span class="p">;</span>
+<span class="n">y</span> <span class="o">=</span> <span class="nb">randi</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="nb">length</span><span class="p">(</span><span class="n">x1</span><span class="p">),</span> <span class="nb">length</span><span class="p">(</span><span class="n">x1</span><span class="p">));</span>
+
+<span class="c1">% Show a 3-D plot</span>
+<span class="nb">figure</span>
+<span class="nb">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+<span class="nb">surf</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">y</span><span class="p">);</span>
+<span class="nb">xlabel</span><span class="p">(</span><span class="err">’</span><span class="n">x_1</span><span class="err">’</span><span class="p">);</span>
+<span class="nb">ylabel</span><span class="p">(</span><span class="err">’</span><span class="n">x_2</span><span class="err">’</span><span class="p">);</span>
+
+<span class="c1">% Show contours</span>
+<span class="nb">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+<span class="nb">contour</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">y</span><span class="p">);</span>
+<span class="nb">xlabel</span><span class="p">(</span><span class="err">’</span><span class="n">x_</span><span class="p">{</span><span class="mi">1</span><span class="p">}</span><span class="err">’</span><span class="p">);</span>
+<span class="nb">ylabel</span><span class="p">(</span><span class="err">’</span><span class="n">x_</span><span class="p">{</span><span class="mi">2</span><span class="p">}</span><span class="err">’</span><span class="p">);</span>
+<span class="nb">axis</span> <span class="n">equal</span>
+
+<span class="c1">% Show a colour map</span>
+<span class="nb">figure</span>
+<span class="nb">imagesc</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+<span class="nb">xlabel</span><span class="p">(</span><span class="err">’</span><span class="n">x_</span><span class="p">{</span><span class="mi">1</span><span class="p">}</span><span class="err">’</span><span class="p">);</span>
+<span class="nb">ylabel</span><span class="p">(</span><span class="err">’</span><span class="n">x_</span><span class="p">{</span><span class="mi">2</span><span class="p">}</span><span class="err">’</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="4-functions-and-scripts">4. Functions and Scripts</h2>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">% Calling Functions</span>
+<span class="c1">% Standard function syntax:</span>
+<span class="nb">load</span><span class="p">(</span><span class="s1">'myFile.mat'</span><span class="p">,</span> <span class="s1">'y'</span><span class="p">)</span>
+<span class="c1">% Command syntax:</span>
+<span class="nb">load</span> <span class="n">myFile</span><span class="o">.</span><span class="n">mat</span> <span class="n">y</span>   <span class="c1">% no parentheses, and spaces instead of commas</span>
+
+<span class="c1">% Calling a function from a script</span>
+<span class="c1">% [arguments out] = function_name(arguments in)</span>
+<span class="p">[</span><span class="n">V</span><span class="p">,</span><span class="n">D</span><span class="p">]</span> <span class="o">=</span> <span class="nb">eig</span><span class="p">(</span><span class="n">A</span><span class="p">);</span>
+<span class="p">[</span><span class="o">~</span><span class="p">,</span><span class="n">D</span><span class="p">]</span> <span class="o">=</span> <span class="nb">eig</span><span class="p">(</span><span class="n">A</span><span class="p">);</span>  <span class="c1">% if you only want D and not V</span>
+
+<span class="c1">% To use functions or scripts, they must be on your path or current directory</span>
+<span class="nb">path</span> <span class="c1">% displays current path</span>
+<span class="nb">addpath</span> <span class="p">/</span><span class="nb">path</span><span class="p">/</span><span class="n">to</span><span class="p">/</span><span class="nb">dir</span> <span class="c1">% add to path</span>
+<span class="nb">rmpath</span> <span class="p">/</span><span class="nb">path</span><span class="p">/</span><span class="n">to</span><span class="p">/</span><span class="nb">dir</span> <span class="c1">% remove from path</span>
+<span class="nb">cd</span> <span class="p">/</span><span class="nb">path</span><span class="p">/</span><span class="n">to</span><span class="p">/</span><span class="nb">move</span><span class="p">/</span><span class="n">into</span> <span class="c1">% change directory</span>
+
+<span class="c1">% M-file Scripts</span>
+<span class="c1">% A script file is an external file that contains a sequence of statements.</span>
+<span class="c1">% They let you avoid repeatedly typing the same code in the Command Window</span>
+<span class="c1">% Have .m extensions</span>
+
+<span class="c1">% M-file Functions</span>
+<span class="c1">% Like scripts, and have the same .m extension</span>
+<span class="c1">% But can accept input arguments and return an output</span>
+<span class="c1">% Also, they have their own workspace (ie. different variable scope).</span>
+<span class="c1">% Function name should match file name (so save this example as double_input.m).</span>
+<span class="c1">% 'help double_input.m' returns the comments under line beginning function</span>
+<span class="k">function</span> <span class="n">output</span> <span class="o">=</span> <span class="n">double_input</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="c1">%double_input(x) returns twice the value of x</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="p">;</span>
+<span class="k">end</span>
+<span class="n">double_input</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="c1">% ans = 12</span>
+
+<span class="c1">% If you want to create a function without creating a new file you can use an</span>
+<span class="c1">% anonymous function.</span>
+<span class="c1">% Example that returns the square of it's input, assigned to the handle sqr:</span>
+<span class="n">sqr</span> <span class="o">=</span> <span class="o">@</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="n">x</span><span class="o">.^</span><span class="mi">2</span><span class="p">;</span>
+<span class="n">sqr</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="c1">% ans = 100</span>
+<span class="nb">doc</span> <span class="n">function_handle</span> <span class="c1">% find out more</span>
+</code></pre></div></div>
+
+<h2 id="5-programming-logic">5. Programming Logic</h2>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">% User input</span>
+<span class="n">a</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Enter the value: '</span><span class="p">)</span>
+
+<span class="c1">% Stops execution of file and gives control to the keyboard: user can examine</span>
+<span class="c1">% or change variables. Type 'return' to continue execution, or 'dbquit' to exit</span>
+<span class="nb">keyboard</span>
+
+<span class="c1">% Reading in data (also xlsread/importdata/imread for excel/CSV/image files)</span>
+<span class="nb">fopen</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+
+<span class="c1">% Output</span>
+<span class="nb">disp</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="c1">% Print out the value of variable a</span>
+<span class="nb">disp</span><span class="p">(</span><span class="s1">'Hello World'</span><span class="p">)</span> <span class="c1">% Print out a string</span>
+<span class="nb">fprintf</span> <span class="c1">% Print to Command Window with more control</span>
+
+<span class="c1">% Conditional statements (the parentheses are optional, but good style)</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">15</span><span class="p">)</span>
+    <span class="nb">disp</span><span class="p">(</span><span class="s1">'Greater than 15'</span><span class="p">)</span>
+<span class="k">elseif</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="mi">23</span><span class="p">)</span>
+    <span class="nb">disp</span><span class="p">(</span><span class="s1">'a is 23'</span><span class="p">)</span>
+<span class="k">else</span>
+    <span class="nb">disp</span><span class="p">(</span><span class="s1">'neither condition met'</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="c1">% Looping</span>
+<span class="c1">% NB. looping over elements of a vector/matrix is slow!</span>
+<span class="c1">% Where possible, use functions that act on whole vector/matrix at once</span>
+<span class="k">for</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">1</span><span class="p">:</span><span class="mi">5</span>
+    <span class="nb">disp</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">k</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">)</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">k</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+<span class="k">end</span>
+
+<span class="c1">% Timing code execution: 'toc' prints the time since 'tic' was called</span>
+<span class="nb">tic</span>
+<span class="n">A</span> <span class="o">=</span> <span class="nb">rand</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="n">A</span><span class="o">*</span><span class="n">A</span><span class="o">*</span><span class="n">A</span><span class="o">*</span><span class="n">A</span><span class="o">*</span><span class="n">A</span><span class="o">*</span><span class="n">A</span><span class="o">*</span><span class="n">A</span><span class="p">;</span>
+<span class="nb">toc</span>
+</code></pre></div></div>
+
+<h2 id="6-mathengineering">6. Math/Engineering</h2>
+
+<h3 id="i-common-math-functions">i. Common Math Functions</h3>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">tan</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">asin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">acos</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">atan</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">log</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">log10</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">abs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1">%If x is complex, returns magnitude</span>
+<span class="nb">min</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">max</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">ceil</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">floor</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">rem</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">rand</span> <span class="c1">% Uniformly distributed pseudorandom numbers</span>
+<span class="nb">randi</span> <span class="c1">% Uniformly distributed pseudorandom integers</span>
+<span class="nb">randn</span> <span class="c1">% Normally distributed pseudorandom numbers</span>
+
+<span class="c1">%Complex math operations</span>
+<span class="nb">abs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>   <span class="c1">% Magnitude of complex variable x</span>
+<span class="n">phase</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1">% Phase (or angle) of complex variable x</span>
+<span class="nb">real</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1">% Returns the real part of x (i.e returns a if x = a +jb)</span>
+<span class="nb">imag</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1">% Returns the imaginary part of x (i.e returns b if x = a+jb)</span>
+<span class="nb">conj</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1">% Returns the complex conjugate </span>
+
+
+<span class="c1">% Common constants</span>
+<span class="nb">pi</span>
+<span class="nb">NaN</span>
+<span class="n">inf</span>
+
+<span class="c1">% Given a meshgrid X,Y and a function defined on the meshgrid like Gauss, interpolates the value of the function at the point u1,u2</span>
+<span class="nb">interp2</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">,</span><span class="n">Gauss</span><span class="p">,</span><span class="n">u1</span><span class="p">,</span><span class="n">u2</span><span class="p">)</span>
+
+
+</code></pre></div></div>
+
+<h3 id="ii-transfer-functions">ii. Transfer Functions</h3>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">% Transfer functions</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">tf</span><span class="p">(</span><span class="s1">'s'</span><span class="p">);</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">s</span><span class="o">^</span><span class="mi">2</span><span class="p">/(</span><span class="n">s</span><span class="o">^</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">100</span><span class="o">*</span><span class="n">s</span><span class="o">^</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">30</span><span class="o">*</span><span class="n">s</span> <span class="o">+</span> <span class="mi">50</span><span class="p">);</span>
+
+<span class="n">pole</span><span class="p">(</span><span class="n">G</span><span class="p">);</span> <span class="c1">% Returns the location(s) of the pole(s) in rad/s</span>
+<span class="n">zero</span><span class="p">(</span><span class="n">G</span><span class="p">);</span> <span class="c1">% Returns the location(s) of the zero(s) in rad/s</span>
+<span class="n">pzmap</span><span class="p">(</span><span class="n">G</span><span class="p">);</span> <span class="c1">% Plots the locations of both the pole(s) and zero(s)</span>
+
+<span class="nb">bandwidth</span><span class="p">(</span><span class="n">closed_loop_system</span><span class="p">);</span> <span class="c1">% Returns bandwidth of a closed loop transfer function in rad/s</span>
+<span class="n">bode</span><span class="p">(</span><span class="n">closed_loop_system</span><span class="p">)</span> <span class="c1">% Creates bode plot of system</span>
+<span class="n">rlocus</span><span class="p">(</span><span class="n">closed_loop_system</span><span class="p">)</span> <span class="c1">% Plots a root locus of the specified system</span>
+
+<span class="n">margin</span><span class="p">(</span><span class="n">open_loop_system</span><span class="p">);</span> <span class="c1">% Creates a bode plot, displaying the gain and phase margins of an open loop transfer function</span>
+
+</code></pre></div></div>
+
+<h2 id="7-vectorization">7. Vectorization</h2>
+<p><a href="https://www.mathworks.com/help/matlab/matlab_prog/vectorization.html">Tips to vectorize your code to get rid of loops and make it run more efficiently.</a></p>
+
+<h2 id="source"><a href="https://github.com/krishnr/MATLAB-cheat-sheet" target="_blank">Source</a></h2>
+
+<h2 id="see-also">See Also</h2>
+
+<ul>
+  <li><a href="http://learnxinyminutes.com/docs/matlab/" target="_blank">Learn X in Y minutes</a></li>
+</ul>
+
+
+
+        
+      </section>
+
+      <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/resources/cheatsheets/linux/" class="pagination--pager" title="Linux
+">Previous</a>
+    
+    
+      <a href="/resources/cheatsheets/powershell/" class="pagination--pager" title="PowerShell
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+    
+  </article>
+
+  
+  
+</div>
+
+      <div align="center" style="margin: 1em 0;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- ad-unit_horizontal -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-7211504142101622"
+             data-ad-slot="6952122554"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    
+    
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
+    <label class="sr-only" for="cse-search-input-box-id">
+      Enter your search term...
+    </label>
+    <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results">
+    <gcse:searchresults-only></gcse:searchresults-only>
+  </div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.linkedin.com/company/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+        
+          <li><a href="https://github.com/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+        
+          <li><a href="https://www.pinterest.com/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-pinterest" aria-hidden="true"></i> Pinterest</a></li>
+        
+      
+        
+          <li><a href="https://www.instagram.com/cfd.streamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/CfdStreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/CFD-Streamline-102236005421147/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 CFD Streamline. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<script>
+  (function () {
+    var cx = 'a390aa655bef0d717';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+  function googleCustomSearchExecute() {
+    var input = document.getElementById('cse-search-input-box-id');
+    var element = google.search.cse.element.getElement('searchresults-only0');
+    if (input.value == '') {
+      element.clearAllResults();
+    } else {
+      element.execute(input.value);
+    }
+    return false;
+  }
+
+  
+</script>
+
+
+
+
+
+
+
+<!-- snipcart -->
+<script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+<div hidden id="snipcart" data-api-key="NThhNjEyYzUtNjY3ZS00YTlkLWFjYWEtYmVmZTZhMzRhZjgyNjM3NjIzNzM3NTkwNTg2NzQ5
+"></div>
+
+  </body>
+</html>

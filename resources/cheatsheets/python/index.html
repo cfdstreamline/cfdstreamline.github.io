@@ -1,0 +1,1108 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.23.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Python | CFD Streamline</title>
+<meta name="description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CFD Streamline">
+<meta property="og:title" content="Python">
+<meta property="og:url" content="http://localhost:4000/resources/cheatsheets/python/">
+
+
+  <meta property="og:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/logos/logo_python.svg">
+
+
+
+  <meta name="twitter:site" content="@cfdstreamline">
+  <meta name="twitter:title" content="Python">
+  <meta name="twitter:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+  <meta name="twitter:url" content="http://localhost:4000/resources/cheatsheets/python/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="http://localhost:4000/assets/images/logos/logo_python.svg">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-07-23T17:10:09+02:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/CFD-Streamline-102236005421147">
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/resources/cheatsheets/python/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Organization",
+      "url": "http://localhost:4000/",
+      "logo": "http://localhost:4000/assets/images/site-logo.png"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="CFD Streamline Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- snipcart -->
+<link rel="preconnect" href="https://app.snipcart.com">
+<link rel="preconnect" href="https://cdn.snipcart.com">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
+
+
+
+<!-- google adsense -->
+<script data-ad-client="ca-pub-7211504142101622" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+<!-- mathjax -->
+<!--
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+  </script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js">
+</script>
+-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  processEscapes: true},
+  jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
+  extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
+  TeX: {
+  extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
+  equationNumbers: {
+  autoNumber: "AMS"
+  }
+  }
+  });
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icon/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icon/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icon/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/icon/favicon/site.webmanifest">
+<link rel="mask-icon" href="/assets/images/icon/favicon/safari-pinned-tab.svg" color="#283747">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--wiki">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/icon/logo.jpg" alt="CFD Streamline"></a>
+        
+        <a class="site-title" href="/">
+          CFD Streamline
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/wiki/">Wiki</a>
+            </li><li class="masthead__menu-item">
+              <a href="/software/">Software</a>
+            </li><li class="masthead__menu-item">
+              <a href="/testcases/">Test Cases</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resources/">Resources</a>
+            </li><li class="masthead__menu-item">
+              <a href="/posts/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/store/">Store</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/resources" itemprop="item"><span itemprop="name">Resources</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/cheatsheets" itemprop="item"><span itemprop="name">Cheatsheets</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Python</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+  
+  </div>
+
+
+
+  
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Python">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Python
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+
+        <h2 id="introduction">Introduction</h2>
+
+<ul>
+  <li>Python is an interpreted, high-level and general-purpose, dynamically typed programming language</li>
+  <li>It is also Object oriented, modular oriented and a scripting language.</li>
+  <li>In Python, everything is considered as an Object.</li>
+  <li>A python file has an extension of .py</li>
+  <li>Python follows Indentation to separate code blocks instead of flower brackets({}).</li>
+  <li>We can run a python file by the following command in cmd(Windows) or shell(mac/linux).
+  <code class="language-plaintext highlighter-rouge">$ python &lt;filename.py&gt;</code> or <code class="language-plaintext highlighter-rouge">$ python3 &lt;filename.py&gt;</code></li>
+</ul>
+
+<h2 id="create-and-execute-a-program">Create and execute a program</h2>
+
+<ol>
+  <li>Open up a terminal/cmd</li>
+  <li>Create the program: nano/cat &gt; nameProgram.py</li>
+  <li>Write the program and save it</li>
+  <li>python nameProgram.py</li>
+</ol>
+
+<h2 id="basic-datatypes">Basic Datatypes</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">int</code></td>
+      <td>Integer values [0, 1, -2, 3]</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">float</code></td>
+      <td>Floating point values [0.1, 4.532, -5.092]</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">char</code></td>
+      <td>Characters [a, b, @, !, `]</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">str</code></td>
+      <td>Strings [abc, AbC, A@B, sd!, `asa]</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">bool</code></td>
+      <td>Boolean Values [True, False]</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">complex</code></td>
+      <td>Complex numbers [2+3j, 4-1j]</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="keywords">Keywords</h2>
+
+<p>As of python3.8 there are 35 keywords:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Keyword</th>
+      <th>Description</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">True</code></td>
+      <td>Boolean value for not False or 1</td>
+      <td>Value Keyword</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">False</code></td>
+      <td>Boolean Value for not True or 0</td>
+      <td>Value Keyword</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">None</code></td>
+      <td>No Value</td>
+      <td>Value keyword</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">and</code></td>
+      <td>returns true if both (oprand) are true (other language <code class="language-plaintext highlighter-rouge">&amp;&amp;</code> )</td>
+      <td>Operator keyword</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">or</code></td>
+      <td>returns true of either operands is true (other language <code class="language-plaintext highlighter-rouge">||</code> )</td>
+      <td>Operator keyword</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">in</code></td>
+      <td>returns true if word is in iterator</td>
+      <td>Operator keyword</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">is</code></td>
+      <td>returns true if id of variables are same</td>
+      <td>Operator keyword</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">not</code></td>
+      <td>returns opposite Boolean value</td>
+      <td>Operator Keyword</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">if</code></td>
+      <td>get into block if expression is true</td>
+      <td>conditional</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">elif</code></td>
+      <td>for more than 1 if checks</td>
+      <td>conditional</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">else</code></td>
+      <td>this block will be executed if condition is false</td>
+      <td>conditional</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">for</code></td>
+      <td>used for looping</td>
+      <td>iteration</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">while</code></td>
+      <td>used for looping</td>
+      <td>iteration</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">break</code></td>
+      <td>get out of loop</td>
+      <td>iteration</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">continue</code></td>
+      <td>skip for specific condition</td>
+      <td>iteration</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">def</code></td>
+      <td>make user defined function</td>
+      <td>structure</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">class</code></td>
+      <td>make user defined classes</td>
+      <td>structure</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">lambda</code></td>
+      <td>make anonymous function</td>
+      <td>structure</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">with</code></td>
+      <td>execute code within context manager’s scope</td>
+      <td>structure</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">as</code></td>
+      <td>alias for something</td>
+      <td>structure</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pass</code></td>
+      <td>used for making empty structures(declaration)</td>
+      <td>structure</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">return</code></td>
+      <td>get value(s) from function, get out of function</td>
+      <td>returning keyword</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">yield</code></td>
+      <td>yields values instead of returning (are called generators)</td>
+      <td>returning keyword</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">import</code></td>
+      <td>import libraries/modules/packages</td>
+      <td>import</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">from</code></td>
+      <td>import specific function/classes from modules/packages</td>
+      <td>import</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">try</code></td>
+      <td>this block will be tried to get executed</td>
+      <td>execption handling</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">execpt</code></td>
+      <td>is any execption/error has occured it’ll be executed</td>
+      <td>execption handling</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">finally</code></td>
+      <td>It’ll be executed no matter execption occurs or not</td>
+      <td>execption handling</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">raise</code></td>
+      <td>throws any specific error/execption</td>
+      <td>execption handling</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">assert</code></td>
+      <td>throws an AssertionError if condition is false</td>
+      <td>execption handling</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">async</code></td>
+      <td>used to define asynchronous functions/co-routines</td>
+      <td>asynchronous programming</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">await</code></td>
+      <td>used to specify a point when control is taken back</td>
+      <td>asynchronous programming</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">del</code></td>
+      <td>deletes/unsets any user defined data</td>
+      <td>variable handling</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">global</code></td>
+      <td>used to access variables defined outsied of function</td>
+      <td>variable handling</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">nonlocal</code></td>
+      <td>modify variables from different scopes</td>
+      <td>variable handling</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="operators">Operators</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operator</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">( )</code></td>
+      <td>grouping parenthesis, function call, tuple declaration</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">[ ]</code></td>
+      <td>array indexing, also declaring lists etc.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">!</code></td>
+      <td>relational not, complement, <code class="language-plaintext highlighter-rouge">!</code> a  yields true or false</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">*</code></td>
+      <td>multiply, <code class="language-plaintext highlighter-rouge">a * b</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/</code></td>
+      <td>divide, <code class="language-plaintext highlighter-rouge">a / b</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%</code></td>
+      <td>modulo, <code class="language-plaintext highlighter-rouge">a % b</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">+</code></td>
+      <td>add, <code class="language-plaintext highlighter-rouge">a + b</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-</code></td>
+      <td>subtract, <code class="language-plaintext highlighter-rouge">a - b</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt;</code></td>
+      <td>shift left,  left operand is shifted left by right operand bits (multiply by 2)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&gt;&gt;</code></td>
+      <td>shift right, left operand is shifted right by right operand bits (divide by 2)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;</code></td>
+      <td>less than, result is true or false,  <code class="language-plaintext highlighter-rouge">a &lt; b</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;=</code></td>
+      <td>less than or equal, result is true or false,  <code class="language-plaintext highlighter-rouge">a &lt;= b</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&gt;</code></td>
+      <td>greater than, result is true or false,  <code class="language-plaintext highlighter-rouge">a &gt; b</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&gt;=</code></td>
+      <td>greater than or equal, result is true or false, <code class="language-plaintext highlighter-rouge">a &gt;= b</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">==</code></td>
+      <td>equal, result is true or false,  <code class="language-plaintext highlighter-rouge">a == b</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">!=</code></td>
+      <td>not equal, result is true or false,  <code class="language-plaintext highlighter-rouge">a != b</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&amp;</code></td>
+      <td>bitwise and,  <code class="language-plaintext highlighter-rouge">a &amp; b</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">^</code></td>
+      <td>bitwise exclusive or XOR,  <code class="language-plaintext highlighter-rouge">a ^ b</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">|</code></td>
+      <td>bitwise or,  <code class="language-plaintext highlighter-rouge">a | b</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&amp;&amp;</code>, <code class="language-plaintext highlighter-rouge">and</code></td>
+      <td>relational and, result is true or false,  <code class="language-plaintext highlighter-rouge">a &lt; b &amp;&amp; c &gt;= d</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">||</code>, <code class="language-plaintext highlighter-rouge">or</code></td>
+      <td>relational or, result is true or false,  <code class="language-plaintext highlighter-rouge">a &lt; b || c &gt;= d</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">=</code></td>
+      <td>store or assignment</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">+=</code></td>
+      <td>add and store</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-=</code></td>
+      <td>subtract and store</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">*=</code></td>
+      <td>multiply and store</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/=</code></td>
+      <td>divide and store</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">%=</code></td>
+      <td>modulo and store</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&lt;&lt;=</code></td>
+      <td>shift left and store</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&gt;&gt;=</code></td>
+      <td>shift right and store</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">,</code></td>
+      <td>separator as in   <code class="language-plaintext highlighter-rouge">( y=x,z=++x )</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">~</code></td>
+      <td>bitwise not, ones complement, <code class="language-plaintext highlighter-rouge">~a</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-</code></td>
+      <td>unary minus, <code class="language-plaintext highlighter-rouge">- a</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">+</code></td>
+      <td>unary plus, <code class="language-plaintext highlighter-rouge">+ a</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">&amp;=</code></td>
+      <td>bitwise and and store</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">^=</code></td>
+      <td>bitwise exclusive or and store</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">|=</code></td>
+      <td>bitwise or and store</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="basic-data-structures">Basic Data Structures</h2>
+
+<h3 id="list">List</h3>
+
+<ul>
+  <li>List is a collection which is ordered and changeable. Allows duplicate members.</li>
+  <li>Syntax:
+    <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">thislist</span> <span class="o">=</span> <span class="p">[</span><span class="s">"apple"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"cherry"</span><span class="p">]</span> 
+</code></pre></div>    </div>
+  </li>
+  <li>List items are ordered, changeable, and allow duplicate values.</li>
+  <li>List items are indexed, the first item has index <code class="language-plaintext highlighter-rouge">[0]</code>, the second item has index <code class="language-plaintext highlighter-rouge">[1]</code> etc.</li>
+  <li>The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.</li>
+  <li>To determine how many items a list has, use the <code class="language-plaintext highlighter-rouge">len()</code> function.</li>
+  <li>A list can contain different data types:
+    <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="s">"abc"</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="s">"male"</span><span class="p">]</span>
+</code></pre></div>    </div>
+  </li>
+  <li>It is also possible to use the <code class="language-plaintext highlighter-rouge">list()</code> constructor when creating a new list
+    <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">thislist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">((</span><span class="s">"apple"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"cherry"</span><span class="p">))</span>  <span class="c1"># note the double round-brackets
+</span></code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="tuple">Tuple</h3>
+
+<ul>
+  <li>Tuple is a collection which is ordered and unchangeable. Allows duplicate members.</li>
+  <li>A tuple is a collection which is ordered and unchangeable.</li>
+  <li>Syntax:
+    <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">thistuple</span> <span class="o">=</span> <span class="p">(</span><span class="s">"apple"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"cherry"</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Tuple items are ordered, unchangeable, and allow duplicate values.</li>
+  <li>Tuple items are indexed, the first item has index <code class="language-plaintext highlighter-rouge">[0]</code>, the second item has index <code class="language-plaintext highlighter-rouge">[1]</code> etc.</li>
+  <li>When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.</li>
+  <li>Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.</li>
+  <li>Since tuple are indexed, tuples can have items with the same value:</li>
+  <li>Tuples allow duplicate values:
+    <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">thistuple</span> <span class="o">=</span> <span class="p">(</span><span class="s">"apple"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"cherry"</span><span class="p">,</span> <span class="s">"apple"</span><span class="p">,</span> <span class="s">"cherry"</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>To determine how many items a tuple has, use the  <code class="language-plaintext highlighter-rouge">len()</code> function:
+    <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">thistuple</span> <span class="o">=</span> <span class="p">(</span><span class="s">"apple"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"cherry"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">thistuple</span><span class="p">))</span>
+</code></pre></div>    </div>
+  </li>
+  <li>To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.
+    <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">thistuple</span> <span class="o">=</span> <span class="p">(</span><span class="s">"apple"</span><span class="p">,)</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">thistuple</span><span class="p">))</span>
+<span class="c1">#NOT a tuple
+</span><span class="n">thistuple</span> <span class="o">=</span> <span class="p">(</span><span class="s">"apple"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">thistuple</span><span class="p">))</span>
+</code></pre></div>    </div>
+  </li>
+  <li>It is also possible to use the <code class="language-plaintext highlighter-rouge">tuple()</code> constructor to make a tuple.
+    <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">thistuple</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">((</span><span class="s">"apple"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"cherry"</span><span class="p">))</span> <span class="c1"># note the double round-brackets
+</span><span class="k">print</span><span class="p">(</span><span class="n">thistuple</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="set">Set</h3>
+<ul>
+  <li>Set is a collection which is unordered and unindexed. No duplicate members.</li>
+  <li>A set is a collection which is both unordered and unindexed.
+    <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">thisset</span> <span class="o">=</span> <span class="p">{</span><span class="s">"apple"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"cherry"</span><span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Set items are unordered, unchangeable, and do not allow duplicate values.</li>
+  <li>Unordered means that the items in a set do not have a defined order.</li>
+  <li>Set items can appear in a different order every time you use them, and cannot be referred to by index or key.</li>
+  <li>Sets are unchangeable, meaning that we cannot change the items after the set has been created.</li>
+  <li>Duplicate values will be ignored.</li>
+  <li>To determine how many items a set has, use the <code class="language-plaintext highlighter-rouge">len()</code> method.
+    <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">thisset</span> <span class="o">=</span> <span class="p">{</span><span class="s">"apple"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"cherry"</span><span class="p">}</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">thisset</span><span class="p">))</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Set items can be of any data type:
+    <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="s">"apple"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"cherry"</span><span class="p">}</span>
+<span class="n">set2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="n">set3</span> <span class="o">=</span> <span class="p">{</span><span class="bp">True</span><span class="p">,</span> <span class="bp">False</span><span class="p">,</span> <span class="bp">False</span><span class="p">}</span>
+<span class="n">set4</span> <span class="o">=</span> <span class="p">{</span><span class="s">"abc"</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="s">"male"</span><span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>It is also possible to use the <code class="language-plaintext highlighter-rouge">set()</code> constructor to make a set.
+    <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">thisset</span> <span class="o">=</span> <span class="nb">set</span><span class="p">((</span><span class="s">"apple"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"cherry"</span><span class="p">))</span> <span class="c1"># note the double round-brackets
+</span></code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="dictionary">Dictionary</h3>
+<ul>
+  <li>Dictionary is a collection which is unordered and changeable. No duplicate members.</li>
+  <li>Dictionaries are used to store data values in key:value pairs.</li>
+  <li>Dictionary items are presented in key:value pairs, and can be referred to by using the key name.
+    <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">thisdict</span> <span class="o">=</span> <span class="p">{</span>
+<span class="s">"brand"</span><span class="p">:</span> <span class="s">"Ford"</span><span class="p">,</span>
+<span class="s">"model"</span><span class="p">:</span> <span class="s">"Mustang"</span><span class="p">,</span>
+<span class="s">"year"</span><span class="p">:</span> <span class="mi">1964</span>
+<span class="p">}</span>
+<span class="k">print</span><span class="p">(</span><span class="n">thisdict</span><span class="p">[</span><span class="s">"brand"</span><span class="p">])</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.</li>
+  <li>Dictionaries cannot have two items with the same key.</li>
+  <li>Duplicate values will overwrite existing values.</li>
+  <li>To determine how many items a dictionary has, use the <code class="language-plaintext highlighter-rouge">len()</code> function.
+    <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">thisdict</span><span class="p">))</span>
+</code></pre></div>    </div>
+  </li>
+  <li>The values in dictionary items can be of any data type
+    <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">thisdict</span> <span class="o">=</span> <span class="p">{</span>
+<span class="s">"brand"</span><span class="p">:</span> <span class="s">"Ford"</span><span class="p">,</span>
+<span class="s">"electric"</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span>
+<span class="s">"year"</span><span class="p">:</span> <span class="mi">1964</span><span class="p">,</span>
+<span class="s">"colors"</span><span class="p">:</span> <span class="p">[</span><span class="s">"red"</span><span class="p">,</span> <span class="s">"white"</span><span class="p">,</span> <span class="s">"blue"</span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="flow-control">Flow Control</h2>
+
+<h3 id="conditional">Conditional</h3>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">if</span> <span class="n">condition</span><span class="p">:</span>
+        <span class="o">&lt;</span><span class="n">commands</span><span class="o">&gt;</span>
+    <span class="k">elif</span> <span class="n">condition2</span><span class="p">:</span>
+        <span class="o">&lt;</span><span class="n">commands</span><span class="o">&gt;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="o">&lt;</span><span class="n">commands</span><span class="o">&gt;</span>
+</code></pre></div></div>
+
+<h3 id="loops">Loops</h3>
+
+<h4 id="for-loop">For loop</h4>
+
+<ul>
+  <li>A <code class="language-plaintext highlighter-rouge">for</code> loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</li>
+  <li>This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.</li>
+  <li>With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+    <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s">"apple"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"cherry"</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>The for loop does not require an indexing variable to set beforehand.</li>
+  <li>To loop through a set of code a specified number of times, we can use the range() function.
+    <ul>
+      <li>The <code class="language-plaintext highlighter-rouge">range(b,e,i)</code> function returns a sequence of numbers, starting from <code class="language-plaintext highlighter-rouge">b</code> (0 as default), and increments by <code class="language-plaintext highlighter-rouge">i</code> (1 by default), and ends at number <code class="language-plaintext highlighter-rouge">e</code>.</li>
+      <li>The <code class="language-plaintext highlighter-rouge">else</code> keyword in a for loop specifies a block of code to be executed when the loop is finished.</li>
+    </ul>
+  </li>
+  <li>A nested loop is a loop inside a loop. The “inner loop” will be executed one time for each iteration of the “outer loop”:
+    <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">adj</span> <span class="o">=</span> <span class="p">[</span><span class="s">"red"</span><span class="p">,</span> <span class="s">"big"</span><span class="p">,</span> <span class="s">"tasty"</span><span class="p">]</span>
+<span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s">"apple"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"cherry"</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">adj</span><span class="p">:</span>
+  <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
+      <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h4 id="while-loop">While loop</h4>
+
+<ul>
+  <li>With the <code class="language-plaintext highlighter-rouge">while</code> loop we can execute a set of statements as long as a condition is true.</li>
+  <li>Example: Print i as long as i is less than 6
+    <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+  <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>    </div>
+  </li>
+  <li>The <code class="language-plaintext highlighter-rouge">while</code> loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.</li>
+  <li>With the <code class="language-plaintext highlighter-rouge">break</code> statement we can stop the loop even if the while condition is true</li>
+  <li>With the continue statement we can stop the current iteration, and continue with the next.</li>
+  <li>With the else statement we can run a block of code once when the condition no longer is true.</li>
+</ul>
+
+<h2 id="functions">Functions</h2>
+
+<h3 id="definition">Definition</h3>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">function_name</span><span class="p">():</span>
+    <span class="k">return</span>
+</code></pre></div></div>
+
+<h3 id="call">Call</h3>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">function_name</span><span class="p">()</span>
+</code></pre></div></div>
+<ul>
+  <li>We need not to specify the return type of the function.</li>
+  <li>Functions by default return <code class="language-plaintext highlighter-rouge">None</code></li>
+  <li>We can return any datatype.</li>
+</ul>
+
+<h2 id="source"><a href="https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/python.md" target="_blank">Source</a></h2>
+
+<h2 id="see-also">See Also</h2>
+
+<p><a href="https://learnxinyminutes.com/docs/python/" target="_blank">Learn X in Y minutes</a></p>
+
+
+        
+      </section>
+
+      <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/resources/cheatsheets/powershell/" class="pagination--pager" title="PowerShell
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+    
+  </article>
+
+  
+  
+</div>
+
+      <div align="center" style="margin: 1em 0;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- ad-unit_horizontal -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-7211504142101622"
+             data-ad-slot="6952122554"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    
+    
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
+    <label class="sr-only" for="cse-search-input-box-id">
+      Enter your search term...
+    </label>
+    <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results">
+    <gcse:searchresults-only></gcse:searchresults-only>
+  </div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.linkedin.com/company/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+        
+          <li><a href="https://github.com/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+        
+          <li><a href="https://www.pinterest.com/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-pinterest" aria-hidden="true"></i> Pinterest</a></li>
+        
+      
+        
+          <li><a href="https://www.instagram.com/cfd.streamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/CfdStreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/CFD-Streamline-102236005421147/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 CFD Streamline. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<script>
+  (function () {
+    var cx = 'a390aa655bef0d717';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+  function googleCustomSearchExecute() {
+    var input = document.getElementById('cse-search-input-box-id');
+    var element = google.search.cse.element.getElement('searchresults-only0');
+    if (input.value == '') {
+      element.clearAllResults();
+    } else {
+      element.execute(input.value);
+    }
+    return false;
+  }
+
+  
+</script>
+
+
+
+
+
+
+
+<!-- snipcart -->
+<script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+<div hidden id="snipcart" data-api-key="NThhNjEyYzUtNjY3ZS00YTlkLWFjYWEtYmVmZTZhMzRhZjgyNjM3NjIzNzM3NTkwNTg2NzQ5
+"></div>
+
+  </body>
+</html>

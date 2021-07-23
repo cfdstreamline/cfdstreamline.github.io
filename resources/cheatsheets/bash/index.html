@@ -1,0 +1,1031 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.23.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Bash | CFD Streamline</title>
+<meta name="description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CFD Streamline">
+<meta property="og:title" content="Bash">
+<meta property="og:url" content="http://localhost:4000/resources/cheatsheets/bash/">
+
+
+  <meta property="og:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/logos/logo_gnu-bash.svg">
+
+
+
+  <meta name="twitter:site" content="@cfdstreamline">
+  <meta name="twitter:title" content="Bash">
+  <meta name="twitter:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+  <meta name="twitter:url" content="http://localhost:4000/resources/cheatsheets/bash/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="http://localhost:4000/assets/images/logos/logo_gnu-bash.svg">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-07-23T17:10:09+02:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/CFD-Streamline-102236005421147">
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/resources/cheatsheets/bash/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Organization",
+      "url": "http://localhost:4000/",
+      "logo": "http://localhost:4000/assets/images/site-logo.png"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="CFD Streamline Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- snipcart -->
+<link rel="preconnect" href="https://app.snipcart.com">
+<link rel="preconnect" href="https://cdn.snipcart.com">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
+
+
+
+<!-- google adsense -->
+<script data-ad-client="ca-pub-7211504142101622" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+<!-- mathjax -->
+<!--
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+  </script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js">
+</script>
+-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  processEscapes: true},
+  jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
+  extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
+  TeX: {
+  extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
+  equationNumbers: {
+  autoNumber: "AMS"
+  }
+  }
+  });
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icon/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icon/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icon/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/icon/favicon/site.webmanifest">
+<link rel="mask-icon" href="/assets/images/icon/favicon/safari-pinned-tab.svg" color="#283747">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--wiki">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/icon/logo.jpg" alt="CFD Streamline"></a>
+        
+        <a class="site-title" href="/">
+          CFD Streamline
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/wiki/">Wiki</a>
+            </li><li class="masthead__menu-item">
+              <a href="/software/">Software</a>
+            </li><li class="masthead__menu-item">
+              <a href="/testcases/">Test Cases</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resources/">Resources</a>
+            </li><li class="masthead__menu-item">
+              <a href="/posts/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/store/">Store</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/resources" itemprop="item"><span itemprop="name">Resources</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/cheatsheets" itemprop="item"><span itemprop="name">Cheatsheets</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Bash</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+  
+  </div>
+
+
+
+  
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Bash">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Bash
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+
+        <h2 id="enforcing-a-script-to-use-bash">Enforcing a script to use Bash</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+</code></pre></div></div>
+
+<h2 id="shortcuts">Shortcuts</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CTRL+A  <span class="c"># move to beginning of line</span>
+CTRL+B  <span class="c"># moves backward one character</span>
+CTRL+C  <span class="c"># halts the current command</span>
+CTRL+D  <span class="c"># deletes one character backward or logs out of current session, similar to exit</span>
+CTRL+E  <span class="c"># moves to end of line</span>
+CTRL+F  <span class="c"># moves forward one character</span>
+CTRL+G  <span class="c"># aborts the current editing command and ring the terminal bell</span>
+CTRL+H  <span class="c"># deletes one character under cursor (same as DELETE)</span>
+CTRL+J  <span class="c"># same as RETURN</span>
+CTRL+K  <span class="c"># deletes (kill) forward to end of line</span>
+CTRL+L  <span class="c"># clears screen and redisplay the line</span>
+CTRL+M  <span class="c"># same as RETURN</span>
+CTRL+N  <span class="c"># next line in command history</span>
+CTRL+O  <span class="c"># same as RETURN, then displays next line in history file</span>
+CTRL+P  <span class="c"># previous line in command history</span>
+CTRL+Q  <span class="c"># resumes suspended shell output</span>
+CTRL+R  <span class="c"># searches backward</span>
+CTRL+S  <span class="c"># searches forward or suspends shell output</span>
+CTRL+T  <span class="c"># transposes two characters</span>
+CTRL+U  <span class="c"># kills backward from point to the beginning of line</span>
+CTRL+V  <span class="c"># makes the next character typed verbatim</span>
+CTRL+W  <span class="c"># kills the word behind the cursor</span>
+CTRL+X  <span class="c"># lists the possible filename completions of the current word</span>
+CTRL+Y  <span class="c"># retrieves (yank) last item killed</span>
+CTRL+Z  <span class="c"># stops the current command, resume with fg in the foreground or bg in the background</span>
+
+ALT+B   <span class="c"># moves backward one word</span>
+ALT+D   <span class="c"># deletes next word</span>
+ALT+F   <span class="c"># moves forward one word</span>
+ALT+H   <span class="c"># deletes one character backward</span>
+ALT+T   <span class="c"># transposes two words</span>
+ALT+.   <span class="c"># pastes last word from the last command. Pressing it repeatedly traverses through command history.</span>
+ALT+U   <span class="c"># capitalizes every character from the current cursor position to the end of the word</span>
+ALT+L   <span class="c"># uncapitalizes every character from the current cursor position to the end of the word</span>
+ALT+C   <span class="c"># capitalizes the letter under the cursor. The cursor then moves to the end of the word.</span>
+ALT+R   <span class="c"># reverts any changes to a command you’ve pulled from your history if you’ve edited it.</span>
+ALT+?   <span class="c"># list possible completions to what is typed</span>
+ALT+^   <span class="c"># expand line to most recent match from history</span>
+
+CTRL+X <span class="k">then</span> <span class="o">(</span>   <span class="c"># start recording a keyboard macro</span>
+CTRL+X <span class="k">then</span> <span class="o">)</span>   <span class="c"># finish recording keyboard macro</span>
+CTRL+X <span class="k">then </span>E   <span class="c"># recall last recorded keyboard macro</span>
+CTRL+X <span class="k">then </span>CTRL+E   <span class="c"># invoke text editor (specified by $EDITOR) on current command line then execute resultes as shell commands</span>
+
+BACKSPACE  <span class="c"># deletes one character backward</span>
+DELETE     <span class="c"># deletes one character under cursor</span>
+</code></pre></div></div>
+
+<h2 id="history">History</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">history</span>   <span class="c"># shows command line history</span>
+<span class="o">!!</span>        <span class="c"># repeats the last command</span>
+<span class="o">!</span>&lt;n&gt;      <span class="c"># refers to command line 'n'</span>
+<span class="o">!</span>&lt;string&gt; <span class="c"># refers to command starting with 'string'</span>
+</code></pre></div></div>
+
+<h2 id="basics">Basics</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">env</span>                 <span class="c"># displays all environment variables</span>
+
+<span class="nb">echo</span> <span class="nv">$SHELL</span>         <span class="c"># displays the shell you're using</span>
+<span class="nb">echo</span> <span class="nv">$BASH_VERSION</span>  <span class="c"># displays bash version</span>
+
+bash                <span class="c"># if you want to use bash (type exit to go back to your previously opened shell)</span>
+whereis bash        <span class="c"># locates the binary, source and manual-page for a command</span>
+which bash          <span class="c"># finds out which program is executed as 'bash' (default: /bin/bash, can change across environments)</span>
+
+clear               <span class="c"># clears content on window (hide displayed lines)</span>
+
+<span class="nb">exit</span>                <span class="c"># logs out of current session</span>
+</code></pre></div></div>
+
+<h2 id="file-commands">File Commands</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">ls</span>                            <span class="c"># lists your files in current directory, ls &lt;dir&gt; to print files in a specific directory</span>
+<span class="nb">ls</span> <span class="nt">-l</span>                         <span class="c"># lists your files in 'long format', which contains the exact size of the file, who owns the file and who has the right to look at it, and when it was last modified</span>
+<span class="nb">ls</span> <span class="nt">-a</span>                         <span class="c"># lists all files in 'long format', including hidden files (name beginning with '.')</span>
+<span class="nb">ln</span> <span class="nt">-s</span> &lt;filename&gt; &lt;<span class="nb">link</span><span class="o">&gt;</span>       <span class="c"># creates symbolic link to file</span>
+<span class="nb">readlink</span> &lt;filename&gt;           <span class="c"># shows where a symbolic links points to</span>
+tree                          <span class="c"># show directories and subdirectories in easilly readable file tree</span>
+mc                            <span class="c"># terminal file explorer (alternative to ncdu)</span>
+<span class="nb">touch</span> &lt;filename&gt;              <span class="c"># creates or updates (edit) your file</span>
+<span class="nb">mktemp</span> <span class="nt">-t</span> &lt;filename&gt;            <span class="c"># make a temp file in /tmp/ which is deleted at next boot (-d to make directory)</span>
+<span class="nb">cat</span> &lt;filename&gt;                <span class="c"># prints file raw content (will not be interpreted)</span>
+any_command <span class="o">&gt;</span> &lt;filename&gt;      <span class="c"># '&gt;' is used to perform redirections, it will set any_command's stdout to file instead of "real stdout" (generally /dev/stdout)</span>
+more &lt;filename&gt;               <span class="c"># shows the first part of a file (move with space and type q to quit)</span>
+<span class="nb">head</span> &lt;filename&gt;               <span class="c"># outputs the first lines of file (default: 10 lines)</span>
+<span class="nb">tail</span> &lt;filename&gt;               <span class="c"># outputs the last lines of file (useful with -f option) (default: 10 lines)</span>
+vim &lt;filename&gt;                <span class="c"># opens a file in VIM (VI iMproved) text editor, will create it if it doesn't exist</span>
+<span class="nb">mv</span> &lt;filename1&gt; &lt;dest&gt;         <span class="c"># moves a file to destination, behavior will change based on 'dest' type (dir: file is placed into dir; file: file will replace dest (tip: useful for renaming))</span>
+<span class="nb">cp</span> &lt;filename1&gt; &lt;dest&gt;         <span class="c"># copies a file</span>
+<span class="nb">rm</span> &lt;filename&gt;                 <span class="c"># removes a file</span>
+find <span class="nb">.</span> <span class="nt">-name</span> &lt;name&gt; &lt;<span class="nb">type</span><span class="o">&gt;</span>    <span class="c"># searches for a file or a directory in the current directory and all its sub-directories by its name</span>
+diff &lt;filename1&gt; &lt;filename2&gt;  <span class="c"># compares files, and shows where they differ</span>
+<span class="nb">wc</span> &lt;filename&gt;                 <span class="c"># tells you how many lines, words and characters there are in a file. Use -lwc (lines, word, character) to ouput only 1 of those informations</span>
+<span class="nb">sort</span> &lt;filename&gt;               <span class="c"># sorts the contents of a text file line by line in alphabetical order, use -n for numeric sort and -r for reversing order.</span>
+<span class="nb">sort</span> <span class="nt">-t</span> <span class="nt">-k</span> &lt;filename&gt;         <span class="c"># sorts the contents on specific sort key field starting from 1, using the field separator t.</span>
+rev                           <span class="c"># reverse string characters (hello becomes olleh)</span>
+<span class="nb">chmod</span> <span class="nt">-options</span> &lt;filename&gt;     <span class="c"># lets you change the read, write, and execute permissions on your files (more infos: SUID, GUID)</span>
+<span class="nb">gzip</span> &lt;filename&gt;               <span class="c"># compresses files using gzip algorithm</span>
+<span class="nb">gunzip</span> &lt;filename&gt;             <span class="c"># uncompresses files compressed by gzip</span>
+gzcat &lt;filename&gt;              <span class="c"># lets you look at gzipped file without actually having to gunzip it</span>
+lpr &lt;filename&gt;                <span class="c"># prints the file</span>
+lpq                           <span class="c"># checks out the printer queue</span>
+lprm &lt;jobnumber&gt;              <span class="c"># removes something from the printer queue</span>
+genscript                     <span class="c"># converts plain text files into postscript for printing and gives you some options for formatting</span>
+dvips &lt;filename&gt;              <span class="c"># prints .dvi files (i.e. files produced by LaTeX)</span>
+<span class="nb">grep</span> &lt;pattern&gt; &lt;filenames&gt;    <span class="c"># looks for the string in the files</span>
+<span class="nb">grep</span> <span class="nt">-r</span> &lt;pattern&gt; &lt;<span class="nb">dir</span><span class="o">&gt;</span>       <span class="c"># search recursively for pattern in directory</span>
+<span class="nb">head</span> <span class="nt">-n</span> file_name | <span class="nb">tail</span> +n   <span class="c"># Print nth line from file.</span>
+<span class="nb">head</span> <span class="nt">-y</span> lines.txt | <span class="nb">tail</span> +x   <span class="c"># want to display all the lines from x to y. This includes the xth and yth lines.</span>
+</code></pre></div></div>
+
+<h2 id="directory-commands">Directory Commands</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> &lt;<span class="nb">dirname</span><span class="o">&gt;</span>               <span class="c"># makes a new directory</span>
+<span class="nb">rmdir</span> &lt;<span class="nb">dirname</span><span class="o">&gt;</span>               <span class="c"># remove an empty directory</span>
+<span class="nb">rmdir</span> <span class="nt">-rf</span> &lt;<span class="nb">dirname</span><span class="o">&gt;</span>           <span class="c"># remove a non-empty directory</span>
+<span class="nb">mv</span> &lt;dir1&gt; &lt;dir2&gt;              <span class="c"># rename a directory from &lt;dir1&gt; to &lt;dir2&gt;</span>
+<span class="nb">cd</span>                            <span class="c"># changes to home</span>
+<span class="nb">cd</span> ..                         <span class="c"># changes to the parent directory</span>
+<span class="nb">cd</span> &lt;<span class="nb">dirname</span><span class="o">&gt;</span>                  <span class="c"># changes directory</span>
+<span class="nb">cp</span> <span class="nt">-r</span> &lt;dir1&gt; &lt;dir2&gt;           <span class="c"># copy &lt;dir1&gt; into &lt;dir2&gt; including sub-directories</span>
+<span class="nb">pwd</span>                           <span class="c"># tells you where you currently are</span>
+<span class="nb">cd</span> ~                          <span class="c"># changes to home.</span>
+<span class="nb">cd</span> -                          <span class="c"># changes to previous working directory</span>
+</code></pre></div></div>
+
+<h2 id="system-info">System Info</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">whoami</span>                   <span class="c"># returns your username</span>
+passwd                   <span class="c"># lets you change your password</span>
+quota <span class="nt">-v</span>                 <span class="c"># shows what your disk quota is</span>
+<span class="nb">date</span>                     <span class="c"># shows the current date and time</span>
+cal                      <span class="c"># shows the month's calendar</span>
+<span class="nb">uptime</span>                   <span class="c"># shows current uptime</span>
+w                        <span class="c"># displays whois online</span>
+finger &lt;user&gt;            <span class="c"># displays information about user</span>
+<span class="nb">uname</span> <span class="nt">-a</span>                 <span class="c"># shows kernel information</span>
+man &lt;<span class="nb">command</span><span class="o">&gt;</span>            <span class="c"># shows the manual for specified command</span>
+<span class="nb">df</span>                       <span class="c"># shows disk usage</span>
+<span class="nb">du</span> &lt;filename&gt;            <span class="c"># shows the disk usage of the files and directories in filename (du -s give only a total)</span>
+last &lt;yourUsername&gt;      <span class="c"># lists your last logins</span>
+ps <span class="nt">-u</span> yourusername       <span class="c"># lists your processes</span>
+<span class="nb">kill</span> &lt;PID&gt;               <span class="c"># kills the processes with the ID you gave</span>
+killall &lt;processname&gt;    <span class="c"># kill all processes with the name</span>
+top                      <span class="c"># displays your currently active processes</span>
+lsof                     <span class="c"># lists open files</span>
+<span class="nb">bg</span>                       <span class="c"># lists stopped or background jobs ; resume a stopped job in the background</span>
+<span class="nb">fg</span>                       <span class="c"># brings the most recent job in the foreground</span>
+<span class="nb">fg</span> &lt;job&gt;                 <span class="c"># brings job to the foreground</span>
+<span class="nb">time</span> &lt;<span class="nb">command</span><span class="o">&gt;</span>           <span class="c"># report time consumed by command execution</span>
+</code></pre></div></div>
+
+<h2 id="ssh-commands">SSH Commands</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh user@host            <span class="c"># connects to host as user</span>
+ssh <span class="nt">-p</span> &lt;port&gt; user@host  <span class="c"># connects to host on specified port as user</span>
+ssh-copy-id user@host    <span class="c"># adds your ssh key to host for user to enable a keyed or passwordless login</span>
+</code></pre></div></div>
+
+<h2 id="netword-commands">Netword Commands</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ping &lt;host&gt;              <span class="c"># pings host and outputs results</span>
+whois &lt;domain&gt;           <span class="c"># gets whois information for domain</span>
+dig &lt;domain&gt;             <span class="c"># gets DNS information for domain</span>
+dig <span class="nt">-x</span> &lt;host&gt;            <span class="c"># reverses lookup host</span>
+wget &lt;file&gt;              <span class="c"># downloads file</span>
+</code></pre></div></div>
+
+<h2 id="variables">Variables</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">varname</span><span class="o">=</span>value                <span class="c"># defines a variable</span>
+<span class="nv">varname</span><span class="o">=</span>value <span class="nb">command</span>        <span class="c"># defines a variable to be in the environment of a particular subprocess</span>
+<span class="nb">echo</span> <span class="nv">$varname</span>                <span class="c"># checks a variable's value</span>
+<span class="nb">echo</span> <span class="nv">$$</span>                      <span class="c"># prints process ID of the current shell</span>
+<span class="nb">echo</span> <span class="nv">$!</span>                      <span class="c"># prints process ID of the most recently invoked background job</span>
+<span class="nb">echo</span> <span class="nv">$?</span>                      <span class="c"># displays the exit status of the last command</span>
+<span class="nb">read</span> &lt;varname&gt;               <span class="c"># reads a string from the input and assigns it to a variable</span>
+<span class="nb">read</span> <span class="nt">-p</span> <span class="s2">"prompt"</span> &lt;varname&gt;   <span class="c"># same as above but outputs a prompt to ask user for value</span>
+column <span class="nt">-t</span> &lt;filename&gt;         <span class="c"># display info in pretty columns (often used with pipe)</span>
+<span class="nb">let</span> &lt;varname&gt; <span class="o">=</span> &lt;equation&gt;   <span class="c"># performs mathematical calculation using operators like +, -, *, /, %</span>
+<span class="nb">export </span><span class="nv">VARNAME</span><span class="o">=</span>value         <span class="c"># defines an environment variable (will be available in subprocesses)</span>
+
+array[0]<span class="o">=</span>valA                <span class="c"># how to define an array</span>
+array[1]<span class="o">=</span>valB
+array[2]<span class="o">=</span>valC
+<span class="nv">array</span><span class="o">=([</span>2]<span class="o">=</span>valC <span class="o">[</span>0]<span class="o">=</span>valA <span class="o">[</span>1]<span class="o">=</span>valB<span class="o">)</span>  <span class="c"># another way</span>
+<span class="nv">array</span><span class="o">=(</span>valA valB valC<span class="o">)</span>              <span class="c"># and another</span>
+
+<span class="k">${</span><span class="nv">array</span><span class="p">[i]</span><span class="k">}</span>                  <span class="c"># displays array's value for this index. If no index is supplied, array element 0 is assumed</span>
+<span class="k">${#</span><span class="nv">array</span><span class="p">[i]</span><span class="k">}</span>                 <span class="c"># to find out the length of any element in the array</span>
+<span class="k">${#</span><span class="nv">array</span><span class="p">[@]</span><span class="k">}</span>                 <span class="c"># to find out how many values there are in the array</span>
+
+<span class="nb">declare</span> <span class="nt">-a</span>                   <span class="c"># the variables are treated as arrays</span>
+<span class="nb">declare</span> <span class="nt">-f</span>                   <span class="c"># uses function names only</span>
+<span class="nb">declare</span> <span class="nt">-F</span>                   <span class="c"># displays function names without definitions</span>
+<span class="nb">declare</span> <span class="nt">-i</span>                   <span class="c"># the variables are treated as integers</span>
+<span class="nb">declare</span> <span class="nt">-r</span>                   <span class="c"># makes the variables read-only</span>
+<span class="nb">declare</span> <span class="nt">-x</span>                   <span class="c"># marks the variables for export via the environment</span>
+
+<span class="k">${</span><span class="nv">varname</span><span class="k">:-</span><span class="nv">word</span><span class="k">}</span>             <span class="c"># if varname exists and isn't null, return its value; otherwise return word</span>
+<span class="k">${</span><span class="nv">varname</span>:word<span class="k">}</span>              <span class="c"># if varname exists and isn't null, return its value; otherwise return word</span>
+<span class="k">${</span><span class="nv">varname</span>:<span class="p">=word</span><span class="k">}</span>             <span class="c"># if varname exists and isn't null, return its value; otherwise set it word and then return its value</span>
+<span class="k">${</span><span class="nv">varname</span>:?message<span class="k">}</span>          <span class="c"># if varname exists and isn't null, return its value; otherwise print varname, followed by message and abort the current command or script</span>
+<span class="k">${</span><span class="nv">varname</span>:+word<span class="k">}</span>             <span class="c"># if varname exists and isn't null, return word; otherwise return null</span>
+<span class="k">${</span><span class="nv">varname</span>:offset:length<span class="k">}</span>     <span class="c"># performs substring expansion. It returns the substring of $varname starting at offset and up to length characters</span>
+
+<span class="k">${</span><span class="nv">variable</span><span class="p">#pattern</span><span class="k">}</span>          <span class="c"># if the pattern matches the beginning of the variable's value, delete the shortest part that matches and return the rest</span>
+<span class="k">${</span><span class="nv">variable</span><span class="p">##pattern</span><span class="k">}</span>         <span class="c"># if the pattern matches the beginning of the variable's value, delete the longest part that matches and return the rest</span>
+<span class="k">${</span><span class="nv">variable</span><span class="p">%pattern</span><span class="k">}</span>          <span class="c"># if the pattern matches the end of the variable's value, delete the shortest part that matches and return the rest</span>
+<span class="k">${</span><span class="nv">variable</span><span class="p">%%pattern</span><span class="k">}</span>         <span class="c"># if the pattern matches the end of the variable's value, delete the longest part that matches and return the rest</span>
+<span class="k">${</span><span class="nv">variable</span><span class="p">/pattern/string</span><span class="k">}</span>   <span class="c"># the longest match to pattern in variable is replaced by string. Only the first match is replaced</span>
+<span class="k">${</span><span class="nv">variable</span><span class="p">//pattern/string</span><span class="k">}</span>  <span class="c"># the longest match to pattern in variable is replaced by string. All matches are replaced</span>
+
+<span class="k">${#</span><span class="nv">varname</span><span class="k">}</span>                  <span class="c"># returns the length of the value of the variable as a character string</span>
+
+<span class="k">*</span><span class="o">(</span>patternlist<span class="o">)</span>               <span class="c"># matches zero or more occurrences of the given patterns</span>
++<span class="o">(</span>patternlist<span class="o">)</span>               <span class="c"># matches one or more occurrences of the given patterns</span>
+?<span class="o">(</span>patternlist<span class="o">)</span>               <span class="c"># matches zero or one occurrence of the given patterns</span>
+@<span class="o">(</span>patternlist<span class="o">)</span>               <span class="c"># matches exactly one of the given patterns</span>
+<span class="o">!(</span>patternlist<span class="o">)</span>               <span class="c"># matches anything except one of the given patterns</span>
+
+<span class="si">$(</span>UNIX <span class="nb">command</span><span class="si">)</span>              <span class="c"># command substitution: runs the command and returns standard output</span>
+</code></pre></div></div>
+
+<h2 id="functions">Functions</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.</span>
+<span class="c"># $@ is equal to "$1" "$2"... "$N", where N is the number of positional parameters. $# holds the number of positional parameters.</span>
+
+
+<span class="k">function </span>functname<span class="o">()</span> <span class="o">{</span>
+  shell commands
+<span class="o">}</span>
+
+<span class="nb">unset</span> <span class="nt">-f</span> functname  <span class="c"># deletes a function definition</span>
+<span class="nb">declare</span> <span class="nt">-f</span>          <span class="c"># displays all defined functions in your login session</span>
+</code></pre></div></div>
+
+<h1 id="flow-controls">FLOW CONTROLS</h1>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>statement1 <span class="o">&amp;&amp;</span> statement2  <span class="c"># and operator</span>
+statement1 <span class="o">||</span> statement2  <span class="c"># or operator</span>
+
+<span class="nt">-a</span>                        <span class="c"># and operator inside a test conditional expression</span>
+<span class="nt">-o</span>                        <span class="c"># or operator inside a test conditional expression</span>
+
+<span class="c"># STRINGS</span>
+
+str1 <span class="o">==</span> str2               <span class="c"># str1 matches str2</span>
+str1 <span class="o">!=</span> str2               <span class="c"># str1 does not match str2</span>
+str1 &lt; str2                <span class="c"># str1 is less than str2 (alphabetically)</span>
+str1 <span class="o">&gt;</span> str2                <span class="c"># str1 is greater than str2 (alphabetically)</span>
+str1 <span class="se">\&gt;</span> str2               <span class="c"># str1 is sorted after str2</span>
+str1 <span class="se">\&lt;</span> str2               <span class="c"># str1 is sorted before str2</span>
+<span class="nt">-n</span> str1                    <span class="c"># str1 is not null (has length greater than 0)</span>
+<span class="nt">-z</span> str1                    <span class="c"># str1 is null (has length 0)</span>
+
+<span class="c"># FILES</span>
+
+<span class="nt">-a</span> file                   <span class="c"># file exists or its compilation is successful</span>
+<span class="nt">-d</span> file                   <span class="c"># file exists and is a directory</span>
+<span class="nt">-e</span> file                   <span class="c"># file exists; same -a</span>
+<span class="nt">-f</span> file                   <span class="c"># file exists and is a regular file (i.e., not a directory or other special type of file)</span>
+<span class="nt">-r</span> file                   <span class="c"># you have read permission</span>
+<span class="nt">-s</span> file                   <span class="c"># file exists and is not empty</span>
+<span class="nt">-w</span> file                   <span class="c"># your have write permission</span>
+<span class="nt">-x</span> file                   <span class="c"># you have execute permission on file, or directory search permission if it is a directory</span>
+<span class="nt">-N</span> file                   <span class="c"># file was modified since it was last read</span>
+<span class="nt">-O</span> file                   <span class="c"># you own file</span>
+<span class="nt">-G</span> file                   <span class="c"># file's group ID matches yours (or one of yours, if you are in multiple groups)</span>
+file1 <span class="nt">-nt</span> file2           <span class="c"># file1 is newer than file2</span>
+file1 <span class="nt">-ot</span> file2           <span class="c"># file1 is older than file2</span>
+
+<span class="c"># NUMBERS</span>
+
+<span class="nt">-lt</span>                       <span class="c"># less than</span>
+<span class="nt">-le</span>                       <span class="c"># less than or equal</span>
+<span class="nt">-eq</span>                       <span class="c"># equal</span>
+<span class="nt">-ge</span>                       <span class="c"># greater than or equal</span>
+<span class="nt">-gt</span>                       <span class="c"># greater than</span>
+<span class="nt">-ne</span>                       <span class="c"># not equal</span>
+
+<span class="k">if </span>condition
+<span class="k">then
+  </span>statements
+<span class="o">[</span><span class="k">elif </span>condition
+  <span class="k">then </span>statements...]
+<span class="o">[</span><span class="k">else
+  </span>statements]
+<span class="k">fi
+
+for </span>x <span class="k">in</span> <span class="o">{</span>1..10<span class="o">}</span>
+<span class="k">do
+  </span>statements
+<span class="k">done
+
+for </span>name <span class="o">[</span><span class="k">in </span>list]
+<span class="k">do
+  </span>statements that can use <span class="nv">$name</span>
+<span class="k">done
+
+for</span> <span class="o">((</span> initialisation <span class="p">;</span> ending condition <span class="p">;</span> update <span class="o">))</span>
+<span class="k">do
+  </span>statements...
+<span class="k">done
+
+case</span> expression <span class="k">in
+  </span>pattern1 <span class="p">)</span>
+    statements <span class="p">;;</span>
+  pattern2 <span class="p">)</span>
+    statements <span class="p">;;</span>
+<span class="k">esac</span>
+
+<span class="k">select </span>name <span class="o">[</span><span class="k">in </span>list]
+<span class="k">do
+  </span>statements that can use <span class="nv">$name</span>
+<span class="k">done
+
+while </span>condition<span class="p">;</span> <span class="k">do
+  </span>statements
+<span class="k">done
+
+until </span>condition<span class="p">;</span> <span class="k">do
+  </span>statements
+<span class="k">done</span>
+</code></pre></div></div>
+
+<h2 id="command-line-processing-cycle">Command-line Processing Cycle</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># The default order for command lookup is functions, followed by built-ins, with scripts and executables last.</span>
+<span class="c"># There are three built-ins that you can use to override this order: `command`, `builtin` and `enable`.</span>
+
+<span class="nb">command</span>  <span class="c"># removes alias and function lookup. Only built-ins and commands found in the search path are executed</span>
+<span class="nb">builtin</span>  <span class="c"># looks up only built-in commands, ignoring functions and commands found in PATH</span>
+<span class="nb">enable</span>   <span class="c"># enables and disables shell built-ins</span>
+
+<span class="nb">eval</span>     <span class="c"># takes arguments and run them through the command-line processing steps all over again</span>
+</code></pre></div></div>
+
+<h2 id="inputoutput-redirectors">Input/Output Redirectors</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmd1|cmd2  <span class="c"># pipe; takes standard output of cmd1 as standard input to cmd2</span>
+&lt; file     <span class="c"># takes standard input from file</span>
+<span class="o">&gt;</span> file     <span class="c"># directs standard output to file</span>
+<span class="o">&gt;&gt;</span> file    <span class="c"># directs standard output to file; append to file if it already exists</span>
+<span class="o">&gt;</span>|file     <span class="c"># forces standard output to file even if noclobber is set</span>
+n&gt;|file    <span class="c"># forces output to file from file descriptor n even if noclobber is set</span>
+&lt;<span class="o">&gt;</span> file    <span class="c"># uses file as both standard input and standard output</span>
+n&lt;<span class="o">&gt;</span>file    <span class="c"># uses file as both input and output for file descriptor n</span>
+n&gt;file     <span class="c"># directs file descriptor n to file</span>
+n&lt;file     <span class="c"># takes file descriptor n from file</span>
+n&gt;&gt;file    <span class="c"># directs file description n to file; append to file if it already exists</span>
+n&gt;&amp;        <span class="c"># duplicates standard output to file descriptor n</span>
+n&lt;&amp;        <span class="c"># duplicates standard input from file descriptor n</span>
+n&gt;&amp;m       <span class="c"># file descriptor n is made to be a copy of the output file descriptor</span>
+n&lt;&amp;m       <span class="c"># file descriptor n is made to be a copy of the input file descriptor</span>
+&amp;&gt;file     <span class="c"># directs standard output and standard error to file</span>
+&lt;&amp;-        <span class="c"># closes the standard input</span>
+<span class="o">&gt;</span>&amp;-        <span class="c"># closes the standard output</span>
+n&gt;&amp;-       <span class="c"># closes the ouput from file descriptor n</span>
+n&lt;&amp;-       <span class="c"># closes the input from file descripor n</span>
+
+|tee &lt;file&gt;# output <span class="nb">command </span>to both terminal and a file <span class="o">(</span><span class="nt">-a</span> to append to file<span class="o">)</span>
+</code></pre></div></div>
+
+<h2 id="process-handling">Process Handling</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y.</span>
+<span class="c"># This is slightly different from CTRL+Z in that the process is only stopped when it attempts to read input from terminal.</span>
+<span class="c"># Of course, to interrupt a job, type CTRL+C.</span>
+
+myCommand &amp;  <span class="c"># runs job in the background and prompts back the shell</span>
+
+<span class="nb">jobs</span>         <span class="c"># lists all jobs (use with -l to see associated PID)</span>
+
+<span class="nb">fg</span>           <span class="c"># brings a background job into the foreground</span>
+<span class="nb">fg</span> %+        <span class="c"># brings most recently invoked background job</span>
+<span class="nb">fg</span> %-        <span class="c"># brings second most recently invoked background job</span>
+<span class="nb">fg</span> %N        <span class="c"># brings job number N</span>
+<span class="nb">fg</span> %string   <span class="c"># brings job whose command begins with string</span>
+<span class="nb">fg</span> %?string  <span class="c"># brings job whose command contains string</span>
+
+<span class="nb">kill</span> <span class="nt">-l</span>               <span class="c"># returns a list of all signals on the system, by name and number</span>
+<span class="nb">kill </span>PID              <span class="c"># terminates process with specified PID</span>
+<span class="nb">kill</span> <span class="nt">-s</span> SIGKILL 4500  <span class="c"># sends a signal to force or terminate the process</span>
+<span class="nb">kill</span> <span class="nt">-15</span> 913          <span class="c"># Ending PID 913 process with signal 15 (TERM)</span>
+<span class="nb">kill</span> %1               <span class="c"># Where %1 is the number of job as read from 'jobs' command.</span>
+
+ps           <span class="c"># prints a line of information about the current running login shell and any processes running under it</span>
+ps <span class="nt">-a</span>        <span class="c"># selects all processes with a tty except session leaders</span>
+
+<span class="nb">trap </span>cmd sig1 sig2  <span class="c"># executes a command when a signal is received by the script</span>
+<span class="nb">trap</span> <span class="s2">""</span> sig1 sig2   <span class="c"># ignores that signals</span>
+<span class="nb">trap</span> - sig1 sig2    <span class="c"># resets the action taken when the signal is received to the default</span>
+
+<span class="nb">disown</span> &lt;PID|JID&gt;    <span class="c"># removes the process from the list of jobs</span>
+
+<span class="nb">wait</span>                <span class="c"># waits until all background jobs have finished</span>
+<span class="nb">sleep</span> &lt;number&gt;      <span class="c"># wait # of seconds before continuing</span>
+
+pv                  <span class="c"># display progress bar for data handling commands. often used with pipe like |pv</span>
+<span class="nb">yes</span>                 <span class="c"># give yes response everytime an input is requested from script/process</span>
+</code></pre></div></div>
+
+<h1 id="tips--tricks">Tips &amp; Tricks</h1>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># set an alias</span>
+<span class="nb">cd</span><span class="p">;</span> nano .bash_profile
+<span class="o">&gt;</span> <span class="nb">alias </span><span class="nv">gentlenode</span><span class="o">=</span><span class="s1">'ssh admin@gentlenode.com -p 3404'</span>  <span class="c"># add your alias in .bash_profile</span>
+
+<span class="c"># to quickly go to a specific directory</span>
+<span class="nb">cd</span><span class="p">;</span> nano .bashrc
+<span class="o">&gt;</span> <span class="nb">shopt</span> <span class="nt">-s</span> cdable_vars
+<span class="o">&gt;</span> <span class="nb">export </span><span class="nv">websites</span><span class="o">=</span><span class="s2">"/Users/mac/Documents/websites"</span>
+
+<span class="nb">source</span> .bashrc
+<span class="nb">cd</span> <span class="nv">$websites</span>
+</code></pre></div></div>
+
+<h2 id="debugging-shell-scripts">Debugging Shell Scripts</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash <span class="nt">-n</span> scriptname  <span class="c"># don't run commands; check for syntax errors only</span>
+<span class="nb">set</span> <span class="nt">-o</span> noexec       <span class="c"># alternative (set option in script)</span>
+
+bash <span class="nt">-v</span> scriptname  <span class="c"># echo commands before running them</span>
+<span class="nb">set</span> <span class="nt">-o</span> verbose      <span class="c"># alternative (set option in script)</span>
+
+bash <span class="nt">-x</span> scriptname  <span class="c"># echo commands after command-line processing</span>
+<span class="nb">set</span> <span class="nt">-o</span> xtrace       <span class="c"># alternative (set option in script)</span>
+
+<span class="nb">trap</span> <span class="s1">'echo $varname'</span> EXIT  <span class="c"># useful when you want to print out the values of variables at the point that your script exits</span>
+
+<span class="k">function </span>errtrap <span class="o">{</span>
+  <span class="nv">es</span><span class="o">=</span><span class="nv">$?</span>
+  <span class="nb">echo</span> <span class="s2">"ERROR line </span><span class="nv">$1</span><span class="s2">: Command exited with status </span><span class="nv">$es</span><span class="s2">."</span>
+<span class="o">}</span>
+
+<span class="nb">trap</span> <span class="s1">'errtrap $LINENO'</span> ERR  <span class="c"># is run whenever a command in the surrounding script or function exits with non-zero status</span>
+
+<span class="k">function </span>dbgtrap <span class="o">{</span>
+  <span class="nb">echo</span> <span class="s2">"badvar is </span><span class="nv">$badvar</span><span class="s2">"</span>
+<span class="o">}</span>
+
+<span class="nb">trap </span>dbgtrap DEBUG  <span class="c"># causes the trap code to be executed before every statement in a function or script</span>
+<span class="c"># ...section of code in which the problem occurs...</span>
+<span class="nb">trap</span> - DEBUG  <span class="c"># turn off the DEBUG trap</span>
+
+<span class="k">function </span>returntrap <span class="o">{</span>
+  <span class="nb">echo</span> <span class="s2">"A return occurred"</span>
+<span class="o">}</span>
+
+<span class="nb">trap </span>returntrap RETURN  <span class="c"># is executed each time a shell function or a script executed with the . or source commands finishes executing</span>
+</code></pre></div></div>
+
+<h2 id="colors-and-background">Colors and Background</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># note: \e or \x1B also work instead of \033</span>
+<span class="c"># Reset</span>
+<span class="nv">Color_Off</span><span class="o">=</span><span class="s1">'\033[0m'</span> <span class="c"># Text Reset</span>
+
+<span class="c"># Regular Colors</span>
+<span class="nv">Black</span><span class="o">=</span><span class="s1">'\033[0;30m'</span>  <span class="c"># Black</span>
+<span class="nv">Red</span><span class="o">=</span><span class="s1">'\033[0;31m'</span>    <span class="c"># Red</span>
+<span class="nv">Green</span><span class="o">=</span><span class="s1">'\033[0;32m'</span>  <span class="c"># Green</span>
+<span class="nv">Yellow</span><span class="o">=</span><span class="s1">'\033[0;33m'</span> <span class="c"># Yellow</span>
+<span class="nv">Blue</span><span class="o">=</span><span class="s1">'\033[0;34m'</span>   <span class="c"># Blue</span>
+<span class="nv">Purple</span><span class="o">=</span><span class="s1">'\033[0;35m'</span> <span class="c"># Purple</span>
+<span class="nv">Cyan</span><span class="o">=</span><span class="s1">'\033[0;36m'</span>   <span class="c"># Cyan</span>
+<span class="nv">White</span><span class="o">=</span><span class="s1">'\033[0;97m'</span>  <span class="c"># White</span>
+
+<span class="c"># Additional colors</span>
+<span class="nv">LGrey</span><span class="o">=</span><span class="s1">'\033[0;37m'</span>  <span class="c"># Ligth Gray</span>
+<span class="nv">DGrey</span><span class="o">=</span><span class="s1">'\033[0;90m'</span>  <span class="c"># Dark Gray</span>
+<span class="nv">LRed</span><span class="o">=</span><span class="s1">'\033[0;91m'</span>   <span class="c"># Ligth Red</span>
+<span class="nv">LGreen</span><span class="o">=</span><span class="s1">'\033[0;92m'</span> <span class="c"># Ligth Green</span>
+<span class="nv">LYellow</span><span class="o">=</span><span class="s1">'\033[0;93m'</span><span class="c"># Ligth Yellow</span>
+<span class="nv">LBlue</span><span class="o">=</span><span class="s1">'\033[0;94m'</span>  <span class="c"># Ligth Blue</span>
+<span class="nv">LPurple</span><span class="o">=</span><span class="s1">'\033[0;95m'</span><span class="c"># Light Purple</span>
+<span class="nv">LCyan</span><span class="o">=</span><span class="s1">'\033[0;96m'</span>  <span class="c"># Ligth Cyan</span>
+
+
+<span class="c"># Bold</span>
+<span class="nv">BBlack</span><span class="o">=</span><span class="s1">'\033[1;30m'</span> <span class="c"># Black</span>
+<span class="nv">BRed</span><span class="o">=</span><span class="s1">'\033[1;31m'</span>   <span class="c"># Red</span>
+<span class="nv">BGreen</span><span class="o">=</span><span class="s1">'\033[1;32m'</span> <span class="c"># Green</span>
+<span class="nv">BYellow</span><span class="o">=</span><span class="s1">'\033[1;33m'</span><span class="c"># Yellow</span>
+<span class="nv">BBlue</span><span class="o">=</span><span class="s1">'\033[1;34m'</span>  <span class="c"># Blue</span>
+<span class="nv">BPurple</span><span class="o">=</span><span class="s1">'\033[1;35m'</span><span class="c"># Purple</span>
+<span class="nv">BCyan</span><span class="o">=</span><span class="s1">'\033[1;36m'</span>  <span class="c"># Cyan</span>
+<span class="nv">BWhite</span><span class="o">=</span><span class="s1">'\033[1;37m'</span> <span class="c"># White</span>
+
+<span class="c"># Underline</span>
+<span class="nv">UBlack</span><span class="o">=</span><span class="s1">'\033[4;30m'</span> <span class="c"># Black</span>
+<span class="nv">URed</span><span class="o">=</span><span class="s1">'\033[4;31m'</span>   <span class="c"># Red</span>
+<span class="nv">UGreen</span><span class="o">=</span><span class="s1">'\033[4;32m'</span> <span class="c"># Green</span>
+<span class="nv">UYellow</span><span class="o">=</span><span class="s1">'\033[4;33m'</span><span class="c"># Yellow</span>
+<span class="nv">UBlue</span><span class="o">=</span><span class="s1">'\033[4;34m'</span>  <span class="c"># Blue</span>
+<span class="nv">UPurple</span><span class="o">=</span><span class="s1">'\033[4;35m'</span><span class="c"># Purple</span>
+<span class="nv">UCyan</span><span class="o">=</span><span class="s1">'\033[4;36m'</span>  <span class="c"># Cyan</span>
+<span class="nv">UWhite</span><span class="o">=</span><span class="s1">'\033[4;37m'</span> <span class="c"># White</span>
+
+<span class="c"># Background</span>
+<span class="nv">On_Black</span><span class="o">=</span><span class="s1">'\033[40m'</span> <span class="c"># Black</span>
+<span class="nv">On_Red</span><span class="o">=</span><span class="s1">'\033[41m'</span>   <span class="c"># Red</span>
+<span class="nv">On_Green</span><span class="o">=</span><span class="s1">'\033[42m'</span> <span class="c"># Green</span>
+<span class="nv">On_Yellow</span><span class="o">=</span><span class="s1">'\033[43m'</span><span class="c"># Yellow</span>
+<span class="nv">On_Blue</span><span class="o">=</span><span class="s1">'\033[44m'</span>  <span class="c"># Blue</span>
+<span class="nv">On_Purple</span><span class="o">=</span><span class="s1">'\033[45m'</span><span class="c"># Purple</span>
+<span class="nv">On_Cyan</span><span class="o">=</span><span class="s1">'\033[46m'</span>  <span class="c"># Cyan</span>
+<span class="nv">On_White</span><span class="o">=</span><span class="s1">'\033[47m'</span> <span class="c"># White</span>
+
+<span class="c"># Example of usage</span>
+<span class="nb">echo</span> <span class="nt">-e</span> <span class="s2">"</span><span class="k">${</span><span class="nv">Green</span><span class="k">}</span><span class="s2">This is GREEN text</span><span class="k">${</span><span class="nv">Color_Off</span><span class="k">}</span><span class="s2"> and normal text"</span>
+<span class="nb">echo</span> <span class="nt">-e</span> <span class="s2">"</span><span class="k">${</span><span class="nv">Red</span><span class="k">}${</span><span class="nv">On_White</span><span class="k">}</span><span class="s2">This is Red test on White background</span><span class="k">${</span><span class="nv">Color_Off</span><span class="k">}</span><span class="s2">"</span>
+<span class="c"># option -e is mandatory, it enable interpretation of backslash escapes</span>
+<span class="nb">printf</span> <span class="s2">"</span><span class="k">${</span><span class="nv">Red</span><span class="k">}</span><span class="s2"> This is red </span><span class="se">\n</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<h2 id="source"><a href="https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh" target="_blank">Source</a></h2>
+
+<h2 id="see-also">See Also</h2>
+
+<p><a href="https://learnxinyminutes.com/docs/bash/" target="_blank">Learn X in Y minutes</a></p>
+
+
+        
+      </section>
+
+      <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/resources/cheatsheets/awk/" class="pagination--pager" title="Awk
+">Previous</a>
+    
+    
+      <a href="/resources/cheatsheets/cpp/" class="pagination--pager" title="C++
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+    
+  </article>
+
+  
+  
+</div>
+
+      <div align="center" style="margin: 1em 0;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- ad-unit_horizontal -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-7211504142101622"
+             data-ad-slot="6952122554"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    
+    
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
+    <label class="sr-only" for="cse-search-input-box-id">
+      Enter your search term...
+    </label>
+    <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results">
+    <gcse:searchresults-only></gcse:searchresults-only>
+  </div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.linkedin.com/company/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+        
+          <li><a href="https://github.com/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+        
+          <li><a href="https://www.pinterest.com/cfdstreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-pinterest" aria-hidden="true"></i> Pinterest</a></li>
+        
+      
+        
+          <li><a href="https://www.instagram.com/cfd.streamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/CfdStreamline" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/CFD-Streamline-102236005421147/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 CFD Streamline. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<script>
+  (function () {
+    var cx = 'a390aa655bef0d717';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+  function googleCustomSearchExecute() {
+    var input = document.getElementById('cse-search-input-box-id');
+    var element = google.search.cse.element.getElement('searchresults-only0');
+    if (input.value == '') {
+      element.clearAllResults();
+    } else {
+      element.execute(input.value);
+    }
+    return false;
+  }
+
+  
+</script>
+
+
+
+
+
+
+
+<!-- snipcart -->
+<script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+<div hidden id="snipcart" data-api-key="NThhNjEyYzUtNjY3ZS00YTlkLWFjYWEtYmVmZTZhMzRhZjgyNjM3NjIzNzM3NTkwNTg2NzQ5
+"></div>
+
+  </body>
+</html>
