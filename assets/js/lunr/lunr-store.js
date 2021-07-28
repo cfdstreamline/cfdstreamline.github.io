@@ -299,7 +299,7 @@ var store = [{
         "url": "/wiki/discretization_methods/",
         "teaser": "/assets/images/brand/header-image_cfdstreamline.jpg"
       },{
-        "title": "Introduction",
+        "title": "Equations",
         "excerpt":"Navier-Stokes Equations   Lattice-Boltzmann Equation  ","categories": [],
         "tags": [],
         "url": "/wiki/equations/",
@@ -312,7 +312,7 @@ var store = [{
         "teaser": "/assets/images/brand/header-image_cfdstreamline.jpg"
       },{
         "title": "Navier-Stokes Equations",
-        "excerpt":"Wikipedia               ","categories": [],
+        "excerpt":"Navier-Stokes Equations - NS               Reynolds-Averaged Navier-Stokes Equations - RANS               Thin Layer Navier-Stokes Equations - TLNS             Boundary Layer Equations - BL               Incompressible Navier-Stokes Equations               Euler Equations               Full Potential Equations               Transonic Small Disturbances Equations               Laplace Equation               Bernoulli Equation               ","categories": [],
         "tags": [],
         "url": "/wiki/equations/navier-stokes_equations/",
         "teaser": "/assets/images/brand/header-image_cfdstreamline.jpg"
@@ -335,32 +335,32 @@ var store = [{
         "url": "/wiki/important_properties/",
         "teaser": "/assets/images/brand/header-image_cfdstreamline.jpg"
       },{
-        "title": "Introduction",
+        "title": "Models",
         "excerpt":"Reynolds-Averaged Navier-Stokes Equations   Direct Numerical Simulation   Large Eddy Simulation   Detached Eddy Simulation  ","categories": [],
         "tags": [],
         "url": "/wiki/models/",
         "teaser": "/assets/images/brand/header-image_cfdstreamline.jpg"
       },{
         "title": "DES - Detached Eddy Simulation",
-        "excerpt":"Wikipedia               ","categories": [],
+        "excerpt":"             ","categories": [],
         "tags": [],
         "url": "/wiki/models/des/",
         "teaser": "/assets/images/brand/header-image_cfdstreamline.jpg"
       },{
         "title": "DNS - Direct Numerical Simulation",
-        "excerpt":"Wikipedia               ","categories": [],
+        "excerpt":"             ","categories": [],
         "tags": [],
         "url": "/wiki/models/dns/",
         "teaser": "/assets/images/brand/header-image_cfdstreamline.jpg"
       },{
         "title": "LES - Large Eddy Simulation",
-        "excerpt":"Wikipedia               ","categories": [],
+        "excerpt":"             ","categories": [],
         "tags": [],
         "url": "/wiki/models/les/",
         "teaser": "/assets/images/brand/header-image_cfdstreamline.jpg"
       },{
         "title": "RANS - Reynolds-Averaged Navier-Stokes Simulation",
-        "excerpt":"Wikipedia               ","categories": [],
+        "excerpt":"Equations               Turbulence Modeling               Spalart-Allmaras Model               K-&amp;epsilon Model               K-&amp;omega Model               Menter’s Shear Stress Transport Model - SST               Reynolds Stress Model - RSM               ","categories": [],
         "tags": [],
         "url": "/wiki/models/rans/",
         "teaser": "/assets/images/brand/header-image_cfdstreamline.jpg"
@@ -378,7 +378,7 @@ var store = [{
         "teaser": "/assets/images/brand/header-image_cfdstreamline.jpg"
       },{
         "title": "Introduction",
-        "excerpt":"Wikipedia               ","categories": [],
+        "excerpt":"             ","categories": [],
         "tags": [],
         "url": "/wiki/",
         "teaser": "/assets/images/brand/header-image_cfdstreamline.jpg"
