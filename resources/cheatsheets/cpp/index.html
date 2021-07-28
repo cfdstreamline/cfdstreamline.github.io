@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>C++ | CFD Streamline</title>
-<meta name="description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+<meta name="description" content="Cheat sheet for the C++ language, very useful as a quick reference and for grabbing code snippets. It is a reference for basic, essential and more elaborated commands and language constructions.">
 
 
 
@@ -21,7 +21,7 @@
 <meta property="og:url" content="https://cfdstreamline.com/resources/cheatsheets/cpp/">
 
 
-  <meta property="og:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+  <meta property="og:description" content="Cheat sheet for the C++ language, very useful as a quick reference and for grabbing code snippets. It is a reference for basic, essential and more elaborated commands and language constructions.">
 
 
 
@@ -31,7 +31,7 @@
 
   <meta name="twitter:site" content="@cfdstreamline">
   <meta name="twitter:title" content="C++">
-  <meta name="twitter:description" content="CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.">
+  <meta name="twitter:description" content="Cheat sheet for the C++ language, very useful as a quick reference and for grabbing code snippets. It is a reference for basic, essential and more elaborated commands and language constructions.">
   <meta name="twitter:url" content="https://cfdstreamline.com/resources/cheatsheets/cpp/">
 
   
@@ -45,7 +45,7 @@
 
 
 
-  <meta property="article:published_time" content="2021-07-28T12:52:09+02:00">
+  <meta property="article:published_time" content="2021-07-28T17:19:05+02:00">
 
 
 
@@ -180,7 +180,7 @@
 
   </head>
 
-  <body class="layout--wiki">
+  <body class="layout--wiki wide">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -294,45 +294,29 @@
 
 <div id="main" role="main">
   
-  <div class="sidebar sticky">
+<div class="sidebar sticky">
   
   
+  <nav class="toc">
+    <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+    <ul class="toc__menu"><li><a href="#preprocessor">Preprocessor</a></li><li><a href="#literals">Literals</a></li><li><a href="#declarations">Declarations</a></li><li><a href="#storage-classes">STORAGE Classes</a></li><li><a href="#statements">Statements</a></li><li><a href="#functions">Functions</a></li><li><a href="#expressions">Expressions</a></li><li><a href="#classes">Classes</a></li><li><a href="#templates">Templates</a></li><li><a href="#namespaces">Namespaces</a></li><li><a href="#memory-dynamic-memory-management">memory (dynamic memory management)</a></li><li><a href="#mathh-cmath-floating-point-math">math.h, cmath (floating point math)</a></li><li><a href="#asserth-cassert-debugging-aid">assert.h, cassert (Debugging Aid)</a></li><li><a href="#iostreamh-iostream-replaces-stdioh">iostream.h, iostream (Replaces stdio.h)</a></li><li><a href="#fstreamh-fstream-file-io-works-like-cin-cout-as-above">fstream.h, fstream (File I/O works like cin, cout as above)</a></li><li><a href="#string-variable-sized-character-array">string (Variable sized character array)</a></li><li><a href="#vector-variable-sized-arraystack-with-built-in-memory-allocation">vector (Variable sized array/stack with built in memory allocation)</a></li><li><a href="#deque-array-stack-queue">deque (Array stack queue)</a></li><li><a href="#utility-pair">utility (pair)</a></li><li><a href="#map-associative-array---usually-implemented-as-binary-search-trees---avg-time-complexity-olog-n">map (associative array - usually implemented as binary search trees - avg. time complexity: O(log n))</a></li><li><a href="#unordered_map-associative-array---usually-implemented-as-hash-table---avg-time-complexity-o1">unordered_map (associative array - usually implemented as hash table - avg. time complexity: O(1))</a></li><li><a href="#set-store-unique-elements---usually-implemented-as-binary-search-trees---avg-time-complexity-olog-n">set (store unique elements - usually implemented as binary search trees - avg. time complexity: O(log n))</a></li><li><a href="#unordered_set-store-unique-elements---usually-implemented-as-a-hash-set---avg-time-complexity-o1">unordered_set (store unique elements - usually implemented as a hash set - avg. time complexity: O(1))</a></li><li><a href="#algorithm-a-collection-of-60-algorithms-on-sequences-with-iterators">algorithm (A collection of 60 algorithms on sequences with iterators)</a></li><li><a href="#chrono-time-related-library">chrono (Time related library)</a></li><li><a href="#thread-multi-threading-library">thread (Multi-threading library)</a></li><li><a href="#future-thread-support-library">future (thread support library)</a></li><li><a href="#source">Source</a></li><li><a href="#see-also">See Also</a></li></ul>
+
+  </nav>
+
+  
+
+  
+
+
+  
+</div>
+
+
     
-      
-      
-      
-      
-    
-    
-  
-
-  
-
-
-     <div align="center" style="margin: 1em 0;">
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <!-- ad-unit_square -->
-          <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-client="ca-pub-4699563125299312"
-               data-ad-slot="5480790064"
-               data-ad-format="auto"
-               data-full-width-responsive="true"></ins>
-          <script>
-               (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-     </div>
-
-  
-  </div>
-
-
-
-  
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="C++">
-    <meta itemprop="description" content="">
-    <meta itemprop="datePublished" content="2021-07-28T12:52:09+02:00">
+    <meta itemprop="description" content="Cheat sheet for the C++ language, very useful as a quick reference and for grabbing code snippets. It is a reference for basic, essential and more elaborated commands and language constructions.">
+    <meta itemprop="datePublished" content="2021-07-28T17:19:05+02:00">
     
 
     <div class="page__inner-wrap">
@@ -906,7 +890,7 @@ destructors do not inherit.</p>
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-07-28T12:52:09+02:00">2021-07-28</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-07-28T17:19:05+02:00">2021-07-28</time></p>
 
 
       </footer>

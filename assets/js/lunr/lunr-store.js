@@ -2,7 +2,7 @@ var store = [{
         "title": " ",
         "excerpt":"                 U&infin;\t\t\t\t\t\t\t\t       \t\t\t\t       [m/s]\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t       freestream velocity\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                 &rho;&infin;\t\t\t\t\t\t\t       \t\t\t\t       [kg/m3]\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t       freestream density\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                 &mu;&infin;\t\t\t\t\t\t\t\t       \t\t\t       [kg/m*s]\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t       freestream dynamic viscosity\t\t\t\t\t\t\t\t\t\t\t\t                 L\t\t\t\t\t\t\t\t\t\t\t\t\t       \t\t\t\t\t       [m]\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t       reference length\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                 Target y+\t\t\t\t\t\t\t\t       \t\t\t       [-]\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t       required y+\t\t\t\t\t\t\t\t\t\t\t\t\t\t                 &Delta;s\t\t\t\t\t\t\t\t\t\t\t       \t\t\t\t\t\t\t\t       [mm]\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t       first element height\t\t\t\t\t\t\t\t\t\t\t\t\t\t                 Re\t\t\t\t\t\t\t\t\t\t\t\t\t        \t\t\t\t\t\t\t       [-]\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t       Reynolds number\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t           Calculate  ","categories": [],
         "tags": [],
-        "url": "/resourses/apps/yplus/",
+        "url": "/resources/apps/yplus/",
         "teaser": "/assets/images/icon/stock/yplus.png"
       },{
         "title": "Baz Boom Identity",
@@ -312,7 +312,7 @@ var store = [{
         "teaser": "/assets/images/brand/header-image_cfdstreamline.jpg"
       },{
         "title": "Navier-Stokes Equations",
-        "excerpt":"Navier-Stokes Equations - NS               Reynolds-Averaged Navier-Stokes Equations - RANS               Thin Layer Navier-Stokes Equations - TLNS             Boundary Layer Equations - BL               Incompressible Navier-Stokes Equations               Euler Equations               Full Potential Equations               Transonic Small Disturbances Equations               Laplace Equation               Bernoulli Equation               ","categories": [],
+        "excerpt":"Navier-Stokes Equations - NS               Reynolds-Averaged Navier-Stokes Equations - RANS               Thin Layer Navier-Stokes Equations - TLNS                         Boundary Layer Equations - BL               Incompressible Navier-Stokes Equations               Euler Equations               Full Potential Equations               Transonic Small Disturbances Equations               Laplace Equation               Bernoulli Equation               ","categories": [],
         "tags": [],
         "url": "/wiki/equations/navier-stokes_equations/",
         "teaser": "/assets/images/brand/header-image_cfdstreamline.jpg"
