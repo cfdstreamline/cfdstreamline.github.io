@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://cfdstreamline.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cfdstreamline.com/" rel="alternate" type="text/html" /><updated>2021-08-17T16:25:00+02:00</updated><id>https://cfdstreamline.com/feed.xml</id><title type="html">CFD Streamline</title><subtitle>CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><entry><title type="html">How to install SU2 in MPI mode on Linux</title><link href="https://cfdstreamline.com/howto/How_to_install_su2/" rel="alternate" type="text/html" title="How to install SU2 in MPI mode on Linux" /><published>2020-06-04T00:00:00+02:00</published><updated>2020-06-04T00:00:00+02:00</updated><id>https://cfdstreamline.com/howto/How_to_install_su2</id><content type="html" xml:base="https://cfdstreamline.com/howto/How_to_install_su2/">&lt;h2 id=&quot;pre-requisite-installations-installations&quot;&gt;Pre-requisite installations installations&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://cfdstreamline.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cfdstreamline.com/" rel="alternate" type="text/html" /><updated>2021-08-17T16:39:59+02:00</updated><id>https://cfdstreamline.com/feed.xml</id><title type="html">CFD Streamline</title><subtitle>CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><entry><title type="html">How to install SU2 in MPI mode on Linux</title><link href="https://cfdstreamline.com/howto/How_to_install_su2/" rel="alternate" type="text/html" title="How to install SU2 in MPI mode on Linux" /><published>2020-06-04T00:00:00+02:00</published><updated>2020-06-04T00:00:00+02:00</updated><id>https://cfdstreamline.com/howto/How_to_install_su2</id><content type="html" xml:base="https://cfdstreamline.com/howto/How_to_install_su2/">&lt;h2 id=&quot;pre-requisite-installations-installations&quot;&gt;Pre-requisite installations installations&lt;/h2&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -14,16 +14,14 @@
     &lt;p&gt;Install MPI for Python (&lt;a href=&quot;/posts/2020-06-05_How_to_Install_mpi4py/&quot;&gt;mpi4py&lt;/a&gt;)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;It is not needed to install Meson, Ninja, CoDiPack and MeDiPack. SU2 installation process does that for you and ensures the correct versions.&lt;/p&gt;
+    &lt;p&gt;It is not needed to install Meson, Ninja, CoDiPack and MeDiPack. SU2 installation process does that for you and ensures the correct versions.
+ &lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;
+  (adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
-&lt;script&gt;
-     (adsbygoogle = window.adsbygoogle || []).push({});
-&lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
 
@@ -49,17 +47,13 @@
 
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; unzip su2code...zip
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+    &lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 
-&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
+    &lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
 &lt;script&gt;
-     (adsbygoogle = window.adsbygoogle || []).push({});
+  (adsbygoogle = window.adsbygoogle || []).push({});
 &lt;/script&gt;&lt;/p&gt;
-
-&lt;ol&gt;
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Create 2 other folders&lt;/p&gt;
 
@@ -96,17 +90,13 @@
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; /home/you/mpich
  &lt;span class=&quot;c&quot;&gt;# If it is not bash, command: bash&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+    &lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 
-&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
+    &lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
 &lt;script&gt;
-     (adsbygoogle = window.adsbygoogle || []).push({});
+  (adsbygoogle = window.adsbygoogle || []).push({});
 &lt;/script&gt;&lt;/p&gt;
-
-&lt;ol&gt;
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Download to that folder the latest stable version of mpich from: &lt;a href=&quot;https://www.mpich.org/downloads/&quot;&gt;https://www.mpich.org/downloads/&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
@@ -134,17 +124,13 @@
 
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; make 2&amp;gt;&amp;amp;1 | &lt;span class=&quot;nb&quot;&gt;tee &lt;/span&gt;m.txt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+    &lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 
-&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
+    &lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
 &lt;script&gt;
-     (adsbygoogle = window.adsbygoogle || []).push({});
+  (adsbygoogle = window.adsbygoogle || []).push({});
 &lt;/script&gt;&lt;/p&gt;
-
-&lt;ol&gt;
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Install MPICH.&lt;/p&gt;
 
@@ -186,17 +172,13 @@ which mpiexec
 
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3-devel
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+    &lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 
-&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
+    &lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
 &lt;script&gt;
-     (adsbygoogle = window.adsbygoogle || []).push({});
+  (adsbygoogle = window.adsbygoogle || []).push({});
 &lt;/script&gt;&lt;/p&gt;
-
-&lt;ol&gt;
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;If you don’t have pip installed, install it with:&lt;/p&gt;
 
