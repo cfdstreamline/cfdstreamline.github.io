@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>How to install MPICH | CFD Streamline</title>
-<meta name="description" content="Many software use MPICH as part of their parallel processes, including SU2. This tutorial guides the user through the process of installing MPICH in their windows or linux machines.">
+<meta name="description" content="Many software use MPICH as part of their parallel processes, including SU2. This tutorial guides the user through the process of installing MPICH on Linux and macOS machines.">
 
 
 
@@ -18,10 +18,10 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="CFD Streamline">
 <meta property="og:title" content="How to install MPICH">
-<meta property="og:url" content="https://cfdstreamline.com/howto/How_to_Install_MPICH/">
+<meta property="og:url" content="https://cfdstreamline.com/howto/how_to_install_mpich/">
 
 
-  <meta property="og:description" content="Many software use MPICH as part of their parallel processes, including SU2. This tutorial guides the user through the process of installing MPICH in their windows or linux machines.">
+  <meta property="og:description" content="Many software use MPICH as part of their parallel processes, including SU2. This tutorial guides the user through the process of installing MPICH on Linux and macOS machines.">
 
 
 
@@ -31,8 +31,8 @@
 
   <meta name="twitter:site" content="@cfdstreamline">
   <meta name="twitter:title" content="How to install MPICH">
-  <meta name="twitter:description" content="Many software use MPICH as part of their parallel processes, including SU2. This tutorial guides the user through the process of installing MPICH in their windows or linux machines.">
-  <meta name="twitter:url" content="https://cfdstreamline.com/howto/How_to_Install_MPICH/">
+  <meta name="twitter:description" content="Many software use MPICH as part of their parallel processes, including SU2. This tutorial guides the user through the process of installing MPICH on Linux and macOS machines.">
+  <meta name="twitter:url" content="https://cfdstreamline.com/howto/how_to_install_mpich/">
 
   
     <meta name="twitter:card" content="summary">
@@ -45,7 +45,7 @@
 
 
 
-  <meta property="article:published_time" content="2020-06-04T00:00:00+02:00">
+  <meta property="article:published_time" content="2021-12-27T00:00:00+01:00">
 
 
 
@@ -58,7 +58,7 @@
   
 
 
-<link rel="canonical" href="https://cfdstreamline.com/howto/How_to_Install_MPICH/">
+<link rel="canonical" href="https://cfdstreamline.com/howto/how_to_install_mpich/">
 
 
 
@@ -424,8 +424,8 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="How to install MPICH">
-    <meta itemprop="description" content="Many software use MPICH as part of their parallel processes, including SU2. This tutorial guides the user through the process of installing MPICH in their windows or linux machines.">
-    <meta itemprop="datePublished" content="2020-06-04T00:00:00+02:00">
+    <meta itemprop="description" content="Many software use MPICH as part of their parallel processes, including SU2. This tutorial guides the user through the process of installing MPICH on Linux and macOS machines.">
+    <meta itemprop="datePublished" content="2021-12-27T00:00:00+01:00">
     
 
     <div class="page__inner-wrap">
@@ -447,7 +447,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
@@ -459,18 +459,30 @@
 
       <section class="page__content" itemprop="text">
         
-        <ol>
+        <h2 id="requirements">Requirements</h2>
+
+<ul>
+  <li>A copy of the distribution, mpich.tar.gz. Download the latest stable version of mpich from: <a href="https://www.mpich.org/downloads/" target="_blank">https://www.mpich.org/downloads/</a></li>
+  <li>A C compiler. <a href="/howto/how_to_install_gcc">See how to install gcc.</a></li>
+  <li>A Fortran-77, Fortran-90, and/or C++ compiler if you wish to write MPI programs in any of these languages. <a href="/howto/how_to_install_gfortran">See how to install gfortran.</a></li>
+</ul>
+
+<h2 id="directions">Directions</h2>
+
+<h3 id="linux-and-macos">Linux and macOS</h3>
+
+<ol>
   <li>
     <p>Make sure you are using bash.</p>
 
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">echo</span> <span class="nv">$SHELL</span>
 </code></pre></div>    </div>
+    <p>If it is not bash, command: <code class="language-plaintext highlighter-rouge">bash</code></p>
   </li>
   <li>
     <p>Create a folder for mpich</p>
 
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">mkdir</span> /home/you/mpich
- <span class="c"># If it is not bash, command: bash</span>
 </code></pre></div>    </div>
     <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622" crossorigin="anonymous"></script>
 
@@ -480,10 +492,7 @@
 </script></p>
   </li>
   <li>
-    <p>Download to that folder the latest stable version of mpich from: <a href="https://www.mpich.org/downloads/">https://www.mpich.org/downloads/</a></p>
-  </li>
-  <li>
-    <p>Unpack the tar file that you just downloaded, mpich-x-y-z.tar.gz, where x-y-z is the version</p>
+    <p>Unpack mpich-x-y-z.tar.gz to that folder, where x-y-z is the version</p>
 
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">tar </span>xfz mpich-x-y-z.tar.gz
 </code></pre></div>    </div>
@@ -496,9 +505,10 @@
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Enter the build directory and run the configuration script.</p>
+    <p>Enter the build directory and run the configuration script. It is important to write the full path in the prefix argument.</p>
 
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">cd</span> /home/you/mpich/build ../mpich-x-y-z/configure <span class="nt">--with-device</span><span class="o">=</span>ch4:ofi <span class="nt">-prefix</span><span class="o">=</span>/home/you/mpich/mpich-install 2&gt;&amp;1 | <span class="nb">tee </span>c.txt
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">cd</span> /home/you/mpich/build
+ ../mpich-x-y-z/configure <span class="nt">--with-device</span><span class="o">=</span>ch4:ofi <span class="nt">-prefix</span><span class="o">=</span>/home/you/mpich/mpich-install 2&gt;&amp;1 | <span class="nb">tee </span>c.txt
 </code></pre></div>    </div>
   </li>
   <li>
@@ -528,19 +538,32 @@
   <li>
     <p>Check if the installation went well:</p>
 
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>which mpicc
-which mpiexec
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> which mpicc
+ which mpiexec
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Test mpi in your machine by using the example file that the building process creates. That simple program computes the value of PI. If your machine has NC cores, then:</p>
+    <p>Test mpi in your machine by using the example file that the building process creates. That simple program computes the value of PI. While still inside the build folder, command:</p>
 
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mpiexe <span class="nt">-n</span> NC ./examples/cpi
 </code></pre></div>    </div>
+    <p>where NC is the number of cores of your machine.</p>
   </li>
 </ol>
 
 <p><a href="https://www.mpich.org/static/downloads/3.4.2/mpich-3.4.2-installguide.pdf" target="_blank">Learn more</a></p>
+
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622" crossorigin="anonymous"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7211504142101622" data-ad-slot="1211975591"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h3 id="windows">Windows</h3>
+
+<p>You should install Microsoft MPI instead.
+<a href="/howto/how_to_install_microsoft_mpi">See how to install Microsoft MPI.</a></p>
 
         
       </section>
@@ -567,7 +590,7 @@ which mpiexec
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-06-04T00:00:00+02:00">2020-06-04</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-12-27T00:00:00+01:00">2021-12-27</time></p>
 
 
       </footer>
@@ -577,11 +600,11 @@ which mpiexec
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fcfdstreamline.com%2Fhowto%2FHow_to_Install_MPICH%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fcfdstreamline.com%2Fhowto%2Fhow_to_install_mpich%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 
-  <a href="https://twitter.com/intent/tweet?via=cfdstreamline&text=How+to+install+MPICH%20https%3A%2F%2Fcfdstreamline.com%2Fhowto%2FHow_to_Install_MPICH%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=cfdstreamline&text=How+to+install+MPICH%20https%3A%2F%2Fcfdstreamline.com%2Fhowto%2Fhow_to_install_mpich%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcfdstreamline.com%2Fhowto%2FHow_to_Install_MPICH%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcfdstreamline.com%2Fhowto%2Fhow_to_install_mpich%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
 </section>
 
@@ -589,10 +612,11 @@ which mpiexec
       
   <nav class="pagination">
     
-      <a href="#" class="pagination--pager disabled">Previous</a>
+      <a href="/howto/how_to_install_microsoft_mpi/" class="pagination--pager" title="How to install Microsoft MPI
+">Previous</a>
     
     
-      <a href="/howto/How_to_Install_mpi4py/" class="pagination--pager" title="How to install mpi4py
+      <a href="/howto/how_to_install_python3/" class="pagination--pager" title="How to install Python3
 ">Next</a>
     
   </nav>
@@ -605,7 +629,7 @@ which mpiexec
   
   
       <h4 class="page__comments-title">Leave a comment</h4>
-      <section class="fb-comments" data-href="https://cfdstreamline.com/howto/How_to_Install_MPICH/" data-mobile="true" data-num-posts="5" data-width="100%" data-colorscheme="light"></section>
+      <section class="fb-comments" data-href="https://cfdstreamline.com/howto/how_to_install_mpich/" data-mobile="true" data-num-posts="5" data-width="100%" data-colorscheme="light"></section>
     
 </div>
 
@@ -631,7 +655,7 @@ which mpiexec
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/howto/How_to_install_su2/" rel="permalink">How to install SU2 in MPI mode on Linux
+        <a href="/howto/how_to_install_swig/" rel="permalink">How to install swig
 </a>
       
     </h2>
@@ -650,6 +674,50 @@ which mpiexec
         <i class="far fa-clock" aria-hidden="true"></i>
         
           less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Tutorial for installing swig on Linux, Windows and macOS machines.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser" >
+        <img src="/assets/images/brand/logos/a06.png" class="align-center" alt="" width="auto" height="10%">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/howto/how_to_install_su2/" rel="permalink">How to install SU2 in MPI mode
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
         
       </span>
     
@@ -674,7 +742,7 @@ which mpiexec
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/howto/How_to_Install_mpi4py/" rel="permalink">How to install mpi4py
+        <a href="/howto/how_to_install_python3_scientific_packs/" rel="permalink">How to install common Python3 packages for scientific computing
 </a>
       
     </h2>
@@ -699,7 +767,52 @@ which mpiexec
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">Many software use mpi4py (Python) as part of their parallel processes, including SU2. This tutorial guides the user through the process of installing mpi4py ...</p>
+    <p class="archive__item-excerpt" itemprop="description">Tutorial for installing common Python3 packages for scientific computing on Linux, Windows and macOS machines.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser" >
+        <img src="/assets/images/brand/logos/a06.png" class="align-center" alt="" width="auto" height="10%">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/howto/how_to_install_python3/" rel="permalink">How to install Python3
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Tutorial for installing Python3 on Linux, Windows and macOS machines..
+</p>
   </article>
 </div>
 
