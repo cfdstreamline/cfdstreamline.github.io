@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://cfdstreamline.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cfdstreamline.com/" rel="alternate" type="text/html" /><updated>2021-12-27T19:30:02+01:00</updated><id>https://cfdstreamline.com/feed.xml</id><title type="html">CFD Streamline</title><subtitle>CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><entry><title type="html">How to install mpi4py</title><link href="https://cfdstreamline.com/howto/how_to_Install_mpi4py/" rel="alternate" type="text/html" title="How to install mpi4py" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_Install_mpi4py</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_Install_mpi4py/">&lt;p&gt;MPI for Python enables MPI usage for the Python language, allowing programmers to write codes that leverage multiple processor computing systems.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://cfdstreamline.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cfdstreamline.com/" rel="alternate" type="text/html" /><updated>2021-12-28T18:02:53+01:00</updated><id>https://cfdstreamline.com/feed.xml</id><title type="html">CFD Streamline</title><subtitle>CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><entry><title type="html">How to install mpi4py</title><link href="https://cfdstreamline.com/howto/how_to_Install_mpi4py/" rel="alternate" type="text/html" title="How to install mpi4py" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_Install_mpi4py</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_Install_mpi4py/">&lt;p&gt;MPI for Python enables MPI usage for the Python language, allowing programmers to write codes that leverage multiple processor computing systems.&lt;/p&gt;
 
 &lt;h2 id=&quot;linux-and-macos&quot;&gt;Linux and macOS&lt;/h2&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;In a bash terminal, sudo your user:&lt;/p&gt;
-
+  &lt;li&gt;In a bash terminal, sudo your user:
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;su
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
@@ -29,23 +27,17 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;If you don’t have pip installed, install it with:&lt;/p&gt;
-
+  &lt;li&gt;If you don’t have pip installed, install it with:
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;easy_install pip
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Add the bin subdirectory of the MPICH installation directory to your path:&lt;/p&gt;
-
+  &lt;li&gt;Add the bin subdirectory of the MPICH installation directory to your path:
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/home/you/mpich/mpich-install/bin:&lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
 
     &lt;p&gt;&lt;a href=&quot;/posts/2020-06-04-how_to_install_mpich_on_linux&quot;&gt;See how to install MPICH.&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Finally, install mpi4py.&lt;/p&gt;
-
+  &lt;li&gt;Finally, install mpi4py.
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip3 &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;mpi4py
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
     &lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
@@ -86,12 +78,10 @@
 &lt;/ol&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Many software use mpi4py (Python) as part of their parallel processes, including SU2. This tutorial guides the user through the process of installing mpi4py on Linux, Windows and macOS machines.</summary></entry><entry><title type="html">How to install gcc</title><link href="https://cfdstreamline.com/howto/how_to_install_gcc/" rel="alternate" type="text/html" title="How to install gcc" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_install_gcc</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_install_gcc/">&lt;h2 id=&quot;linux&quot;&gt;Linux&lt;/h2&gt;
 
 &lt;h3 id=&quot;debian-based-debian-ubuntu-mint-etc&quot;&gt;Debian-based (Debian, Ubuntu, Mint, etc…)&lt;/h3&gt;
-
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get gcc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;rpm-based-red-hat-linux-centos-fedora-opensuse-mandrake-linux&quot;&gt;RPM-based (Red Hat Linux, CentOS, Fedora, openSuse, Mandrake Linux)&lt;/h3&gt;
-
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;yum &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;gcc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
@@ -133,14 +123,11 @@ At the bottom “System Variables” panel, add to the “Path” variable: &lt;
   &lt;li&gt;
     &lt;p&gt;If you don’t have Xcode installed, install it.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Install Command Line Tools for Xcode. Open a terminal window and type:&lt;/p&gt;
-
+  &lt;li&gt;Install Command Line Tools for Xcode. Open a terminal window and type:
     &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; xcode-select --install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Install gcc using Homebrew:&lt;/p&gt;
+  &lt;li&gt;Install gcc using Homebrew:
     &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; brew update
  brew upgrade
  brew info gcc
@@ -151,12 +138,10 @@ At the bottom “System Variables” panel, add to the “Path” variable: &lt;
 &lt;/ol&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Tutorial for installing gcc on Linux, Windows and macOS machines.</summary></entry><entry><title type="html">How to install gfortran</title><link href="https://cfdstreamline.com/howto/how_to_install_gfortran/" rel="alternate" type="text/html" title="How to install gfortran" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_install_gfortran</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_install_gfortran/">&lt;h2 id=&quot;linux&quot;&gt;Linux&lt;/h2&gt;
 
 &lt;h3 id=&quot;debian-based-debian-ubuntu-mint-etc&quot;&gt;Debian-based (Debian, Ubuntu, Mint, etc…)&lt;/h3&gt;
-
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get gfortran
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;rpm-based-red-hat-linux-centos-fedora-opensuse-mandrake-linux&quot;&gt;RPM-based (Red Hat Linux, CentOS, Fedora, openSuse, Mandrake Linux)&lt;/h3&gt;
-
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;yum &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;gcc-gfortran
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
@@ -198,14 +183,11 @@ At the bottom “System Variables” panel, add to the “Path” variable: &lt;
   &lt;li&gt;
     &lt;p&gt;If you don’t have Xcode installed, install it.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Install Command Line Tools for Xcode. Open a terminal window and type:&lt;/p&gt;
-
+  &lt;li&gt;Install Command Line Tools for Xcode. Open a terminal window and type:
     &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; xcode-select --install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Install gcc using Homebrew:&lt;/p&gt;
+  &lt;li&gt;Install gcc using Homebrew:
     &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; brew update
  brew upgrade
  brew info gcc
@@ -219,19 +201,19 @@ At the bottom “System Variables” panel, add to the “Path” variable: &lt;
   &lt;li&gt;Windows 7 or newer.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;directions&quot;&gt;Directions&lt;/h2&gt;
-
-&lt;h3 id=&quot;linux-and-macos&quot;&gt;Linux and macOS&lt;/h3&gt;
-
-&lt;p&gt;You should install MPICH instead.
-&lt;a href=&quot;/howto/how_to_install_mpich/&quot;&gt;See how to install MPICH.&lt;/a&gt;&lt;/p&gt;
-
 &lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
 &lt;script&gt;
      (adsbygoogle = window.adsbygoogle || []).push({});
 &lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;directions&quot;&gt;Directions&lt;/h2&gt;
+
+&lt;h3 id=&quot;linux-and-macos&quot;&gt;Linux and macOS&lt;/h3&gt;
+
+&lt;p&gt;You should install MPICH instead.
+&lt;a href=&quot;/howto/how_to_install_mpich/&quot;&gt;See how to install MPICH.&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;windows&quot;&gt;Windows&lt;/h3&gt;
 
@@ -255,16 +237,12 @@ At the bottom “System Variables” panel, add to the “Path” variable: &lt;
 &lt;h3 id=&quot;linux-and-macos&quot;&gt;Linux and macOS&lt;/h3&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Make sure you are using bash.&lt;/p&gt;
-
+  &lt;li&gt;Make sure you are using bash.
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$SHELL&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
     &lt;p&gt;If it is not bash, command: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Create a folder for mpich&lt;/p&gt;
-
+  &lt;li&gt;Create a folder for mpich
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; /home/you/mpich
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
     &lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
@@ -274,29 +252,21 @@ At the bottom “System Variables” panel, add to the “Path” variable: &lt;
   (adsbygoogle = window.adsbygoogle || []).push({});
 &lt;/script&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Unpack mpich-x-y-z.tar.gz to that folder, where x-y-z is the version&lt;/p&gt;
-
+  &lt;li&gt;Unpack mpich-x-y-z.tar.gz to that folder, where x-y-z is the version
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;tar &lt;/span&gt;xfz mpich-x-y-z.tar.gz
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Create 2 other folders&lt;/p&gt;
-
+  &lt;li&gt;Create 2 other folders
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; /home/you/mpich/build
  &lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; /home/you/mpich/mpich-install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Enter the build directory and run the configuration script. It is important to write the full path in the prefix argument.&lt;/p&gt;
-
+  &lt;li&gt;Enter the build directory and run the configuration script. It is important to write the full path in the prefix argument.
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home/you/mpich/build
  ../mpich-x-y-z/configure &lt;span class=&quot;nt&quot;&gt;--with-device&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;ch4:ofi &lt;span class=&quot;nt&quot;&gt;-prefix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/home/you/mpich/mpich-install 2&amp;gt;&amp;amp;1 | &lt;span class=&quot;nb&quot;&gt;tee &lt;/span&gt;c.txt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Build mpich. Run command and go for a coffee:&lt;/p&gt;
-
+  &lt;li&gt;Build mpich. Run command and go for a coffee:
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; make 2&amp;gt;&amp;amp;1 | &lt;span class=&quot;nb&quot;&gt;tee &lt;/span&gt;m.txt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
     &lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
@@ -306,28 +276,20 @@ At the bottom “System Variables” panel, add to the “Path” variable: &lt;
   (adsbygoogle = window.adsbygoogle || []).push({});
 &lt;/script&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Install MPICH.&lt;/p&gt;
-
+  &lt;li&gt;Install MPICH.
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; make &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;2&amp;gt;&amp;amp;1 | &lt;span class=&quot;nb&quot;&gt;tee &lt;/span&gt;mi.txt	
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Add the bin subdirectory of the installation directory to your path:&lt;/p&gt;
-
+  &lt;li&gt;Add the bin subdirectory of the installation directory to your path:
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/home/you/mpich/mpich-install/bin:&lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Check if the installation went well:&lt;/p&gt;
-
+  &lt;li&gt;Check if the installation went well:
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; which mpicc
  which mpiexec
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Test mpi in your machine by using the example file that the building process creates. That simple program computes the value of PI. While still inside the build folder, command:&lt;/p&gt;
-
+  &lt;li&gt;Test mpi in your machine by using the example file that the building process creates. That simple program computes the value of PI. While still inside the build folder, command:
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mpiexe &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; NC ./examples/cpi
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
     &lt;p&gt;where NC is the number of cores of your machine.&lt;/p&gt;
@@ -349,13 +311,11 @@ At the bottom “System Variables” panel, add to the “Path” variable: &lt;
 &lt;a href=&quot;/howto/how_to_install_microsoft_mpi&quot;&gt;See how to install Microsoft MPI.&lt;/a&gt;&lt;/p&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Many software use MPICH as part of their parallel processes, including SU2. This tutorial guides the user through the process of installing MPICH on Linux and macOS machines.</summary></entry><entry><title type="html">How to install Python3</title><link href="https://cfdstreamline.com/howto/how_to_install_python3/" rel="alternate" type="text/html" title="How to install Python3" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_install_python3</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_install_python3/">&lt;h2 id=&quot;linux&quot;&gt;Linux&lt;/h2&gt;
 
 &lt;h3 id=&quot;debian-based-debian-ubuntu-mint-etc&quot;&gt;Debian-based (Debian, Ubuntu, Mint, etc…)&lt;/h3&gt;
-
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update
 &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3.6
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;rpm-based-red-hat-linux-centos-fedora-opensuse-mandrake-linux&quot;&gt;RPM-based (Red Hat Linux, CentOS, Fedora, openSuse, Mandrake Linux)&lt;/h3&gt;
-
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;dnf update
 &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;dnf &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -396,12 +356,10 @@ At the bottom “System Variables” panel, add to the “Path” variable: &lt;
 &lt;h2 id=&quot;linux&quot;&gt;Linux&lt;/h2&gt;
 
 &lt;h3 id=&quot;debian-based-debian-ubuntu-mint-etc&quot;&gt;Debian-based (Debian, Ubuntu, Mint, etc…)&lt;/h3&gt;
-
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;rpm-based-red-hat-linux-centos-fedora-opensuse-mandrake-linux&quot;&gt;RPM-based (Red Hat Linux, CentOS, Fedora, openSuse, Mandrake Linux)&lt;/h3&gt;
-
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;dnf &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;numpy scipy python-matplotlib ipython python-pandas sympy python-nose atlas-devel
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
@@ -437,12 +395,10 @@ At the bottom “System Variables” panel, add to the “Path” variable: &lt;
     &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; brew install numpy scipy ipython jupyter
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Tutorial for installing common Python3 packages for scientific computing on Linux, Windows and macOS machines.</summary></entry><entry><title type="html">How to install SU2 in MPI mode</title><link href="https://cfdstreamline.com/howto/how_to_install_su2/" rel="alternate" type="text/html" title="How to install SU2 in MPI mode" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_install_su2</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_install_su2/">&lt;h2 id=&quot;pre-requisite&quot;&gt;Pre-requisite&lt;/h2&gt;
+&lt;/ol&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Tutorial for installing common Python3 packages for scientific computing on Linux, Windows and macOS machines.</summary></entry><entry><title type="html">How to install SU2 in MPI mode</title><link href="https://cfdstreamline.com/howto/how_to_install_su2_in_mpi_mode/" rel="alternate" type="text/html" title="How to install SU2 in MPI mode" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_install_su2_in_mpi_mode</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_install_su2_in_mpi_mode/">&lt;h2 id=&quot;pre-requisite&quot;&gt;Pre-requisite&lt;/h2&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Python3. &lt;a href=&quot;/howto/how_to_install_python3&quot;&gt;See how to install Python3&lt;/a&gt;&lt;/p&gt;
-
+  &lt;li&gt;Python3. &lt;a href=&quot;/howto/how_to_install_python3&quot;&gt;See how to install Python3&lt;/a&gt;
     &lt;ul&gt;
       &lt;li&gt;It is necessary to install numpy and scipy if you are going to use more advanced features from SU2, like optimization. Matplotlib is very handy for post-processing CFD. &lt;a href=&quot;/howto/how_to_install_python3_scientific_packs&quot;&gt;See how to install common Python3 packages for scientific computating&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;For Windows use Python3.7 or newer. (&lt;a href=&quot;https://www.python.org/downloads/windows/&quot; target=&quot;_blank&quot;&gt;download here&lt;/a&gt; or from the Microsoft Store)&lt;/li&gt;
@@ -493,44 +449,32 @@ At the bottom “System Variables” panel, add to the “Path” variable: &lt;
 &lt;h5 id=&quot;linux-and-macos&quot;&gt;Linux and macOS&lt;/h5&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Make sure you are using bash.&lt;/p&gt;
-
+  &lt;li&gt;Make sure you are using bash.
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$SHELL&lt;/span&gt;
  &lt;span class=&quot;c&quot;&gt;# if it is not bash, command: bash&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Create a folder for SU2&lt;/p&gt;
-
+  &lt;li&gt;Create a folder for SU2
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; /home/you/su2
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Download to that folder the latest stable source code version of SU2 from: &lt;a href=&quot;https://su2code.github.io/download.html&quot; target=&quot;_blank&quot;&gt;https://su2code.github.io/download.html&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Unzip the file&lt;/p&gt;
-
+  &lt;li&gt;Unzip the file
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; unzip su2code...zip
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Create a build folder&lt;/p&gt;
-
+  &lt;li&gt;Create a build folder
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; /home/you/su2/build
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Enter the unziped su2 source code folder and run mason, giving the full address of the build folder above in the prefix argument:&lt;/p&gt;
-
+  &lt;li&gt;Enter the unziped su2 source code folder and run mason, giving the full address of the build folder above in the prefix argument:
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home/you/su2/su2code...
  ./meson.py build &lt;span class=&quot;nt&quot;&gt;-Denable-autodiff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--prefix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/home/you/su2/build
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Compile with ninja&lt;/p&gt;
-
+  &lt;li&gt;Compile with ninja
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ./ninja &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; build &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
     &lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
@@ -559,21 +503,15 @@ At the bottom “System Variables” panel, add to the “Path” variable: &lt;
   &lt;li&gt;
     &lt;p&gt;In the file browser go to the mingw installation directory and execute the file mingw-w64. This should open the command prompt. Navigate to the SU2 source code directory.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Create a build folder.&lt;/p&gt;
-
+  &lt;li&gt;Create a build folder.
     &lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mkdir&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Enter the unziped su2 source code folder and run mason, giving the full address of the build folder above in the prefix argument:&lt;/p&gt;
-
+  &lt;li&gt;Enter the unziped su2 source code folder and run mason, giving the full address of the build folder above in the prefix argument:
     &lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;meson.py&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Denable-autodiff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;--prefix&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;/home/you/su2/build&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Compile with ninja&lt;/p&gt;
-
+  &lt;li&gt;Compile with ninja
     &lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ninja.exe&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
     &lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
@@ -612,13 +550,11 @@ Assuming that &lt;install_path&gt; is the path to the SU2 binaries (i.e. the fol
 &lt;h2 id=&quot;linux&quot;&gt;Linux&lt;/h2&gt;
 
 &lt;h3 id=&quot;debian-based-debian-ubuntu-mint-etc&quot;&gt;Debian-based (Debian, Ubuntu, Mint, etc…)&lt;/h3&gt;
-
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update
 &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get swig
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;rpm-based-red-hat-linux-centos-fedora-opensuse-mandrake-linux&quot;&gt;RPM-based (Red Hat Linux, CentOS, Fedora, openSuse, Mandrake Linux)&lt;/h3&gt;
-
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;yum update
 &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;yum &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;swig
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;

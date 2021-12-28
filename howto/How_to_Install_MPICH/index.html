@@ -182,7 +182,7 @@
 
   </head>
 
-  <body class="layout--single wide">
+  <body class="layout--single">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -459,6 +459,28 @@
 
       <section class="page__content" itemprop="text">
         
+          <aside class="sidebar__right ">
+            
+            
+
+
+<div align="center" style="margin: 1em 0;">
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622"
+     crossorigin="anonymous"></script>
+     <!-- vertical -->
+     <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7211504142101622"
+          data-ad-slot="5481286843"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</div>
+
+          </aside>
+        
         <h2 id="requirements">Requirements</h2>
 
 <ul>
@@ -472,16 +494,12 @@
 <h3 id="linux-and-macos">Linux and macOS</h3>
 
 <ol>
-  <li>
-    <p>Make sure you are using bash.</p>
-
+  <li>Make sure you are using bash.
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">echo</span> <span class="nv">$SHELL</span>
 </code></pre></div>    </div>
     <p>If it is not bash, command: <code class="language-plaintext highlighter-rouge">bash</code></p>
   </li>
-  <li>
-    <p>Create a folder for mpich</p>
-
+  <li>Create a folder for mpich
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">mkdir</span> /home/you/mpich
 </code></pre></div>    </div>
     <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622" crossorigin="anonymous"></script>
@@ -491,29 +509,21 @@
   (adsbygoogle = window.adsbygoogle || []).push({});
 </script></p>
   </li>
-  <li>
-    <p>Unpack mpich-x-y-z.tar.gz to that folder, where x-y-z is the version</p>
-
+  <li>Unpack mpich-x-y-z.tar.gz to that folder, where x-y-z is the version
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">tar </span>xfz mpich-x-y-z.tar.gz
 </code></pre></div>    </div>
   </li>
-  <li>
-    <p>Create 2 other folders</p>
-
+  <li>Create 2 other folders
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">mkdir</span> /home/you/mpich/build
  <span class="nb">mkdir</span> /home/you/mpich/mpich-install
 </code></pre></div>    </div>
   </li>
-  <li>
-    <p>Enter the build directory and run the configuration script. It is important to write the full path in the prefix argument.</p>
-
+  <li>Enter the build directory and run the configuration script. It is important to write the full path in the prefix argument.
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">cd</span> /home/you/mpich/build
  ../mpich-x-y-z/configure <span class="nt">--with-device</span><span class="o">=</span>ch4:ofi <span class="nt">-prefix</span><span class="o">=</span>/home/you/mpich/mpich-install 2&gt;&amp;1 | <span class="nb">tee </span>c.txt
 </code></pre></div>    </div>
   </li>
-  <li>
-    <p>Build mpich. Run command and go for a coffee:</p>
-
+  <li>Build mpich. Run command and go for a coffee:
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> make 2&gt;&amp;1 | <span class="nb">tee </span>m.txt
 </code></pre></div>    </div>
     <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622" crossorigin="anonymous"></script>
@@ -523,28 +533,20 @@
   (adsbygoogle = window.adsbygoogle || []).push({});
 </script></p>
   </li>
-  <li>
-    <p>Install MPICH.</p>
-
+  <li>Install MPICH.
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> make <span class="nb">install </span>2&gt;&amp;1 | <span class="nb">tee </span>mi.txt	
 </code></pre></div>    </div>
   </li>
-  <li>
-    <p>Add the bin subdirectory of the installation directory to your path:</p>
-
+  <li>Add the bin subdirectory of the installation directory to your path:
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span>/home/you/mpich/mpich-install/bin:<span class="nv">$PATH</span>
 </code></pre></div>    </div>
   </li>
-  <li>
-    <p>Check if the installation went well:</p>
-
+  <li>Check if the installation went well:
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> which mpicc
  which mpiexec
 </code></pre></div>    </div>
   </li>
-  <li>
-    <p>Test mpi in your machine by using the example file that the building process creates. That simple program computes the value of PI. While still inside the build folder, command:</p>
-
+  <li>Test mpi in your machine by using the example file that the building process creates. That simple program computes the value of PI. While still inside the build folder, command:
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mpiexe <span class="nt">-n</span> NC ./examples/cpi
 </code></pre></div>    </div>
     <p>where NC is the number of cores of your machine.</p>
@@ -699,7 +701,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/howto/how_to_install_su2/" rel="permalink">How to install SU2 in MPI mode
+        <a href="/howto/how_to_install_su2_in_mpi_mode/" rel="permalink">How to install SU2 in MPI mode
 </a>
       
     </h2>

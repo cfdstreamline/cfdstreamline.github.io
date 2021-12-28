@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="CFD Streamline">
 <meta property="og:title" content="How to install SU2 in MPI mode">
-<meta property="og:url" content="https://cfdstreamline.com/howto/how_to_install_su2/">
+<meta property="og:url" content="https://cfdstreamline.com/howto/how_to_install_su2_in_mpi_mode/">
 
 
   <meta property="og:description" content="SU2 is a renowned CFD solver developed as an open-source code, in an initiative of the Stanford University. This tutorial guides the user through the process of installing SU2 in MPI mode on Linux, Windows and macOS machines.">
@@ -32,7 +32,7 @@
   <meta name="twitter:site" content="@cfdstreamline">
   <meta name="twitter:title" content="How to install SU2 in MPI mode">
   <meta name="twitter:description" content="SU2 is a renowned CFD solver developed as an open-source code, in an initiative of the Stanford University. This tutorial guides the user through the process of installing SU2 in MPI mode on Linux, Windows and macOS machines.">
-  <meta name="twitter:url" content="https://cfdstreamline.com/howto/how_to_install_su2/">
+  <meta name="twitter:url" content="https://cfdstreamline.com/howto/how_to_install_su2_in_mpi_mode/">
 
   
     <meta name="twitter:card" content="summary">
@@ -58,7 +58,7 @@
   
 
 
-<link rel="canonical" href="https://cfdstreamline.com/howto/how_to_install_su2/">
+<link rel="canonical" href="https://cfdstreamline.com/howto/how_to_install_su2_in_mpi_mode/">
 
 
 
@@ -182,7 +182,7 @@
 
   </head>
 
-  <body class="layout--single wide">
+  <body class="layout--single">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -459,12 +459,38 @@
 
       <section class="page__content" itemprop="text">
         
+          <aside class="sidebar__right sticky">
+            
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#pre-requisite">Pre-requisite</a></li><li><a href="#directions">Directions</a><ul><li><a href="#installation">Installation</a><ul><li><a href="#installing-from-binaries">Installing from binaries</a></li><li><a href="#installing-from-source-files">Installing from source files</a><ul><li><a href="#linux-and-macos">Linux and macOS</a></li><li><a href="#windows">Windows</a></li></ul></li></ul></li><li><a href="#setting-environment-variables">Setting Environment variables</a><ul><li><a href="#linux-and-macos-1">Linux and macOS</a></li><li><a href="#windows-1">Windows</a></li></ul></li></ul></li></ul>
+
+            </nav>
+            
+            
+
+
+<div align="center" style="margin: 1em 0;">
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622"
+     crossorigin="anonymous"></script>
+     <!-- vertical -->
+     <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7211504142101622"
+          data-ad-slot="5481286843"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+     <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+</div>
+
+          </aside>
+        
         <h2 id="pre-requisite">Pre-requisite</h2>
 
 <ol>
-  <li>
-    <p>Python3. <a href="/howto/how_to_install_python3">See how to install Python3</a></p>
-
+  <li>Python3. <a href="/howto/how_to_install_python3">See how to install Python3</a>
     <ul>
       <li>It is necessary to install numpy and scipy if you are going to use more advanced features from SU2, like optimization. Matplotlib is very handy for post-processing CFD. <a href="/howto/how_to_install_python3_scientific_packs">See how to install common Python3 packages for scientific computating</a></li>
       <li>For Windows use Python3.7 or newer. (<a href="https://www.python.org/downloads/windows/" target="_blank">download here</a> or from the Microsoft Store)</li>
@@ -515,44 +541,32 @@
 <h5 id="linux-and-macos">Linux and macOS</h5>
 
 <ol>
-  <li>
-    <p>Make sure you are using bash.</p>
-
+  <li>Make sure you are using bash.
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">echo</span> <span class="nv">$SHELL</span>
  <span class="c"># if it is not bash, command: bash</span>
 </code></pre></div>    </div>
   </li>
-  <li>
-    <p>Create a folder for SU2</p>
-
+  <li>Create a folder for SU2
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">mkdir</span> /home/you/su2
 </code></pre></div>    </div>
   </li>
   <li>
     <p>Download to that folder the latest stable source code version of SU2 from: <a href="https://su2code.github.io/download.html" target="_blank">https://su2code.github.io/download.html</a></p>
   </li>
-  <li>
-    <p>Unzip the file</p>
-
+  <li>Unzip the file
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> unzip su2code...zip
 </code></pre></div>    </div>
   </li>
-  <li>
-    <p>Create a build folder</p>
-
+  <li>Create a build folder
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">mkdir</span> /home/you/su2/build
 </code></pre></div>    </div>
   </li>
-  <li>
-    <p>Enter the unziped su2 source code folder and run mason, giving the full address of the build folder above in the prefix argument:</p>
-
+  <li>Enter the unziped su2 source code folder and run mason, giving the full address of the build folder above in the prefix argument:
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">cd</span> /home/you/su2/su2code...
  ./meson.py build <span class="nt">-Denable-autodiff</span><span class="o">=</span><span class="nb">true</span> <span class="nt">--prefix</span><span class="o">=</span>/home/you/su2/build
 </code></pre></div>    </div>
   </li>
-  <li>
-    <p>Compile with ninja</p>
-
+  <li>Compile with ninja
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ./ninja <span class="nt">-C</span> build <span class="nb">install</span>
 </code></pre></div>    </div>
     <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622" crossorigin="anonymous"></script>
@@ -581,21 +595,15 @@
   <li>
     <p>In the file browser go to the mingw installation directory and execute the file mingw-w64. This should open the command prompt. Navigate to the SU2 source code directory.</p>
   </li>
-  <li>
-    <p>Create a build folder.</p>
-
+  <li>Create a build folder.
     <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w"> </span><span class="n">mkdir</span><span class="w"> </span><span class="nx">build</span><span class="w">
 </span></code></pre></div>    </div>
   </li>
-  <li>
-    <p>Enter the unziped su2 source code folder and run mason, giving the full address of the build folder above in the prefix argument:</p>
-
+  <li>Enter the unziped su2 source code folder and run mason, giving the full address of the build folder above in the prefix argument:
     <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w"> </span><span class="n">python</span><span class="w"> </span><span class="nx">meson.py</span><span class="w"> </span><span class="nx">build</span><span class="w"> </span><span class="nt">-Denable-autodiff</span><span class="o">=</span><span class="n">true</span><span class="w"> </span><span class="nt">--prefix</span><span class="o">=</span><span class="n">/home/you/su2/build</span><span class="w">
 </span></code></pre></div>    </div>
   </li>
-  <li>
-    <p>Compile with ninja</p>
-
+  <li>Compile with ninja
     <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w"> </span><span class="n">ninja.exe</span><span class="w"> </span><span class="nt">-C</span><span class="w"> </span><span class="nx">build</span><span class="w"> </span><span class="nx">install</span><span class="w">
 </span></code></pre></div>    </div>
     <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622" crossorigin="anonymous"></script>
@@ -666,11 +674,11 @@ Assuming that <install_path> is the path to the SU2 binaries (i.e. the folder th
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fcfdstreamline.com%2Fhowto%2Fhow_to_install_su2%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fcfdstreamline.com%2Fhowto%2Fhow_to_install_su2_in_mpi_mode%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 
-  <a href="https://twitter.com/intent/tweet?via=cfdstreamline&text=How+to+install+SU2+in+MPI+mode%20https%3A%2F%2Fcfdstreamline.com%2Fhowto%2Fhow_to_install_su2%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=cfdstreamline&text=How+to+install+SU2+in+MPI+mode%20https%3A%2F%2Fcfdstreamline.com%2Fhowto%2Fhow_to_install_su2_in_mpi_mode%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcfdstreamline.com%2Fhowto%2Fhow_to_install_su2%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcfdstreamline.com%2Fhowto%2Fhow_to_install_su2_in_mpi_mode%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
 </section>
 
@@ -695,7 +703,7 @@ Assuming that <install_path> is the path to the SU2 binaries (i.e. the folder th
   
   
       <h4 class="page__comments-title">Leave a comment</h4>
-      <section class="fb-comments" data-href="https://cfdstreamline.com/howto/how_to_install_su2/" data-mobile="true" data-num-posts="5" data-width="100%" data-colorscheme="light"></section>
+      <section class="fb-comments" data-href="https://cfdstreamline.com/howto/how_to_install_su2_in_mpi_mode/" data-mobile="true" data-num-posts="5" data-width="100%" data-colorscheme="light"></section>
     
 </div>
 
