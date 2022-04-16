@@ -447,7 +447,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
@@ -481,16 +481,40 @@
 
           </aside>
         
-        <p>https://scipy.org/install/</p>
+        <ul>
+  <li>Python modules:
+    <ul>
+      <li>numPy, short for “Numerical Python”, is used for working with arrays.</li>
+      <li>scipy, short for “Scientific Python”, is a scientific computation library that uses NumPy underneath, providing more utility functions for optimization, stats and signal processing.</li>
+      <li>matplotlib is a low level graph plotting library in python that serves as a visualization utility.</li>
+      <li>ipython is a command shell for interactive computing in multiple programming languages, originally developed for the Python programming language, that offers introspection, rich media, shell syntax, tab completion, and history.</li>
+      <li>notebook, formely Ipython Notebook and now known as the Jupyter Notebook, is an interactive computational environment, in which you can combine code execution, rich text, mathematics, plots and rich media.</li>
+      <li>pandas is a package for data manipulation and data analisis, mostly used for data science and machine learning.</li>
+      <li>sympy is a process-based discrete-event simulation framework based on standard Python. Processes in SimPy are defined by Python generator functions and can, for example, be used to model active components like customers, vehicles or agents.</li>
+      <li>nose extends the test loading and running features of unittest, making it easier to write, find and run tests.</li>
+    </ul>
+  </li>
+  <li>ATLAS, short for “Automatically Tuned Linear Algebra Software”, provides highly optimized Linear Algebra kernels for arbitrary cache-based architectures. ATLAS provides ANSI C and Fortran77 interfaces for the entire BLAS API, and a small portion of the LAPACK AP.</li>
+</ul>
 
 <h2 id="linux">Linux</h2>
 
 <h3 id="debian-based-debian-ubuntu-mint-etc">Debian-based (Debian, Ubuntu, Mint, etc…)</h3>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>su - root
+
+pip <span class="nb">install </span>numpy scipy matplotlib ipython notebook pandas sympy nose
+
+apt-get update <span class="nt">-y</span>
+apt-get <span class="nb">install</span> <span class="nt">-y</span> libatlas-base-dev
 </code></pre></div></div>
 
 <h3 id="rpm-based-red-hat-linux-centos-fedora-opensuse-mandrake-linux">RPM-based (Red Hat Linux, CentOS, Fedora, openSuse, Mandrake Linux)</h3>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dnf <span class="nb">install </span>numpy scipy python-matplotlib ipython python-pandas sympy python-nose atlas-devel
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>su - root
+
+pip <span class="nb">install </span>numpy scipy matplotlib ipython pandas sympy nose
+
+dnf update
+dnf <span class="nb">install </span>atlas-devel
 </code></pre></div></div>
 <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622" crossorigin="anonymous"></script>
 
@@ -507,7 +531,7 @@
 </span></code></pre></div>    </div>
   </li>
   <li>Run pip as follows:
-    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="n">pip.exe</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">numpy</span><span class="w"> </span><span class="nx">scipy</span><span class="w"> </span><span class="nx">matplotlib</span><span class="w"> </span><span class="nx">ipython</span><span class="w"> </span><span class="nx">pandas</span><span class="w"> </span><span class="nx">sympy</span><span class="w"> </span><span class="nx">nose</span><span class="w">
+    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="n">pip.exe</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">numpy</span><span class="w"> </span><span class="nx">scipy</span><span class="w"> </span><span class="nx">matplotlib</span><span class="w"> </span><span class="nx">ipython</span><span class="w"> </span><span class="nx">notebook</span><span class="w"> </span><span class="nx">pandas</span><span class="w"> </span><span class="nx">sympy</span><span class="w"> </span><span class="nx">nose</span><span class="w">
 </span></code></pre></div>    </div>
     <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622" crossorigin="anonymous"></script>
 
@@ -522,7 +546,7 @@
 
 <ol>
   <li>Install using Homebrew:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> brew install numpy scipy ipython jupyter
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> brew install numpy scipy matplotlib ipython jupyter pandas sympy nose
 </code></pre></div>    </div>
   </li>
 </ol>
@@ -617,6 +641,94 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
+        <a href="/howto/how_to_convert_webp_files/" rel="permalink">How to convert webp files to jpg, to png or to other image formats
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Tutorial for converting webp files on Linux, Windows and macOS machines.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser" >
+        <img src="/assets/images/brand/logos/a06.png" class="align-center" alt="" width="auto" height="10%">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/howto/how_to_use_openfoam/" rel="permalink">How to use OpenFOAM
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Basic tutorial for a quick start on OpenFOAM.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser" >
+        <img src="/assets/images/brand/logos/a06.png" class="align-center" alt="" width="auto" height="10%">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
         <a href="/howto/how_to_install_swig/" rel="permalink">How to install swig
 </a>
       
@@ -687,93 +799,6 @@
 
 
     <p class="archive__item-excerpt" itemprop="description">SU2 is a renowned CFD solver developed as an open-source code, in an initiative of the Stanford University. This tutorial guides the user through the process...</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser" >
-        <img src="/assets/images/brand/logos/a06.png" class="align-center" alt="" width="auto" height="10%">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/howto/how_to_install_python3/" rel="permalink">How to install Python3
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Tutorial for installing Python3 on Linux, Windows and macOS machines..
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser" >
-        <img src="/assets/images/brand/logos/a06.png" class="align-center" alt="" width="auto" height="10%">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/howto/how_to_install_mpich/" rel="permalink">How to install MPICH
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Many software use MPICH as part of their parallel processes, including SU2. This tutorial guides the user through the process of installing MPICH on Linux an...</p>
   </article>
 </div>
 
@@ -869,7 +894,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2021 CFD Streamline. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2022 CFD Streamline. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

@@ -9,19 +9,19 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>How to install SU2 in MPI mode | CFD Streamline</title>
-<meta name="description" content="SU2 is a renowned CFD solver developed as an open-source code, in an initiative of the Stanford University. This tutorial guides the user through the process of installing SU2 in MPI mode on Linux, Windows and macOS machines.">
+<!-- begin _includes/seo.html --><title>How to use OpenFOAM | CFD Streamline</title>
+<meta name="description" content="Basic tutorial for a quick start on OpenFOAM.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="CFD Streamline">
-<meta property="og:title" content="How to install SU2 in MPI mode">
-<meta property="og:url" content="https://cfdstreamline.com/howto/how_to_install_su2_in_mpi_mode/">
+<meta property="og:title" content="How to use OpenFOAM">
+<meta property="og:url" content="https://cfdstreamline.com/howto/how_to_use_openfoam/">
 
 
-  <meta property="og:description" content="SU2 is a renowned CFD solver developed as an open-source code, in an initiative of the Stanford University. This tutorial guides the user through the process of installing SU2 in MPI mode on Linux, Windows and macOS machines.">
+  <meta property="og:description" content="Basic tutorial for a quick start on OpenFOAM.">
 
 
 
@@ -30,9 +30,9 @@
 
 
   <meta name="twitter:site" content="@cfdstreamline">
-  <meta name="twitter:title" content="How to install SU2 in MPI mode">
-  <meta name="twitter:description" content="SU2 is a renowned CFD solver developed as an open-source code, in an initiative of the Stanford University. This tutorial guides the user through the process of installing SU2 in MPI mode on Linux, Windows and macOS machines.">
-  <meta name="twitter:url" content="https://cfdstreamline.com/howto/how_to_install_su2_in_mpi_mode/">
+  <meta name="twitter:title" content="How to use OpenFOAM">
+  <meta name="twitter:description" content="Basic tutorial for a quick start on OpenFOAM.">
+  <meta name="twitter:url" content="https://cfdstreamline.com/howto/how_to_use_openfoam/">
 
   
     <meta name="twitter:card" content="summary">
@@ -45,7 +45,7 @@
 
 
 
-  <meta property="article:published_time" content="2021-12-27T00:00:00+01:00">
+  <meta property="article:published_time" content="2021-12-28T00:00:00+01:00">
 
 
 
@@ -58,7 +58,7 @@
   
 
 
-<link rel="canonical" href="https://cfdstreamline.com/howto/how_to_install_su2_in_mpi_mode/">
+<link rel="canonical" href="https://cfdstreamline.com/howto/how_to_use_openfoam/">
 
 
 
@@ -275,7 +275,7 @@
     
       
       
-        <li class="current">How to install SU2 in MPI mode</li>
+        <li class="current">How to use OpenFOAM</li>
       
     
   </ol>
@@ -423,15 +423,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="How to install SU2 in MPI mode">
-    <meta itemprop="description" content="SU2 is a renowned CFD solver developed as an open-source code, in an initiative of the Stanford University. This tutorial guides the user through the process of installing SU2 in MPI mode on Linux, Windows and macOS machines.">
-    <meta itemprop="datePublished" content="2021-12-27T00:00:00+01:00">
+    <meta itemprop="headline" content="How to use OpenFOAM">
+    <meta itemprop="description" content="Basic tutorial for a quick start on OpenFOAM.">
+    <meta itemprop="datePublished" content="2021-12-28T00:00:00+01:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">How to install SU2 in MPI mode
+          <h1 id="page-title" class="page__title" itemprop="headline">How to use OpenFOAM
 </h1>
           
 
@@ -447,7 +447,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          2 minute read
+          less than 1 minute read
         
       </span>
     
@@ -459,13 +459,7 @@
 
       <section class="page__content" itemprop="text">
         
-          <aside class="sidebar__right sticky">
-            
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#pre-requisite">Pre-requisite</a></li><li><a href="#directions">Directions</a><ul><li><a href="#installation">Installation</a><ul><li><a href="#installing-from-binaries">Installing from binaries</a></li><li><a href="#installing-from-source-files">Installing from source files</a><ul><li><a href="#linux-and-macos">Linux and macOS</a></li><li><a href="#windows">Windows</a></li></ul></li></ul></li><li><a href="#setting-environment-variables">Setting Environment variables</a><ul><li><a href="#linux-and-macos-1">Linux and macOS</a></li><li><a href="#windows-1">Windows</a></li></ul></li></ul></li></ul>
-
-            </nav>
+          <aside class="sidebar__right ">
             
             
 
@@ -487,157 +481,44 @@
 
           </aside>
         
-        <h2 id="pre-requisite">Pre-requisite</h2>
+        <h2 id="references">References</h2>
 
-<ol>
-  <li>Python3. <a href="/howto/how_to_install_python3">See how to install Python3</a>
-    <ul>
-      <li>It is necessary to install numpy and scipy if you are going to use more advanced features from SU2, like optimization. Matplotlib is very handy for post-processing CFD. <a href="/howto/how_to_install_python3_scientific_packs">See how to install common Python3 packages for scientific computating</a></li>
-      <li>For Windows use Python3.7 or newer. (<a href="https://www.python.org/downloads/windows/" target="_blank">download here</a> or from the Microsoft Store)</li>
-    </ul>
-  </li>
-  <li>
-    <p>Swig. <a href="/howto/how_to_install_swig">See how to install swig</a></p>
-  </li>
-  <li>
-    <p>For Windows, MinGW-w64 version 8.1.0 <a href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download" target="_blank">download here</a>. <a href="/howto/how_to_install_gcc">See how to install MinGW</a></p>
-  </li>
-  <li>Install a MPI implementation.
-    <ul>
-      <li>For Linux and macOS, use <a href="/howto/how_to_install_mpich/">MPICH</a></li>
-      <li>For Windows use Microsoft MPI v10.1.2 or newer. <a href="/howto/how_to_install_microsoft_mpi/">See how to install</a></li>
-    </ul>
-  </li>
-  <li>
-    <p>Install MPI for Python (<a href="/howto/how_to_install_mpi4py/">mpi4py</a>)</p>
-  </li>
-  <li>It is not needed to install Meson, Ninja, CoDiPack and MeDiPack beforehand. SU2 installation process does that for you and ensures the correct versions.</li>
-</ol>
+<ul>
+  <li><a href="https://cfd.direct/openfoam/user-guide/" target="_blank">user guide</a></li>
+  <li><a href="https://www.openfoam.com/documentation/tutorial-guide" target="_blank">tutorial guide</a></li>
+  <li><a href="https://wiki.openfoam.com/Collection_by_authors" target="_blank">collection</a></li>
+  <li><a href="https://openfoamwiki.net/index.php/Main_Page" target="_blank">https://openfoamwiki.net/index.php/Main_Page</a></li>
+</ul>
 
-<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622" crossorigin="anonymous"></script>
+<h3 id="cfd-with-open-source-software---chalmers-university">CFD with Open Source Software - Chalmers University</h3>
+<ul>
+  <li><a href="http://www.tfd.chalmers.se/~hani/kurser/OS_CFD/" target="_blank">OS CFD</a></li>
+  <li><a href="http://www.tfd.chalmers.se/~hani/kurser/OS_CFD_2015/" target="_blank">OS CFD 2015</a></li>
+</ul>
 
-<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7211504142101622" data-ad-slot="1211975591"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script></p>
+<h3 id="introduction">Introduction</h3>
+<ul>
+  <li><a href="https://wiki.openfoam.com/Basic_introduction_by_Hakan_Nilsson" target="_blank">basic introduction</a></li>
+  <li><a href="https://wiki.openfoam.com/First_simulation_by_Jozsef_Nagy" target="_blank">tutorial - first simulation</a></li>
+</ul>
 
-<h2 id="directions">Directions</h2>
+<h3 id="meshing">Meshing</h3>
+<ul>
+  <li><a href="https://wiki.openfoam.com/Meshing_in_OpenFOAM_by_Joel_Guerrero" target="_blank">tutorial - meshing</a></li>
+  <li><a href="https://wiki.openfoam.com/BlockMesh_by_Jozsef_Nagy" target="_blank">tutorial - blockmesh</a></li>
+  <li><a href="" target="_blank"></a></li>
+</ul>
 
-<h3 id="installation">Installation</h3>
+<h3 id="test-cases">Test Cases</h3>
+<ul>
+  <li><a href="https://gitlab.com/mAlletto/openfoamtutorials/-/tree/master/OneraM6Wing" target="_blank">tutorial - onera m6 wing</a></li>
+  <li><a href="https://wiki.openfoam.com/NACA0012_by_Michael_Alletto" target="_blank">tutorial - naca0012</a></li>
+  <li><a href="https://wiki.openfoam.com/Compressible_flows_by_Joel_Guerrero" target="_blank">tutorial - supersonic flow past a wedge</a></li>
+  <li><a href="https://wiki.openfoam.com/Compressible_flows_by_Joel_Guerrero2" target="_blank">tutorial - supersonic flow past an expansion corner</a></li>
+  <li><a href="https://wiki.openfoam.com/Compressible_flows_by_Joel_Guerrero3" target="_blank">tutorial - sod’s shock tube</a></li>
+  <li><a href="https://wiki.openfoam.com/Drivaer_Joel_Guerrero3" target="_blank">tutorial - drivaer</a></li>
+</ul>
 
-<h4 id="installing-from-binaries">Installing from binaries</h4>
-
-<ol>
-  <li>
-    <p>Download the zipped package containing the binary executables from <a href="https://su2code.github.io/download.html" target="_blank">https://su2code.github.io/download.html</a></p>
-  </li>
-  <li>
-    <p>Unzip the package in a directory of your preference. It is a good idea to avoid spaces in the address.</p>
-  </li>
-</ol>
-
-<h4 id="installing-from-source-files">Installing from source files</h4>
-
-<h5 id="linux-and-macos">Linux and macOS</h5>
-
-<ol>
-  <li>Make sure you are using bash.
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">echo</span> <span class="nv">$SHELL</span>
- <span class="c"># if it is not bash, command: bash</span>
-</code></pre></div>    </div>
-  </li>
-  <li>Create a folder for SU2
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">mkdir</span> /home/you/su2
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Download to that folder the latest stable source code version of SU2 from: <a href="https://su2code.github.io/download.html" target="_blank">https://su2code.github.io/download.html</a></p>
-  </li>
-  <li>Unzip the file
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> unzip su2code...zip
-</code></pre></div>    </div>
-  </li>
-  <li>Create a build folder
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">mkdir</span> /home/you/su2/build
-</code></pre></div>    </div>
-  </li>
-  <li>Enter the unziped su2 source code folder and run mason, giving the full address of the build folder above in the prefix argument:
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">cd</span> /home/you/su2/su2code...
- ./meson.py build <span class="nt">-Denable-autodiff</span><span class="o">=</span><span class="nb">true</span> <span class="nt">--prefix</span><span class="o">=</span>/home/you/su2/build
-</code></pre></div>    </div>
-  </li>
-  <li>Compile with ninja
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ./ninja <span class="nt">-C</span> build <span class="nb">install</span>
-</code></pre></div>    </div>
-    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622" crossorigin="anonymous"></script>
-
-    <p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7211504142101622" data-ad-slot="1211975591"></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script></p>
-  </li>
-</ol>
-
-<h5 id="windows">Windows</h5>
-
-<p>It works for Windows 10 and it is expected to work for newer versions as well.</p>
-
-<ol>
-  <li>
-    <p>Download SU2 v7.x.x <a href="https://su2code.github.io/download" target="_blank">download here</a></p>
-  </li>
-  <li>
-    <p>Install Microsoft MPI by simply executing the installers msmpisetup.exe and the msmpisdk.msi.</p>
-  </li>
-  <li>
-    <p>Install MinGW by executing the installer mingw-w64-install.exe. Choose Version 8.1.0 and Architecture x86_64 on the Settings page. Everything else can stay on their default values. On the next page set a destination folder and remember it! Click next until everything has been downloaded and installed.</p>
-  </li>
-  <li>
-    <p>In the file browser go to the mingw installation directory and execute the file mingw-w64. This should open the command prompt. Navigate to the SU2 source code directory.</p>
-  </li>
-  <li>Create a build folder.
-    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w"> </span><span class="n">mkdir</span><span class="w"> </span><span class="nx">build</span><span class="w">
-</span></code></pre></div>    </div>
-  </li>
-  <li>Enter the unziped su2 source code folder and run mason, giving the full address of the build folder above in the prefix argument:
-    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w"> </span><span class="n">python</span><span class="w"> </span><span class="nx">meson.py</span><span class="w"> </span><span class="nx">build</span><span class="w"> </span><span class="nt">-Denable-autodiff</span><span class="o">=</span><span class="n">true</span><span class="w"> </span><span class="nt">--prefix</span><span class="o">=</span><span class="n">/home/you/su2/build</span><span class="w">
-</span></code></pre></div>    </div>
-  </li>
-  <li>Compile with ninja
-    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w"> </span><span class="n">ninja.exe</span><span class="w"> </span><span class="nt">-C</span><span class="w"> </span><span class="nx">build</span><span class="w"> </span><span class="nx">install</span><span class="w">
-</span></code></pre></div>    </div>
-    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622" crossorigin="anonymous"></script>
-
-    <p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7211504142101622" data-ad-slot="1211975591"></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script></p>
-  </li>
-</ol>
-
-<h3 id="setting-environment-variables">Setting Environment variables</h3>
-
-<p>In order to use the executables from any directory without explicitly specifying the path to the executable you should set some environment variables.</p>
-
-<h4 id="linux-and-macos-1">Linux and macOS</h4>
-
-<p>Either add the following lines to your ~/.bashrc or ~/.bash_profile to be permanent, or type the commands into the terminal for temporary use.
-Assuming that <install_path> is the path to the SU2 binaries (i.e. the folder that contains SU2_CFD etc. If you have built SU2 from source, it will be the path that you specified with the --prefix option):</install_path></p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">SU2_RUN</span><span class="o">=</span>&lt;install_path&gt;
-<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$SU2_RUN</span>:<span class="nv">$PATH</span>
-<span class="nb">export </span><span class="nv">PYTHONPATH</span><span class="o">=</span><span class="nv">$SU2_RUN</span>:<span class="nv">$PYTHONPATH</span>
-</code></pre></div></div>
-
-<p>The export commands are also printed after a successful configuration using meson.py.</p>
-
-<h4 id="windows-1">Windows</h4>
-
-<p>Search for “Environment Variables” in Windows Search. At the bottom “System Variables” panel, add to the “Path” variable: <install_path>.</install_path></p>
-
-<p><a href="https://su2code.github.io/docs_v7/Build-SU2-Linux-MacOS/">Learn more</a></p>
-
-<p><a href="https://su2code.github.io/docs_v7/SU2-Windows/">Install on Windows</a></p>
 
         
       </section>
@@ -664,7 +545,7 @@ Assuming that <install_path> is the path to the SU2 binaries (i.e. the folder th
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-12-27T00:00:00+01:00">2021-12-27</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-12-28T00:00:00+01:00">2021-12-28</time></p>
 
 
       </footer>
@@ -674,11 +555,11 @@ Assuming that <install_path> is the path to the SU2 binaries (i.e. the folder th
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fcfdstreamline.com%2Fhowto%2Fhow_to_install_su2_in_mpi_mode%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fcfdstreamline.com%2Fhowto%2Fhow_to_use_openfoam%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 
-  <a href="https://twitter.com/intent/tweet?via=cfdstreamline&text=How+to+install+SU2+in+MPI+mode%20https%3A%2F%2Fcfdstreamline.com%2Fhowto%2Fhow_to_install_su2_in_mpi_mode%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=cfdstreamline&text=How+to+use+OpenFOAM%20https%3A%2F%2Fcfdstreamline.com%2Fhowto%2Fhow_to_use_openfoam%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcfdstreamline.com%2Fhowto%2Fhow_to_install_su2_in_mpi_mode%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcfdstreamline.com%2Fhowto%2Fhow_to_use_openfoam%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
 </section>
 
@@ -686,11 +567,11 @@ Assuming that <install_path> is the path to the SU2 binaries (i.e. the folder th
       
   <nav class="pagination">
     
-      <a href="/howto/how_to_install_python3_scientific_packs/" class="pagination--pager" title="How to install common Python3 packages for scientific computing
+      <a href="/howto/how_to_install_swig/" class="pagination--pager" title="How to install swig
 ">Previous</a>
     
     
-      <a href="/howto/how_to_install_swig/" class="pagination--pager" title="How to install swig
+      <a href="/howto/how_to_convert_webp_files/" class="pagination--pager" title="How to convert webp files to jpg, to png or to other image formats
 ">Next</a>
     
   </nav>
@@ -703,7 +584,7 @@ Assuming that <install_path> is the path to the SU2 binaries (i.e. the folder th
   
   
       <h4 class="page__comments-title">Leave a comment</h4>
-      <section class="fb-comments" data-href="https://cfdstreamline.com/howto/how_to_install_su2_in_mpi_mode/" data-mobile="true" data-num-posts="5" data-width="100%" data-colorscheme="light"></section>
+      <section class="fb-comments" data-href="https://cfdstreamline.com/howto/how_to_use_openfoam/" data-mobile="true" data-num-posts="5" data-width="100%" data-colorscheme="light"></section>
     
 </div>
 
@@ -773,50 +654,6 @@ Assuming that <install_path> is the path to the SU2 binaries (i.e. the folder th
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/howto/how_to_use_openfoam/" rel="permalink">How to use OpenFOAM
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Basic tutorial for a quick start on OpenFOAM.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser" >
-        <img src="/assets/images/brand/logos/a06.png" class="align-center" alt="" width="auto" height="10%">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
         <a href="/howto/how_to_install_swig/" rel="permalink">How to install swig
 </a>
       
@@ -844,6 +681,49 @@ Assuming that <install_path> is the path to the SU2 binaries (i.e. the folder th
 
     <p class="archive__item-excerpt" itemprop="description">Tutorial for installing swig on Linux, Windows and macOS machines.
 </p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser" >
+        <img src="/assets/images/brand/logos/a06.png" class="align-center" alt="" width="auto" height="10%">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/howto/how_to_install_su2_in_mpi_mode/" rel="permalink">How to install SU2 in MPI mode
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">SU2 is a renowned CFD solver developed as an open-source code, in an initiative of the Stanford University. This tutorial guides the user through the process...</p>
   </article>
 </div>
 
