@@ -1,4 +1,84 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://cfdstreamline.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cfdstreamline.com/" rel="alternate" type="text/html" /><updated>2022-04-16T12:21:15+02:00</updated><id>https://cfdstreamline.com/feed.xml</id><title type="html">CFD Streamline</title><subtitle>CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><entry><title type="html">How to convert webp files to jpg, to png or to other image formats</title><link href="https://cfdstreamline.com/howto/how_to_convert_webp_files/" rel="alternate" type="text/html" title="How to convert webp files to jpg, to png or to other image formats" /><published>2022-01-04T00:00:00+01:00</published><updated>2022-01-04T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_convert_webp_files</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_convert_webp_files/">&lt;h2 id=&quot;linux&quot;&gt;Linux&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://cfdstreamline.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cfdstreamline.com/" rel="alternate" type="text/html" /><updated>2022-04-21T20:31:55+02:00</updated><id>https://cfdstreamline.com/feed.xml</id><title type="html">CFD Streamline</title><subtitle>CFD Streamline is a comprehensive reference for Computational Fluid Dynamics (CFD) and its application accross the engineering areas, mainly focusing on aerospace and automotive.</subtitle><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><entry><title type="html">How to enable Windows Subsystem Linux (WSL) and install Ubuntu</title><link href="https://cfdstreamline.com/howto/how_to_enable_windows_subsystem_linux_ubuntu/" rel="alternate" type="text/html" title="How to enable Windows Subsystem Linux (WSL) and install Ubuntu" /><published>2022-04-21T00:00:00+02:00</published><updated>2022-04-21T00:00:00+02:00</updated><id>https://cfdstreamline.com/howto/how_to_enable_windows_subsystem_linux_ubuntu</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_enable_windows_subsystem_linux_ubuntu/">&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Search for “Turn Windows features on or off” in the Start Menu Search.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;On the screen that will pop-up, check the box for “Windows Subsystem for Linux”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Restart de computer.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Download and install Ubuntu WSL from the Microsoft Store
+&lt;a href=&quot;https://www.microsoft.com/store/productId/9NBLGGH4MSV6&quot;&gt;Ubuntu in Microsoft Store&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.wikihow.com/Enable-the-Windows-Subsystem-for-Linux&quot;&gt;Wikihow&lt;/a&gt;&lt;/p&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Tutorial for enabling Windows Subsystem Linux (WSL) and installing Ubuntu.</summary></entry><entry><title type="html">Cool tools in Linux command line</title><link href="https://cfdstreamline.com/howto/how_to_install_cool_tools_in_linux_command_line/" rel="alternate" type="text/html" title="Cool tools in Linux command line" /><published>2022-04-21T00:00:00+02:00</published><updated>2022-04-21T00:00:00+02:00</updated><id>https://cfdstreamline.com/howto/how_to_install_cool_tools_in_linux_command_line</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_install_cool_tools_in_linux_command_line/">&lt;h2 id=&quot;neofetch&quot;&gt;neofetch&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/dylanaraps/neofetch&quot; target=&quot;_blank&quot;&gt;https://github.com/dylanaraps/neofetch&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/screenshots/neofetch.png&quot; alt=&quot;neofetch screenshot&quot; width=&quot;100%&quot; /&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;cpufetch&quot;&gt;cpufetch&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Dr-Noob/cpufetch&quot; target=&quot;_blank&quot;&gt;https://github.com/Dr-Noob/cpufetch&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/screenshots/cpufetch.jpg&quot; alt=&quot;cpufetch screenshot&quot; width=&quot;100%&quot; /&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;cmatrix&quot;&gt;cmatrix&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/abishekvashok/cmatrix&quot; target=&quot;_blank&quot;&gt;https://github.com/abishekvashok/cmatrix&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/screenshots/cmatrix.png&quot; alt=&quot;cmatrix screenshot&quot; width=&quot;100%&quot; /&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;bpytop&quot;&gt;bpytop&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/aristocratos/bpytop&quot; target=&quot;_blank&quot;&gt;https://github.com/aristocratos/bpytop&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/screenshots/bpytop.png&quot; alt=&quot;bpytop screenshot&quot; width=&quot;100%&quot; /&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;lsd&quot;&gt;lsd&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Peltoche/lsd&quot; target=&quot;_blank&quot;&gt;https://github.com/Peltoche/lsd&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/screenshots/lsd.png&quot; alt=&quot;lsd screenshot&quot; width=&quot;100%&quot; /&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;ncdu&quot;&gt;ncdu&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://dev.yorhel.nl/ncdu&quot; target=&quot;_blank&quot;&gt;https://dev.yorhel.nl/ncdu&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/screenshots/ncdu.png&quot; alt=&quot;ncdu screenshot&quot; width=&quot;100%&quot; /&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;gdu&quot;&gt;gdu&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/dundee/gdu&quot; target=&quot;_blank&quot;&gt;https://github.com/dundee/gdu&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/screenshots/gdu.svg&quot; alt=&quot;gdu screenshot&quot; width=&quot;100%&quot; /&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;bat&quot;&gt;bat&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/sharkdp/bat&quot; target=&quot;_blank&quot;&gt;https://github.com/sharkdp/bat&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/screenshots/bat.png&quot; alt=&quot;bat screenshot&quot; width=&quot;100%&quot; /&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;ascii-image-converter&quot;&gt;ascii-image-converter&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/TheZoraiz/ascii-image-converter&quot; target=&quot;_blank&quot;&gt;https://github.com/TheZoraiz/ascii-image-converter&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/screenshots/ascii-image-converter.gif&quot; alt=&quot;ascii-image-converter screenshot&quot; width=&quot;100%&quot; /&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;ranger&quot;&gt;ranger&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://ranger.github.io/&quot; target=&quot;_blank&quot;&gt;https://ranger.github.io/&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/screenshots/ranger.png&quot; alt=&quot;ranger screenshot&quot; width=&quot;100%&quot; /&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;speedtest-cli&quot;&gt;speedtest-cli&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/sivel/speedtest-cli&quot; target=&quot;_blank&quot;&gt;https://github.com/sivel/speedtest-cli&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/screenshots/speedtest-cli.png&quot; alt=&quot;speedtest-cli screenshot&quot; width=&quot;100%&quot; /&gt;&lt;/figure&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Tutorial for installing cool tools in linux command line.</summary></entry><entry><title type="html">How to convert webp files to jpg, to png or to other image formats</title><link href="https://cfdstreamline.com/howto/how_to_convert_webp_files/" rel="alternate" type="text/html" title="How to convert webp files to jpg, to png or to other image formats" /><published>2022-01-04T00:00:00+01:00</published><updated>2022-01-04T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_convert_webp_files</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_convert_webp_files/">&lt;h2 id=&quot;linux&quot;&gt;Linux&lt;/h2&gt;
 
 &lt;h3 id=&quot;debian-based-debian-ubuntu-mint-etc&quot;&gt;Debian-based (Debian, Ubuntu, Mint, etc…)&lt;/h3&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;webp
@@ -90,96 +170,7 @@ Run the executable file and follows the steps.&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;https://wiki.openfoam.com/Compressible_flows_by_Joel_Guerrero2&quot; target=&quot;_blank&quot;&gt;tutorial - supersonic flow past an expansion corner&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://wiki.openfoam.com/Compressible_flows_by_Joel_Guerrero3&quot; target=&quot;_blank&quot;&gt;tutorial - sod’s shock tube&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://wiki.openfoam.com/Drivaer_Joel_Guerrero3&quot; target=&quot;_blank&quot;&gt;tutorial - drivaer&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Basic tutorial for a quick start on OpenFOAM.</summary></entry><entry><title type="html">How to install gfortran</title><link href="https://cfdstreamline.com/howto/how_to_install_gfortran/" rel="alternate" type="text/html" title="How to install gfortran" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_install_gfortran</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_install_gfortran/">&lt;h2 id=&quot;linux&quot;&gt;Linux&lt;/h2&gt;
-
-&lt;h3 id=&quot;debian-based-debian-ubuntu-mint-etc&quot;&gt;Debian-based (Debian, Ubuntu, Mint, etc…)&lt;/h3&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get gfortran
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;rpm-based-red-hat-linux-centos-fedora-opensuse-mandrake-linux&quot;&gt;RPM-based (Red Hat Linux, CentOS, Fedora, openSuse, Mandrake Linux)&lt;/h3&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;yum &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;gcc-gfortran
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
-&lt;script&gt;
-     (adsbygoogle = window.adsbygoogle || []).push({});
-&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;windows&quot;&gt;Windows&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Download MinGW from &lt;a href=&quot;https://sourceforge.net/projects/mingw-w64/&quot; target=&quot;_blank&quot;&gt;https://sourceforge.net/projects/mingw-w64/&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Run the executable file and follows the steps.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The installation process will prompt the “MinGW Installation Manager”, with a list of packages. Tick mingw32-gcc-gfortran-bin and mingw32-gcc-g++-bin (if you need C/C++ compiler also). If you are prompted with a menu, click on Mark for Install. Then on the top left corner click on Installation &amp;gt; Apply Changes.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;After the installation finishes, edit the Enviromental Variables. Search for “Environment Variables” in Windows Search. 
-At the bottom “System Variables” panel, add to the “Path” variable: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C:\MinGW\bin&lt;/code&gt; or the full address of that folder if you have used a different one during the installation. Click on OK, and OK and close the other windows.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Open a Command Prompt Terminal and try typing gcc –version and press &amp;lt;Enter&amp;gt; to check if it works.
-&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
-&lt;script&gt;
-  (adsbygoogle = window.adsbygoogle || []).push({});
-&lt;/script&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;macos&quot;&gt;macOS&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;If you don’t have Xcode installed, install it.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Install Command Line Tools for Xcode. Open a terminal window and type:
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; xcode-select --install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Install gcc using Homebrew:
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; brew update
- brew upgrade
- brew info gcc
- brew install gcc
- brew cleanup
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Tutorial for installing gfortran on Linux, Windows and macOS machines.</summary></entry><entry><title type="html">How to install Microsoft MPI</title><link href="https://cfdstreamline.com/howto/how_to_install_microsoft_mpi/" rel="alternate" type="text/html" title="How to install Microsoft MPI" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_install_microsoft_mpi</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_install_microsoft_mpi/">&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Windows 7 or newer.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
-&lt;script&gt;
-     (adsbygoogle = window.adsbygoogle || []).push({});
-&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;directions&quot;&gt;Directions&lt;/h2&gt;
-
-&lt;h3 id=&quot;linux-and-macos&quot;&gt;Linux and macOS&lt;/h3&gt;
-
-&lt;p&gt;You should install MPICH instead.
-&lt;a href=&quot;/howto/how_to_install_mpich/&quot;&gt;See how to install MPICH.&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;windows&quot;&gt;Windows&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Download Microsoft MPI v10.1.2 or newer (&lt;a href=&quot;https://www.microsoft.com/en-us/download/details.aspx?id=100593&quot; target=&quot;_blank&quot;&gt;download here&lt;/a&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Run MSMpiSetup.exe or msmpisdk.msi, and follow instructions.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Many software use Microsoft MPI as part of their parallel processes, including SU2. This tutorial guides the user through the process of installing it on Windows.</summary></entry><entry><title type="html">How to install MPICH</title><link href="https://cfdstreamline.com/howto/how_to_install_mpich/" rel="alternate" type="text/html" title="How to install MPICH" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_install_mpich</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_install_mpich/">&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Basic tutorial for a quick start on OpenFOAM.</summary></entry><entry><title type="html">How to install MPICH</title><link href="https://cfdstreamline.com/howto/how_to_install_mpich/" rel="alternate" type="text/html" title="How to install MPICH" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_install_mpich</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_install_mpich/">&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;A copy of the distribution, mpich.tar.gz. Download the latest stable version of mpich from: &lt;a href=&quot;https://www.mpich.org/downloads/&quot; target=&quot;_blank&quot;&gt;https://www.mpich.org/downloads/&lt;/a&gt;&lt;/li&gt;
@@ -263,7 +254,50 @@ At the bottom “System Variables” panel, add to the “Path” variable: &lt;
 &lt;h3 id=&quot;windows&quot;&gt;Windows&lt;/h3&gt;
 
 &lt;p&gt;You should install Microsoft MPI instead.
-&lt;a href=&quot;/howto/how_to_install_microsoft_mpi&quot;&gt;See how to install Microsoft MPI.&lt;/a&gt;&lt;/p&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Many software use MPICH as part of their parallel processes, including SU2. This tutorial guides the user through the process of installing MPICH on Linux and macOS machines.</summary></entry><entry><title type="html">How to install mpi4py</title><link href="https://cfdstreamline.com/howto/how_to_Install_mpi4py/" rel="alternate" type="text/html" title="How to install mpi4py" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_Install_mpi4py</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_Install_mpi4py/">&lt;p&gt;MPI for Python enables MPI usage for the Python language, allowing programmers to write codes that leverage multiple processor computing systems.&lt;/p&gt;
+&lt;a href=&quot;/howto/how_to_install_microsoft_mpi&quot;&gt;See how to install Microsoft MPI.&lt;/a&gt;&lt;/p&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Many software use MPICH as part of their parallel processes, including SU2. This tutorial guides the user through the process of installing MPICH on Linux and macOS machines.</summary></entry><entry><title type="html">How to install Python3</title><link href="https://cfdstreamline.com/howto/how_to_install_python3/" rel="alternate" type="text/html" title="How to install Python3" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_install_python3</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_install_python3/">&lt;h2 id=&quot;linux&quot;&gt;Linux&lt;/h2&gt;
+
+&lt;h3 id=&quot;debian-based-debian-ubuntu-mint-etc&quot;&gt;Debian-based (Debian, Ubuntu, Mint, etc…)&lt;/h3&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3.6
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;rpm-based-red-hat-linux-centos-fedora-opensuse-mandrake-linux&quot;&gt;RPM-based (Red Hat Linux, CentOS, Fedora, openSuse, Mandrake Linux)&lt;/h3&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;dnf update
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;dnf &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;python3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;
+     (adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;windows&quot;&gt;Windows&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Download lastest version of Python from &lt;a href=&quot;https://www.python.org/downloads/&quot; target=&quot;_blank&quot;&gt;https://www.python.org/downloads/&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run the executable file and follow the steps.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;
+     (adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;macos&quot;&gt;macOS&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Install Python using Homebrew:
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; brew install python
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Tutorial for installing Python3 on Linux, Windows and macOS machines..</summary></entry><entry><title type="html">How to install mpi4py</title><link href="https://cfdstreamline.com/howto/how_to_Install_mpi4py/" rel="alternate" type="text/html" title="How to install mpi4py" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_Install_mpi4py</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_Install_mpi4py/">&lt;p&gt;MPI for Python enables MPI usage for the Python language, allowing programmers to write codes that leverage multiple processor computing systems.&lt;/p&gt;
 
 &lt;h2 id=&quot;linux-and-macos&quot;&gt;Linux and macOS&lt;/h2&gt;
 
@@ -340,75 +374,7 @@ At the bottom “System Variables” panel, add to the “Path” variable: &lt;
     &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;mpi4py
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Many software use mpi4py (Python) as part of their parallel processes, including SU2. This tutorial guides the user through the process of installing mpi4py on Linux, Windows and macOS machines.</summary></entry><entry><title type="html">How to install common Python3 packages for scientific computing</title><link href="https://cfdstreamline.com/howto/how_to_install_python3_scientific_packs/" rel="alternate" type="text/html" title="How to install common Python3 packages for scientific computing" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_install_python3_scientific_packs</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_install_python3_scientific_packs/">&lt;ul&gt;
-  &lt;li&gt;Python modules:
-    &lt;ul&gt;
-      &lt;li&gt;numPy, short for “Numerical Python”, is used for working with arrays.&lt;/li&gt;
-      &lt;li&gt;scipy, short for “Scientific Python”, is a scientific computation library that uses NumPy underneath, providing more utility functions for optimization, stats and signal processing.&lt;/li&gt;
-      &lt;li&gt;matplotlib is a low level graph plotting library in python that serves as a visualization utility.&lt;/li&gt;
-      &lt;li&gt;ipython is a command shell for interactive computing in multiple programming languages, originally developed for the Python programming language, that offers introspection, rich media, shell syntax, tab completion, and history.&lt;/li&gt;
-      &lt;li&gt;notebook, formely Ipython Notebook and now known as the Jupyter Notebook, is an interactive computational environment, in which you can combine code execution, rich text, mathematics, plots and rich media.&lt;/li&gt;
-      &lt;li&gt;pandas is a package for data manipulation and data analisis, mostly used for data science and machine learning.&lt;/li&gt;
-      &lt;li&gt;sympy is a process-based discrete-event simulation framework based on standard Python. Processes in SimPy are defined by Python generator functions and can, for example, be used to model active components like customers, vehicles or agents.&lt;/li&gt;
-      &lt;li&gt;nose extends the test loading and running features of unittest, making it easier to write, find and run tests.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;ATLAS, short for “Automatically Tuned Linear Algebra Software”, provides highly optimized Linear Algebra kernels for arbitrary cache-based architectures. ATLAS provides ANSI C and Fortran77 interfaces for the entire BLAS API, and a small portion of the LAPACK AP.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;linux&quot;&gt;Linux&lt;/h2&gt;
-
-&lt;h3 id=&quot;debian-based-debian-ubuntu-mint-etc&quot;&gt;Debian-based (Debian, Ubuntu, Mint, etc…)&lt;/h3&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;su - root
-
-pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;numpy scipy matplotlib ipython notebook pandas sympy nose
-
-apt-get update &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
-apt-get &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; libatlas-base-dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;rpm-based-red-hat-linux-centos-fedora-opensuse-mandrake-linux&quot;&gt;RPM-based (Red Hat Linux, CentOS, Fedora, openSuse, Mandrake Linux)&lt;/h3&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;su - root
-
-pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;numpy scipy matplotlib ipython pandas sympy nose
-
-dnf update
-dnf &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;atlas-devel
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
-&lt;script&gt;
-     (adsbygoogle = window.adsbygoogle || []).push({});
-&lt;/script&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;windows&quot;&gt;Windows&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Go to the Scripts folder inside your Python installation directory:
-    &lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;C:\PythonXX\Scripts\&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Run pip as follows:
-    &lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pip.exe&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;numpy&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;scipy&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;matplotlib&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ipython&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;notebook&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pandas&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sympy&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;nose&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-
-    &lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
-&lt;script&gt;
-  (adsbygoogle = window.adsbygoogle || []).push({});
-&lt;/script&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;macos&quot;&gt;macOS&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Install using Homebrew:
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; brew install numpy scipy matplotlib ipython jupyter pandas sympy nose
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Tutorial for installing common Python3 packages for scientific computing on Linux, Windows and macOS machines.</summary></entry><entry><title type="html">How to install SU2 in MPI mode</title><link href="https://cfdstreamline.com/howto/how_to_install_su2_in_mpi_mode/" rel="alternate" type="text/html" title="How to install SU2 in MPI mode" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_install_su2_in_mpi_mode</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_install_su2_in_mpi_mode/">&lt;h2 id=&quot;pre-requisite&quot;&gt;Pre-requisite&lt;/h2&gt;
+&lt;/ol&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Many software use mpi4py (Python) as part of their parallel processes, including SU2. This tutorial guides the user through the process of installing mpi4py on Linux, Windows and macOS machines.</summary></entry><entry><title type="html">How to install SU2 in MPI mode</title><link href="https://cfdstreamline.com/howto/how_to_install_su2_in_mpi_mode/" rel="alternate" type="text/html" title="How to install SU2 in MPI mode" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_install_su2_in_mpi_mode</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_install_su2_in_mpi_mode/">&lt;h2 id=&quot;pre-requisite&quot;&gt;Pre-requisite&lt;/h2&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Python3. &lt;a href=&quot;/howto/how_to_install_python3&quot;&gt;See how to install Python3&lt;/a&gt;
@@ -558,7 +524,7 @@ Assuming that &lt;install_path&gt; is the path to the SU2 binaries (i.e. the fol
 
 &lt;p&gt;&lt;a href=&quot;https://su2code.github.io/docs_v7/Build-SU2-Linux-MacOS/&quot;&gt;Learn more&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://su2code.github.io/docs_v7/SU2-Windows/&quot;&gt;Install on Windows&lt;/a&gt;&lt;/p&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">SU2 is a renowned CFD solver developed as an open-source code, in an initiative of the Stanford University. This tutorial guides the user through the process of installing SU2 in MPI mode on Linux, Windows and macOS machines.</summary></entry><entry><title type="html">How to install swig</title><link href="https://cfdstreamline.com/howto/how_to_install_swig/" rel="alternate" type="text/html" title="How to install swig" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_install_swig</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_install_swig/">&lt;p&gt;Swig is the abbreviation of Simplified Wrapper and Interface Generator, it can give script language such as python the ability to invoke C and C++ libraries interface method indirectly.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://su2code.github.io/docs_v7/SU2-Windows/&quot;&gt;Install on Windows&lt;/a&gt;&lt;/p&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">SU2 is a renowned CFD solver developed as an open-source code, in an initiative of the Stanford University. This tutorial guides the user through the process of installing SU2 in MPI mode on Linux, Windows and macOS machines.</summary></entry><entry><title type="html">How to install swig</title><link href="https://cfdstreamline.com/howto/how_to_install_swig/" rel="alternate" type="text/html" title="How to install swig" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_install_swig</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_install_swig/">&lt;p&gt;&lt;a href=&quot;https://swig.org/&quot; target=&quot;_blank&quot;&gt;Swig&lt;/a&gt; is the abbreviation of Simplified Wrapper and Interface Generator, it can give script language such as python the ability to invoke C and C++ libraries interface method indirectly.&lt;/p&gt;
 
 &lt;h2 id=&quot;linux&quot;&gt;Linux&lt;/h2&gt;
 
@@ -609,15 +575,12 @@ Assuming that &lt;install_path&gt; is the path to the SU2 binaries (i.e. the fol
  brew cleanup
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Tutorial for installing swig on Linux, Windows and macOS machines.</summary></entry><entry><title type="html">How to install gcc</title><link href="https://cfdstreamline.com/howto/how_to_install_gcc/" rel="alternate" type="text/html" title="How to install gcc" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_install_gcc</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_install_gcc/">&lt;h2 id=&quot;linux&quot;&gt;Linux&lt;/h2&gt;
+&lt;/ol&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Tutorial for installing swig on Linux, Windows and macOS machines.</summary></entry><entry><title type="html">How to install Microsoft MPI</title><link href="https://cfdstreamline.com/howto/how_to_install_microsoft_mpi/" rel="alternate" type="text/html" title="How to install Microsoft MPI" /><published>2021-12-27T00:00:00+01:00</published><updated>2021-12-27T00:00:00+01:00</updated><id>https://cfdstreamline.com/howto/how_to_install_microsoft_mpi</id><content type="html" xml:base="https://cfdstreamline.com/howto/how_to_install_microsoft_mpi/">&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
 
-&lt;h3 id=&quot;debian-based-debian-ubuntu-mint-etc&quot;&gt;Debian-based (Debian, Ubuntu, Mint, etc…)&lt;/h3&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;gcc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Windows 7 or newer.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&quot;rpm-based-red-hat-linux-centos-fedora-opensuse-mandrake-linux&quot;&gt;RPM-based (Red Hat Linux, CentOS, Fedora, openSuse, Mandrake Linux)&lt;/h3&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;yum &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;gcc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
@@ -625,48 +588,20 @@ Assuming that &lt;install_path&gt; is the path to the SU2 binaries (i.e. the fol
      (adsbygoogle = window.adsbygoogle || []).push({});
 &lt;/script&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;windows&quot;&gt;Windows&lt;/h2&gt;
+&lt;h2 id=&quot;directions&quot;&gt;Directions&lt;/h2&gt;
+
+&lt;h3 id=&quot;linux-and-macos&quot;&gt;Linux and macOS&lt;/h3&gt;
+
+&lt;p&gt;You should install MPICH instead.
+&lt;a href=&quot;/howto/how_to_install_mpich/&quot;&gt;See how to install MPICH.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;windows&quot;&gt;Windows&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Download MinGW from &lt;a href=&quot;https://sourceforge.net/projects/mingw-w64/&quot; target=&quot;_blank&quot;&gt;https://sourceforge.net/projects/mingw-w64/&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;Download Microsoft MPI v10.1.2 or newer (&lt;a href=&quot;https://www.microsoft.com/en-us/download/details.aspx?id=100593&quot; target=&quot;_blank&quot;&gt;download here&lt;/a&gt;)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Run the executable file and follows the steps.&lt;/p&gt;
+    &lt;p&gt;Run MSMpiSetup.exe or msmpisdk.msi, and follow instructions.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The installation process will prompt the “MinGW Installation Manager”, with a list of packages. Tick mingw32-gcc-g++-bin and mingw32-gcc-gfortran-bin (if you need Fortran also). If you are prompted with a menu, click on Mark for Install. Then on the top left corner click on Installation &amp;gt; Apply Changes.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;After the installation finishes, edit the Enviromental Variables. Search for “Environment Variables” in Windows Search. 
-At the bottom “System Variables” panel, add to the “Path” variable: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C:\MinGW\bin&lt;/code&gt; or the full address of that folder if you have used a different one during the installation. Click on OK, and OK and close the other windows.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Open a Command Prompt Terminal and try typing gcc –version and press &amp;lt;Enter&amp;gt; to check if it works.
-&lt;script async=&quot;&quot; src=&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211504142101622&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display:block; text-align:center;&quot; data-ad-layout=&quot;in-article&quot; data-ad-format=&quot;fluid&quot; data-ad-client=&quot;ca-pub-7211504142101622&quot; data-ad-slot=&quot;1211975591&quot;&gt;&lt;/ins&gt;
-&lt;script&gt;
-  (adsbygoogle = window.adsbygoogle || []).push({});
-&lt;/script&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;macos&quot;&gt;macOS&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;If you don’t have Xcode installed, install it.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Install Command Line Tools for Xcode. Open a terminal window and type:
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; xcode-select --install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Install gcc using Homebrew:
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; brew update
- brew upgrade
- brew info gcc
- brew install gcc
- brew cleanup
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Tutorial for installing gcc on Linux, Windows and macOS machines.</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>{&quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Linkedin&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-linkedin&quot;, &quot;url&quot;=&gt;&quot;https://www.linkedin.com/company/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;, &quot;url&quot;=&gt;&quot;https://github.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;GitLab&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-gitlab&quot;}, {&quot;label&quot;=&gt;&quot;Youtube&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-youtube&quot;, &quot;url&quot;=&gt;&quot;https://www.youtube.com/channel/UCCJGCwszCKYYy43s0g7II0A&quot;}, {&quot;label&quot;=&gt;&quot;Pinterest&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-pinterest&quot;, &quot;url&quot;=&gt;&quot;https://www.pinterest.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;, &quot;url&quot;=&gt;&quot;https://www.instagram.com/cfd.streamline&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;, &quot;url&quot;=&gt;&quot;https://twitter.com/CfdStreamline&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;, &quot;url&quot;=&gt;&quot;https://www.facebook.com/CFD-Streamline-102236005421147/&quot;}, {&quot;label&quot;=&gt;&quot;Buymeacoffee&quot;, &quot;icon&quot;=&gt;&quot;fas fa-coffee&quot;, &quot;url&quot;=&gt;&quot;https://www.buymeacoffee.com/cfdstreamline&quot;}, {&quot;label&quot;=&gt;&quot;Paypal&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-paypal&quot;, &quot;url&quot;=&gt;&quot;https://www.paypal.me/cfdstreamline&quot;}]}</name></author><category term="howto" /><summary type="html">Many software use Microsoft MPI as part of their parallel processes, including SU2. This tutorial guides the user through the process of installing it on Windows.</summary></entry></feed>
